@@ -5,43 +5,55 @@ using UnityEngine;
 public class TempPlayerController : MonoBehaviour {
 
     public float speed;
-    public float aimSpeed;
     public float sensitivity;
     Camera mainCamera;
 
     public Gun gun;
-    [HideInInspector] public Vector3 gunPos;
-    [HideInInspector] public Quaternion gunRot;
+    [HideInInspector] bool triggerDown = false;
 
     void Start () {
         mainCamera = FindObjectOfType<Camera>();
         gun.aim = false;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         transform.position += ((transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"))) * speed * Time.deltaTime;
         transform.eulerAngles += new Vector3(0f, Input.GetAxis("Mouse X"), 0f) * sensitivity * Time.deltaTime;
         mainCamera.transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), 0f, 0f) * sensitivity * Time.deltaTime;
 
-        gun.transform.position = Vector3.Lerp(gun.transform.position, gunPos , aimSpeed * Time.deltaTime);
-        gun.transform.rotation = Quaternion.Lerp(gun.transform.rotation, gunRot, aimSpeed * Time.deltaTime);
-
-        if (gun.aim)
+        if (!triggerDown)
         {
-            gunPos = gun.aimPos.position;
-            gunRot = gun.aimPos.rotation;
+            if (gun.primed)
+            {
+                if (Input.GetButton("Fire1"))
+                {
+                    gun.Fire();
+                    triggerDown = true;
+                    gun.hammerPull = 0;
+                }
+            }
+            else
+            {
+                if (Input.GetButton("Fire1"))
+                {
+                    gun.hammerPull = -0.01f;
+                }
+                else
+                {
+                    gun.hammerPull = Input.GetAxis("Mouse ScrollWheel");
+                }
+            }
         }
-        else
+        else if (!Input.GetButton("Fire1"))
         {
-            gunPos = gun.hipPos.position;
-            gunRot = gun.hipPos.rotation;
+            triggerDown = false;
         }
 
         if (Input.GetButtonDown("Fire2"))
         {
             gun.aim = gun.aim ? false : true;
         }
-	}
+    }
 }
