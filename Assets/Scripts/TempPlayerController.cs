@@ -12,6 +12,7 @@ public class TempPlayerController : MonoBehaviour {
     [HideInInspector] bool triggerDown = false;
 
     void Start () {
+        Cursor.lockState = CursorLockMode.Confined;
         mainCamera = FindObjectOfType<Camera>();
         gun.aim = false;
 	}
