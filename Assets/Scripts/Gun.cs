@@ -4,67 +4,90 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public float aimSpeed;
     public float hammerTension;
     public float hammerSensitivity;
     public float hammerMax;
     public float addForce;
 
-    [HideInInspector] public bool aim;
-    [HideInInspector] public bool primed;
-    [HideInInspector] public float hammerPull;
+    bool primed;
+    bool triggerDown;
+    float hammerPull;
+    float hammerVal;
+    float hammerTarget;
 
     public GameObject hammer;
     public GameObject cylinder;
 
-    public Transform hipPos;
-    public Transform aimPos;
     public Transform firePos;
 
     public GameObject effect;
 
-    Vector3 pos;
-    Quaternion rot;
-
     private void Update()
     {
-        if (aim)
+        Debug.Log("hammerPull " + hammerPull);
+        Debug.Log("hammerVal " + hammerVal);
+        if (!primed && hammerPull == 0f)
         {
-            pos = aimPos.position;
-            rot = aimPos.rotation;
+            HammerSet (Mathf.Lerp(hammerVal, 0f, hammerTension * Time.deltaTime));
+        }
+    }
+
+    public void HammerPull(float val)
+    {
+        hammerPull = val;
+        if (!primed)
+        {
+            if (val > 0f)
+            {
+                HammerSet (Mathf.MoveTowardsAngle(hammerVal, 1f, hammerPull * hammerSensitivity * Time.deltaTime));
+            }
+        }
+    }
+
+    void HammerSet(float val)
+    {
+        hammerVal = val;
+        float angle;
+        if (hammerVal == 1)
+        {
+            primed = true;
+            angle = hammerMax;
         }
         else
         {
-            pos = hipPos.position;
-            rot = hipPos.rotation;
+            angle = Mathf.LerpAngle(0f, hammerMax, hammerVal);
         }
-        transform.position = Vector3.Lerp(transform.position, pos, aimSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.Lerp(transform.rotation, rot, aimSpeed * Time.deltaTime);
+        hammer.transform.localEulerAngles = new Vector3(angle, 0f, 0f);
+    }
 
-        if (!primed)
+    public void TriggerPull(float val)
+    {
+        if (val > 0)
         {
-            float angle;
-            if (hammerPull < 0f)
+            if (!triggerDown)
             {
-                angle = Mathf.MoveTowardsAngle(hammer.transform.localEulerAngles.x, hammerMax, -hammerPull * hammerSensitivity * Time.deltaTime);
-                if (hammer.transform.localEulerAngles.x == hammerMax)
+                if (primed)
                 {
-                    primed = true;
-                    angle = hammerMax;
+                    Fire();
+                }
+                else
+                {
+                    HammerSet(val);
                 }
             }
-            else
-            {
-                angle = Mathf.LerpAngle(hammer.transform.localEulerAngles.x, 0f, hammerTension * Time.fixedDeltaTime);
-            }
-            hammer.transform.localEulerAngles = new Vector3(angle, 0f, 0f);
+        }
+        else
+        {
+            triggerDown = false;
         }
     }
 
     public void Fire()
     {
         primed = false;
-        hammer.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
+        triggerDown = true;
+        //add pew sound here
+        HammerSet(0f);
         Instantiate(effect, firePos);
         RaycastHit hit;
         if (Physics.Raycast(firePos.transform.position, transform.forward, out hit,1<<8))
