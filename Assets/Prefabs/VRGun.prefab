@@ -326,8 +326,8 @@ GameObject:
   - component: {fileID: 114374940791989768}
   - component: {fileID: 114200912886224366}
   - component: {fileID: 65186799026594330}
-  - component: {fileID: 114288035097805618}
   - component: {fileID: 114320773544497084}
+  - component: {fileID: 114250743364182030}
   m_Layer: 0
   m_Name: VRGun
   m_TagString: Gun
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   validDrop: 2
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 114288035097805618}
+  grabAttachMechanicScript: {fileID: 114250743364182030}
   secondaryGrabActionScript: {fileID: 114612911317626238}
   isUsable: 0
   holdButtonToUse: 0
@@ -1848,7 +1848,7 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
---- !u!114 &114288035097805618
+--- !u!114 &114250743364182030
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1856,7 +1856,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776322934907326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a1ebaa51525b734287157cb3f53f958, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   precisionGrab: 0
@@ -1865,10 +1865,6 @@ MonoBehaviour:
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
-  detachDistance: 1
-  velocityLimit: Infinity
-  angularVelocityLimit: Infinity
-  maxDistanceDelta: 10
 --- !u!114 &114320773544497084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1988,7 +1984,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1776322934907326}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab4755a0ce4f26849a9b370d2ae95ed3, type: 3}
   m_Name: 
