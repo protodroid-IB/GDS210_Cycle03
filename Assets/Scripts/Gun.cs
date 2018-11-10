@@ -28,7 +28,7 @@ public class Gun : MonoBehaviour
         Debug.Log("hammerVal " + hammerVal);
         if (!primed && hammerPull == 0f)
         {
-            HammerSet (Mathf.Lerp(hammerVal, 0f, hammerTension * Time.deltaTime));
+            HammerSet(Mathf.Lerp(hammerVal, 0f, hammerTension * Time.deltaTime));
         }
     }
 
@@ -39,7 +39,7 @@ public class Gun : MonoBehaviour
         {
             if (val > 0f)
             {
-                HammerSet (Mathf.MoveTowardsAngle(hammerVal, 1f, hammerPull * hammerSensitivity * Time.deltaTime));
+                HammerSet(Mathf.MoveTowardsAngle(hammerVal, 1f, hammerPull * hammerSensitivity * Time.deltaTime));
             }
         }
     }
@@ -90,7 +90,7 @@ public class Gun : MonoBehaviour
         HammerSet(0f);
         Instantiate(effect, firePos);
         RaycastHit hit;
-        if (Physics.Raycast(firePos.transform.position, transform.forward, out hit,1<<8))
+        if (Physics.Raycast(firePos.transform.position, transform.forward, out hit, 1 << 8))
         {
             var col = hit.collider;
             if (col.CompareTag("Object"))
@@ -106,5 +106,10 @@ public class Gun : MonoBehaviour
                 }
             }
         }
+    }
+
+    void Equip()
+    {
+
     }
 }
