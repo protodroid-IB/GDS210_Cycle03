@@ -2390,7 +2390,7 @@ GameObject:
   - component: {fileID: 4942889207938810}
   m_Layer: 0
   m_Name: VRPlayer
-  m_TagString: Untagged
+  m_TagString: VRPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9484,7 +9484,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457913969629786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22657815, y: 0.5200353, z: -0.11782849}
+  m_LocalPosition: {x: 0.22657815, y: 0.5, z: -0.11782849}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4156057212401568}
@@ -19620,7 +19620,7 @@ MonoBehaviour:
   highlightAlwaysActive: 1
   validObjectListPolicy: {fileID: 114210923370656054}
   displayDropZoneInEditor: 1
-  defaultSnappedInteractableObject: {fileID: 0}
+  defaultSnappedInteractableObject: {fileID: 114689724609017890}
   defaultSnappedObject: {fileID: 0}
 --- !u!114 &114055106879265310
 MonoBehaviour:
@@ -19747,7 +19747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94efdff66f64b4141ac283449a848624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrGun: {fileID: 0}
+  vrGun: {fileID: 114562380821258342}
 --- !u!114 &114082281032167726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20550,7 +20550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94efdff66f64b4141ac283449a848624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrGun: {fileID: 0}
+  vrGun: {fileID: 114487870662690608}
 --- !u!114 &114625715696664920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20699,7 +20699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
   allowedNearTouchControllers: 0
-  allowedTouchControllers: 0
+  allowedTouchControllers: 1
   ignoredColliders: []
   isGrabbable: 1
   holdButtonToGrab: 0
@@ -20992,7 +20992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disableWhenIdle: 1
   allowedNearTouchControllers: 0
-  allowedTouchControllers: 0
+  allowedTouchControllers: 2
   ignoredColliders: []
   isGrabbable: 1
   holdButtonToGrab: 0

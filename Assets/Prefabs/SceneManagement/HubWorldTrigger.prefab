@@ -39,6 +39,8 @@ GameObject:
   - component: {fileID: 114033643237855722}
   - component: {fileID: 65999413726571082}
   - component: {fileID: 114795100785500480}
+  - component: {fileID: 114485906289296486}
+  - component: {fileID: 114126487312596230}
   m_Layer: 0
   m_Name: HubWorldTrigger
   m_TagString: Untagged
@@ -471,6 +473,84 @@ MonoBehaviour:
   hideDirectionIndicatorOnHover: 0
   snapToRotation: 0
   teleporter: {fileID: 0}
+--- !u!114 &114126487312596230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082865294062534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d034a1a4a56c594c96328ad52b9afc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDestinationPointEnabled:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationPoint_UnityEvents+DestinationPointEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnDestinationPointDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationPoint_UnityEvents+DestinationPointEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnDestinationPointLocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationPoint_UnityEvents+DestinationPointEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnDestinationPointUnlocked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationPoint_UnityEvents+DestinationPointEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnDestinationPointReset:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationPoint_UnityEvents+DestinationPointEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114485906289296486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082865294062534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f558dc01554774f9e8d5ff8e5da938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDestinationMarkerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114795100785500480}
+        m_MethodName: ResetHub
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationMarker_UnityEvents+DestinationMarkerEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnDestinationMarkerExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationMarker_UnityEvents+DestinationMarkerEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnDestinationMarkerHover:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationMarker_UnityEvents+DestinationMarkerEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnDestinationMarkerSet:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_DestinationMarker_UnityEvents+DestinationMarkerEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114795100785500480
 MonoBehaviour:
   m_ObjectHideFlags: 1

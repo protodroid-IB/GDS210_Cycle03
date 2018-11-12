@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
-{
+public class Gun : MonoBehaviour {
     public float hammerTension;
     public float hammerSensitivity;
     public float hammerMax;
@@ -14,6 +13,8 @@ public class Gun : MonoBehaviour
     float hammerPull;
     float hammerVal;
     float hammerTarget;
+
+    [SerializeField] float triggerDeadZone = 0.05f;
 
     public GameObject hammer;
     public GameObject cylinder;
@@ -62,7 +63,7 @@ public class Gun : MonoBehaviour
 
     public void TriggerPull(float val)
     {
-        if (val > 0)
+        if (val > triggerDeadZone)
         {
             if (!triggerDown)
             {
