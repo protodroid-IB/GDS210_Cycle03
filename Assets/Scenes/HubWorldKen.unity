@@ -1156,6 +1156,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a0a7ed3599a7d1f4dbc5a0ab7f314b66,
     type: 3}
   m_PrefabInternal: {fileID: 769417837}
+--- !u!1 &802102614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1296636276892368, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 970795929}
+--- !u!65 &802102615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802102614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.2, z: 0.3}
+  m_Center: {x: 0, y: -0.06, z: 0.03}
 --- !u!1001 &970795929
 Prefab:
   m_ObjectHideFlags: 0
@@ -1163,6 +1180,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114689724609017890, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: ignoredColliders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906146977240380, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: ignoredColliders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4942889207938810, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.22657815
@@ -1205,23 +1232,35 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1043882452}
-    - target: {fileID: 1502535371513942, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114594470311324576, guid: 805c56b3b076949fba9b84cd408d94ad,
+    - target: {fileID: 114906146977240380, guid: 805c56b3b076949fba9b84cd408d94ad,
         type: 2}
-      propertyPath: vrGun
+      propertyPath: ignoredColliders.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114081648859039506, guid: 805c56b3b076949fba9b84cd408d94ad,
+    - target: {fileID: 114689724609017890, guid: 805c56b3b076949fba9b84cd408d94ad,
         type: 2}
-      propertyPath: vrGun
+      propertyPath: ignoredColliders.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092395880083092, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146588173205850, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092395880083092, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146588173205850, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.24
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 136298507161684634, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-    - {fileID: 114754635906663528, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+    - {fileID: 135093430224490548, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+    - {fileID: 135269937873450892, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &977713358
@@ -1295,11 +1334,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1138387505 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4623448230200554, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 970795929}
 --- !u!1001 &1152430368
 Prefab:
   m_ObjectHideFlags: 0
@@ -1767,37 +1801,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &1540796981 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1480767123546722, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 970795929}
---- !u!135 &1540796983
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540796981}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.25
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1540796984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540796981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 1880513197}
-  _ears: {fileID: 1138387505}
-  wireframe: 0
 --- !u!1 &1582803794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +1915,23 @@ Transform:
   m_Father: {fileID: 977713359}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1768108452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1103204097376564, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 970795929}
+--- !u!65 &1768108454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1768108452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.2, z: 0.3}
+  m_Center: {x: 0, y: -0.06, z: 0.03}
 --- !u!1 &1792003441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,11 +1963,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1880513197 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4677426645414564, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 970795929}
 --- !u!1001 &1889062935
 Prefab:
   m_ObjectHideFlags: 0

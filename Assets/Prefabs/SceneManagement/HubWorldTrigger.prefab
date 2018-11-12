@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7240117a5c1ed54eb305cfe186d3a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
+  scene: HubWorldKen
 --- !u!136 &136538101931078678
 CapsuleCollider:
   m_ObjectHideFlags: 1

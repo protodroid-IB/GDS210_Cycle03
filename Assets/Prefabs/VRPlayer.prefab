@@ -2503,8 +2503,8 @@ GameObject:
   - component: {fileID: 4535830194693412}
   - component: {fileID: 20629320615231132}
   - component: {fileID: 124949666852265504}
-  - component: {fileID: 136298507161684634}
-  - component: {fileID: 114754635906663528}
+  - component: {fileID: 135099139628274268}
+  - component: {fileID: 114260553591834600}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -19807,7 +19807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holster: {fileID: 114555375752249504}
-  vrGun: {fileID: 114562380821258342}
+  vrGun: {fileID: 0}
 --- !u!114 &114082281032167726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20010,6 +20010,20 @@ MonoBehaviour:
   targetListPolicy: {fileID: 0}
   navMeshData: {fileID: 0}
   navMeshLimitDistance: 0
+--- !u!114 &114260553591834600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4677426645414564}
+  _ears: {fileID: 4623448230200554}
+  wireframe: 0
 --- !u!114 &114276781359883084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20242,7 +20256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammerTension: 20
-  hammerSensitivity: 20
+  hammerSensitivity: 10
   hammerMax: 300
   addForce: 500
   triggerDeadZone: 0.05
@@ -20497,7 +20511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammerTension: 20
-  hammerSensitivity: 20
+  hammerSensitivity: 10
   hammerMax: 300
   addForce: 500
   triggerDeadZone: 0.05
@@ -20599,7 +20613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holster: {fileID: 114030160893360906}
-  vrGun: {fileID: 114487870662690608}
+  vrGun: {fileID: 0}
 --- !u!114 &114625715696664920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20749,7 +20763,8 @@ MonoBehaviour:
   disableWhenIdle: 1
   allowedNearTouchControllers: 0
   allowedTouchControllers: 1
-  ignoredColliders: []
+  ignoredColliders:
+  - {fileID: 135269937873450892}
   isGrabbable: 1
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
@@ -20848,20 +20863,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Control Hints
---- !u!114 &114754635906663528
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480767123546722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4677426645414564}
-  _ears: {fileID: 4623448230200554}
-  wireframe: 0
 --- !u!114 &114784653861030022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21056,7 +21057,8 @@ MonoBehaviour:
   disableWhenIdle: 1
   allowedNearTouchControllers: 0
   allowedTouchControllers: 2
-  ignoredColliders: []
+  ignoredColliders:
+  - {fileID: 135093430224490548}
   isGrabbable: 1
   holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
@@ -21159,6 +21161,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.18
   m_Center: {x: 0, y: -0.05, z: 0.05}
+--- !u!135 &135099139628274268
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &135269937873450892
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -21171,19 +21185,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.18
   m_Center: {x: 0, y: -0.05, z: 0.05}
---- !u!136 &136298507161684634
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480767123546722}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.63
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!222 &222030105256553422
 CanvasRenderer:
   m_ObjectHideFlags: 1
