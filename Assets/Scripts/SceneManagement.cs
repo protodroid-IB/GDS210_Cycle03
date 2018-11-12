@@ -8,8 +8,9 @@ public class SceneManagement : MonoBehaviour
     public static SceneManagement sceneManagement;
 
     [SerializeField] GameObject vrPlayer;
+    [SerializeField] GameObject playerCollider;
 
-    GameObject hubWorldObjects;
+    [SerializeField] GameObject hubWorldObjects;
 
     GameObject instancedObjects;
 
@@ -33,8 +34,6 @@ public class SceneManagement : MonoBehaviour
 
         sceneManagement = this;
 
-        hubWorldObjects = GameObject.FindGameObjectWithTag("DontDestroy");
-
         // Creates a parent to store all objects in the hubworld instance.
         instancedObjects = new GameObject();
         instancedObjects.name = "instanced_" + SceneManager.GetActiveScene().name;
@@ -44,6 +43,7 @@ public class SceneManagement : MonoBehaviour
         hubWorld.name = "DoNotDisable_";
         vrPlayer.transform.SetParent(hubWorld);
         hubWorldObjects.transform.SetParent(hubWorld);
+        playerCollider.transform.SetParent(hubWorld);
 
         // Setup ignore objects.
         ignore[transform] = true;
