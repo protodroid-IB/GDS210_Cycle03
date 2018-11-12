@@ -15,6 +15,6 @@ public class FollowPlayer : MonoBehaviour
 
         quart.eulerAngles = new Vector3(0, cameraRigTransform.rotation.eulerAngles.y, 0);
 
-     //   holsters.transform.rotation = quart;
+        holsters.transform.rotation = quart;
     }
 }
