@@ -2019,7 +2019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammerTension: 20
-  hammerSensitivity: 20000
+  hammerSensitivity: 10
   hammerMax: 300
   addForce: 500
   triggerDeadZone: 0.05

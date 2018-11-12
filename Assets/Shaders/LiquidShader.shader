@@ -47,7 +47,7 @@
             UNITY_FOG_COORDS(1)
             float4 vertex : SV_POSITION;
 			float3 viewDir : COLOR;
-		    float3 normal : COLOR2;		
+		    float3 normal : COLOR2;
 			float fillEdge : TEXCOORD2;
          };
  
