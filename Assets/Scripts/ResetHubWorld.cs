@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ResetHubWorld : MonoBehaviour {
-    [SerializeField] string scene;
-    bool loadingScene = false;
+ public class ResetHubWorld : MonoBehaviour {
+        [SerializeField] string scene;
+        bool loadingScene = false;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "VRPlayer" && !loadingScene)
+        void OnTriggerEnter(Collider col) 
         {
+
+        if (col.tag == "MainCamera") 
+            {
             print("going back to hubworld");
-         //   SceneManager.LoadScene(scene);
-         //   SceneManager.LoadScene(scene);
+
+            SceneManagement.sceneManagement.SetPlayerSpawn(col.transform.position, col.transform.rotation);
+
             SteamVR_LoadLevel.Begin(scene, false, 0.5f);
             loadingScene = true;
-            // SceneManagement.sceneManagement.ActivateHubworldInstance();
-
-
+            }
         }
-    }
-}
+ }
+

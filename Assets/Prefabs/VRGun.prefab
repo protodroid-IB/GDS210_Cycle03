@@ -196,6 +196,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1465857190100556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4448801761003988}
+  m_Layer: 0
+  m_Name: SnapHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1513745415537940
 GameObject:
   m_ObjectHideFlags: 1
@@ -549,6 +564,19 @@ Transform:
   m_Father: {fileID: 4718742179834304}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4448801761003988
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1465857190100556}
+  m_LocalRotation: {x: -0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4718742179834304}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -50, y: 0, z: 0}
 --- !u!4 &4478535561453042
 Transform:
   m_ObjectHideFlags: 1
@@ -679,13 +707,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1776322934907326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.681, y: 1.449, z: 1}
+  m_LocalPosition: {x: -0.58881664, y: 0.01999998, z: 5.260819}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4584905533681756}
   - {fileID: 4191778547290238}
   - {fileID: 4848313626452276}
   - {fileID: 4827790849590400}
+  - {fileID: 4448801761003988}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1990,9 +2019,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammerTension: 20
-  hammerSensitivity: 20000
+  hammerSensitivity: 10
   hammerMax: 300
   addForce: 500
+  triggerDeadZone: 0.05
   hammer: {fileID: 1766749295113074}
   cylinder: {fileID: 1447595297491976}
   firePos: {fileID: 4827790849590400}

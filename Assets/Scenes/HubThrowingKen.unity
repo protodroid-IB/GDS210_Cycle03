@@ -202,43 +202,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114795100785500480, guid: 47a4a23038467f54b93724b3d4188bb0,
-        type: 2}
-      propertyPath: scene
-      value: HubWorldKen
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.224
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.55949837
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.8288315
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -68.042
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.265
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
   m_IsPrefabAsset: 0

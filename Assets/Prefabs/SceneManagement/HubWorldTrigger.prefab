@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 4211896276502168}
   - component: {fileID: 114033643237855722}
   - component: {fileID: 65999413726571082}
-  - component: {fileID: 114795100785500480}
   m_Layer: 0
   m_Name: HubWorldTrigger
   m_TagString: Untagged
@@ -76,6 +75,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1384146498150938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4625402373676500}
+  - component: {fileID: 136538101931078678}
+  - component: {fileID: 114294310528066578}
+  m_Layer: 0
+  m_Name: TriggerArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1499471287321496
 GameObject:
   m_ObjectHideFlags: 1
@@ -176,13 +192,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1082865294062534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -13.54, y: -0.36, z: -8.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4446423263633972}
   - {fileID: 4764326401791186}
   - {fileID: 4058093052880626}
   - {fileID: 4919726405638666}
+  - {fileID: 4625402373676500}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -199,6 +216,19 @@ Transform:
   - {fileID: 4937228661045084}
   m_Father: {fileID: 4211896276502168}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4625402373676500
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1384146498150938}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4211896276502168}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4764326401791186
 Transform:
@@ -233,13 +263,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1628242745009778}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.55949837, z: -0, w: 0.8288315}
+  m_LocalPosition: {x: -1.224, y: 2.3, z: -3.265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4211896276502168}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -68.042, z: 0}
 --- !u!4 &4937228661045084
 Transform:
   m_ObjectHideFlags: 1
@@ -471,15 +501,28 @@ MonoBehaviour:
   hideDirectionIndicatorOnHover: 0
   snapToRotation: 0
   teleporter: {fileID: 0}
---- !u!114 &114795100785500480
+--- !u!114 &114294310528066578
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082865294062534}
+  m_GameObject: {fileID: 1384146498150938}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7240117a5c1ed54eb305cfe186d3a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
+  scene: HubWorldKen
+--- !u!136 &136538101931078678
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1384146498150938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 4.856204
+  m_Direction: 1
+  m_Center: {x: 0, y: 2, z: 0}

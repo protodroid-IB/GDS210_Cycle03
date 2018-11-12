@@ -1,4 +1,4 @@
-﻿namespace VRTK.Controllables
+﻿namespace VRTK
 {
     using System.Collections;
     using System.Collections.Generic;
@@ -6,7 +6,7 @@
 
     public class InputController : MonoBehaviour
     {
-
+        [SerializeField] VRTK_SnapDropZone holster;
         [SerializeField] Gun vrGun;
 
         float previousAxis = 0;
@@ -92,7 +92,13 @@
 
         void ControllerEvents_TriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
-            vrGun.TriggerPull(e.buttonPressure);
+            if (vrGun != null) 
+            {
+                if (!holster.ValidSnappableObjectIsHovering()) 
+                {
+                    vrGun.TriggerPull(e.buttonPressure);
+                }
+            }
         }
 
         void ControllerEvents_TriggerSenseAxisChanged(object sender, ControllerInteractionEventArgs e)

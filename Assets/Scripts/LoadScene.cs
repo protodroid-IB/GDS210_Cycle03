@@ -10,7 +10,7 @@ public class LoadScene : MonoBehaviour {
     // When the player enters the trigger, the scene will be added to the hierarchy.
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "VRPlayer" && !loadingScene)
+        if(other.tag == "MainCamera" && !loadingScene)
         {
             SceneManagement.sceneManagement.LoadScene(loadSceneName);
             loadingScene = true;
