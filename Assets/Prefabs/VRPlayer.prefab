@@ -2503,8 +2503,8 @@ GameObject:
   - component: {fileID: 4535830194693412}
   - component: {fileID: 20629320615231132}
   - component: {fileID: 124949666852265504}
-  - component: {fileID: 136298507161684634}
-  - component: {fileID: 114754635906663528}
+  - component: {fileID: 135901639537256148}
+  - component: {fileID: 114714007080833172}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -4506,6 +4506,7 @@ GameObject:
   - component: {fileID: 92913228733393604}
   - component: {fileID: 81263192763466348}
   - component: {fileID: 114813268407353036}
+  - component: {fileID: 135916532414195322}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -19807,7 +19808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holster: {fileID: 114555375752249504}
-  vrGun: {fileID: 114562380821258342}
+  vrGun: {fileID: 0}
 --- !u!114 &114082281032167726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20572,7 +20573,7 @@ MonoBehaviour:
   highlightAlwaysActive: 0
   validObjectListPolicy: {fileID: 0}
   displayDropZoneInEditor: 1
-  defaultSnappedInteractableObject: {fileID: 0}
+  defaultSnappedInteractableObject: {fileID: 114689724609017890}
   defaultSnappedObject: {fileID: 1721888314090510}
 --- !u!114 &114592967338174236
 MonoBehaviour:
@@ -20599,7 +20600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holster: {fileID: 114030160893360906}
-  vrGun: {fileID: 114487870662690608}
+  vrGun: {fileID: 0}
 --- !u!114 &114625715696664920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20796,6 +20797,20 @@ MonoBehaviour:
   interactUse: {fileID: 0}
   customOrigin: {fileID: 0}
   controller: {fileID: 0}
+--- !u!114 &114714007080833172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4677426645414564}
+  _ears: {fileID: 4623448230200554}
+  wireframe: 0
 --- !u!114 &114741875824612618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20848,20 +20863,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Control Hints
---- !u!114 &114754635906663528
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480767123546722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4677426645414564}
-  _ears: {fileID: 4623448230200554}
-  wireframe: 0
 --- !u!114 &114784653861030022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21171,8 +21172,8 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.18
   m_Center: {x: 0, y: -0.05, z: 0.05}
---- !u!136 &136298507161684634
-CapsuleCollider:
+--- !u!135 &135901639537256148
+SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -21180,9 +21181,20 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.63
-  m_Direction: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &135916532414195322
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1847414500154988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.77
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!222 &222030105256553422
 CanvasRenderer:

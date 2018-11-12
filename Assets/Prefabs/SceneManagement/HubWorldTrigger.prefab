@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4211896276502168}
   - component: {fileID: 114033643237855722}
   - component: {fileID: 65999413726571082}
+  - component: {fileID: 114188398030507742}
   m_Layer: 0
   m_Name: HubWorldTrigger
   m_TagString: Untagged
@@ -192,7 +193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1082865294062534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.54, y: -0.36, z: -8.34}
+  m_LocalPosition: {x: 6.49, y: -0.36, z: 9.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4446423263633972}
@@ -264,7 +265,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1628242745009778}
   m_LocalRotation: {x: -0, y: -0.55949837, z: -0, w: 0.8288315}
-  m_LocalPosition: {x: -1.224, y: 2.3, z: -3.265}
+  m_LocalPosition: {x: -3.55, y: 2.62, z: -3.265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4211896276502168}
@@ -501,6 +502,18 @@ MonoBehaviour:
   hideDirectionIndicatorOnHover: 0
   snapToRotation: 0
   teleporter: {fileID: 0}
+--- !u!114 &114188398030507742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082865294062534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7240117a5c1ed54eb305cfe186d3a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: HubWorldKen
 --- !u!114 &114294310528066578
 MonoBehaviour:
   m_ObjectHideFlags: 1
