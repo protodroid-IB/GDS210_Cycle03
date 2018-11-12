@@ -24,8 +24,6 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("hammerPull " + hammerPull);
-        Debug.Log("hammerVal " + hammerVal);
         if (!primed && hammerPull == 0f)
         {
             HammerSet(Mathf.Lerp(hammerVal, 0f, hammerTension * Time.deltaTime));
@@ -90,7 +88,7 @@ public class Gun : MonoBehaviour
         HammerSet(0f);
         Instantiate(effect, firePos);
         RaycastHit hit;
-        if (Physics.Raycast(firePos.transform.position, transform.forward, out hit, 1 << 8))
+        if (Physics.SphereCast(firePos.transform.position, 0.1f, transform.forward, out hit, 1 << 8))
         {
             var col = hit.collider;
             if (col.CompareTag("Object"))
@@ -104,12 +102,13 @@ public class Gun : MonoBehaviour
                 {
                     rb.AddForce(transform.forward * addForce);
                 }
+
+                var target = col.transform.parent.GetComponentInChildren<Target>();
+                if (target != null)
+                {
+                    target.AddScore();
+                }
             }
         }
-    }
-
-    void Equip()
-    {
-
     }
 }

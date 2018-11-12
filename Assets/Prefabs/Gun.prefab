@@ -1773,17 +1773,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4755a0ce4f26849a9b370d2ae95ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aimSpeed: 10
   hammerTension: 20
-  hammerSensitivity: 20000
-  hammerMax: 300
+  hammerSensitivity: 200
+  hammerMax: -60
   addForce: 500
-  aim: 0
-  primed: 0
-  hammerPull: 0
   hammer: {fileID: 1597838036045854}
   cylinder: {fileID: 1615380761372444}
-  hipPos: {fileID: 0}
-  aimPos: {fileID: 0}
   firePos: {fileID: 4839928311588132}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
