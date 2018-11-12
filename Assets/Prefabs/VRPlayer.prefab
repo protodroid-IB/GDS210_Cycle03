@@ -2503,7 +2503,8 @@ GameObject:
   - component: {fileID: 4535830194693412}
   - component: {fileID: 20629320615231132}
   - component: {fileID: 124949666852265504}
-  - component: {fileID: 114310872725105790}
+  - component: {fileID: 136298507161684634}
+  - component: {fileID: 114754635906663528}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -2787,6 +2788,21 @@ GameObject:
   - component: {fileID: 23920611546376156}
   m_Layer: 0
   m_Name: Cube (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1535635331890302
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4162082738504638}
+  m_Layer: 0
+  m_Name: SnapHandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4396,6 +4412,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1837210219120648
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4186060418095254}
+  m_Layer: 0
+  m_Name: SnapHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1838076120510344
 GameObject:
   m_ObjectHideFlags: 1
@@ -6159,9 +6190,23 @@ Transform:
   - {fileID: 4421950940616090}
   - {fileID: 4040148634092312}
   - {fileID: 4777935342465774}
+  - {fileID: 4186060418095254}
   m_Father: {fileID: 4942889207938810}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4162082738504638
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535635331890302}
+  m_LocalRotation: {x: -0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4248337958428386}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -50, y: 0, z: 0}
 --- !u!4 &4164311152440636
 Transform:
   m_ObjectHideFlags: 1
@@ -6305,6 +6350,19 @@ Transform:
   m_Father: {fileID: 4317649944181086}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -58.636, y: 0, z: 0}
+--- !u!4 &4186060418095254
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837210219120648}
+  m_LocalRotation: {x: -0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4156659926067808}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -50, y: 0, z: 0}
 --- !u!4 &4187226235298540
 Transform:
   m_ObjectHideFlags: 1
@@ -6733,9 +6791,10 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4187226235298540}
+  - {fileID: 4442032404235742}
   - {fileID: 4962221736785438}
   - {fileID: 4618367172819650}
-  - {fileID: 4442032404235742}
+  - {fileID: 4162082738504638}
   m_Father: {fileID: 4942889207938810}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7623,7 +7682,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4248337958428386}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4445997521509224
 Transform:
@@ -8380,7 +8439,7 @@ Transform:
   m_Children:
   - {fileID: 4379226438613108}
   m_Father: {fileID: 4248337958428386}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4622823309960136
 Transform:
@@ -9561,7 +9620,7 @@ Transform:
   - {fileID: 4447635060354746}
   - {fileID: 4229768500305972}
   m_Father: {fileID: 4248337958428386}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4962498471865074
 Transform:
@@ -19747,6 +19806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94efdff66f64b4141ac283449a848624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holster: {fileID: 114555375752249504}
   vrGun: {fileID: 114562380821258342}
 --- !u!114 &114082281032167726
 MonoBehaviour:
@@ -19760,8 +19820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
+  rightSnapHandle: {fileID: 4162082738504638}
+  leftSnapHandle: {fileID: 4162082738504638}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
@@ -19968,20 +20028,6 @@ MonoBehaviour:
   controllerAttachPoint: {fileID: 0}
   controllerEvents: {fileID: 0}
   interactTouch: {fileID: 0}
---- !u!114 &114310872725105790
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480767123546722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4677426645414564}
-  _ears: {fileID: 4623448230200554}
-  wireframe: 0
 --- !u!114 &114315431470154960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20141,8 +20187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
-  leftSnapHandle: {fileID: 0}
+  rightSnapHandle: {fileID: 4186060418095254}
+  leftSnapHandle: {fileID: 4186060418095254}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
@@ -20190,15 +20236,16 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1721888314090510}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab4755a0ce4f26849a9b370d2ae95ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hammerTension: 20
-  hammerSensitivity: 20000
+  hammerSensitivity: 20
   hammerMax: 300
   addForce: 500
+  triggerDeadZone: 0.05
   hammer: {fileID: 1397244995837584}
   cylinder: {fileID: 1007688223370422}
   firePos: {fileID: 4442032404235742}
@@ -20444,15 +20491,16 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1927942315163364}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab4755a0ce4f26849a9b370d2ae95ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hammerTension: 20
-  hammerSensitivity: 20000
+  hammerSensitivity: 20
   hammerMax: 300
   addForce: 500
+  triggerDeadZone: 0.05
   hammer: {fileID: 1043742302713012}
   cylinder: {fileID: 1331314451548946}
   firePos: {fileID: 4777935342465774}
@@ -20550,6 +20598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94efdff66f64b4141ac283449a848624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holster: {fileID: 114030160893360906}
   vrGun: {fileID: 114487870662690608}
 --- !u!114 &114625715696664920
 MonoBehaviour:
@@ -20799,6 +20848,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Control Hints
+--- !u!114 &114754635906663528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4677426645414564}
+  _ears: {fileID: 4623448230200554}
+  wireframe: 0
 --- !u!114 &114784653861030022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21108,6 +21171,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.18
   m_Center: {x: 0, y: -0.05, z: 0.05}
+--- !u!136 &136298507161684634
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.63
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!222 &222030105256553422
 CanvasRenderer:
   m_ObjectHideFlags: 1
