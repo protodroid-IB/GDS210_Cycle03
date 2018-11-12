@@ -8,7 +8,6 @@ public class SceneManagement : MonoBehaviour
     public static SceneManagement sceneManagement;
 
     [SerializeField] GameObject vrPlayer;
-    [SerializeField] GameObject vrPlayerCamera;
 
     GameObject hubWorldObjects;
 
@@ -17,8 +16,6 @@ public class SceneManagement : MonoBehaviour
     Dictionary<Transform, bool> ignore = new Dictionary<Transform, bool>();
 
     Transform hubWorld;
-
-    [SerializeField] PlayerSpawnLocation playerSpawnLocation;
 
     bool gameStarted = false;
 
@@ -30,9 +27,9 @@ public class SceneManagement : MonoBehaviour
             return;
         }
 
+        DontDestroyOnLoad(vrPlayer);
 
-        vrPlayer.transform.position = playerSpawnLocation.spawnLocation;
-        vrPlayerCamera.transform.rotation = playerSpawnLocation.rotation;
+        vrPlayer.transform.position = GameManager.spawnPosition;
 
         sceneManagement = this;
 
@@ -44,7 +41,7 @@ public class SceneManagement : MonoBehaviour
 
         //Create a parent to store the objects that will not be destroyed.
         hubWorld = new GameObject().transform;
-        hubWorld.name = "DoNotDestroy_";
+        hubWorld.name = "DoNotDisable_";
         vrPlayer.transform.SetParent(hubWorld);
         hubWorldObjects.transform.SetParent(hubWorld);
 
@@ -54,7 +51,6 @@ public class SceneManagement : MonoBehaviour
         ignore[hubWorld] = true;
 
         MakeNewInstanceObjects(SceneManager.GetActiveScene().name);
-
     }
 
     // Sets the objects in the scene to be instanced.
@@ -87,7 +83,7 @@ public class SceneManagement : MonoBehaviour
     IEnumerator LoadSceneObjects(string scene)
     {
 
-       // SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+        // SceneManager.LoadScene(scene, LoadSceneMode.Additive);
         SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
 
         yield return null;
@@ -100,18 +96,6 @@ public class SceneManagement : MonoBehaviour
         print("Active hubworld instance");
     }
 
-    public void SetPlayerSpawn(Vector3 spawnLocation, Quaternion spawnRotation)
-    {
-        spawnLocation.y = 0;
-        playerSpawnLocation.spawnLocation = spawnLocation;
-        playerSpawnLocation.rotation = spawnRotation;
-    }
 }
 
-[CreateAssetMenu(menuName = "PlayerSpawnLocation")]
-public class PlayerSpawnLocation : ScriptableObject
-{
-    public Vector3 spawnLocation;
-    public Quaternion rotation;
 
-}

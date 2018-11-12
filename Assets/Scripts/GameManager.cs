@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
     public static GameManager gameManager;
-
-    public bool gameStarted = false;
-
-    [SerializeField] PlayerSpawnLocation playerSpawnLocation;
+    public static Vector3 spawnPosition = Vector3.zero;
 
     void Awake () {
         if (gameManager != null)
@@ -16,10 +13,6 @@ public class GameManager : MonoBehaviour {
             return;
         }
 
-        if(gameStarted == false)
-        {
-            playerSpawnLocation.spawnLocation = Vector3.zero;
-            gameStarted = false;
-        }
+     //   DontDestroyOnLoad(gameObject);
     }
 }

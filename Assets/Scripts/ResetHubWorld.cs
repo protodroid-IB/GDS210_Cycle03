@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
  public class ResetHubWorld : MonoBehaviour {
         [SerializeField] string scene;
@@ -14,7 +13,8 @@ using UnityEngine.SceneManagement;
             {
             print("going back to hubworld");
 
-            SceneManagement.sceneManagement.SetPlayerSpawn(col.transform.position, col.transform.rotation);
+            GameManager.spawnPosition = col.transform.position;
+            GameManager.spawnPosition.y = 0;
 
             SteamVR_LoadLevel.Begin(scene, false, 0.5f);
             loadingScene = true;
