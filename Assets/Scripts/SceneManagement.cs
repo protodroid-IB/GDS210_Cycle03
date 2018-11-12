@@ -7,7 +7,8 @@ public class SceneManagement : MonoBehaviour
 {
     public static SceneManagement sceneManagement;
 
-    GameObject vrPlayer;
+    [SerializeField] GameObject vrPlayer;
+    [SerializeField] GameObject vrPlayerCamera;
 
     GameObject hubWorldObjects;
 
@@ -17,6 +18,10 @@ public class SceneManagement : MonoBehaviour
 
     Transform hubWorld;
 
+    [SerializeField] PlayerSpawnLocation playerSpawnLocation;
+
+    bool gameStarted = false;
+
     private void Awake()
     {
         if (sceneManagement != null)
@@ -25,9 +30,12 @@ public class SceneManagement : MonoBehaviour
             return;
         }
 
+
+        vrPlayer.transform.position = playerSpawnLocation.spawnLocation;
+        vrPlayerCamera.transform.rotation = playerSpawnLocation.rotation;
+
         sceneManagement = this;
 
-        vrPlayer = GameObject.FindGameObjectWithTag("VRPlayer");
         hubWorldObjects = GameObject.FindGameObjectWithTag("DontDestroy");
 
         // Creates a parent to store all objects in the hubworld instance.
@@ -83,7 +91,6 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
 
         yield return null;
-
     }
 
     // Turn instanced objects back on.
@@ -92,5 +99,19 @@ public class SceneManagement : MonoBehaviour
         instancedObjects.SetActive(true);
         print("Active hubworld instance");
     }
+
+    public void SetPlayerSpawn(Vector3 spawnLocation, Quaternion spawnRotation)
+    {
+        spawnLocation.y = 0;
+        playerSpawnLocation.spawnLocation = spawnLocation;
+        playerSpawnLocation.rotation = spawnRotation;
+    }
+}
+
+[CreateAssetMenu(menuName = "PlayerSpawnLocation")]
+public class PlayerSpawnLocation : ScriptableObject
+{
+    public Vector3 spawnLocation;
+    public Quaternion rotation;
 
 }

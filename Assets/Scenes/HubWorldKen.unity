@@ -1258,11 +1258,32 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -0.24
       objectReference: {fileID: 0}
+    - target: {fileID: 1242242743102324, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 135093430224490548, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
     - {fileID: 135269937873450892, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &970795930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1847414500154988, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 970795929}
+--- !u!135 &970795931
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970795930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.9
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &977713358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,6 +1578,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ce076382b8cf44d9fdacaf72912f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vrPlayer: {fileID: 0}
+  vrPlayerCamera: {fileID: 0}
+  playerSpawnLocation: {fileID: 0}
 --- !u!4 &1365230821
 Transform:
   m_ObjectHideFlags: 0
