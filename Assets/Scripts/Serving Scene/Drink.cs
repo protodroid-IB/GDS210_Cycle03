@@ -1,36 +1,50 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Serving;
 
-public class Drink : MonoBehaviour {
-
-	List<Ingredient> ingredients = new List<Ingredient>();
-
-	bool ice;
-
-	enum MixMethod { Shaken, Stirred, Mixed }
-	MixMethod method;
-
-	public void AddIngredient(Ingredient ingredient)
+namespace Serving
+{
+	// used to manage and create a drink
+	public class Drink : MonoBehaviour
 	{
-		ingredients.Add(ingredient);
+
+		// list of main ingredients added
+		List<Ingredient> ingredients = new List<Ingredient>();
+
+		MixMethod method = MixMethod.Mixed;
+
+		public void AddIngredient(Ingredient ingredient)
+		{
+			if (!ingredients.Contains(ingredient))
+			{
+				ingredients.Add(ingredient);
+				ingredients = ingredients.OrderBy(t => t.name).ToList();
+			}
+		}
+
+		public void Combine(MixMethod mixMethod)
+		{
+			if (mixMethod > method)
+			{
+				method = mixMethod;
+			}
+		}
+
+		public CompleteDrink GetDrink()
+		{
+			CompleteDrink drink = new CompleteDrink
+			{
+				usedIngredients = ingredients.ToArray(),
+				mixMethod = method
+			};
+			return drink;
+		}
+
+		public void Clear()
+		{
+			ingredients.Clear();
+		}
 	}
-
-	public void Clear()
-	{
-		ingredients.Clear();
-	}
-
-	public void AddIce()
-	{
-		ice = true;
-	}
-
-	void Combine(MixMethod mixMethod)
-	{
-		method = mixMethod;
-	}
-
-
-
 }
