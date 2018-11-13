@@ -9,9 +9,8 @@ using UnityEngine;
         void OnTriggerEnter(Collider col) 
         {
 
-        if (col.tag == "MainCamera") 
+        if (col.tag == "Player") 
             {
-            print("going back to hubworld");
 
             GameManager.spawnPosition = col.transform.position;
             GameManager.spawnPosition.y = 0;
