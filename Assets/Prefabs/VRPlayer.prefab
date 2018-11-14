@@ -3751,7 +3751,7 @@ GameObject:
   - component: {fileID: 20626865574634190}
   - component: {fileID: 114003928993007108}
   - component: {fileID: 92540383428638126}
-  - component: {fileID: 114478953475549826}
+  - component: {fileID: 114390500813014632}
   m_Layer: 0
   m_Name: Camera (head)
   m_TagString: MainCamera
@@ -4506,7 +4506,7 @@ GameObject:
   - component: {fileID: 92913228733393604}
   - component: {fileID: 81263192763466348}
   - component: {fileID: 114813268407353036}
-  - component: {fileID: 114324675202309142}
+  - component: {fileID: 114724686243752664}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -9545,7 +9545,7 @@ Transform:
   m_GameObject: {fileID: 1457913969629786}
   m_LocalRotation: {x: -0, y: 0.99874264, z: -0, w: -0.0501312}
   m_LocalPosition: {x: 2.1499896, y: 0.5, z: 1.1942985}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4156057212401568}
   - {fileID: 4807724290032230}
@@ -20070,18 +20070,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraRigTransform: {fileID: 4535830194693412}
   holsters: {fileID: 1273893629981850}
---- !u!114 &114324675202309142
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1847414500154988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
 --- !u!114 &114337138366315314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20137,6 +20125,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114390500813014632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1718269612472500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider: {fileID: 0}
 --- !u!114 &114424813631485284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20231,12 +20231,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 0}
-  actualHeadset: {fileID: 0}
-  actualLeftController: {fileID: 0}
-  actualRightController: {fileID: 0}
-  modelAliasLeftController: {fileID: 0}
-  modelAliasRightController: {fileID: 0}
+  actualBoundaries: {fileID: 1242242743102324}
+  actualHeadset: {fileID: 1847414500154988}
+  actualLeftController: {fileID: 1358908443004542}
+  actualRightController: {fileID: 1417583825379894}
+  modelAliasLeftController: {fileID: 1039921009492852}
+  modelAliasRightController: {fileID: 1455407306083378}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
@@ -20257,18 +20257,6 @@ MonoBehaviour:
     fallbackTypeName: VRTK.SDK_FallbackController
     typeName: VRTK.SDK_SimController
     descriptionIndex: 0
---- !u!114 &114478953475549826
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1718269612472500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
 --- !u!114 &114487870662690608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20836,6 +20824,18 @@ MonoBehaviour:
   interactUse: {fileID: 0}
   customOrigin: {fileID: 0}
   controller: {fileID: 0}
+--- !u!114 &114724686243752664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1847414500154988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider: {fileID: 0}
 --- !u!114 &114741875824612618
 MonoBehaviour:
   m_ObjectHideFlags: 1
