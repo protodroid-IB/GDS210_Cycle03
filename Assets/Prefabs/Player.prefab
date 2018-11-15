@@ -762,7 +762,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1176238074390750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.521}
+  m_LocalPosition: {x: 3.21, y: 1, z: 4.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4819231571267864}
@@ -2023,6 +2023,7 @@ MonoBehaviour:
   hammerSensitivity: 500
   hammerMax: -60
   addForce: 500
+  triggerDeadZone: 0.05
   hammer: {fileID: 1205534543777866}
   cylinder: {fileID: 1760835136686160}
   firePos: {fileID: 4711155873248272}

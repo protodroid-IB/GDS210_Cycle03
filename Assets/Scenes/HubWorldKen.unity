@@ -377,7 +377,29 @@ Prefab:
       propertyPath: playerCollider
       value: 
       objectReference: {fileID: 964687205}
-    m_RemovedComponents: []
+    - target: {fileID: 1875368599768886, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148469402710966, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942889207938810, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942889207938810, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942889207938810, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114260553591834600, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+    - {fileID: 114390500813014632, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &507959094
@@ -554,6 +576,11 @@ CapsuleCollider:
   m_Height: 4.856204
   m_Direction: 1
   m_Center: {x: 0, y: 0.928102, z: 0}
+--- !u!4 &686530815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4623448230200554, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 382210185}
 --- !u!1001 &697426682
 Prefab:
   m_ObjectHideFlags: 0
@@ -639,6 +666,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 136403893306767308, guid: 4c3d25fac53d14f42b6f6cac0600d121,
+        type: 2}
+      propertyPath: m_Height
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 136403893306767308, guid: 4c3d25fac53d14f42b6f6cac0600d121,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c3d25fac53d14f42b6f6cac0600d121, type: 2}
   m_IsPrefabAsset: 0
@@ -714,6 +751,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1029551854722152, guid: 4c3d25fac53d14f42b6f6cac0600d121,
     type: 2}
   m_PrefabInternal: {fileID: 729976546}
+--- !u!1 &1113280181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1480767123546722, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 382210185}
+--- !u!114 &1113280183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113280181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 1866996825}
+  _ears: {fileID: 686530815}
+  wireframe: 0
+--- !u!114 &1113280186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113280181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider: {fileID: 964687205}
 --- !u!4 &1128134146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4945119116472300, guid: 0b01046970b84cf429e8290850d24c2b,
@@ -1076,6 +1144,11 @@ Prefab:
     - {fileID: 54671621066993590, guid: ddbce81db79c9ae4b9a24995a017df82, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ddbce81db79c9ae4b9a24995a017df82, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1866996825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4677426645414564, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 382210185}
 --- !u!1001 &1889062935
 Prefab:
   m_ObjectHideFlags: 0
