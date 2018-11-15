@@ -206,6 +206,10 @@ ModelImporter:
     100400: WindowFrame7
     100402: WindowFrame8
     100404: WindowFrame9
+    100406: transform37
+    100408: transform38
+    100410: transform39
+    100412: transform40
     400000: Bar
     400002: DoorFrame
     400004: DoorFrame1
@@ -409,6 +413,10 @@ ModelImporter:
     400400: WindowFrame7
     400402: WindowFrame8
     400404: WindowFrame9
+    400406: transform37
+    400408: transform38
+    400410: transform39
+    400412: transform40
     2100000: lambert1
     2100002: typeBlinn4
     2300000: Bar
