@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114015234527911600}
   - component: {fileID: 114203332893823124}
   - component: {fileID: 114539745659402628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bottle
   m_TagString: Object
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 33519973079194226}
   - component: {fileID: 23479086101502808}
   - component: {fileID: 136114353978289586}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (1)
   m_TagString: Object
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 33090329521435010}
   - component: {fileID: 23053669365745320}
   - component: {fileID: 135083989931992188}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Object
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 33297732440386638}
   - component: {fileID: 23017973244902898}
   - component: {fileID: 136681011860444364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (2)
   m_TagString: Object
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 33090102368544354}
   - component: {fileID: 23125191040248188}
   - component: {fileID: 136145370355298870}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Object
   m_Icon: {fileID: 0}

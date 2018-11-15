@@ -8,6 +8,8 @@
     {
         [SerializeField] VRTK_SnapDropZone holster;
         [SerializeField] Gun vrGun;
+        [SerializeField] float touchpadThreshold = .05f;
+        [SerializeField] float triggerThreshold = .05f;
 
         float previousAxis = 0;
 
@@ -96,7 +98,14 @@
             {
                 if (!holster.ValidSnappableObjectIsHovering()) 
                 {
-                    vrGun.TriggerPull(e.buttonPressure);
+                    if (e.buttonPressure >= triggerThreshold)
+                    {
+                        vrGun.TriggerPull(e.buttonPressure);
+                    }
+                    else
+                    {
+                        vrGun.TriggerPull(0f);
+                    }
                 }
             }
         }

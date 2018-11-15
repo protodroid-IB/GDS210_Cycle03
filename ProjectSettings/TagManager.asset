@@ -9,6 +9,7 @@ TagManager:
   - Object
   - VRPlayer
   - DontDestroy
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Gun
+  - Throwable
+  - Target
   - 
   - 
   - 

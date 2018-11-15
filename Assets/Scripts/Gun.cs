@@ -14,8 +14,6 @@ public class Gun : MonoBehaviour {
     float hammerVal;
     float hammerTarget;
 
-    [SerializeField] float triggerDeadZone = 0.05f;
-
     public GameObject hammer;
     public GameObject cylinder;
 
@@ -61,7 +59,7 @@ public class Gun : MonoBehaviour {
 
     public void TriggerPull(float val)
     {
-        if (val > triggerDeadZone)
+        if (val > 0f)
         {
             if (!triggerDown)
             {
