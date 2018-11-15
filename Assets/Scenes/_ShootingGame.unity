@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.18380117, g: 0.22840926, b: 0.30002627, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -221,7 +221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1058322396953488, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
@@ -265,60 +265,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114795100785500480, guid: 47a4a23038467f54b93724b3d4188bb0,
-        type: 2}
-      propertyPath: scene
-      value: HubWorldKen
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.2458128
-      objectReference: {fileID: 0}
-    - target: {fileID: 4211896276502168, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -101.511
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.76853853
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.6398036
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 4.6651726
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919726405638666, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 100.44601
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114795100785500480, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &550804287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1082865294062534, guid: 47a4a23038467f54b93724b3d4188bb0,
-    type: 2}
-  m_PrefabInternal: {fileID: 550804286}
---- !u!114 &550804288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 550804287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7240117a5c1ed54eb305cfe186d3a00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: HubWorldKen
 --- !u!1001 &652057139
 Prefab:
   m_ObjectHideFlags: 0
