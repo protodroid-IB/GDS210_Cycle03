@@ -6,21 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ShootingGame.unity
-    guid: 3970f9f03a451c74f8f18abe6f6077f8
-  - enabled: 1
     path: Assets/Scenes/Preload.unity
     guid: 113ba6e5449c33b409b5c2ee4d3e8ec4
   - enabled: 1
-    path: Assets/Scenes/HubWorldKen.unity
+    path: Assets/Scenes/HubWorldMASTER.unity
     guid: c10b44cc8ec9d984d9072af214aa6959
   - enabled: 1
-    path: Assets/Scenes/HubShootingKen.unity
+    path: Assets/Scenes/_BarServingGame.unity
+    guid: 12371b72853ef09498e39aef360d8053
+  - enabled: 1
+    path: Assets/Scenes/_ShootingGame.unity
     guid: 9ab28dc7981e2334a8f059b80d428a7c
   - enabled: 1
-    path: Assets/Scenes/HubThrowingKen.unity
+    path: Assets/Scenes/_ThrowingGame.unity
     guid: 872aa2b614b56864ba1480ff3553a0fd
-  - enabled: 1
-    path: Assets/Scenes/HubBarKen.unity
-    guid: 12371b72853ef09498e39aef360d8053
   m_configObjects: {}
