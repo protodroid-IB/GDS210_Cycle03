@@ -85,7 +85,6 @@ public class SceneManagement : MonoBehaviour
 
         // SceneManager.LoadScene(scene, LoadSceneMode.Additive);
         SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
-
         yield return null;
     }
 
