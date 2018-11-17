@@ -8,12 +8,16 @@ public class Wobble : MonoBehaviour
 
 	Vector3 lastVelocity, lastAngularVelocity, lastPos, lastRot;
 
-	[Header("References")]
-	[SerializeField]
+	
+	
 	Vector3 velocity;
 
-	[SerializeField]
+	
 	Vector3 acceleration, angularAcceleration, angularVelocity;
+
+	/*[SerializeField]
+	[Range(0f, 1f)]
+	float fillQuantity;*/
 
 	[SerializeField]
 	float fillAmount;
