@@ -33,7 +33,7 @@ namespace Serving
 			else
 			{
 				timer += time;
-				ingredientAdded = timer / ingredient.timeToAdd;
+				ingredientAdded = timer / ingredient.timeToAdd + 0.01f;
 				if (ingredientAdded >= 1)
 				{
 					ingredients.Add(ingredient);
