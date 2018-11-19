@@ -10,8 +10,7 @@ TagManager:
   - VRPlayer
   - DontDestroy
   - Fire
-  - ThrowingTarget
-  - Floor
+  - Bullet
   layers:
   - Default
   - TransparentFX

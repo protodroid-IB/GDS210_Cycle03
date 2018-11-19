@@ -8,21 +8,26 @@ public class Gun : MonoBehaviour {
     public float hammerMax;
     public float addForce;
 
-    bool loaded;
+    [SerializeField]
+    public bool loaded;
+
     bool primed;
     bool triggerDown;
     float hammerPull;
     float hammerVal;
     float hammerTarget;
 
+    public int bullets = 6;
+
     public GameObject hammer;
     public GameObject cylinder;
+    public GameObject currentBullet;
 
     public Transform firePos;
-    public Transform cylinderReloadPos;
-    public Transform cylinderLoadedPos;
 
     public GameObject effect;
+
+    public GameObject[] cylinderBullets;
 
     private void Update()
     {
@@ -32,15 +37,28 @@ public class Gun : MonoBehaviour {
         }
 
         //checks to see if gun is loaded, also useful for other functions
-        if(cylinder.transform.position == cylinderLoadedPos.transform.position)
+        if(cylinder.transform.localEulerAngles == Vector3.zero)
         {
 
             loaded = true;
 
         }
-        else if(cylinder.transform.position == cylinderReloadPos.transform.position)
+        else if(cylinder.transform.localEulerAngles != Vector3.zero)
         {
             loaded = false;
+        }
+
+        //should iterate through each bullet to find bullet id
+        foreach (GameObject bullet in cylinderBullets)
+        {
+
+            if (bullet.GetComponent<Identification>().id == bullets)
+            {
+
+                currentBullet = bullet;
+
+            }
+
         }
 
         Reload();
@@ -81,8 +99,10 @@ public class Gun : MonoBehaviour {
         {
             if (!triggerDown)
             {
-                if (primed)
+                if (primed && loaded && bullets > 0) //*
                 {
+                    currentBullet.SetActive(false);
+                    bullets--;
                     Fire();
                 }
                 else
@@ -127,21 +147,24 @@ public class Gun : MonoBehaviour {
                 }
             }
         }
+
+        //if bullets is equal to current bullet's ID set current bullet inactive take one from bullets and replace current bullet
     }
 
+    //Reload function: Pops out the cylinder for reloading.
     public void Reload()
     {
 
         if (loaded == true && Input.GetButtonDown("Reload"))
         {
 
-            cylinder.transform.position = cylinderReloadPos.transform.position;  //popped out rotation 
+            cylinder.transform.localEulerAngles = new Vector3(0f, 0f, 80f);
 
         }
         else if (loaded == false && Input.GetButtonDown("Reload"))
         {
 
-            cylinder.transform.position = cylinderLoadedPos.transform.position;
+            cylinder.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
 
         }
 
