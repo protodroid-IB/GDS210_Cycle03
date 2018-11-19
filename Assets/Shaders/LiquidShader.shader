@@ -73,13 +73,13 @@
 
             o.vertex = UnityObjectToClipPos(v.vertex);
             o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-            UNITY_TRANSFER_FOG(o,o.vertex);			
+            UNITY_TRANSFER_FOG(o,o.vertex);
 			// get world position of the vertex
             float3 worldPos = mul (unity_ObjectToWorld, v.vertex.xyz);   
 			// rotate it around XY
 			float3 worldPosX= RotateAroundYInDegrees(float4(worldPos,0),360);
 			// rotate around XZ
-			float3 worldPosZ = float3 (worldPosX.y, worldPosX.z, worldPosX.x);		
+			float3 worldPosZ = float3 (worldPosX.y, worldPosX.z, worldPosX.x);
 			// combine rotations with worldPos, based on sine wave from script
 			float3 worldPosAdjusted = worldPos + (worldPosX  * _WobbleX)+ (worldPosZ* _WobbleZ); 
 			// how high up the liquid is
