@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
     #region singleton instance
     public static AudioManager instance;
 
-    private void Awake()
+    private void MakeSingleton()
     {
         if (FindObjectsOfType(GetType()).Length > 1)
         {
@@ -42,6 +42,7 @@ public class AudioManager : MonoBehaviour
         [Range(0f, 1f)]
         public float spatial;
 
+        public bool setDistancesHere;
         public float minDistance3Dsound;
         public float maxDistance3DSound;
     }
@@ -60,12 +61,19 @@ public class AudioManager : MonoBehaviour
 
 
 
-    void Start ()
+    void Awake ()
     {
+        MakeSingleton();
+
         // add dictionary elements with the sound name as the key and the array index of the sound as the value
         for (int i = 0; i < sounds.Length; i++)
         {
             soundDictionary.Add(sounds[i].clipName, i);
+        }
+
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            Debug.Log(sounds[i].clipName);
         }
     }
 	
@@ -94,6 +102,8 @@ public class AudioManager : MonoBehaviour
             
             // if the sound can be played multiple times
             else inSource.Play();
+
+            Debug.Log("Play Sound!!!");
         }
 
         // if the sound does not exist within the dictionary, display an error
@@ -117,7 +127,11 @@ public class AudioManager : MonoBehaviour
         source.loop = inSound.loop;
         source.outputAudioMixerGroup = inSound.audioMixerGroup;
         source.spatialBlend = inSound.spatial;
-        source.minDistance = inSound.minDistance3Dsound;
-        source.maxDistance = inSound.maxDistance3DSound;
+
+        if(inSound.setDistancesHere)
+        {
+            source.minDistance = inSound.minDistance3Dsound;
+            source.maxDistance = inSound.maxDistance3DSound;
+        }      
     }
 }
