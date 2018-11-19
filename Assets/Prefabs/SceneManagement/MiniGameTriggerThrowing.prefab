@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 65670398897061376}
   m_Layer: 0
   m_Name: MiniGameTriggerThrowing
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
