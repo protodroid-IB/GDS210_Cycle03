@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18380117, g: 0.22840926, b: 0.30002627, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -185,15 +185,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4410036933025078, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.111643
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4410036933025078, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.5734998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4410036933025078, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.49244186
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4410036933025078, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -214,14 +214,6 @@ Prefab:
     - target: {fileID: 4410036933025078, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058322396953488, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058322396953488, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
@@ -504,7 +496,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 832224493}
   m_LocalRotation: {x: -0, y: 0.80203825, z: -0, w: 0.5972727}
-  m_LocalPosition: {x: -37.06, y: 0.473, z: -46.42}
+  m_LocalPosition: {x: -37.06, y: 0, z: -46.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 652057140}
@@ -587,7 +579,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -38.09
+      value: -18.31
       objectReference: {fileID: 0}
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -595,7 +587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -43.37
+      value: -42.58
       objectReference: {fileID: 0}
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -603,7 +595,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.950932
+      value: -0.99996746
       objectReference: {fileID: 0}
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_LocalRotation.z
@@ -611,7 +603,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.30940005
+      value: 0.008068201
       objectReference: {fileID: 0}
     - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
       propertyPath: m_RootOrder
@@ -691,6 +683,10 @@ Prefab:
         type: 2}
       propertyPath: m_ConnectedAnchor.y
       value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294466751721858, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.07501
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00228099b3f88c647900028e3da9d1b1, type: 2}
