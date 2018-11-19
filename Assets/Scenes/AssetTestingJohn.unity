@@ -236,9 +236,9 @@ MonoBehaviour:
   sensitivity: 100
   aimSpeed: 0
   triggerSpeed: 0
-  gun: {fileID: 0}
-  hipPos: {fileID: 0}
-  aimPos: {fileID: 0}
+  gun: {fileID: 897052119}
+  hipPos: {fileID: 2063601968}
+  aimPos: {fileID: 489019855}
   aim: 0
 --- !u!136 &264575902
 CapsuleCollider:
@@ -697,6 +697,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83640615471f7104eba628d023ba2ec0, type: 3}
   m_IsPrefabAsset: 0
+--- !u!114 &897052119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114481125685207928, guid: cbd59bb6286a5274eae38ae88d99cade,
+    type: 2}
+  m_PrefabInternal: {fileID: 215902895}
+  m_Script: {fileID: 11500000, guid: ab4755a0ce4f26849a9b370d2ae95ed3, type: 3}
 --- !u!1 &1218097896 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 83640615471f7104eba628d023ba2ec0,

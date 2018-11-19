@@ -8,6 +8,7 @@ public class Gun : MonoBehaviour {
     public float hammerMax;
     public float addForce;
 
+    bool loaded;
     bool primed;
     bool triggerDown;
     float hammerPull;
@@ -18,6 +19,8 @@ public class Gun : MonoBehaviour {
     public GameObject cylinder;
 
     public Transform firePos;
+    public Transform cylinderReloadPos;
+    public Transform cylinderLoadedPos;
 
     public GameObject effect;
 
@@ -27,6 +30,21 @@ public class Gun : MonoBehaviour {
         {
             HammerSet(Mathf.Lerp(hammerVal, 0f, hammerTension * Time.deltaTime));
         }
+
+        //checks to see if gun is loaded, also useful for other functions
+        if(cylinder.transform.position == cylinderLoadedPos.transform.position)
+        {
+
+            loaded = true;
+
+        }
+        else if(cylinder.transform.position == cylinderReloadPos.transform.position)
+        {
+            loaded = false;
+        }
+
+        Reload();
+
     }
 
     public void HammerPull(float val)
@@ -109,5 +127,23 @@ public class Gun : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public void Reload()
+    {
+
+        if (loaded == true && Input.GetButtonDown("Reload"))
+        {
+
+            cylinder.transform.position = cylinderReloadPos.transform.position;  //popped out rotation 
+
+        }
+        else if (loaded == false && Input.GetButtonDown("Reload"))
+        {
+
+            cylinder.transform.position = cylinderLoadedPos.transform.position;
+
+        }
+
     }
 }
