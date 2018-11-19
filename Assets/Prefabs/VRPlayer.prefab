@@ -4599,6 +4599,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1838533884708792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4495348906008208}
+  - component: {fileID: 136818983882285770}
+  m_Layer: 8
+  m_Name: PlayerCollider
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1842922053123150
 GameObject:
   m_ObjectHideFlags: 1
@@ -7779,6 +7795,19 @@ Transform:
   m_Father: {fileID: 4132221726621446}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -11.361001, y: 0, z: 0}
+--- !u!4 &4495348906008208
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838533884708792}
+  m_LocalRotation: {x: -0, y: -0.99874264, z: -0, w: -0.0501312}
+  m_LocalPosition: {x: 10.682634, y: 1.2266667, z: 13.641775}
+  m_LocalScale: {x: 0.66666675, y: 0.6666667, z: 0.66666675}
+  m_Children: []
+  m_Father: {fileID: 4942889207938810}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4495868580297058
 Transform:
   m_ObjectHideFlags: 1
@@ -9647,7 +9676,7 @@ Transform:
   m_GameObject: {fileID: 1457913969629786}
   m_LocalRotation: {x: -0, y: 0.99874264, z: -0, w: -0.0501312}
   m_LocalPosition: {x: 2.1499896, y: 0.5, z: 1.1942985}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4156057212401568}
   - {fileID: 4807724290032230}
@@ -9655,6 +9684,7 @@ Transform:
   - {fileID: 4248337958428386}
   - {fileID: 4997669248560692}
   - {fileID: 4911330249312500}
+  - {fileID: 4495348906008208}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19802,7 +19832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  playerCollider: {fileID: 1838533884708792}
 --- !u!114 &114072709675344844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20414,12 +20444,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 1242242743102324}
-  actualHeadset: {fileID: 1847414500154988}
-  actualLeftController: {fileID: 1358908443004542}
-  actualRightController: {fileID: 1417583825379894}
-  modelAliasLeftController: {fileID: 1039921009492852}
-  modelAliasRightController: {fileID: 1455407306083378}
+  actualBoundaries: {fileID: 0}
+  actualHeadset: {fileID: 0}
+  actualLeftController: {fileID: 0}
+  actualRightController: {fileID: 0}
+  modelAliasLeftController: {fileID: 0}
+  modelAliasRightController: {fileID: 0}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
@@ -20455,12 +20485,14 @@ MonoBehaviour:
   hammerSensitivity: 10
   hammerMax: 300
   addForce: 500
+  loaded: 0
+  bullets: 6
   hammer: {fileID: 1397244995837584}
-  cylinder: {fileID: 1007688223370422}
+  cylinder: {fileID: 0}
+  currentBullet: {fileID: 0}
   firePos: {fileID: 4442032404235742}
-  cylinderReloadPos: {fileID: 0}
-  cylinderLoadedPos: {fileID: 0}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
+  cylinderBullets: []
 --- !u!114 &114499543710336268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20531,7 +20563,7 @@ MonoBehaviour:
   invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
-  maximumLength: {x: 10, y: Infinity}
+  maximumLength: {x: 20, y: Infinity}
   tracerDensity: 10
   cursorRadius: 0.5
   heightLimitAngle: 100
@@ -20926,7 +20958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  playerCollider: {fileID: 1838533884708792}
 --- !u!114 &114741875824612618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21078,7 +21110,7 @@ MonoBehaviour:
   invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
-  maximumLength: {x: 10, y: Infinity}
+  maximumLength: {x: 20, y: Infinity}
   tracerDensity: 10
   cursorRadius: 0.5
   heightLimitAngle: 100
@@ -21119,12 +21151,14 @@ MonoBehaviour:
   hammerSensitivity: 10
   hammerMax: 300
   addForce: 500
+  loaded: 0
+  bullets: 6
   hammer: {fileID: 1829808787330840}
-  cylinder: {fileID: 1878350865169594}
+  cylinder: {fileID: 0}
+  currentBullet: {fileID: 0}
   firePos: {fileID: 4104811051829424}
-  cylinderReloadPos: {fileID: 0}
-  cylinderLoadedPos: {fileID: 0}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
+  cylinderBullets: []
 --- !u!114 &114842539668747164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21310,6 +21344,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.18
   m_Center: {x: 0, y: -0.05, z: 0.05}
+--- !u!136 &136818983882285770
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838533884708792}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.25
+  m_Height: 4
+  m_Direction: 1
+  m_Center: {x: 0, y: -1, z: 0}
 --- !u!222 &222030105256553422
 CanvasRenderer:
   m_ObjectHideFlags: 1
