@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Serving;
 
 namespace Serving
 {
@@ -11,16 +10,35 @@ namespace Serving
 	{
 
 		// list of main ingredients added
+		[SerializeField]
 		List<Ingredient> ingredients = new List<Ingredient>();
+		Ingredient adding;
 
 		MixMethod method = MixMethod.Mixed;
 
-		public void AddIngredient(Ingredient ingredient)
+		float timer;
+
+		[SerializeField]
+		float ingredientAdded;
+
+		
+
+		public void AddIngredient(Ingredient ingredient, float time)
 		{
-			if (!ingredients.Contains(ingredient))
+			if(ingredient != adding)
 			{
-				ingredients.Add(ingredient);
-				ingredients = ingredients.OrderBy(t => t.name).ToList();
+				ingredientAdded = time;
+				adding = ingredient;
+			}
+			else
+			{
+				timer += time;
+				ingredientAdded = timer / ingredient.timeToAdd + 0.01f;
+				if (ingredientAdded >= 1)
+				{
+					ingredients.Add(ingredient);
+					ingredients = ingredients.OrderBy(t => t.name).ToList();
+				}
 			}
 		}
 
