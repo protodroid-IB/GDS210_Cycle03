@@ -10,6 +10,7 @@ TagManager:
   - VRPlayer
   - DontDestroy
   - Fire
+  - ThrowingTarget
   layers:
   - Default
   - TransparentFX
