@@ -516,34 +516,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 198625728029462032, guid: a420c5c76efeba74fba015344ed4377f,
+    - target: {fileID: 114720187071988144, guid: a420c5c76efeba74fba015344ed4377f,
         type: 2}
-      propertyPath: ShapeModule.radius.value
-      value: 0.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 198625728029462032, guid: a420c5c76efeba74fba015344ed4377f,
-        type: 2}
-      propertyPath: ShapeModule.radiusThickness
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198625728029462032, guid: a420c5c76efeba74fba015344ed4377f,
-        type: 2}
-      propertyPath: ShapeModule.angle
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 198625728029462032, guid: a420c5c76efeba74fba015344ed4377f,
-        type: 2}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 0.37489608
-      objectReference: {fileID: 0}
-    - target: {fileID: 198625728029462032, guid: a420c5c76efeba74fba015344ed4377f,
-        type: 2}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4578256653772936, guid: a420c5c76efeba74fba015344ed4377f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.0324
+      propertyPath: holdButtonToUse
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a420c5c76efeba74fba015344ed4377f, type: 2}
@@ -695,9 +671,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4070427211482286, guid: 1d6cf63763be85442af69ec8cc45a34a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.01495
+    - target: {fileID: 114484022501371026, guid: 1d6cf63763be85442af69ec8cc45a34a,
+        type: 2}
+      propertyPath: holdButtonToUse
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d6cf63763be85442af69ec8cc45a34a, type: 2}

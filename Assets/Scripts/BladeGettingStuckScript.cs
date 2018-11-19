@@ -16,13 +16,16 @@ public class BladeGettingStuckScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("KnifeCollider");
-        if (other.tag == "ThrowingTarget")
+        if (other.gameObject.layer == 2)
         {
+            return;
+        }
+        Debug.Log("KnifeCollider");
+        
             myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
             
             Debug.Log("FrozenKnife");
-        }
+        
     }
 
     /*private void OnCollisionEnter(Collision collision)
@@ -37,11 +40,14 @@ public class BladeGettingStuckScript : MonoBehaviour
         }
     }*/
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.tag == "ThrowingTarget")
+        if (collision.gameObject.layer == 2)
         {
-            myObjectRB.constraints = RigidbodyConstraints.None;
+            return;
         }
+
+        myObjectRB.constraints = RigidbodyConstraints.None;
+        
     }
 }

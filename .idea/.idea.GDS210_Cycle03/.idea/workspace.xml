@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f87112a-94c0-4e63-b872-166ce778621d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS210_Cycle03/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS210_Cycle03/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS210_Cycle03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS210_Cycle03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/MayaProjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Axe.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Axe.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HubWorld.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HubWorld.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Knife.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Knife.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ThrowingGame/Board.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ThrowingGame/Board.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Serving Game/Glass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Serving Game/Glass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Serving Game/TallBottle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Serving Game/TallBottle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ShootingLevel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ShootingLevel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/VRPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/VRPlayer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/HubWorldMASTER.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HubWorldMASTER.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_BarServingGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_BarServingGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_ShootingGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_ShootingGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_ThrowingGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_ThrowingGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BladeGettingStuckScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BladeGettingStuckScript.cs" afterDir="false" />
     </list>
@@ -30,12 +36,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="215" />
+          <entry key="cs" value="254" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="215" />
+          <entry key="C#" value="254" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -121,17 +127,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BladeGettingStuckScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            <state relative-caret-position="240">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding>
-                <marker date="1542607058958" expanded="false" signature="6:78" ph="..." />
-                <marker date="1542607058958" expanded="true" signature="132:1105" ph="{...}" />
-                <marker date="1542607058958" expanded="true" signature="229:298" ph="{...}" />
-                <marker date="1542607058958" expanded="true" signature="348:579" ph="{...}" />
-                <marker date="1542607058958" expanded="true" signature="433:573" ph="{...}" />
-                <marker date="1542607058958" expanded="true" signature="585:894" ph="/* private void OnCollisionEnter(Collision collision) ... */" />
-                <marker date="1542607058958" expanded="true" signature="949:1103" ph="{...}" />
-                <marker date="1542607058958" expanded="true" signature="1013:1097" ph="{...}" />
+                <marker date="1542616872785" expanded="false" signature="6:78" ph="..." />
+                <marker date="1542616872785" expanded="true" signature="132:1023" ph="{...}" />
+                <marker date="1542616872785" expanded="true" signature="229:298" ph="{...}" />
+                <marker date="1542616872785" expanded="true" signature="348:560" ph="{...}" />
+                <marker date="1542616872785" expanded="true" signature="566:875" ph="/* private void OnCollisionEnter(Collision collision) ... */" />
+                <marker date="1542616872785" expanded="true" signature="927:1021" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -311,12 +315,12 @@
       <updated>1542245731598</updated>
       <workItem from="1542245740028" duration="308000" />
       <workItem from="1542251267041" duration="2082000" />
-      <workItem from="1542605360603" duration="2574000" />
+      <workItem from="1542605360603" duration="3325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4964000" />
+    <option name="totallyTimeSpent" value="5715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,17 +518,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BladeGettingStuckScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="240">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <marker date="1542607058958" expanded="false" signature="6:78" ph="..." />
-            <marker date="1542607058958" expanded="true" signature="132:1105" ph="{...}" />
-            <marker date="1542607058958" expanded="true" signature="229:298" ph="{...}" />
-            <marker date="1542607058958" expanded="true" signature="348:579" ph="{...}" />
-            <marker date="1542607058958" expanded="true" signature="433:573" ph="{...}" />
-            <marker date="1542607058958" expanded="true" signature="585:894" ph="/* private void OnCollisionEnter(Collision collision) ... */" />
-            <marker date="1542607058958" expanded="true" signature="949:1103" ph="{...}" />
-            <marker date="1542607058958" expanded="true" signature="1013:1097" ph="{...}" />
+            <marker date="1542616872785" expanded="false" signature="6:78" ph="..." />
+            <marker date="1542616872785" expanded="true" signature="132:1023" ph="{...}" />
+            <marker date="1542616872785" expanded="true" signature="229:298" ph="{...}" />
+            <marker date="1542616872785" expanded="true" signature="348:560" ph="{...}" />
+            <marker date="1542616872785" expanded="true" signature="566:875" ph="/* private void OnCollisionEnter(Collision collision) ... */" />
+            <marker date="1542616872785" expanded="true" signature="927:1021" ph="{...}" />
           </folding>
         </state>
       </provider>
