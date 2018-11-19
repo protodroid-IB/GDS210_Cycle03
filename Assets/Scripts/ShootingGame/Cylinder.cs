@@ -18,6 +18,8 @@ public class Cylinder : MonoBehaviour
 
     public Vector3 originalPos;
 
+    float lastAngle;
+
     public GameObject gunObject;
     public GameObject gunCylinder;
 
@@ -51,22 +53,31 @@ public class Cylinder : MonoBehaviour
             gunCylinder.GetComponent<Rigidbody>().constraints = ~RigidbodyConstraints.FreezeRotationY;
 
         }
-
-        SpinCylinder();
-
     }
 
-    void SpinCylinder()
+    public void SpinCylinder(float scroll, bool angle = true)
     {
+        print(scroll);
+        if (angle)
+        {
+            SpinCylinder(Mathf.DeltaAngle(scroll, lastAngle));
+        }
+        else
+        {
+            SpinCylinder(scroll);
+        }
+    }
 
-        var scroll = Input.GetAxis("Mouse ScrollWheel");
-
+    void SpinCylinder(float scroll)
+    {
+        
         if (scroll > 0f)
         {
 
             //scrolls up
             gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.up * upVelocity);
             gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.right * rightVelocity);
+
         }
 
         if (scroll < 0f)

@@ -20,7 +20,7 @@ public class Gun : MonoBehaviour {
     public int bullets = 6;
 
     public GameObject hammer;
-    public GameObject cylinder;
+    public Cylinder cylinder;
     public GameObject currentBullet;
 
     public Transform firePos;

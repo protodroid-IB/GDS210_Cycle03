@@ -1815,6 +1815,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331818346}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &354883000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1645319932529064, guid: 7e460d80fac32194e95670e4a7f657da,
+    type: 2}
+  m_PrefabInternal: {fileID: 864380194}
 --- !u!1 &392567801
 GameObject:
   m_ObjectHideFlags: 0
@@ -3449,6 +3454,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 603226692}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &614977231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1335346429963900, guid: 7e460d80fac32194e95670e4a7f657da,
+    type: 2}
+  m_PrefabInternal: {fileID: 864380194}
 --- !u!1 &629052039
 GameObject:
   m_ObjectHideFlags: 0
@@ -4505,7 +4515,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114498304346858942, guid: 7e460d80fac32194e95670e4a7f657da,
+        type: 2}
+      propertyPath: cylinder
+      value: 
+      objectReference: {fileID: 2028147129}
+    - target: {fileID: 114155086556750108, guid: 7e460d80fac32194e95670e4a7f657da,
+        type: 2}
+      propertyPath: cylinderSensitivity
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114642823935050726, guid: 7e460d80fac32194e95670e4a7f657da, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 7e460d80fac32194e95670e4a7f657da, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &875130379
@@ -10700,6 +10721,28 @@ Transform:
   m_Father: {fileID: 984084313}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2028147127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1760835136686160, guid: 7e460d80fac32194e95670e4a7f657da,
+    type: 2}
+  m_PrefabInternal: {fileID: 864380194}
+--- !u!114 &2028147129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028147127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe22e8f09262b246aff52b66f308033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upVelocity: 10
+  rightVelocity: 10
+  leftVelocity: 10
+  originalPos: {x: 90, y: 0, z: 0}
+  gunObject: {fileID: 354883000}
+  gunCylinder: {fileID: 614977231}
 --- !u!1 &2050449695
 GameObject:
   m_ObjectHideFlags: 0

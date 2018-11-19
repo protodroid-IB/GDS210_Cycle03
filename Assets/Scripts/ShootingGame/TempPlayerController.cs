@@ -8,6 +8,7 @@ public class TempPlayerController : MonoBehaviour {
     public float sensitivity;
     public float aimSpeed;
     public float triggerSpeed;
+    public float cylinderSensitivity;
 
     Camera mainCamera;
 
@@ -29,6 +30,15 @@ public class TempPlayerController : MonoBehaviour {
     
     void Update()
     {
+        if (!gun.loaded)
+        {
+            Debug.Log("yes");
+            gun.cylinder.SpinCylinder(Input.GetAxis("Mouse ScrollWheel"), false);
+        }
+        else
+        {
+            Debug.Log("no");
+        }
         transform.position += ((transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"))) * speed * Time.deltaTime;
         transform.eulerAngles += new Vector3(0f, Input.GetAxis("Mouse X"), 0f) * sensitivity * Time.deltaTime;
         mainCamera.transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), 0f, 0f) * sensitivity * Time.deltaTime;
@@ -44,6 +54,7 @@ public class TempPlayerController : MonoBehaviour {
             triggerPull = 0f;
             gun.HammerPull(-Input.GetAxis("Mouse ScrollWheel"));
         }
+
 
         if (Input.GetButtonDown("Fire2"))
         {
