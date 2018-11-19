@@ -2538,8 +2538,8 @@ GameObject:
   - component: {fileID: 4535830194693412}
   - component: {fileID: 20629320615231132}
   - component: {fileID: 124949666852265504}
-  - component: {fileID: 114188134087290694}
-  - component: {fileID: 114860134849426284}
+  - component: {fileID: 114067377139746398}
+  - component: {fileID: 114075193734990122}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -19740,6 +19740,18 @@ MonoBehaviour:
   displayDropZoneInEditor: 1
   defaultSnappedInteractableObject: {fileID: 114842539668747164}
   defaultSnappedObject: {fileID: 0}
+--- !u!114 &114067377139746398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider: {fileID: 0}
 --- !u!114 &114072709675344844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19843,6 +19855,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114075193734990122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4677426645414564}
+  _ears: {fileID: 4623448230200554}
+  wireframe: 0
 --- !u!114 &114078084809212628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20055,20 +20081,6 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
---- !u!114 &114188134087290694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480767123546722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4677426645414564}
-  _ears: {fileID: 4623448230200554}
-  wireframe: 0
 --- !u!114 &114199694224110474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20413,6 +20425,8 @@ MonoBehaviour:
   hammer: {fileID: 1397244995837584}
   cylinder: {fileID: 1007688223370422}
   firePos: {fileID: 4442032404235742}
+  cylinderReloadPos: {fileID: 0}
+  cylinderLoadedPos: {fileID: 0}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
 --- !u!114 &114499543710336268
 MonoBehaviour:
@@ -21060,6 +21074,8 @@ MonoBehaviour:
   hammer: {fileID: 1829808787330840}
   cylinder: {fileID: 1878350865169594}
   firePos: {fileID: 4104811051829424}
+  cylinderReloadPos: {fileID: 0}
+  cylinderLoadedPos: {fileID: 0}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
 --- !u!114 &114842539668747164
 MonoBehaviour:
@@ -21094,18 +21110,6 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
---- !u!114 &114860134849426284
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480767123546722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3db4feed07c15d48b284c0b5c4475dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
 --- !u!114 &114861098113571060
 MonoBehaviour:
   m_ObjectHideFlags: 1

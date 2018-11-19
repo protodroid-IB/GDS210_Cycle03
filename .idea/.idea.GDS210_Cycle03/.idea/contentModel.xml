@@ -12,6 +12,7 @@
         <e p="PlayerColliderFollow.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
+          <e p="BladeGettingStuckScript.cs" t="Include" />
           <e p="Destroy.cs" t="Include" />
           <e p="DontDestroy.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
@@ -19,10 +20,13 @@
           <e p="InputController.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
           <e p="ResetHubWorld.cs" t="Include" />
-          <e p="Rifle.cs" t="Include" />
           <e p="SceneManagement.cs" t="Include" />
           <e p="Serving Scene" t="Include">
+            <e p="Bottle.cs" t="Include" />
             <e p="Drink.cs" t="Include" />
+            <e p="Ingredient.cs" t="Include" />
+            <e p="Pouring.cs" t="Include" />
+            <e p="RecipeList.cs" t="Include" />
             <e p="ServingEnums.cs" t="Include" />
           </e>
           <e p="ShootingGame" t="Include">

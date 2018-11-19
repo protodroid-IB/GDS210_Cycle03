@@ -67,7 +67,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4921277657728404}
   - component: {fileID: 65426796861135778}
-  m_Layer: 0
+  - component: {fileID: 114518740035016352}
+  m_Layer: 9
   m_Name: BladeCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,6 +120,7 @@ GameObject:
   - component: {fileID: 114232309115604534}
   - component: {fileID: 114155323740262290}
   - component: {fileID: 64579198019087136}
+  - component: {fileID: 65371366146836896}
   m_Layer: 9
   m_Name: Knife
   m_TagString: Untagged
@@ -199,8 +201,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1984377241000748}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 204.604, y: 1.716, z: 235.413}
+  m_LocalRotation: {x: 0.0053755534, y: -0.00043629436, z: 0.99998546, w: 0.0000023453576}
+  m_LocalPosition: {x: -29.104, y: 1.5159403, z: -11.796}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4709222280690154}
@@ -288,12 +290,24 @@ MeshCollider:
   m_GameObject: {fileID: 1984377241000748}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6665eff6b25ae9c4baae6fceceada198, type: 3}
+--- !u!65 &65371366146836896
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984377241000748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.3, z: 0.05}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65426796861135778
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -301,10 +315,10 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576281651851054}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.012496961, y: 0.37207413, z: 0.10423279}
+  m_Size: {x: 0.025, y: 0.375, z: 0.12}
   m_Center: {x: 0.0010757503, y: 0.018816233, z: -0.0002670288}
 --- !u!114 &114155323740262290
 MonoBehaviour:
@@ -368,6 +382,18 @@ MonoBehaviour:
   intervalOnUse: 0.05
   cancelOnUnuse: 1
   objectToAffect: {fileID: 0}
+--- !u!114 &114518740035016352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576281651851054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c1478f4605b8d45ba19d2b7d40d53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myObject: {fileID: 1984377241000748}
 --- !u!114 &114664294840779144
 MonoBehaviour:
   m_ObjectHideFlags: 1
