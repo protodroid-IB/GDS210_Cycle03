@@ -55,24 +55,26 @@ MonoBehaviour:
   sounds:
   - clipName: Soundscape_Inside
     clip: {fileID: 8300000, guid: c7288948cd0fe9448aa89a4b338b1e93, type: 3}
-    audioMixerGroup: {fileID: 0}
+    audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
     volume: 1
     pitch: 0
     loop: 1
     playOnAwake: 1
-    oneShot: 0
+    oneShot: 1
     spatial: 0
     setDistancesHere: 0
     minDistance3Dsound: 0
     maxDistance3DSound: 0
   - clipName: Soundscape_Outside
     clip: {fileID: 8300000, guid: 04093d7b0a13743478ec0622f5856a25, type: 3}
-    audioMixerGroup: {fileID: 0}
+    audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
     volume: 1
     pitch: 0
     loop: 1
     playOnAwake: 1
-    oneShot: 0
+    oneShot: 1
     spatial: 0
     setDistancesHere: 0
     minDistance3Dsound: 0

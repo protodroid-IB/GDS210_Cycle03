@@ -82,7 +82,7 @@ public class AudioManager : MonoBehaviour
 
 
     // takes in a clip name and an audio source and plays a sound, if it exists, according to its predefined properties
-	public void PlaySound(string inName, AudioSource inSource)
+	public void PlaySound(string inName, ref AudioSource inSource)
     {
         int soundIndex;
 
@@ -90,7 +90,7 @@ public class AudioManager : MonoBehaviour
         if (soundDictionary.TryGetValue(inName, out soundIndex))
         {
             // updates the passed in audio source with the correct properties of the sound
-            UpdateAudioSource(inSource, sounds[soundIndex]);
+            UpdateAudioSource(ref inSource, sounds[soundIndex]);
 
             // if the sound is only to be played once
             if (sounds[soundIndex].oneShot == true)
@@ -98,12 +98,14 @@ public class AudioManager : MonoBehaviour
                 // if the sound is not playing, play it
                 if (!inSource.isPlaying)
                     inSource.Play();
+
+                Debug.Log("Play Sound!!!");
             }
             
             // if the sound can be played multiple times
             else inSource.Play();
 
-            Debug.Log("Play Sound!!!");
+            
         }
 
         // if the sound does not exist within the dictionary, display an error
@@ -118,7 +120,7 @@ public class AudioManager : MonoBehaviour
 
 
 
-    private void UpdateAudioSource(AudioSource source, Sound inSound)
+    private void UpdateAudioSource(ref AudioSource source, Sound inSound)
     {
         source.clip = inSound.clip;
         source.volume = inSound.volume;
