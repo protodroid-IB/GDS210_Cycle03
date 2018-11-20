@@ -62,7 +62,7 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 1
     oneShot: 1
-    spatial: 0
+    spatial: 0.85
     setDistancesHere: 0
     minDistance3Dsound: 0
     maxDistance3DSound: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
     loop: 1
     playOnAwake: 1
     oneShot: 1
-    spatial: 0
+    spatial: 0.85
     setDistancesHere: 0
     minDistance3Dsound: 0
     maxDistance3DSound: 0
