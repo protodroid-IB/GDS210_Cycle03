@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b477aa57f10ffd41b281d936faa0cc3
+guid: bd9bf4673609a964981b510484b74617
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -107,18 +107,14 @@ ModelImporter:
     4300000: Cube
     4300002: Circle
     4300004: BigCowBoy
-    7400000: Armature|ArmatureAction
-    7400002: Armature|ArmatureAction.001
-    7400004: Armature|ArmatureAction.002
-    7400006: Armature|ArmatureAction.003
-    7400008: Armature|Drinking.001
-    7400010: Armature|Drinking.002
-    7400012: Armature|Idle
-    7400014: Armature|Idle.001
-    7400016: Armature|Drinking
-    7400018: Armature|Walk
-    7400020: Armature|Walk.001
-    7400022: Armature|Walking
+    7400000: Armature|Drinking.001
+    7400002: Armature|Drinking.002
+    7400004: Armature|Idle
+    7400006: Armature|Idle.001
+    7400008: Armature|Drinking
+    7400010: Armature|Walk
+    7400012: Armature|Walk.001
+    7400014: Armature|Walking
     9500000: //RootNode
     13700000: BigCowBoy
   externalObjects: {}
@@ -152,7 +148,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
