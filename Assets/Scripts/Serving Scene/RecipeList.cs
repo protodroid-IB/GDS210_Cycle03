@@ -31,11 +31,13 @@ namespace Serving
 					else if (check.type == completeDrink.usedIngredients[j].type)
 					{
 						scoreToAdd = 5;
+						j = completeDrink.usedIngredients.Length;
 					}
 				}
 				score += scoreToAdd;
 			}
-			if(drink.mixMethod == allDrinks[drinkNumber].mixMethod)
+
+			if(drink.mixMethod == completeDrink.mixMethod)
 			{
 				score += 10;
 			}
@@ -43,7 +45,17 @@ namespace Serving
 			{
 				score -= 5;
 			}
-			int possibleScore = 10 + allDrinks[drinkNumber].usedIngredients.Length * 10;
+
+			if(drink.glass == completeDrink.glass)
+			{
+				score += 10;
+			}
+			else
+			{
+				score -= 5;
+			}
+			
+			int possibleScore = 20 + allDrinks[drinkNumber].usedIngredients.Length * 10;
 			return (float)score/possibleScore;
 		}
 	}

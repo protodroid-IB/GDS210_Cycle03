@@ -12,7 +12,12 @@ namespace Serving
 		// list of main ingredients added
 		[SerializeField]
 		List<Ingredient> ingredients = new List<Ingredient>();
+
+		[SerializeField]
+		GlassType glassType = GlassType.BeerGlass;
+
 		Ingredient adding;
+
 		List<DrinkType> types = new List<DrinkType>();
 
 		MixMethod method = MixMethod.Mixed;
@@ -66,7 +71,8 @@ namespace Serving
 			CompleteDrink drink = new CompleteDrink
 			{
 				usedIngredients = ingredients.ToArray(),
-				mixMethod = method
+				mixMethod = method,
+				glass = glassType
 			};
 			return drink;
 		}
