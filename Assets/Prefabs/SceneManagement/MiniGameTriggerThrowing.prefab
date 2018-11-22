@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 222712609204450054}
   - component: {fileID: 114316169691932154}
   m_Layer: 0
-  m_Name: BarGameText
+  m_Name: ThrowingGameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

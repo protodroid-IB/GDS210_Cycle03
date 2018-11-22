@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 222602226486164644}
   - component: {fileID: 114664012495258298}
   m_Layer: 0
-  m_Name: BarGameText
+  m_Name: ShootingGameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
