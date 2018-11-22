@@ -7,7 +7,6 @@ public class ShootingGameController : MonoBehaviour {
 
     public TargetSequence targetSequence;
     public Target[] targets;
-    public List<int> idCache = new List<int>();
     int sequenceIndex = 0;
     int targetIndex = 0;
     [HideInInspector] public int score;
@@ -25,7 +24,6 @@ public class ShootingGameController : MonoBehaviour {
             score = 0;
             sequenceIndex = 0;
             targetIndex = 0;
-            idCache.Clear();
             Cycle();
         }
         if (Input.GetKeyDown(KeyCode.P))
@@ -41,22 +39,13 @@ public class ShootingGameController : MonoBehaviour {
             Sequence sequence = targetSequence.sequence[sequenceIndex];
             if (sequence.randomize)
             {
-                int id = Random.Range(0, sequence.targetID.Count);
-
-                while (idCache.Contains(id))
-                {
-                    id = Random.Range(0, sequence.targetID.Count);
-                }
-
-                idCache.Add(id);
-                targets[sequence.targetID[id]].FlipUp(sequence.targetTime);
+                targets[sequence.targetID[Random.Range(0,sequence.targetID.Count)]].FlipUp(sequence.targetTime);
                 targetIndex = 0;
                 sequenceIndex++;
                 Invoke("Cycle", sequence.exitTime);
             }
             else if (targetIndex < sequence.targetID.Count)
             {
-                idCache.Clear();
                 targets[sequence.targetID[targetIndex]].FlipUp(sequence.targetTime);
                 targetIndex++;
                 Invoke("Cycle", sequence.timeInterval);
