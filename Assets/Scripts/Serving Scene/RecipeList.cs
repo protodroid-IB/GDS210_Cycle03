@@ -8,8 +8,7 @@ namespace Serving
 	public class RecipeList : ScriptableObject
 	{
 
-		[SerializeField]
-		CompleteDrink[] allDrinks;
+		public CompleteDrink[] allDrinks;
 
 		// check to see how similar the ingredients of the required drink and the made drink are
 		public float CheckDrink(CompleteDrink drink, int drinkNumber)

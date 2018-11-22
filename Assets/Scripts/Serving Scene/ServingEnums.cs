@@ -25,7 +25,9 @@ namespace Serving
 		public GlassType glass;
 	}
 
-	
-
+	public static class GameManager
+	{
+		public static int score = 0;
+	}
 	
 }
