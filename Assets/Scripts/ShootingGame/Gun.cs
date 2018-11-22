@@ -21,6 +21,8 @@ public class Gun : MonoBehaviour {
 
     public GameObject hammer;
     public Cylinder cylinder;
+    public float cylinderLerpTime;
+    float cylinderTargetAngle;
     public GameObject currentBullet;
 
     public Transform firePos;
@@ -31,19 +33,19 @@ public class Gun : MonoBehaviour {
 
     private void Update()
     {
+        cylinder.transform.localEulerAngles = new Vector3(0f, 0f, Mathf.LerpAngle(cylinder.transform.localEulerAngles.z,cylinderTargetAngle,cylinderLerpTime * Time.deltaTime));
+
         if (!primed && hammerPull == 0f)
         {
             HammerSet(Mathf.Lerp(hammerVal, 0f, hammerTension * Time.deltaTime));
         }
 
         //checks to see if gun is loaded, also useful for other functions
-        if(cylinder.transform.localEulerAngles == Vector3.zero)
+        if(cylinder.transform.localEulerAngles.z < 1f)
         {
-
             loaded = true;
-
         }
-        else if(cylinder.transform.localEulerAngles != Vector3.zero)
+        else if(cylinder.transform.localEulerAngles.z >= 1f)
         {
             loaded = false;
         }
@@ -51,18 +53,11 @@ public class Gun : MonoBehaviour {
         //should iterate through each bullet to find bullet id
         foreach (GameObject bullet in cylinderBullets)
         {
-
             if (bullet.GetComponent<Identification>().id == bullets)
             {
-
                 currentBullet = bullet;
-
             }
-
         }
-
-        Reload();
-
     }
 
     public void HammerPull(float val)
@@ -99,7 +94,7 @@ public class Gun : MonoBehaviour {
         {
             if (!triggerDown)
             {
-                if (primed && loaded && bullets > 0) //*
+                if (primed && loaded && bullets > 0)
                 {
                     currentBullet.SetActive(false);
                     bullets--;
@@ -154,19 +149,23 @@ public class Gun : MonoBehaviour {
     //Reload function: Pops out the cylinder for reloading.
     public void Reload()
     {
-
-        if (loaded == true && Input.GetButtonDown("Reload"))
+        if (loaded == true)
         {
-
-            cylinder.transform.localEulerAngles = new Vector3(0f, 0f, 80f);
-
+            Eject();
         }
-        else if (loaded == false && Input.GetButtonDown("Reload"))
+        else if (loaded == false)
         {
-
-            cylinder.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
-
+            Insert();
         }
+    }
 
+    public void Eject()
+    {
+        cylinderTargetAngle = 80f;
+    }
+
+    public void Insert()
+    {
+        cylinderTargetAngle = 0f;
     }
 }

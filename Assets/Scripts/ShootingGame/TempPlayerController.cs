@@ -32,12 +32,7 @@ public class TempPlayerController : MonoBehaviour {
     {
         if (!gun.loaded)
         {
-            Debug.Log("yes");
             gun.cylinder.SpinCylinder(Input.GetAxis("Mouse ScrollWheel"), true);
-        }
-        else
-        {
-            Debug.Log("no");
         }
         transform.position += ((transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"))) * speed * Time.deltaTime;
         transform.eulerAngles += new Vector3(0f, Input.GetAxis("Mouse X"), 0f) * sensitivity * Time.deltaTime;
@@ -55,6 +50,10 @@ public class TempPlayerController : MonoBehaviour {
             gun.HammerPull(-Input.GetAxis("Mouse ScrollWheel"));
         }
 
+        if (Input.GetButtonDown("Reload"))
+        {
+            gun.Reload();
+        }
 
         if (Input.GetButtonDown("Fire2"))
         {

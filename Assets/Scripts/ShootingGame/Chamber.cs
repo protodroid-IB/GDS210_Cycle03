@@ -13,11 +13,13 @@ public class Chamber : MonoBehaviour
     public GameObject gunObject;
     public GameObject bullet;
 
+    Animator animator;
+
     public int iD;
 
     private void Start()
     {
-
+        animator = GetComponent<Animator>();
         gunScript = gunObject.GetComponent<Gun>();
 
     }
@@ -29,6 +31,7 @@ public class Chamber : MonoBehaviour
         {
 
             isLoaded = true;
+            animator.SetTrigger("Load");
             bullet.SetActive(true);
             gunScript.bullets++;
             Debug.Log("Rounds: " + gunScript.bullets);
