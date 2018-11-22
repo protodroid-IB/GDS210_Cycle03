@@ -33,7 +33,7 @@ public class TempPlayerController : MonoBehaviour {
         if (!gun.loaded)
         {
             Debug.Log("yes");
-            gun.cylinder.SpinCylinder(Input.GetAxis("Mouse ScrollWheel"), false);
+            gun.cylinder.SpinCylinder(Input.GetAxis("Mouse ScrollWheel"), true);
         }
         else
         {
