@@ -12,7 +12,13 @@ namespace Serving
 		// list of main ingredients added
 		[SerializeField]
 		List<Ingredient> ingredients = new List<Ingredient>();
+
+		[SerializeField]
+		GlassType glassType = GlassType.BeerGlass;
+
 		Ingredient adding;
+
+		List<DrinkType> types = new List<DrinkType>();
 
 		MixMethod method = MixMethod.Mixed;
 
@@ -21,10 +27,19 @@ namespace Serving
 		[SerializeField]
 		float ingredientAdded;
 
-		
+		private void Update()
+		{
+			float tilt = Vector3.Dot(Vector3.up, transform.up);
+			if(tilt <= 0)
+			{
+				Clear();
+			}
+		}
 
 		public void AddIngredient(Ingredient ingredient, float time)
 		{
+			if (ingredients.Contains(ingredient) || types.Contains(ingredient.type))
+				return;
 			if(ingredient != adding)
 			{
 				ingredientAdded = time;
@@ -33,7 +48,8 @@ namespace Serving
 			else
 			{
 				timer += time;
-				ingredientAdded = timer / ingredient.timeToAdd;
+				ingredientAdded = timer / ingredient.timeToAdd + 0.01f;
+				types.Add(ingredient.type);
 				if (ingredientAdded >= 1)
 				{
 					ingredients.Add(ingredient);
@@ -55,12 +71,13 @@ namespace Serving
 			CompleteDrink drink = new CompleteDrink
 			{
 				usedIngredients = ingredients.ToArray(),
-				mixMethod = method
+				mixMethod = method,
+				glass = glassType
 			};
 			return drink;
 		}
 
-		public void Clear()
+		void Clear()
 		{
 			ingredients.Clear();
 		}

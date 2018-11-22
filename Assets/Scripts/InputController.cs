@@ -152,6 +152,17 @@
 
         void ControllerEvents_TouchpadPressed(object sender, ControllerInteractionEventArgs e)
         {
+            if (vrGun != null && vrGun.loaded)
+            {
+                if (Deg2Rad(e.touchpadAngle) > Deg2Rad(180f))
+                {
+                    vrGun.Eject();
+                }
+                else if (Deg2Rad(e.touchpadAngle) < Deg2Rad(180f))
+                {
+                    vrGun.Insert();
+                }
+            }
         }
 
         void ControllerEvents_TouchpadReleased(object sender, ControllerInteractionEventArgs e)

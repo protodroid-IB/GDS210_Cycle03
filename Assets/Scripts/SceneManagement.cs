@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
+
     public static SceneManagement sceneManagement;
 
     [SerializeField] GameObject vrPlayer;
@@ -14,9 +15,10 @@ public class SceneManagement : MonoBehaviour
 
     GameObject instancedObjects;
 
+    // List of objects to be kept when the next scene is loaded.
     Dictionary<Transform, bool> ignore = new Dictionary<Transform, bool>();
 
-    Transform hubWorld;
+    Transform doNotDisable;
 
     bool gameStarted = false;
 
@@ -28,27 +30,25 @@ public class SceneManagement : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(vrPlayer);
-
-        vrPlayer.transform.position = GameManager.spawnPosition;
-
         sceneManagement = this;
+
+        // The player will spawn in their current position when they restart the scene.
+        vrPlayer.transform.position = GameManager.spawnPosition;
 
         // Creates a parent to store all objects in the hubworld instance.
         instancedObjects = new GameObject();
         instancedObjects.name = "instanced_" + SceneManager.GetActiveScene().name;
 
         //Create a parent to store the objects that will not be destroyed.
-        hubWorld = new GameObject().transform;
-        hubWorld.name = "DoNotDisable_";
-        vrPlayer.transform.SetParent(hubWorld);
-        hubWorldObjects.transform.SetParent(hubWorld);
-        playerCollider.transform.SetParent(hubWorld);
+        doNotDisable = new GameObject().transform;
+        doNotDisable.name = "DoNotDisable_";
+        vrPlayer.transform.SetParent(doNotDisable);
+        playerCollider.transform.SetParent(doNotDisable);
 
         // Setup ignore objects.
         ignore[transform] = true;
         ignore[vrPlayer.transform] = true;
-        ignore[hubWorld] = true;
+        ignore[doNotDisable] = true;
 
         MakeNewInstanceObjects(SceneManager.GetActiveScene().name);
     }
@@ -56,7 +56,7 @@ public class SceneManagement : MonoBehaviour
     // Sets the objects in the scene to be instanced.
     void MakeNewInstanceObjects(string loadScene)
     {
-        // Create the catalogue
+        // Creates a transform to store all gameobjects that should only appear in the HubWorldMaster scene.
         instancedObjects = new GameObject();
         instancedObjects.name = "instanced__" + loadScene;
 
@@ -73,7 +73,7 @@ public class SceneManagement : MonoBehaviour
         }
     }
 
-    // Turn the instanced objects off.
+    // Disable the HubworldMaster sceene gameobjects and loads the scene.
     public void LoadScene(string scene)
     {
         instancedObjects.SetActive(false);
@@ -82,8 +82,6 @@ public class SceneManagement : MonoBehaviour
 
     IEnumerator LoadSceneObjects(string scene)
     {
-
-        // SceneManager.LoadScene(scene, LoadSceneMode.Additive);
         SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         yield return null;
     }

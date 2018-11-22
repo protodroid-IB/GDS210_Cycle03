@@ -70,7 +70,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: BigCowboyManDrink 0
-  m_Speed: 2
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101125368111097780}
@@ -83,7 +83,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400010, guid: 0b477aa57f10ffd41b281d936faa0cc3, type: 3}
+  m_Motion: {fileID: 7400002, guid: bd9bf4673609a964981b510484b74617, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -109,7 +109,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400010, guid: 0b477aa57f10ffd41b281d936faa0cc3, type: 3}
+  m_Motion: {fileID: 7400002, guid: bd9bf4673609a964981b510484b74617, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

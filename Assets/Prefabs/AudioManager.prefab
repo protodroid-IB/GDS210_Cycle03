@@ -52,7 +52,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2d5eeb5d560dd44b86c3c469ceacda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - clipName: Soundscape_Inside
+    clip: {fileID: 8300000, guid: c7288948cd0fe9448aa89a4b338b1e93, type: 3}
+    audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 0
+    loop: 1
+    playOnAwake: 1
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: Soundscape_Outside
+    clip: {fileID: 8300000, guid: e5ce02b176835aa46ac8f3cdf877e782, type: 3}
+    audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 0
+    loop: 1
+    playOnAwake: 1
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
 --- !u!114 &114424641598908330
 MonoBehaviour:
   m_ObjectHideFlags: 1

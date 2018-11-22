@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Name: Recipes
   m_EditorClassIdentifier: Assembly-CSharp:Serving:RecipeList
   allDrinks:
-  - usedIngredients: []
+  - usedIngredients:
+    - {fileID: 11400000, guid: 44450696ca88812429350c3461cb2cf5, type: 2}
     mixMethod: 0

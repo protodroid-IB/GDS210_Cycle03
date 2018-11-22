@@ -12,14 +12,22 @@ namespace Serving
 		Spirit, Beer, Wine, Mix, Flavour, Ice
 	}
 
+	public enum GlassType
+	{
+		WineGlass, BeerGlass, Tumbler
+	}
+
 	[System.Serializable]
 	public struct CompleteDrink
 	{
 		public Ingredient[] usedIngredients;
 		public MixMethod mixMethod;
+		public GlassType glass;
 	}
 
-	
-
+	public static class GameManager
+	{
+		public static int score = 0;
+	}
 	
 }

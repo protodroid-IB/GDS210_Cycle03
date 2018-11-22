@@ -50,7 +50,6 @@ namespace Serving
 			{
 				pourParticle.trigger.SetCollider(i, glassesColliders[i].GetComponent<Collider>());
 			}
-			
 		}
 
 		private void OnParticleCollision(GameObject other)
@@ -58,7 +57,7 @@ namespace Serving
 			collisions.Add(other);
 			if(pourParticle.GetCollisionEvents(other, particleCollisions) > 0)
 			{
-				Drink glass = other.GetComponent<Drink>();
+				Drink glass = other.GetComponentInChildren<Drink>();
 				if (glass)
 				{
 					glass.AddIngredient(ingredient, Time.deltaTime);
