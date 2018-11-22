@@ -6,30 +6,28 @@ public class Gun : MonoBehaviour {
     public float hammerTension;
     public float hammerSensitivity;
     public float hammerMax;
+    public float cylinderSensitivity;
+    public float cylinderLerpTime;
     public float addForce;
 
-    [SerializeField]
-    public bool loaded;
-
+    
     bool primed;
     bool triggerDown;
     float hammerPull;
     float hammerVal;
     float hammerTarget;
-
-    public int bullets = 6;
-
     public GameObject hammer;
-    public Cylinder cylinder;
-    public float cylinderLerpTime;
+
+    public Chamber[] bullets;
+    [HideInInspector] public int bulletIndex = 6;
+    GameObject currentBullet;
+
+    [HideInInspector] public bool loaded;
     float cylinderTargetAngle;
-    public GameObject currentBullet;
+    public Cylinder cylinder;
 
     public Transform firePos;
-
     public GameObject effect;
-
-    public GameObject[] cylinderBullets;
 
     private void Update()
     {
@@ -44,19 +42,11 @@ public class Gun : MonoBehaviour {
         if(cylinder.transform.localEulerAngles.z < 1f)
         {
             loaded = true;
+            cylinder.cylinderTorque = 0f;
         }
         else if(cylinder.transform.localEulerAngles.z >= 1f)
         {
             loaded = false;
-        }
-
-        //should iterate through each bullet to find bullet id
-        foreach (GameObject bullet in cylinderBullets)
-        {
-            if (bullet.GetComponent<Identification>().id == bullets)
-            {
-                currentBullet = bullet;
-            }
         }
     }
 
@@ -94,11 +84,15 @@ public class Gun : MonoBehaviour {
         {
             if (!triggerDown)
             {
-                if (primed && loaded && bullets > 0)
+                if (primed && loaded)
                 {
-                    currentBullet.SetActive(false);
-                    bullets--;
-                    Fire();
+                    SetBullet();
+                    if (bullets[bulletIndex].isLoaded)
+                    {
+                        bullets[bulletIndex].isLoaded = false;
+                        bullets[bulletIndex].isEjected = false;
+                        Fire();
+                    }
                 }
                 else
                 {
@@ -142,11 +136,9 @@ public class Gun : MonoBehaviour {
                 }
             }
         }
-
         //if bullets is equal to current bullet's ID set current bullet inactive take one from bullets and replace current bullet
     }
-
-    //Reload function: Pops out the cylinder for reloading.
+    
     public void Reload()
     {
         if (loaded == true)
@@ -162,10 +154,24 @@ public class Gun : MonoBehaviour {
     public void Eject()
     {
         cylinderTargetAngle = 80f;
+        foreach (Chamber bullet in bullets)
+        {
+            if (!bullet.isLoaded && !bullet.isEjected)
+            {
+                bullet.Invoke("Eject", 0.1f);
+            }
+        }
     }
 
     public void Insert()
     {
         cylinderTargetAngle = 0f;
+        SetBullet();
+    }
+
+    public void SetBullet()
+    {
+        bulletIndex = bulletIndex < bullets.Length -1 ? bulletIndex + 1 : 0;
+        currentBullet = bullets[bulletIndex].gameObject;
     }
 }

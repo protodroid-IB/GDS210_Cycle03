@@ -4,55 +4,22 @@ using UnityEngine;
 
 public class Cylinder : MonoBehaviour
 {
+    public GameObject cylinder;
+    public float cylinderDrag;
 
-    Gun gunScript;
-
-    [SerializeField]
-    float upVelocity;
-
-    [SerializeField]
-    float rightVelocity;
-
-    [SerializeField]
-    float leftVelocity;
-
-    public Vector3 originalPos;
-
-    float lastAngle;
-
-    public GameObject gunObject;
-    public GameObject gunCylinder;
+    Gun gun;
+    float lastAngle = 0f;
+    [HideInInspector] public float cylinderTorque = 0f;
 
     private void Start()
     {
-
-        gunScript = gunObject.GetComponent<Gun>();
-
+        gun = GetComponentInParent<Gun>();
     }
 
     private void Update()
     {
-
-        if(gunCylinder.transform.localPosition != new Vector3(0f, 0f, 0f))
-        {
-
-            gunCylinder.transform.localPosition = new Vector3(0f, 0f, 0f);
-
-        }
-
-        if (gunScript.loaded == true)
-        {
-
-            gunCylinder.transform.localEulerAngles = originalPos;
-            gunCylinder.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-
-        }
-        else
-        {
-
-            gunCylinder.GetComponent<Rigidbody>().constraints = ~RigidbodyConstraints.FreezeRotationY;
-
-        }
+        cylinder.transform.Rotate(Vector3.up, cylinderTorque * Time.deltaTime);
+        cylinderTorque = Mathf.Lerp(cylinderTorque, 0f, cylinderDrag * Time.deltaTime);
     }
 
     public void SpinCylinder(float scroll, bool angle = true)
@@ -60,6 +27,7 @@ public class Cylinder : MonoBehaviour
         if (angle)
         {
             SpinCylinder(Mathf.DeltaAngle(scroll, lastAngle));
+            lastAngle = scroll;
         }
         else
         {
@@ -69,29 +37,7 @@ public class Cylinder : MonoBehaviour
 
     void SpinCylinder(float scroll)
     {
-
-        
-        if (scroll > 0f)
-        {
-            //scrolls up
-            //gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.up * upVelocity);
-            //gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.right * rightVelocity);
-
-            gunCylinder.transform.Rotate(new Vector3(0, 1, 0), scroll * rightVelocity);
-
-        }
-
-        if (scroll < 0f)
-        {
-            //scrolls down
-            // gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.up * -upVelocity);
-            // gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.right * -leftVelocity);
-
-            gunCylinder.transform.Rotate(new Vector3(0, 1, 0), scroll * leftVelocity);
-
-        }
-
+        cylinderTorque = scroll * gun.cylinderSensitivity;
     }
-
 }
 

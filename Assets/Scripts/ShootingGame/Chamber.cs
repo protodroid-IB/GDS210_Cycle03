@@ -4,40 +4,39 @@ using UnityEngine;
 
 public class Chamber : MonoBehaviour
 {
+    public float ejectForce;
+    public float ejectTorque;
 
-    Gun gunScript;
+    [HideInInspector] public bool isLoaded = true;
+    [HideInInspector] public bool isEjected = false;
 
-    public bool isLoaded;
-
-    //public GameObject gunCylinder;
-    public GameObject gunObject;
+    public GameObject cylinder;
     public GameObject bullet;
+    public GameObject shell;
 
     Animator animator;
-
-    public int iD;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        gunScript = gunObject.GetComponent<Gun>();
-
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        if(other.tag == "Bullet" && bullet.activeInHierarchy == false)
+        if (other.tag == "Bullet" && bullet.activeInHierarchy == false)
         {
-
             isLoaded = true;
             animator.SetTrigger("Load");
             bullet.SetActive(true);
-            gunScript.bullets++;
-            Debug.Log("Rounds: " + gunScript.bullets);
-
         }
-
     }
 
+    public void Eject()
+    {
+        isEjected = true;
+        var rb = Instantiate(shell, bullet.transform.position, bullet.transform.rotation).GetComponent<Rigidbody>();
+        rb.AddForce(-transform.up * ejectForce,ForceMode.Impulse);
+        rb.AddTorque(new Vector3(Random.Range(0f, ejectTorque), Random.Range(0f, ejectTorque), Random.Range(0f, ejectTorque)));
+        bullet.SetActive(false);
+    }
 }
