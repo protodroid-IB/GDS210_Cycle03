@@ -52,9 +52,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c267e4a834a4a374d917c6023617e1b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStarted: 0
-  playerSpawnLocation: {fileID: 11400000, guid: a67967fc26c7e5f4d9263c734fb837b6,
-    type: 2}
+  tmProTextFeields:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &114800762017911386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,6 +69,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vrPlayer: {fileID: 0}
-  vrPlayerCamera: {fileID: 0}
-  playerSpawnLocation: {fileID: 11400000, guid: a67967fc26c7e5f4d9263c734fb837b6,
-    type: 2}
+  playerCollider: {fileID: 0}
+  hubWorldObjects: {fileID: 0}

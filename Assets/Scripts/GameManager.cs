@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour {
     public static GameManager gameManager;
     public static Vector3 spawnPosition = Vector3.zero;
 
+    [SerializeField] GameObject[] tmProTextFeields;
+    [SerializeField] Transform player;
+
     void Awake () {
         if (gameManager != null)
         {
@@ -13,6 +16,13 @@ public class GameManager : MonoBehaviour {
             return;
         }
 
-     //   DontDestroyOnLoad(gameObject);
+    }
+
+    private void Update()
+    {
+        foreach(GameObject tmProTextField in tmProTextFeields)
+        {
+            tmProTextField.transform.LookAt(2 * tmProTextField.transform.position - player.transform.position);
+        }
     }
 }

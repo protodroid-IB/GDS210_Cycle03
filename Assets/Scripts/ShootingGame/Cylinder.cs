@@ -57,7 +57,6 @@ public class Cylinder : MonoBehaviour
 
     public void SpinCylinder(float scroll, bool angle = true)
     {
-        print(scroll);
         if (angle)
         {
             SpinCylinder(Mathf.DeltaAngle(scroll, lastAngle));
@@ -70,22 +69,25 @@ public class Cylinder : MonoBehaviour
 
     void SpinCylinder(float scroll)
     {
+
         
         if (scroll > 0f)
         {
-
             //scrolls up
-            gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.up * upVelocity);
-            gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.right * rightVelocity);
+            //gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.up * upVelocity);
+            //gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.right * rightVelocity);
+
+            gunCylinder.transform.Rotate(new Vector3(0, 1, 0), scroll * rightVelocity);
 
         }
 
         if (scroll < 0f)
         {
-
             //scrolls down
-            gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.up * -upVelocity);
-            gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.right * -leftVelocity);
+            // gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.up * -upVelocity);
+            // gunCylinder.GetComponent<Rigidbody>().AddTorque(transform.right * -leftVelocity);
+
+            gunCylinder.transform.Rotate(new Vector3(0, 1, 0), scroll * leftVelocity);
 
         }
 
