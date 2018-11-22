@@ -11,7 +11,7 @@ public class Target : MonoBehaviour {
     JointSpring hingeSpring;
     ShootingGameController gameController;
 
-    public void Start()
+    public void Awake()
     {
         gameController = FindObjectOfType<ShootingGameController>();
         hinge = GetComponent<HingeJoint>();
