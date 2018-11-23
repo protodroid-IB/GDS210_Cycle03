@@ -172,8 +172,9 @@ ModelImporter:
     2100000: lambert1
     4300000: Horse
     7400000: Armature|ArmatureAction.001
-    7400002: Armature|HorseWalk.001
-    7400004: Armature|Idle
+    7400002: Armature|HorseWalk.000
+    7400004: Armature|HorseWalk.001
+    7400006: Armature|Idle
     9500000: //RootNode
     13700000: Horse
   externalObjects: {}
