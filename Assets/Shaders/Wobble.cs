@@ -20,10 +20,18 @@ public class Wobble : MonoBehaviour
 	float fillQuantity;*/
 
 	[SerializeField]
+	[Range(0,1)]
+	float fillLevel;
+
 	float fillAmount;
 
 	[SerializeField]
-	LiquidType liquid;
+	Color fillColor, foamColor;
+
+	[SerializeField]
+	float centreFill, varianceUpright, varianceOnSide;
+
+	float maxWobble = 2, wobbleSpeed = 5, wobbleSmooth = 0.02f, recovery = 0.1f;
 
 	float wobbleAmountX, wobbleAmountZ;
 
@@ -35,17 +43,22 @@ public class Wobble : MonoBehaviour
 	void Start()
 	{
 		rend = GetComponent<Renderer>();
-		rend.material.SetColor("_Tint", liquid.liquidColor);
-		rend.material.SetColor("_FoamColor", liquid.foamColor);
-		rend.material.SetColor("_TopColor", liquid.foamColor);
+		rend.material.SetColor("_Tint", fillColor);
+		rend.material.SetColor("_FoamColor", foamColor);
+		rend.material.SetColor("_TopColor", foamColor);
 	}
 
 	private void Update()
 	{
+		float dot = Vector3.Dot(Vector3.up, transform.up);
+		dot = Mathf.Abs(dot);
+		float variance = Mathf.Lerp(varianceOnSide, varianceUpright, dot);
+
+		fillAmount = (fillLevel - 0.5f) * (variance) + centreFill;
 		SetValues();
 
-		totalWobbleX += Mathf.Clamp((acceleration.x + (angularAcceleration.z * 0.02f)) * liquid.MaxWobble, -liquid.MaxWobble, liquid.MaxWobble);
-		totalWobbleZ += Mathf.Clamp((acceleration.z + (angularAcceleration.x * 0.02f)) * liquid.MaxWobble, -liquid.MaxWobble, liquid.MaxWobble);
+		totalWobbleX += Mathf.Clamp((acceleration.x + (angularAcceleration.z * 0.02f)) * maxWobble, -maxWobble, maxWobble);
+		totalWobbleZ += Mathf.Clamp((acceleration.z + (angularAcceleration.x * 0.02f)) * maxWobble, -maxWobble, maxWobble);
 
 		wobbleAmountX = SetSmooth(wobbleAmountX, totalWobbleX, ref velocityX);
 
@@ -69,7 +82,7 @@ public class Wobble : MonoBehaviour
 	/// <returns>smoothed wobble amount</returns>
 	float SetSmooth(float wobbleAmount, float totalWobble, ref float velocity)
 	{
-		wobbleAmount = Mathf.SmoothDamp(wobbleAmount, totalWobble, ref velocity, liquid.wobbleSmooth, liquid.WobbleSpeed, Time.deltaTime);
+		wobbleAmount = Mathf.SmoothDamp(wobbleAmount, totalWobble, ref velocity, wobbleSmooth, wobbleSpeed, Time.deltaTime);
 		return wobbleAmount;
 	}
 
@@ -105,11 +118,11 @@ public class Wobble : MonoBehaviour
 	{
 		if (wobbleAmount >= (totalWobble - (totalWobble/10)) && totalWobble >= 0)
 		{
-			totalWobble = Mathf.Lerp(totalWobble, 0, liquid.Recovery) * -1;
+			totalWobble = Mathf.Lerp(totalWobble, 0, recovery) * -1;
 		}
 		else if (wobbleAmount <= (totalWobble - (totalWobble / 10)) && totalWobble <= 0)
 		{
-			totalWobble = Mathf.Lerp(totalWobble, 0, liquid.Recovery) * -1;
+			totalWobble = Mathf.Lerp(totalWobble, 0, recovery) * -1;
 		}
 		return totalWobble;
 	}
@@ -141,8 +154,5 @@ public class Wobble : MonoBehaviour
 		}
 	}
 
-	public void AddLiquid(float liquidAmount)
-	{
-		fillAmount = Mathf.Clamp(fillAmount + liquidAmount, liquid.minFill, liquid.maxFill);
-	}
+
 }

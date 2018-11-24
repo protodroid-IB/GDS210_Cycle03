@@ -16,8 +16,6 @@ namespace Serving
 		
 		List<ParticleCollisionEvent> particleCollisions = new List<ParticleCollisionEvent>();
 
-		[SerializeField]
-		List<GameObject> collisions = new List<GameObject>();
 
 		float streamWidth;
 
@@ -54,7 +52,6 @@ namespace Serving
 
 		private void OnParticleCollision(GameObject other)
 		{
-			collisions.Add(other);
 			if(pourParticle.GetCollisionEvents(other, particleCollisions) > 0)
 			{
 				Drink glass = other.GetComponentInChildren<Drink>();
