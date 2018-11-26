@@ -152,21 +152,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114325082083134258, guid: 2b48034d84ca9af4fadb9c1929df062d,
-        type: 2}
-      propertyPath: shootingGameHighscore
-      value: 
-      objectReference: {fileID: 1850241396}
-    - target: {fileID: 114325082083134258, guid: 2b48034d84ca9af4fadb9c1929df062d,
-        type: 2}
-      propertyPath: throwingGameHighscore
-      value: 
-      objectReference: {fileID: 764746922}
-    - target: {fileID: 114325082083134258, guid: 2b48034d84ca9af4fadb9c1929df062d,
-        type: 2}
-      propertyPath: barGameHighscore
-      value: 
-      objectReference: {fileID: 596370797}
     - target: {fileID: 114800762017911386, guid: 2b48034d84ca9af4fadb9c1929df062d,
         type: 2}
       propertyPath: vrPlayer
@@ -207,6 +192,21 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 382210192}
+    - target: {fileID: 114325082083134258, guid: 2b48034d84ca9af4fadb9c1929df062d,
+        type: 2}
+      propertyPath: shootingGameHighscore
+      value: 
+      objectReference: {fileID: 1850241396}
+    - target: {fileID: 114325082083134258, guid: 2b48034d84ca9af4fadb9c1929df062d,
+        type: 2}
+      propertyPath: throwingGameHighscore
+      value: 
+      objectReference: {fileID: 764746922}
+    - target: {fileID: 114325082083134258, guid: 2b48034d84ca9af4fadb9c1929df062d,
+        type: 2}
+      propertyPath: barGameHighscore
+      value: 
+      objectReference: {fileID: 596370797}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b48034d84ca9af4fadb9c1929df062d, type: 2}
   m_IsPrefabAsset: 0

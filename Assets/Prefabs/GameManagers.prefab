@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingGameScores: {fileID: 11400000, guid: 753bfc42abce6514e82520e08ec6a417, type: 2}
   throwingGameScores: {fileID: 11400000, guid: 713111fb2ce9b67408fdf3b5fa69ad79, type: 2}
-  barGameScores: {fileID: 11400000, guid: 6f28b0bc29f4da54bbf427bb9fc138b2, type: 2}
+  barGameScores: {fileID: 11400000, guid: 0e176ac8a95fb6345b8d3319cf7eb0c0, type: 2}
   shootingGameHighscore: {fileID: 0}
   throwingGameHighscore: {fileID: 0}
   barGameHighscore: {fileID: 0}
