@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4916419363548466}
   - component: {fileID: 114800762017911386}
   - component: {fileID: 114598396681795910}
+  - component: {fileID: 114325082083134258}
   m_Layer: 0
   m_Name: GameManagers
   m_TagString: Untagged
@@ -41,6 +42,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114325082083134258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845489290962872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc4f5040458704b9a6eb640480c2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingGameScores: {fileID: 11400000, guid: 753bfc42abce6514e82520e08ec6a417, type: 2}
+  throwingGameScores: {fileID: 11400000, guid: 713111fb2ce9b67408fdf3b5fa69ad79, type: 2}
+  barGameScores: {fileID: 11400000, guid: 6f28b0bc29f4da54bbf427bb9fc138b2, type: 2}
+  shootingGameHighscore: {fileID: 0}
+  throwingGameHighscore: {fileID: 0}
+  barGameHighscore: {fileID: 0}
 --- !u!114 &114598396681795910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmProTextFeields:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
