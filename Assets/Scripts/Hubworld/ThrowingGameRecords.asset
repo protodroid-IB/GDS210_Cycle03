@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 242253a929eba674dae9c9443a3301e0, type: 3}
-  m_Name: ThrowingGameRecords
+  m_Script: {fileID: 0}
+  m_Name: ThrowingGameScores
   m_EditorClassIdentifier: Assembly-CSharp::ScoreRecords
   highestScore: 0
   currentScore: 0
