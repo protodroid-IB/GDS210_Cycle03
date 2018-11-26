@@ -8,9 +8,13 @@ public class BladeGettingStuckScript : MonoBehaviour
 
     Rigidbody myObjectRB;
 
+    ThrowingGameController tgc;
+
     private void Awake()
     {
         myObjectRB = myObject.GetComponent<Rigidbody>();
+
+        tgc = GameObject.Find("ThrowingGameController").GetComponent<ThrowingGameController>();
     }
 
 
@@ -20,25 +24,12 @@ public class BladeGettingStuckScript : MonoBehaviour
         {
             return;
         }
-        Debug.Log("KnifeCollider");
         
-            myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
-            
-            Debug.Log("FrozenKnife");
-        
-    }
+        myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
 
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("KnifeCollider");
-        
-        if (collision.gameObject.tag == "ThrowingTarget")
-        {
-            myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
-            
-            Debug.Log("FrozenKnife");
-        }
-    }*/
+        if (other.gameObject.tag == "ThrowingTarget")
+            tgc.AddScore(100);
+    }
 
     private void OnTriggerExit(Collider collision)
     {

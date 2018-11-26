@@ -2021,9 +2021,14 @@ MonoBehaviour:
   hammerTension: 20
   hammerSensitivity: 10
   hammerMax: 300
+  cylinderSensitivity: 10000
+  cylinderLerpTime: 50
   addForce: 500
   hammer: {fileID: 1766749295113074}
-  cylinder: {fileID: 1447595297491976}
+  bullets: []
+  bulletIndex: 6
+  loaded: 0
+  cylinder: {fileID: 0}
   firePos: {fileID: 4827790849590400}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
 --- !u!114 &114612911317626238

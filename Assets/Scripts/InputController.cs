@@ -46,7 +46,6 @@
             controllerEvents.TouchpadTouchStart += ControllerEvents_TouchpadTouchStart;;
             controllerEvents.TouchpadTouchEnd += ControllerEvents_TouchpadTouchEnd;;
             controllerEvents.TouchpadAxisChanged += ControllerEvents_TouchpadAxisChanged;;
-            controllerEvents.TouchpadSenseAxisChanged += ControllerEvents_TouchpadSenseAxisChanged;;
         }
 
         public void EquipGun(Gun newGun)
@@ -140,6 +139,17 @@
 
         void ControllerEvents_GripClicked(object sender, ControllerInteractionEventArgs e)
         {
+            if (vrGun != null)
+            {
+                if (vrGun.loaded)
+                {
+                    vrGun.Eject();
+                }
+                else
+                {
+                    vrGun.Insert();
+                }
+            }
         }
 
         void ControllerEvents_GripUnclicked(object sender, ControllerInteractionEventArgs e)
@@ -152,17 +162,7 @@
 
         void ControllerEvents_TouchpadPressed(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null && vrGun.loaded)
-            {
-                if (Deg2Rad(e.touchpadAngle) > Deg2Rad(180f))
-                {
-                    vrGun.Eject();
-                }
-                else if (Deg2Rad(e.touchpadAngle) < Deg2Rad(180f))
-                {
-                    vrGun.Insert();
-                }
-            }
+           
         }
 
         void ControllerEvents_TouchpadReleased(object sender, ControllerInteractionEventArgs e)
@@ -181,13 +181,17 @@
         {
             if (vrGun != null)
             {
-                vrGun.HammerPull(TouchPadAxisY(e.touchpadAxis.y, e.touchpadAngle));
+                if (vrGun.loaded)
+                {
+                    vrGun.HammerPull(TouchPadAxisY(e.touchpadAxis.y, e.touchpadAngle));
+                }
+                else
+                {
+                    vrGun.cylinder.SpinCylinder(e.touchpadAngle, true);
+                }
             }
         }
 
-        void ControllerEvents_TouchpadSenseAxisChanged(object sender, ControllerInteractionEventArgs e)
-        {
-        }
 
         float TouchPadAxisY(float axis, float angle)
         {

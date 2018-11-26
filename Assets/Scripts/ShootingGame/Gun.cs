@@ -31,7 +31,7 @@ public class Gun : MonoBehaviour {
 
     private void Update()
     {
-        cylinder.transform.localEulerAngles = new Vector3(0f, 0f, Mathf.LerpAngle(cylinder.transform.localEulerAngles.z,cylinderTargetAngle,cylinderLerpTime * Time.deltaTime));
+        cylinder.transform.localEulerAngles = new Vector3(0f, 0f, Mathf.LerpAngle(cylinder.transform.localEulerAngles.z, cylinderTargetAngle, cylinderLerpTime * Time.deltaTime));
 
         if (!primed && hammerPull == 0f)
         {

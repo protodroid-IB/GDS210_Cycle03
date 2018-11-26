@@ -22,8 +22,23 @@ GameObject:
   - component: {fileID: 114335872951728974}
   - component: {fileID: 65592942542381736}
   - component: {fileID: 95240073640574460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1018907449679108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4185095325880332}
+  m_Layer: 8
+  m_Name: SnapHandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +54,7 @@ GameObject:
   - component: {fileID: 4422141737439592}
   - component: {fileID: 33985366645605036}
   - component: {fileID: 23888475822571718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +71,7 @@ GameObject:
   - component: {fileID: 4941430144688136}
   - component: {fileID: 33523550100946484}
   - component: {fileID: 23794724726788482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +88,7 @@ GameObject:
   - component: {fileID: 4963909353785558}
   - component: {fileID: 33980871746443564}
   - component: {fileID: 23677722897975126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4975682198755458}
   - component: {fileID: 114129278129181140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +121,7 @@ GameObject:
   - component: {fileID: 4405146226937832}
   - component: {fileID: 33307765704844562}
   - component: {fileID: 23544308663375874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +139,7 @@ GameObject:
   - component: {fileID: 33099783089567192}
   - component: {fileID: 23841002916986986}
   - component: {fileID: 54321118593353398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +156,7 @@ GameObject:
   - component: {fileID: 4825602963110104}
   - component: {fileID: 33650298707335118}
   - component: {fileID: 23611568557097168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +173,7 @@ GameObject:
   - component: {fileID: 4070762440276478}
   - component: {fileID: 33674715234803832}
   - component: {fileID: 23453497758940570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +190,7 @@ GameObject:
   - component: {fileID: 4697105283629194}
   - component: {fileID: 33130443937119562}
   - component: {fileID: 23997440590829714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +207,7 @@ GameObject:
   - component: {fileID: 4747680328616540}
   - component: {fileID: 33968868269772222}
   - component: {fileID: 23928789654442490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4439328786322568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +239,7 @@ GameObject:
   - component: {fileID: 4515030370033966}
   - component: {fileID: 33751051314643608}
   - component: {fileID: 23954949023291702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +256,7 @@ GameObject:
   - component: {fileID: 4386227897462082}
   - component: {fileID: 33252531493307636}
   - component: {fileID: 23864418840596118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +273,7 @@ GameObject:
   - component: {fileID: 4885859909199152}
   - component: {fileID: 33693412878289714}
   - component: {fileID: 23025236580299558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +290,7 @@ GameObject:
   - component: {fileID: 4852541447680356}
   - component: {fileID: 33904566649676008}
   - component: {fileID: 23070934819370302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +307,7 @@ GameObject:
   - component: {fileID: 4236278925609454}
   - component: {fileID: 33147490705410364}
   - component: {fileID: 23038228448996878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,9 +323,16 @@ GameObject:
   m_Component:
   - component: {fileID: 4938521469428084}
   - component: {fileID: 114481125685207928}
-  m_Layer: 0
+  - component: {fileID: 114064179780075592}
+  - component: {fileID: 114682851015265406}
+  - component: {fileID: 114507845048706082}
+  - component: {fileID: 65700990449702416}
+  - component: {fileID: 114851111435716166}
+  - component: {fileID: 114698882958885094}
+  - component: {fileID: 54589430389519586}
+  m_Layer: 8
   m_Name: Gun
-  m_TagString: Bullet
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,7 +347,7 @@ GameObject:
   - component: {fileID: 4494761141190812}
   - component: {fileID: 33365695328406540}
   - component: {fileID: 23414514847265086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +364,7 @@ GameObject:
   - component: {fileID: 4082104263545356}
   - component: {fileID: 33903592429467070}
   - component: {fileID: 23827081716500702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +381,7 @@ GameObject:
   - component: {fileID: 4291011049394134}
   - component: {fileID: 33256175568067484}
   - component: {fileID: 23537547910866362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +398,7 @@ GameObject:
   - component: {fileID: 4019598191962306}
   - component: {fileID: 33335282142742574}
   - component: {fileID: 23787024627172836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +415,7 @@ GameObject:
   - component: {fileID: 4092798561183172}
   - component: {fileID: 33928029180905962}
   - component: {fileID: 23898376183778704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4591756904751354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +448,7 @@ GameObject:
   - component: {fileID: 114365346791275986}
   - component: {fileID: 65923077157712714}
   - component: {fileID: 95448442093680130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +465,7 @@ GameObject:
   - component: {fileID: 4045357227502118}
   - component: {fileID: 33385476243664946}
   - component: {fileID: 23347664380586048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +483,7 @@ GameObject:
   - component: {fileID: 114371052654139566}
   - component: {fileID: 65937034229932184}
   - component: {fileID: 95430291619181372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +500,7 @@ GameObject:
   - component: {fileID: 4654769697564934}
   - component: {fileID: 33834045049212374}
   - component: {fileID: 23158581184704880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -495,7 +517,7 @@ GameObject:
   - component: {fileID: 4487075123547048}
   - component: {fileID: 33288474804662594}
   - component: {fileID: 23764990593173344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +534,7 @@ GameObject:
   - component: {fileID: 4267783315146752}
   - component: {fileID: 33028216065605236}
   - component: {fileID: 23433659776818742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +551,7 @@ GameObject:
   - component: {fileID: 4562548671599688}
   - component: {fileID: 33334909656306260}
   - component: {fileID: 23957138072404902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +569,7 @@ GameObject:
   - component: {fileID: 114415320071562718}
   - component: {fileID: 65357471194461698}
   - component: {fileID: 95693338478804458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +587,7 @@ GameObject:
   - component: {fileID: 114817654754473004}
   - component: {fileID: 65308471031284562}
   - component: {fileID: 95411995912182364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4839928311588132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +619,7 @@ GameObject:
   - component: {fileID: 4235488749463418}
   - component: {fileID: 33380979240978078}
   - component: {fileID: 65907736052112066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reloader
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -615,7 +637,7 @@ GameObject:
   - component: {fileID: 114798039501446302}
   - component: {fileID: 65089236154819300}
   - component: {fileID: 95796036987686438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +654,7 @@ GameObject:
   - component: {fileID: 4472298691341440}
   - component: {fileID: 33939193680311466}
   - component: {fileID: 23155758207445458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +671,7 @@ GameObject:
   - component: {fileID: 4408854084852740}
   - component: {fileID: 33818049906675872}
   - component: {fileID: 23241259900798010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +688,7 @@ GameObject:
   - component: {fileID: 4569494416382206}
   - component: {fileID: 33736910199665724}
   - component: {fileID: 23413515429867712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +705,7 @@ GameObject:
   - component: {fileID: 4710214643978466}
   - component: {fileID: 33069236413482568}
   - component: {fileID: 23731910422554940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,6 +805,19 @@ Transform:
   m_Father: {fileID: 4721294548950674}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -116.563, z: 0}
+--- !u!4 &4185095325880332
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018907449679108}
+  m_LocalRotation: {x: -0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4938521469428084}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -50, y: 0, z: 0}
 --- !u!4 &4218237253452560
 Transform:
   m_ObjectHideFlags: 1
@@ -959,7 +994,7 @@ Transform:
   - {fileID: 4236278925609454}
   - {fileID: 4515030370033966}
   m_Father: {fileID: 4938521469428084}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4472298691341440
 Transform:
@@ -1052,7 +1087,7 @@ Transform:
   - {fileID: 4422141737439592}
   - {fileID: 4852541447680356}
   m_Father: {fileID: 4938521469428084}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4654769697564934
 Transform:
@@ -1100,7 +1135,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1151811955099116}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0.08209997, z: -0.0151001215}
+  m_LocalPosition: {x: 0, y: 0.08, z: -0.0151001215}
   m_LocalScale: {x: 0.100000024, y: 0.05000009, z: 0.10000018}
   m_Children:
   - {fileID: 4728565009637016}
@@ -1163,7 +1198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4938521469428084}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4852541447680356
 Transform:
@@ -1199,8 +1234,9 @@ Transform:
   m_GameObject: {fileID: 1407113334619912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.33, y: 0.37, z: 0.587}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
+  - {fileID: 4185095325880332}
   - {fileID: 4439328786322568}
   - {fileID: 4591756904751354}
   - {fileID: 4975682198755458}
@@ -1247,7 +1283,7 @@ Transform:
   - {fileID: 4235488749463418}
   - {fileID: 4721294548950674}
   m_Father: {fileID: 4938521469428084}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23025236580299558
 MeshRenderer:
@@ -2447,6 +2483,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!54 &54589430389519586
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407113334619912}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65089236154819300
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2495,6 +2546,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.11, y: 0.55, z: 0.12}
   m_Center: {x: 0.31, y: -0.29, z: 0}
+--- !u!65 &65700990449702416
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407113334619912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13403371, y: 0.39083314, z: 0.80723315}
+  m_Center: {x: 0, y: -0.13307047, z: 0.09638342}
 --- !u!65 &65907736052112066
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2505,8 +2568,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.02, z: 0.05}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.019999998, y: 0.019999998, z: 0.050338008}
+  m_Center: {x: 0, y: 0, z: -0.013538648}
 --- !u!65 &65923077157712714
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2639,6 +2702,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114064179780075592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407113334619912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  allowedNearTouchControllers: 0
+  allowedTouchControllers: 0
+  ignoredColliders:
+  - {fileID: 0}
+  isGrabbable: 1
+  holdButtonToGrab: 0
+  stayGrabbedOnTeleport: 1
+  validDrop: 2
+  grabOverrideButton: 0
+  allowedGrabControllers: 2
+  grabAttachMechanicScript: {fileID: 114698882958885094}
+  secondaryGrabActionScript: {fileID: 0}
+  isUsable: 0
+  holdButtonToUse: 0
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  objectHighlighter: {fileID: 0}
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  usingState: 0
 --- !u!114 &114129278129181140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2651,7 +2747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cylinder: {fileID: 1151811955099116}
-  cylinderDrag: 10
+  cylinderDrag: 40
   cylinderTorque: 0
 --- !u!114 &114335872951728974
 MonoBehaviour:
@@ -2739,7 +2835,7 @@ MonoBehaviour:
   hammerTension: 20
   hammerSensitivity: 500
   hammerMax: -60
-  cylinderSensitivity: 10000
+  cylinderSensitivity: 40
   cylinderLerpTime: 50
   addForce: 500
   hammer: {fileID: 1597838036045854}
@@ -2755,6 +2851,74 @@ MonoBehaviour:
   cylinder: {fileID: 114129278129181140}
   firePos: {fileID: 4839928311588132}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
+--- !u!114 &114507845048706082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407113334619912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nearTouchHighlight: {r: 0, g: 0, b: 0, a: 0}
+  touchHighlight: {r: 1, g: 1, b: 0, a: 1}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 0}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
+--- !u!114 &114682851015265406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407113334619912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipOnNearTouch: {fileID: 0}
+  strengthOnNearTouch: 0
+  durationOnNearTouch: 0
+  intervalOnNearTouch: 0.05
+  cancelOnNearUntouch: 1
+  clipOnTouch: {fileID: 0}
+  strengthOnTouch: 0
+  durationOnTouch: 0
+  intervalOnTouch: 0.05
+  cancelOnUntouch: 1
+  clipOnGrab: {fileID: 0}
+  strengthOnGrab: 0
+  durationOnGrab: 0
+  intervalOnGrab: 0.05
+  cancelOnUngrab: 1
+  clipOnUse: {fileID: 0}
+  strengthOnUse: 0
+  durationOnUse: 0
+  intervalOnUse: 0.05
+  cancelOnUnuse: 1
+  objectToAffect: {fileID: 0}
+--- !u!114 &114698882958885094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407113334619912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec2ac476f2fc9a45a4e69712580a603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 0
+  rightSnapHandle: {fileID: 4185095325880332}
+  leftSnapHandle: {fileID: 4185095325880332}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
 --- !u!114 &114798039501446302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2791,3 +2955,106 @@ MonoBehaviour:
   cylinder: {fileID: 1151811955099116}
   bullet: {fileID: 1281203337768992}
   shell: {fileID: 1855432573187928, guid: 18ae90c4612310e41bd9384589dad80b, type: 2}
+--- !u!114 &114851111435716166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407113334619912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f96f1837f21d4bf9a77ff61e7b81f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnable:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectDisable:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnNearTouch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnNearUntouch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnTouch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUntouch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnGrab:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: EquipGun
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 114481125685207928}
+          m_ObjectArgumentAssemblyTypeName: Gun, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUngrab:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: UnEquipGun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUnuse:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnEnterSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnExitSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnSnapToDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnUnsnapFromDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
