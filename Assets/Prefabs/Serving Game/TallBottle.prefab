@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54075643659777282}
   - component: {fileID: 114449700304721384}
   - component: {fileID: 114337558673695526}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TallBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 64412534899847154}
   - component: {fileID: 138548631599684294}
   - component: {fileID: 114008512972491838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TallBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 33858213882073628}
   - component: {fileID: 23851678553955952}
   - component: {fileID: 114402177713306718}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 23618106544877714}
   - component: {fileID: 54422776057337610}
   - component: {fileID: 64974505146015042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cork2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 198625728029462032}
   - component: {fileID: 199093390543743702}
   - component: {fileID: 114350415332995062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pouring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pourParticle: {fileID: 0}
-  collisions: []
   minWidth: 0.25
   maxWidth: 0.75
   minDensity: 0
@@ -457,8 +456,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bc110b53cd20d4c9ff38cfed54dba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillAmount: 0
-  liquid: {fileID: 11400000, guid: 71a29ab3dce89f549aaa2f27ea18d1ff, type: 2}
+  fillLevel: 0
+  fillColor: {r: 0, g: 0, b: 0, a: 0}
+  foamColor: {r: 0, g: 0, b: 0, a: 0}
+  centreFill: 0
+  varianceUpright: 0
+  varianceOnSide: 0
 --- !u!114 &114449700304721384
 MonoBehaviour:
   m_ObjectHideFlags: 1
