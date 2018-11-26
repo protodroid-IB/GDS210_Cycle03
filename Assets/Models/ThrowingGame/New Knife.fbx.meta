@@ -1,50 +1,15 @@
 fileFormatVersion: 2
-guid: 43000aee6653592469a844736e7a6adf
+guid: 6dbdb9b2f713dbd4bb1f0527b11dd682
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: joint1
-    100004: joint2
-    100006: joint3
-    100008: pCube1
-    100010: pCube2
-    100012: pCube3
-    100014: pCube4
-    100016: pCylinder1
-    100018: pCylinder2
-    100020: transform1
-    100022: transform2
-    100024: transform3
-    100026: transform4
     400000: //RootNode
-    400002: joint1
-    400004: joint2
-    400006: joint3
-    400008: pCube1
-    400010: pCube2
-    400012: pCube3
-    400014: pCube4
-    400016: pCylinder1
-    400018: pCylinder2
-    400020: transform1
-    400022: transform2
-    400024: transform3
-    400026: transform4
     2100000: lambert1
-    2300000: pCube4
-    3300000: pCube4
-    4300000: pCube3
-    4300002: pCube4
-    7400000: Take 001
-    9500000: //RootNode
-    13700000: pCube3
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 16488ec640de50747b92b79482d9291b, type: 2}
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCylinder5
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -71,39 +36,11 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
-      firstFrame: 1
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 5
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -123,8 +60,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.099999994
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -149,7 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
