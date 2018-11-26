@@ -6,16 +6,13 @@ public class BladeGettingStuckScript : MonoBehaviour
 {
     [SerializeField] GameObject myObject;
 
-    ThrowingGameController throwingGameController;
-
     Rigidbody myObjectRB;
 
     private void Awake()
     {
-        throwingGameController = GameObject.Find("ThrowingGameController").GetComponent<ThrowingGameController>();
-
         myObjectRB = myObject.GetComponent<Rigidbody>();
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,12 +20,25 @@ public class BladeGettingStuckScript : MonoBehaviour
         {
             return;
         }
-
-        myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
-
-        if (other.gameObject.tag == "ThrowingTarget")
-            throwingGameController.Addscore(100);
+        Debug.Log("KnifeCollider");
+        
+            myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
+            
+            Debug.Log("FrozenKnife");
+        
     }
+
+    /*private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("KnifeCollider");
+        
+        if (collision.gameObject.tag == "ThrowingTarget")
+        {
+            myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
+            
+            Debug.Log("FrozenKnife");
+        }
+    }*/
 
     private void OnTriggerExit(Collider collision)
     {
@@ -38,5 +48,6 @@ public class BladeGettingStuckScript : MonoBehaviour
         }
 
         myObjectRB.constraints = RigidbodyConstraints.None;
+        
     }
 }
