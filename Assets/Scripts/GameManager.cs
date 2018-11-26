@@ -29,5 +29,5 @@ public class GameManager : MonoBehaviour {
     public void UpdateHighScore(ScoreRecords game)
     {
         scoreManager.UpdateHighScore(game);
-    }
+    } 
 }

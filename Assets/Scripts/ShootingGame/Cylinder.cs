@@ -11,6 +11,8 @@ public class Cylinder : MonoBehaviour
     float lastAngle = 0f;
     [HideInInspector] public float cylinderTorque = 0f;
 
+    float rotationSpeed = 2;
+
     private void Start()
     {
         gun = GetComponentInParent<Gun>();
@@ -18,7 +20,13 @@ public class Cylinder : MonoBehaviour
 
     private void Update()
     {
-        cylinder.transform.Rotate(Vector3.up, cylinderTorque * Time.deltaTime);
+        
+        Quaternion newRotation = cylinder.transform.localRotation;
+        newRotation *= Quaternion.AngleAxis(cylinderTorque * rotationSpeed, Vector3.up);
+        cylinder.transform.localRotation = newRotation;
+        
+        //cylinder.transform.localEulerAngles = localEulers;
+            //Rotate(Vector3.up, cylinderTorque * Time.deltaTime);
         cylinderTorque = Mathf.Lerp(cylinderTorque, 0f, cylinderDrag * Time.deltaTime);
     }
 
@@ -31,13 +39,17 @@ public class Cylinder : MonoBehaviour
         }
         else
         {
-            SpinCylinder(scroll);
+            SpinCylinder(scroll * 20);
         }
     }
 
     void SpinCylinder(float scroll)
     {
-        cylinderTorque = scroll * gun.cylinderSensitivity;
+        print(scroll);
+
+        if (scroll != 0)
+            cylinderTorque = scroll;
+        //cylinderTorque = scroll * gun.cylinderSensitivity;
     }
 }
 
