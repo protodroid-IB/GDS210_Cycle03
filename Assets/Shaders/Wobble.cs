@@ -29,7 +29,10 @@ public class Wobble : MonoBehaviour
 	Color fillColor, foamColor;
 
 	[SerializeField]
-	float centreFill, varianceUpright, varianceOnSide;
+	bool unevenBase;
+
+	[SerializeField]
+	float centreFill, varianceUpright, varianceOnSide, varianceBetweenSides;
 
 	float maxWobble = 2, wobbleSpeed = 5, wobbleSmooth = 0.02f, recovery = 0.1f;
 
@@ -50,9 +53,17 @@ public class Wobble : MonoBehaviour
 
 	private void Update()
 	{
+		string newName = transform.parent.name;
 		float dot = Vector3.Dot(Vector3.up, transform.up);
 		dot = Mathf.Abs(dot);
-		float variance = Mathf.Lerp(varianceOnSide, varianceUpright, dot);
+		float baseVariance = varianceOnSide;
+		if(unevenBase)
+		{
+			float baseDot = Vector3.Dot(Vector3.up, transform.right);
+			baseDot = Mathf.Abs(baseDot);
+			baseVariance = Mathf.Lerp(varianceOnSide, varianceBetweenSides, baseDot);
+		}
+		float variance = Mathf.Lerp(baseVariance, varianceUpright, dot);
 
 		fillAmount = (fillLevel - 0.5f) * (variance) + centreFill;
 		SetValues();
