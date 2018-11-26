@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     public static GameManager gameManager;
     public static Vector3 spawnPosition = Vector3.zero;
+    ScoreManager scoreManager;
 
     [SerializeField] GameObject[] tmProTextFeields;
     [SerializeField] Transform player;
@@ -15,7 +16,6 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
             return;
         }
-
     }
 
     private void Update()
@@ -24,5 +24,10 @@ public class GameManager : MonoBehaviour {
         {
             tmProTextField.transform.LookAt(2 * tmProTextField.transform.position - player.transform.position);
         }
+    }
+
+    public void UpdateHighScore(ScoreRecords game)
+    {
+        scoreManager.UpdateHighScore(game);
     }
 }
