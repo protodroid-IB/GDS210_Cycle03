@@ -27,6 +27,13 @@ namespace Serving
 		[SerializeField]
 		float ingredientAdded;
 
+		Wobble wobble;
+
+		private void Start()
+		{
+			wobble = GetComponent<Wobble>();
+		}
+
 		private void Update()
 		{
 			float tilt = Vector3.Dot(Vector3.up, transform.up);
@@ -44,14 +51,17 @@ namespace Serving
 			{
 				ingredientAdded = time;
 				adding = ingredient;
+				wobble.ingredient = ingredient;
 			}
 			else
 			{
 				timer += time;
 				ingredientAdded = timer / ingredient.timeToAdd + 0.01f;
-				types.Add(ingredient.type);
+				wobble.fillLevel = ingredientAdded;
+
 				if (ingredientAdded >= 1)
 				{
+					types.Add(ingredient.type);
 					ingredients.Add(ingredient);
 					ingredients = ingredients.OrderBy(t => t.name).ToList();
 				}

@@ -5,18 +5,25 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Cork : MonoBehaviour {
 
-	[SerializeField]
-	GameObject corkObject;
+	FixedJoint joint;
+	MeshCollider collider;
+	Transform parent;
 
-	[SerializeField]
-	Transform corkTransform;
+	private void Start()
+	{
+		joint = GetComponent<FixedJoint>();
+		collider = GetComponent<MeshCollider>();
+		collider.enabled = false;
+		parent = transform.parent;
+	}
 
-	// Use this for initialization
-	void Start () {
-		GameObject cork = Instantiate(corkObject, corkTransform.position, corkTransform.rotation);
-		cork.transform.localScale *= 9.5f;
-		FixedJoint joint = cork.GetComponent<FixedJoint>();
-		joint.connectedBody = GetComponent<Rigidbody>();
+	private void OnJointBreak(float breakForce)
+	{
+		collider.enabled = true;
+		if(transform.parent == parent)
+		{
+			transform.parent = null;
+		}
 	}
 
 }

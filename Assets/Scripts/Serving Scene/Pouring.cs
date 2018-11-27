@@ -30,10 +30,10 @@ namespace Serving
 
 		public float strength;
 
-		[SerializeField]
-		Ingredient ingredient;
+		[HideInInspector]
+		public Ingredient ingredient;
 
-		public Color streamColour;
+		Color streamColour;
 
 		// Use this for initialization
 		void Start() {

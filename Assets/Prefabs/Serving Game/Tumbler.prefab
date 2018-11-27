@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 114428151183056382}
   - component: {fileID: 114988057229573416}
   - component: {fileID: 114909301361635222}
-  - component: {fileID: 114130791804051974}
   m_Layer: 0
   m_Name: Tumbler
   m_TagString: Untagged
@@ -212,20 +211,6 @@ MonoBehaviour:
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
---- !u!114 &114130791804051974
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1678664726109398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e2a85d955ef3ae4ca995c3c5d412e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredients: []
-  glassType: 2
-  ingredientAdded: 0
 --- !u!114 &114428151183056382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,8 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillLevel: 0
-  fillColor: {r: 0.8396226, g: 0.5998339, b: 0, a: 1}
-  foamColor: {r: 0.8018868, g: 0.7224793, b: 0.5862852, a: 1}
+  ingredient: {fileID: 0}
   unevenBase: 0
   centreFill: -0.5
   varianceUpright: 0.294
@@ -300,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredients: []
-  glassType: 1
+  glassType: 2
   ingredientAdded: 0
 --- !u!114 &114909301361635222
 MonoBehaviour:
