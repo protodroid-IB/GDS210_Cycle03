@@ -3866,7 +3866,7 @@ MonoBehaviour:
   gameSettings: {fileID: 11400000, guid: d09a3f0eebf5195419e64410ff71f3d1, type: 2}
   sounds:
   - clipName: Soundscape_Inside
-    clip: {fileID: 8300000, guid: c7288948cd0fe9448aa89a4b338b1e93, type: 3}
+    clip: {fileID: 8300000, guid: 20d7c8b8e8b23a14a88756b4795eab61, type: 3}
     audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
