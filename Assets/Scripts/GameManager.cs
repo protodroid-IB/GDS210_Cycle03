@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
     public static GameManager gameManager;
+
+    // Players spawn position
     public static Vector3 spawnPosition = Vector3.zero;
+
     ScoreManager scoreManager;
+
+    [SerializeField] GameSettings gameSettings;
+
 
     [SerializeField] GameObject[] tmProTextFeields;
     [SerializeField] Transform player;
@@ -16,6 +22,8 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
             return;
         }
+
+        LoadPlayerPrefs();
     }
 
     private void Update()
@@ -30,4 +38,13 @@ public class GameManager : MonoBehaviour {
     {
         scoreManager.UpdateHighScore(game);
     } 
+
+    // Load the game options from Player Prefs into the GameSettings SObject.
+    private void LoadPlayerPrefs()
+    {
+        gameSettings.soundVolume = PlayerPrefs.GetFloat("SoundVolume", 0.5f);
+        gameSettings.musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
+
+        gameSettings.tutorial = PlayerPrefs.GetInt("Tutorial", 1) == 1 ? true : false;
+    }
 }

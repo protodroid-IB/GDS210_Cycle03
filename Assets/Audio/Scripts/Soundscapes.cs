@@ -5,8 +5,8 @@ using UnityEngine;
 public class Soundscapes : MonoBehaviour
 {
 
-    [SerializeField] private AudioSource[] outsideAudioSources;
-    [SerializeField] private AudioSource insideAudioSource;
+    public AudioSource[] outsideAudioSources;   // Made public so I could access the functoins in the MenuSettings Class.
+    public AudioSource insideAudioSource;
 
 	// Use this for initialization
 	void Start ()
