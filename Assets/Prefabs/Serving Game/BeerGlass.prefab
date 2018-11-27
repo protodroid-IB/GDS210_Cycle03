@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114866153150191296}
   - component: {fileID: 114042734755674744}
   - component: {fileID: 114915913980113042}
+  - component: {fileID: 114821405688484484}
   m_Layer: 0
   m_Name: BeerGlass
   m_TagString: Untagged
@@ -310,6 +311,20 @@ MonoBehaviour:
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
+--- !u!114 &114821405688484484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1192331118811598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2a85d955ef3ae4ca995c3c5d412e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: []
+  glassType: 1
+  ingredientAdded: 0
 --- !u!114 &114866153150191296
 MonoBehaviour:
   m_ObjectHideFlags: 1
