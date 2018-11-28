@@ -29,6 +29,8 @@ namespace Serving
 
 		Wobble wobble;
 
+		bool clear;
+
 		private void Start()
 		{
 			wobble = GetComponent<Wobble>();
@@ -37,9 +39,23 @@ namespace Serving
 		private void Update()
 		{
 			float tilt = Vector3.Dot(Vector3.up, transform.up);
-			if(tilt <= 0)
+			if(tilt <= 0 && !clear)
 			{
-				Clear();
+				clear = true;
+			}
+			else if(tilt > 0 && clear)
+			{
+				clear = false;
+			}
+
+			if(clear)
+			{
+				if (wobble.fillLevel <= 0)
+				{
+					ingredients.Clear();
+					types.Clear();
+				}
+				wobble.fillLevel = Mathf.Clamp01(wobble.fillLevel - Time.deltaTime);
 			}
 		}
 
@@ -85,11 +101,6 @@ namespace Serving
 				glass = glassType
 			};
 			return drink;
-		}
-
-		void Clear()
-		{
-			ingredients.Clear();
 		}
 	}
 }
