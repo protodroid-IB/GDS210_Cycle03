@@ -10,15 +10,17 @@ namespace Serving
 	{
 
 		// list of main ingredients added
+		/*[SerializeField]
+		List<Ingredient> ingredients = new List<Ingredient>();*/
 		[SerializeField]
-		List<Ingredient> ingredients = new List<Ingredient>();
+		Ingredient currentIngredient;
 
 		[SerializeField]
 		GlassType glassType = GlassType.BeerGlass;
 
 		Ingredient adding;
 
-		List<DrinkType> types = new List<DrinkType>();
+		//List<DrinkType> types = new List<DrinkType>();
 
 		MixMethod method = MixMethod.Mixed;
 
@@ -52,8 +54,7 @@ namespace Serving
 			{
 				if (wobble.fillLevel <= 0)
 				{
-					ingredients.Clear();
-					types.Clear();
+					currentIngredient = null;
 				}
 				wobble.fillLevel = Mathf.Clamp01(wobble.fillLevel - Time.deltaTime);
 			}
@@ -61,13 +62,15 @@ namespace Serving
 
 		public void AddIngredient(Ingredient ingredient, float time)
 		{
-			if (ingredients.Contains(ingredient) || types.Contains(ingredient.type))
+			if (currentIngredient == ingredient)
 				return;
+
 			if(ingredient != adding)
 			{
 				ingredientAdded = time;
 				adding = ingredient;
 				wobble.ingredient = ingredient;
+				wobble.SetColours();
 			}
 			else
 			{
@@ -77,27 +80,28 @@ namespace Serving
 
 				if (ingredientAdded >= 1)
 				{
-					types.Add(ingredient.type);
+					currentIngredient = adding;
+					/*types.Add(ingredient.type);
 					ingredients.Add(ingredient);
-					ingredients = ingredients.OrderBy(t => t.name).ToList();
+					ingredients = ingredients.OrderBy(t => t.name).ToList();*/
 				}
 			}
 		}
 
-		public void Combine(MixMethod mixMethod)
+		/*public void Combine(MixMethod mixMethod)
 		{
 			if (mixMethod > method)
 			{
 				method = mixMethod;
 			}
-		}
+		}*/
 
 		public CompleteDrink GetDrink()
 		{
 			CompleteDrink drink = new CompleteDrink
 			{
-				usedIngredients = ingredients.ToArray(),
-				mixMethod = method,
+				usedIngredient = currentIngredient,
+				//mixMethod = method,
 				glass = glassType
 			};
 			return drink;

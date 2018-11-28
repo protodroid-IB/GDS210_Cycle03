@@ -6,15 +6,17 @@ namespace Serving
 {
 	public class Bottle : MonoBehaviour {
 
+		[SerializeField]
 		Ingredient ingredient;
 
 		private void Awake()
 		{
 			Pouring emitter = GetComponentInChildren<Pouring>();
 			Wobble wobbler = GetComponentInChildren<Wobble>();
-
-			emitter.ingredient = ingredient;
-			wobbler.ingredient = ingredient;
+			if(emitter)
+				emitter.ingredient = ingredient;
+			if(wobbler)
+				wobbler.ingredient = ingredient;
 		}
 	}
 }

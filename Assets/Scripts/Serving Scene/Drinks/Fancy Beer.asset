@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Fancy Beer
   m_EditorClassIdentifier: 
   type: 1
-  colour: {r: 0.9529412, g: 0.7921569, b: 0.19215687, a: 1}
+  colour: {r: 0.2264151, g: 0.1500584, b: 0.06301175, a: 0.78431374}
   timeToAdd: 1

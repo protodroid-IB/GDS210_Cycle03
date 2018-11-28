@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Tequila
   m_EditorClassIdentifier: 
   type: 0
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  colour: {r: 0.909804, g: 0.57254905, b: 0.09411766, a: 0.39215687}
+  timeToAdd: 1

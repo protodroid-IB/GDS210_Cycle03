@@ -20,14 +20,9 @@ namespace Serving
 	[System.Serializable]
 	public struct CompleteDrink
 	{
-		public Ingredient[] usedIngredients;
-		public MixMethod mixMethod;
+		public Ingredient usedIngredient;
+		//public MixMethod mixMethod;
 		public GlassType glass;
-	}
-
-	public static class GameManager
-	{
-		public static int score = 0;
 	}
 	
 }

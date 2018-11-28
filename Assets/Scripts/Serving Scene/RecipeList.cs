@@ -11,26 +11,40 @@ namespace Serving
 		public CompleteDrink[] allDrinks;
 
 		// check to see how similar the ingredients of the required drink and the made drink are
-		public float CheckDrink(CompleteDrink drink, int drinkNumber)
+		public int CheckDrink(CompleteDrink drink, int drinkNumber)
 		{
 			int score = 0;
 			CompleteDrink completeDrink = allDrinks[drinkNumber];
 
-			for (int i = 0; i < drink.usedIngredients.Length; i++)
+			if(completeDrink.usedIngredient == drink.usedIngredient)
 			{
-				Ingredient check = drink.usedIngredients[i];
+				score += 50;
+			} else if(completeDrink.usedIngredient.type == drink.usedIngredient.type)
+			{
+				score += 20;
+			}
+			if(completeDrink.glass == drink.glass)
+			{
+				score += 20;
+			}
+
+			return score;
+
+			/*for (int i = 0; i < drink.usedIngredient.Length; i++)
+			{
+				Ingredient check = drink.usedIngredient[i];
 				int scoreToAdd = -5;
-				for (int j = 0; j < completeDrink.usedIngredients.Length; j++)
+				for (int j = 0; j < completeDrink.usedIngredient.Length; j++)
 				{
-					if (check == completeDrink.usedIngredients[j])
+					if (check == completeDrink.usedIngredient[j])
 					{
 						scoreToAdd = 10;
-						j = completeDrink.usedIngredients.Length;
+						j = completeDrink.usedIngredient.Length;
 					}
-					else if (check.type == completeDrink.usedIngredients[j].type)
+					else if (check.type == completeDrink.usedIngredient[j].type)
 					{
 						scoreToAdd = 5;
-						j = completeDrink.usedIngredients.Length;
+						j = completeDrink.usedIngredient.Length;
 					}
 				}
 				score += scoreToAdd;
@@ -54,8 +68,8 @@ namespace Serving
 				score -= 5;
 			}
 			
-			int possibleScore = 20 + allDrinks[drinkNumber].usedIngredients.Length * 10;
-			return (float)score/possibleScore;
+			int possibleScore = 20 + allDrinks[drinkNumber].usedIngredient.Length * 10;
+			return (float)score/possibleScore;*/
 		}
 	}
 }

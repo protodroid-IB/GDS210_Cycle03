@@ -30,6 +30,9 @@ namespace Serving
 		[SerializeField]
 		float centreFill, varianceUpright, varianceOnSide, varianceBetweenSides;
 
+		[SerializeField]
+		float maxFill = 1;
+
 		float maxWobble = 2, wobbleSpeed = 5, wobbleSmooth = 0.02f, recovery = 0.1f;
 
 		float wobbleAmountX, wobbleAmountZ;
@@ -47,20 +50,18 @@ namespace Serving
 
 		private void Update()
 		{
-			string newName = transform.parent.name;
-			float dot = Vector3.Dot(Vector3.up, transform.up);
-			dot = Mathf.Abs(dot);
-			float baseVariance = varianceOnSide;
-			if (unevenBase)
-			{
-				float baseDot = Vector3.Dot(Vector3.up, transform.right);
-				baseDot = Mathf.Abs(baseDot);
-				baseVariance = Mathf.Lerp(varianceOnSide, varianceBetweenSides, baseDot);
-			}
-			float variance = Mathf.Lerp(baseVariance, varianceUpright, dot);
-
-			fillAmount = (fillLevel - 0.5f) * (variance) + centreFill;
+			SetFillLevel();
+			
 			SetValues();
+
+
+			if (fillLevel <= 0)
+			{
+				acceleration = Vector3.zero;
+				angularAcceleration = Vector3.zero;
+				totalWobbleX = 0;
+				totalWobbleZ = 0;
+			}
 
 			totalWobbleX += Mathf.Clamp((acceleration.x + (angularAcceleration.z * 0.02f)) * maxWobble, -maxWobble, maxWobble);
 			totalWobbleZ += Mathf.Clamp((acceleration.z + (angularAcceleration.x * 0.02f)) * maxWobble, -maxWobble, maxWobble);
@@ -101,6 +102,22 @@ namespace Serving
 				rend.material.SetColor("_FoamColor", foamColor);
 				rend.material.SetColor("_TopColor", foamColor);
 			}
+		}
+
+		void SetFillLevel()
+		{
+			float dot = Vector3.Dot(Vector3.up, transform.up);
+			dot = Mathf.Abs(dot);
+			float baseVariance = varianceOnSide;
+			if (unevenBase)
+			{
+				float baseDot = Vector3.Dot(Vector3.up, transform.right);
+				baseDot = Mathf.Abs(baseDot);
+				baseVariance = Mathf.Lerp(varianceOnSide, varianceBetweenSides, baseDot);
+			}
+			float variance = Mathf.Lerp(baseVariance, varianceUpright, dot);
+			fillLevel = Mathf.Clamp(fillLevel, 0, maxFill);
+			fillAmount = (fillLevel - 0.5f) * (variance) + centreFill;
 		}
 
 		/// <summary>

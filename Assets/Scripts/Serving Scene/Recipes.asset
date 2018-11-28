@@ -12,74 +12,41 @@ MonoBehaviour:
   m_Name: Recipes
   m_EditorClassIdentifier: Assembly-CSharp:Serving:RecipeList
   allDrinks:
-  - usedIngredients:
-    - {fileID: 11400000, guid: 44450696ca88812429350c3461cb2cf5, type: 2}
-    mixMethod: 0
-    glass: 0
-  - usedIngredients:
-    - {fileID: 11400000, guid: d27b85ec3e1a076489315f675fee1519, type: 2}
-    mixMethod: 0
-    glass: 1
-  - usedIngredients:
-    - {fileID: 11400000, guid: e312045500d06ec42a05057c3aea3306, type: 2}
-    mixMethod: 0
-    glass: 1
-  - usedIngredients:
-    - {fileID: 11400000, guid: 2884fdf9d4b9bc14a840d2e66a7f9a5c, type: 2}
-    mixMethod: 0
-    glass: 1
-  - usedIngredients:
-    - {fileID: 11400000, guid: 07ffe305a628da7438508ed51e994740, type: 2}
-    mixMethod: 0
-    glass: 0
-  - usedIngredients:
-    - {fileID: 11400000, guid: 3c7ae37d5b29f6040bff378bbe5f2fb1, type: 2}
-    mixMethod: 0
-    glass: 0
-  - usedIngredients:
-    - {fileID: 11400000, guid: 178191aa0fcc4e34d8d5fb193fdfd63f, type: 2}
-    mixMethod: 0
-    glass: 0
-  - usedIngredients:
-    - {fileID: 11400000, guid: 947b5c1e7f3b64b4d84695b07728d860, type: 2}
-    mixMethod: 0
-    glass: 0
-  - usedIngredients:
-    - {fileID: 11400000, guid: 97ffcb7c81bfb4d4cb4efdd019d9a87c, type: 2}
-    mixMethod: 0
-    glass: 0
-  - usedIngredients:
-    - {fileID: 11400000, guid: 0a1cd5dd3ac493c4f9a75feedd98efae, type: 2}
-    mixMethod: 0
+  - usedIngredient: {fileID: 11400000, guid: 97ffcb7c81bfb4d4cb4efdd019d9a87c, type: 2}
     glass: 2
-  - usedIngredients:
-    - {fileID: 11400000, guid: 5228ae5c5f325f74690968abbaec5368, type: 2}
-    mixMethod: 0
+  - usedIngredient: {fileID: 11400000, guid: b8f578b6909ef1e4caf6a4a99bcbe807, type: 2}
     glass: 2
-  - usedIngredients:
-    - {fileID: 11400000, guid: 0ec70f51156b9bd4eb8bd7aa81f43db0, type: 2}
-    mixMethod: 0
-    glass: 2
-  - usedIngredients:
-    - {fileID: 11400000, guid: b8f578b6909ef1e4caf6a4a99bcbe807, type: 2}
-    mixMethod: 0
-    glass: 2
-  - usedIngredients:
-    - {fileID: 11400000, guid: c755d18e885b7404388a033353cfb509, type: 2}
-    mixMethod: 0
-    glass: 2
-  - usedIngredients:
-    - {fileID: 11400000, guid: b2001068431ce354a82e449c61dd2e73, type: 2}
-    mixMethod: 0
+  - usedIngredient: {fileID: 11400000, guid: 947b5c1e7f3b64b4d84695b07728d860, type: 2}
     glass: 0
-  - usedIngredients:
-    - {fileID: 11400000, guid: fcb8901a9947a9449b4a45a89d652d7c, type: 2}
-    - {fileID: 11400000, guid: 44487205fe21ac7408ec046990cb48cc, type: 2}
-    - {fileID: 11400000, guid: 0ec70f51156b9bd4eb8bd7aa81f43db0, type: 2}
-    mixMethod: 1
+  - usedIngredient: {fileID: 11400000, guid: 3c7ae37d5b29f6040bff378bbe5f2fb1, type: 2}
+    glass: 0
+  - usedIngredient: {fileID: 11400000, guid: 2884fdf9d4b9bc14a840d2e66a7f9a5c, type: 2}
     glass: 1
-  - usedIngredients:
-    - {fileID: 11400000, guid: b8f578b6909ef1e4caf6a4a99bcbe807, type: 2}
-    - {fileID: 11400000, guid: f870bc3b6ce8a0647abe3e714ff8a989, type: 2}
-    mixMethod: 1
+  - usedIngredient: {fileID: 11400000, guid: e312045500d06ec42a05057c3aea3306, type: 2}
     glass: 1
+  - usedIngredient: {fileID: 11400000, guid: c755d18e885b7404388a033353cfb509, type: 2}
+    glass: 2
+  - usedIngredient: {fileID: 11400000, guid: 6714e73a9d1f84440a6ce72d6667c59b, type: 2}
+    glass: 1
+  - usedIngredient: {fileID: 11400000, guid: d27b85ec3e1a076489315f675fee1519, type: 2}
+    glass: 1
+  - usedIngredient: {fileID: 11400000, guid: b2001068431ce354a82e449c61dd2e73, type: 2}
+    glass: 0
+  - usedIngredient: {fileID: 11400000, guid: 178191aa0fcc4e34d8d5fb193fdfd63f, type: 2}
+    glass: 0
+  - usedIngredient: {fileID: 11400000, guid: 44450696ca88812429350c3461cb2cf5, type: 2}
+    glass: 0
+  - usedIngredient: {fileID: 11400000, guid: 0a1cd5dd3ac493c4f9a75feedd98efae, type: 2}
+    glass: 2
+  - usedIngredient: {fileID: 11400000, guid: f870bc3b6ce8a0647abe3e714ff8a989, type: 2}
+    glass: 1
+  - usedIngredient: {fileID: 11400000, guid: 44487205fe21ac7408ec046990cb48cc, type: 2}
+    glass: 1
+  - usedIngredient: {fileID: 11400000, guid: 3558ba0703d871b4eac19be656c1a178, type: 2}
+    glass: 2
+  - usedIngredient: {fileID: 11400000, guid: 0ec70f51156b9bd4eb8bd7aa81f43db0, type: 2}
+    glass: 2
+  - usedIngredient: {fileID: 11400000, guid: 5228ae5c5f325f74690968abbaec5368, type: 2}
+    glass: 2
+  - usedIngredient: {fileID: 11400000, guid: 07ffe305a628da7438508ed51e994740, type: 2}
+    glass: 0

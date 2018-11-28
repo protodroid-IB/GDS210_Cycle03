@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Vodka
   m_EditorClassIdentifier: 
   type: 0
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  colour: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 0.78431374}
+  timeToAdd: 1

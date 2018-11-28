@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Bourban
   m_EditorClassIdentifier: 
   type: 0
-  colour: {r: 0.7075472, g: 0.4655872, b: 0.29036137, a: 1}
+  colour: {r: 0.6862745, g: 0.42352942, b: 0.24313726, a: 0.5882353}
+  timeToAdd: 1

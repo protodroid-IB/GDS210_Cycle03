@@ -11,5 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6109641b75efa945bb9864387f50d3b, type: 3}
   m_Name: Soda Water
   m_EditorClassIdentifier: 
-  type: 0
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  type: 4
+  colour: {r: 1, g: 1, b: 1, a: 0.39215687}
+  timeToAdd: 1

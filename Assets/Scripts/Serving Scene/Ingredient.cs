@@ -9,6 +9,8 @@ namespace Serving
 	{
 		public DrinkType type;
 		public Color colour;
-		public float timeToAdd = 1f;
+
+		[HideInInspector]
+		public float timeToAdd = 1;
 	}
 }

@@ -9,7 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6109641b75efa945bb9864387f50d3b, type: 3}
-  m_Name: Cherry
+  m_Name: Sherry
   m_EditorClassIdentifier: 
   type: 2
-  colour: {r: 0.745283, g: 0.46052867, b: 0.46052867, a: 1}
+  colour: {r: 0.53333336, g: 0.29803923, b: 0.3882353, a: 0.5882353}
+  timeToAdd: 1

@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 33536348908810632}
   - component: {fileID: 23516081204990874}
   - component: {fileID: 114255819255201402}
+  - component: {fileID: 114991973021870462}
   m_Layer: 0
   m_Name: Liquid
   m_TagString: Untagged
@@ -64,7 +65,6 @@ GameObject:
   - component: {fileID: 114617058467375150}
   - component: {fileID: 114794261938388984}
   - component: {fileID: 114540437893723360}
-  - component: {fileID: 114376234640143168}
   m_Layer: 0
   m_Name: Wine Glass
   m_TagString: Untagged
@@ -79,7 +79,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232379410655654}
   m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.03549347, y: 0.039934862, z: -0.017948722}
+  m_LocalPosition: {x: 0, y: 0.0171, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4756123829747458}
@@ -91,7 +91,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1806708132949020}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.009425128, z: 0}
   m_LocalScale: {x: 0.98829144, y: 0.98829144, z: 0.98829144}
   m_Children: []
@@ -270,27 +270,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillLevel: 0
-  fillColor: {r: 0, g: 0, b: 0, a: 0}
-  foamColor: {r: 0, g: 0, b: 0, a: 0}
+  ingredient: {fileID: 0}
   unevenBase: 0
-  centreFill: 0
-  varianceUpright: 0
-  varianceOnSide: 0
+  centreFill: -0.5
+  varianceUpright: 0.164
+  varianceOnSide: 0.236
   varianceBetweenSides: 0
---- !u!114 &114376234640143168
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1850942773389834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e2a85d955ef3ae4ca995c3c5d412e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredients: []
-  glassType: 0
-  ingredientAdded: 0
+  maxFill: 0.8
 --- !u!114 &114540437893723360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -388,7 +374,20 @@ MonoBehaviour:
   maxDensity: 20
   strength: 0
   ingredient: {fileID: 11400000, guid: 07ffe305a628da7438508ed51e994740, type: 2}
-  streamColour: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &114991973021870462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1806708132949020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2a85d955ef3ae4ca995c3c5d412e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentIngredient: {fileID: 0}
+  glassType: 0
+  ingredientAdded: 0
 --- !u!198 &198159970708841162
 ParticleSystem:
   m_ObjectHideFlags: 1

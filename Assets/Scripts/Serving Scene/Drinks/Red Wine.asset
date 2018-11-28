@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Red Wine
   m_EditorClassIdentifier: 
   type: 2
-  colour: {r: 0.6509434, g: 0, b: 0, a: 1}
+  colour: {r: 0.5647059, g: 0.03529412, b: 0.10980393, a: 0.9411765}
   timeToAdd: 0

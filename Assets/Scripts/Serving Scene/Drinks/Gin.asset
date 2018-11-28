@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Gin
   m_EditorClassIdentifier: 
   type: 0
-  colour: {r: 1, g: 1, b: 1, a: 0.627451}
+  colour: {r: 0.84705883, g: 0.8666667, b: 0.7764706, a: 0.5882353}
+  timeToAdd: 1

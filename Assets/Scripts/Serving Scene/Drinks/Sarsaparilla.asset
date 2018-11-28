@@ -9,7 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6109641b75efa945bb9864387f50d3b, type: 3}
-  m_Name: Biters
+  m_Name: Sarsaparilla
   m_EditorClassIdentifier: 
   type: 4
-  colour: {r: 1, g: 0.21279444, b: 0, a: 1}
+  colour: {r: 0.3254902, g: 0.17254902, b: 0.13333334, a: 0.78431374}
+  timeToAdd: 1

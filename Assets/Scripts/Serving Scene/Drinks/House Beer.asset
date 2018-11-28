@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: House Beer
   m_EditorClassIdentifier: 
   type: 1
-  colour: {r: 0.9528302, g: 0.79053295, b: 0.19326274, a: 1}
+  colour: {r: 0.8018868, g: 0.47103533, b: 0, a: 0.78431374}
   timeToAdd: 1

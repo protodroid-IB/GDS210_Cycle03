@@ -12,19 +12,54 @@ namespace Serving
 		[SerializeField]
 		TextMeshPro orderText;
 
+		ServingGameManager manager;
+
 		int maxScoreAmount;
 
 		int order = 0;
 
+		float timer = 0;
+
+		float roundTime = 30;
+
+		bool gameInProgress, orderBox;
+
+		private void Start()
+		{
+			manager = FindObjectOfType<ServingGameManager>();
+			GetOrder();
+		}
+
 		private void Update()
 		{
-			if(Input.GetKeyDown(KeyCode.Space))
+			if(gameInProgress)
 			{
-				GetOrder();
+				if (!orderBox)
+				{
+					orderText.transform.parent.gameObject.SetActive(true);
+					orderBox = true;
+				}
+				timer += Time.deltaTime;
+				if(timer >= roundTime)
+				{
+					gameInProgress = false;
+					timer = 0;
+				}
+			}
+			else if(orderBox)
+			{ 
+				orderText.transform.parent.gameObject.SetActive(false);
+				orderBox = false;
 			}
 		}
 
-		public void GetOrder()
+		public void StartGame(float newRoundTime)
+		{
+			gameInProgress = true;
+			roundTime = newRoundTime;
+		}
+
+		void GetOrder()
 		{
 			int numberOfDrinks = recipes.allDrinks.Length;
 			order = Random.Range(0, numberOfDrinks);
@@ -38,15 +73,14 @@ namespace Serving
 
 		void SetText()
 		{
-			string text = "";
 			CompleteDrink drink = GetDrink();
-			for (int i = 0; i < drink.usedIngredients.Length; i++)
+			/*for (int i = 0; i < drink.usedIngredient.Length; i++)
 			{
-				text += drink.usedIngredients[i].name;
+				text += drink.usedIngredient[i].name;
 				text += "\n";
 			}
-			text += drink.mixMethod.ToString();
-			orderText.text = text;
+			text += drink.mixMethod.ToString();*/
+			orderText.text = drink.usedIngredient.name;
 		}
 
 		float CheckDrink(CompleteDrink drink)
@@ -56,7 +90,8 @@ namespace Serving
 
 		void Score(int scoreAmount)
 		{
-			GameManager.score += scoreAmount;
+			manager.AddScore(scoreAmount);
+			GetOrder();
 		}
 
 		private void OnCollisionEnter(Collision collision)
@@ -67,6 +102,7 @@ namespace Serving
 				int score = (int)(CheckDrink(recievedDrink.GetDrink()) * maxScoreAmount);
 				Score(score);
 			}
+			Destroy(collision.gameObject);
 		}
 	}
 }

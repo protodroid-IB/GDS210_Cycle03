@@ -227,6 +227,7 @@ MonoBehaviour:
   varianceUpright: 0.382
   varianceOnSide: 0.19
   varianceBetweenSides: 0
+  maxFill: 1
 --- !u!114 &114042734755674744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e2a85d955ef3ae4ca995c3c5d412e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredients: []
+  currentIngredient: {fileID: 0}
   glassType: 1
   ingredientAdded: 0
 --- !u!114 &114263111234939878

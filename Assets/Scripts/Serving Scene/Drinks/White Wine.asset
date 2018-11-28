@@ -11,5 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6109641b75efa945bb9864387f50d3b, type: 3}
   m_Name: White Wine
   m_EditorClassIdentifier: 
-  type: 0
-  colour: {r: 0, g: 0, b: 0, a: 0}
+  type: 2
+  colour: {r: 0.90196085, g: 0.9333334, b: 0.5058824, a: 0.39215687}
+  timeToAdd: 1
