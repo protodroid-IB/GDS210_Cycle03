@@ -20,7 +20,7 @@ public class SceneManagement : MonoBehaviour
 
     Transform doNotDisable;
 
-    bool gameStarted = false;
+    Vector3 playerSpawnPos;
 
     private void Awake()
     {
@@ -32,8 +32,10 @@ public class SceneManagement : MonoBehaviour
 
         sceneManagement = this;
 
+        playerSpawnPos = GameManager.spawnPosition;
+
         // The player will spawn in their current position when they restart the scene.
-        vrPlayer.transform.position = GameManager.spawnPosition;
+        vrPlayer.transform.position = playerSpawnPos;
 
         // Creates a parent to store all objects in the hubworld instance.
         instancedObjects = new GameObject();
@@ -52,6 +54,12 @@ public class SceneManagement : MonoBehaviour
        // ignore[optionMenus.transform] = true;
 
         MakeNewInstanceObjects(SceneManager.GetActiveScene().name);
+
+        if (GameManager.minigameRestarting)
+        {
+            DisableHubworldInstance();
+            GameManager.minigameRestarting = false;
+        }
     }
 
     // Sets the objects in the scene to be instanced.
@@ -81,19 +89,29 @@ public class SceneManagement : MonoBehaviour
         StartCoroutine(LoadSceneObjects(scene));
     }
 
-    IEnumerator LoadSceneObjects(string scene)
+    public IEnumerator LoadSceneObjects(string scene)
     {
         SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         yield return null;
     }
 
-    // Turn instanced objects back on.
-    public void ActivateHubworldInstance()
+    // Turn instanced objects off.
+    public void DisableHubworldInstance()
     {
-        instancedObjects.SetActive(true);
-        print("Active hubworld instance");
+        instancedObjects.SetActive(false);
     }
 
+    // Function to restart the minigame.
+    public void RestartMiniGame(string minigame)
+    {
+        GameManager.spawnPosition = playerCollider.transform.position;
+        GameManager.spawnPosition.y = 0;
+
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene(minigame, LoadSceneMode.Additive);
+
+        GameManager.minigameRestarting = true;
+    }
 }
 
 

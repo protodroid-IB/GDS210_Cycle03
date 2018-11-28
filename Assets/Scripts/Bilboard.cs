@@ -8,15 +8,26 @@ public class Bilboard : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		mainCamera = Camera.main.transform;
+
+        Invoke("SetMainCamera", 1f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 forwardPosition = transform.position - mainCamera.position;
-		forwardPosition = Vector3.Normalize(forwardPosition);
-		transform.forward = forwardPosition;
+        if(mainCamera != null)
+        {
+		    Vector3 forwardPosition = transform.position - mainCamera.position;
+		    forwardPosition = Vector3.Normalize(forwardPosition);
+		    transform.forward = forwardPosition;
+        }
+
 			
 			//.LookAt(mainCamera.position, Vector3.up);
 	}
+
+    void SetMainCamera()
+    {
+		mainCamera = Camera.main.transform;
+
+    }
 }

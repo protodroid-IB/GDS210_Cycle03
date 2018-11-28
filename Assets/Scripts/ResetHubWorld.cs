@@ -1,23 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
- public class ResetHubWorld : MonoBehaviour {
-        [SerializeField] string scene;
-        bool loadingScene = false;
+public class ResetHubWorld : MonoBehaviour {
+    [SerializeField] string scene;
+    bool loadingScene = false;
 
-        void OnTriggerEnter(Collider col) 
+    void OnTriggerEnter(Collider col) 
+    {
+
+    if (col.tag == "Player" && loadingScene == false) 
         {
 
-        if (col.tag == "Player") 
-            {
+        GameManager.spawnPosition = col.transform.position;
+        GameManager.spawnPosition.y = 0;
 
-            GameManager.spawnPosition = col.transform.position;
-            GameManager.spawnPosition.y = 0;
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
 
-            SteamVR_LoadLevel.Begin(scene, false, 0.5f);
-            loadingScene = true;
-            }
+        loadingScene = true;
+
         }
+    }
  }
 

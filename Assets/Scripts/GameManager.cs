@@ -8,12 +8,14 @@ public class GameManager : MonoBehaviour {
     // Players spawn position
     public static Vector3 spawnPosition = Vector3.zero;
 
+    public static bool minigameRestarting = false;
+
+    SceneManagement sceneManagement;
+
     ScoreManager scoreManager;
 
     [SerializeField] GameSettings gameSettings;
 
-
-    [SerializeField] GameObject[] tmProTextFeields;
     [SerializeField] Transform player;
 
     void Awake () {
@@ -24,14 +26,7 @@ public class GameManager : MonoBehaviour {
         }
 
         LoadPlayerPrefs();
-    }
-
-    private void Update()
-    {
-        foreach(GameObject tmProTextField in tmProTextFeields)
-        {
-            tmProTextField.transform.LookAt(2 * tmProTextField.transform.position - player.transform.position);
-        }
+        sceneManagement = GetComponent<SceneManagement>();
     }
 
     public void UpdateHighScore(ScoreRecords game)
@@ -46,5 +41,10 @@ public class GameManager : MonoBehaviour {
         gameSettings.musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
 
         gameSettings.tutorial = PlayerPrefs.GetInt("Tutorial", 1) == 1 ? true : false;
+    }
+
+    public void RestartMiniGame(string minigame)
+    {
+        sceneManagement.RestartMiniGame(minigame);
     }
 }
