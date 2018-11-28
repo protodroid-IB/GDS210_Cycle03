@@ -24,8 +24,9 @@ public class BladeGettingStuckScript : MonoBehaviour
         {
             return;
         }
-        
-        myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
+
+        myObject.GetComponent<Transform>().SetParent(other.gameObject.transform,true);
+        myObjectRB.isKinematic = false;
 
         if (other.gameObject.tag == "ThrowingTarget")
             tgc.AddScore(100);
@@ -38,7 +39,7 @@ public class BladeGettingStuckScript : MonoBehaviour
             return;
         }
 
-        myObjectRB.constraints = RigidbodyConstraints.None;
+        myObjectRB.isKinematic = true;
         
     }
 }
