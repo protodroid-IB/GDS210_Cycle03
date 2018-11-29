@@ -31,9 +31,9 @@ public class BladeGettingStuckScript : MonoBehaviour
 
         if (other.gameObject.tag == "ThrowingTarget")
         {
-            myObject.GetComponent<Transform>().SetParent(other.gameObject.transform, true);
+            ParentMe(other);
 
-            if(!diht.AmIUsed())
+            if (!diht.AmIUsed())
             {
                 diht.SetUsed();
                 tgc.AddScore(100);
@@ -51,5 +51,11 @@ public class BladeGettingStuckScript : MonoBehaviour
 
         myObjectRB.constraints = RigidbodyConstraints.None;
 
+    }
+
+    private void ParentMe(Collider other)
+    {
+        myObject.GetComponent<Transform>().SetParent(other.gameObject.transform, true);
+        myObject.transform.localScale = other.gameObject.transform.localScale;
     }
 }
