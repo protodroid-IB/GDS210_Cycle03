@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 114454498434306526}
   - component: {fileID: 114534741237441126}
   - component: {fileID: 114509544825755298}
+  - component: {fileID: 114416048355745106}
   m_Layer: 9
   m_Name: Gin
   m_TagString: Untagged
@@ -455,6 +456,18 @@ MonoBehaviour:
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
+--- !u!114 &114416048355745106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312869991277658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe157d236cb1394084a06a92103ec24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: c755d18e885b7404388a033353cfb509, type: 2}
 --- !u!114 &114454498434306526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4237,7 +4250,7 @@ ParticleSystem:
     radiusScale: 0.01
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 7735
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5

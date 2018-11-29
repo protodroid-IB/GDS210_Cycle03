@@ -13,13 +13,13 @@ public class Cork : MonoBehaviour {
 	{
 		joint = GetComponent<FixedJoint>();
 		collider = GetComponent<MeshCollider>();
-		collider.enabled = false;
+		//collider.enabled = false;
 		parent = transform.parent;
 	}
 
 	private void OnJointBreak(float breakForce)
 	{
-		collider.enabled = true;
+		//collider.enabled = true;
 		if(transform.parent == parent)
 		{
 			transform.parent = null;
