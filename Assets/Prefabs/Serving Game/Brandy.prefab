@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 114656424860231292}
   - component: {fileID: 114046418440200468}
   - component: {fileID: 114073723171402258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 198315348296462518}
   - component: {fileID: 199621238730809990}
   - component: {fileID: 114883820257930218}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pouring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 4190002816233780}
   - component: {fileID: 33393102693674742}
   - component: {fileID: 23639696868916466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 33849125095328720}
   - component: {fileID: 23528570577738198}
   - component: {fileID: 114687281324621550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 114454498434306526}
   - component: {fileID: 114534741237441126}
   - component: {fileID: 114509544825755298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Brandy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,6 +546,7 @@ MonoBehaviour:
   varianceUpright: 0.445
   varianceOnSide: 0.278
   varianceBetweenSides: 0.149
+  maxFill: 1
 --- !u!114 &114788968019644516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -629,7 +630,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0

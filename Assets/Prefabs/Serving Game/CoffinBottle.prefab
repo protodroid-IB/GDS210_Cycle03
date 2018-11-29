@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114721254367520008}
   - component: {fileID: 114905266335584838}
   - component: {fileID: 114539780092575808}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CoffinBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 4240655003620418}
   - component: {fileID: 33473071267778878}
   - component: {fileID: 23412151372035858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CoffinBottleLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 114969282262326684}
   - component: {fileID: 114480591182306154}
   - component: {fileID: 114676385338789474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 198282751797532114}
   - component: {fileID: 199134861767953346}
   - component: {fileID: 114081371487811212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pouring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 33185452607159778}
   - component: {fileID: 23228577787248386}
   - component: {fileID: 114253900664646432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 0
+  holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0

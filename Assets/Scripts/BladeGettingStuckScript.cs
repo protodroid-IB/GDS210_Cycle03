@@ -26,14 +26,19 @@ public class BladeGettingStuckScript : MonoBehaviour
         {
             return;
         }
-
-        myObject.GetComponent<Transform>().SetParent(other.gameObject.transform,false);
+        
         myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
 
-        if (other.gameObject.tag == "ThrowingTarget" && !diht.AmIUsed())
+        if (other.gameObject.tag == "ThrowingTarget")
         {
-            diht.SetUsed();
-            tgc.AddScore(100);
+            myObject.GetComponent<Transform>().SetParent(other.gameObject.transform, true);
+
+            if(!diht.AmIUsed())
+            {
+                diht.SetUsed();
+                tgc.AddScore(100);
+            }
+            
         }
     }
 
