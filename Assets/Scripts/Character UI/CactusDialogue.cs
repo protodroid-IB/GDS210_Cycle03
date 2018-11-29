@@ -2,15 +2,73 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CactusDialogue : MonoBehaviour {
+public class CactusDialogue : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
+    [SerializeField]
+    GameObject dialogueWheel;
+
+    bool isTalking;
+
+	void Start ()
+    {
+
+        isTalking = false;
+
 	}
 	
-	// Update is called once per frame
-	void Update () {
+
+	void Update ()
+    {
 		
+
+
 	}
+
+    public void DialogueManager()
+    {
+
+        if(isTalking == false)
+        {
+
+            dialogueWheel.SetActive(true);
+
+        }else if(isTalking == true)
+        {
+
+            dialogueWheel.SetActive(false);
+
+        }
+
+    }
+
+    public void Greet()
+    {
+
+        //play audio or something
+
+    }
+
+    public void Antagonise()
+    {
+
+        //play audio or something
+
+    }
+
+    public void Tutorial()
+    {
+
+        //play audio or something
+        //spawn gun or something
+
+    }
+
+    public void Dialogue()
+    {
+
+        //play audio or something
+
+    }
+
 }
