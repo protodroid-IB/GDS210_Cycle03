@@ -141,6 +141,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766147223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114018131845941726, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+    type: 2}
+  m_PrefabInternal: {fileID: 966591264}
+  m_Script: {fileID: 11500000, guid: 0c7813fb01fcdaa409326ea5c249786b, type: 3}
 --- !u!1001 &966591264
 Prefab:
   m_ObjectHideFlags: 0
@@ -148,6 +154,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4816879397282912, guid: 735e08e2a7b6a0e48993f0d01cbd1a12, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5.372301
@@ -199,6 +210,75 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762646365779632, guid: 735e08e2a7b6a0e48993f0d01cbd1a12, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 766147223}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DialogueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.6650944
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114309654966999224, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.77743626
+      objectReference: {fileID: 0}
+    - target: {fileID: 114595446163387246, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.5803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 114595446163387246, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.79056245
+      objectReference: {fileID: 0}
+    - target: {fileID: 114595446163387246, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310531052081258, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.5803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310531052081258, guid: 735e08e2a7b6a0e48993f0d01cbd1a12,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.6063119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735e08e2a7b6a0e48993f0d01cbd1a12, type: 2}

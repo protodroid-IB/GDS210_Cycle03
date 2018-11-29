@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class CactusDialogue : MonoBehaviour
 {
@@ -8,12 +10,16 @@ public class CactusDialogue : MonoBehaviour
     [SerializeField]
     GameObject dialogueWheel;
 
+    [SerializeField]
+    TextMeshPro dialogueButton;
+
     bool isTalking;
 
 	void Start ()
     {
 
         isTalking = false;
+        dialogueButton = GetComponent<TextMeshPro>();
 
 	}
 	
@@ -32,11 +38,13 @@ public class CactusDialogue : MonoBehaviour
         {
 
             dialogueWheel.SetActive(true);
+            dialogueButton.text = "Hi!";
 
         }else if(isTalking == true)
         {
 
             dialogueWheel.SetActive(false);
+            dialogueButton.text = "Bye!";
 
         }
 
