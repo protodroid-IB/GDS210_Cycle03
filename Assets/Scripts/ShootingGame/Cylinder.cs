@@ -8,7 +8,7 @@ public class Cylinder : MonoBehaviour
     public float cylinderDrag;
 
     Gun gun;
-    float lastAngle = 0f;
+    public float lastAngle = 0f;
     [HideInInspector] public float cylinderTorque = 0f;
 
     float rotationSpeed = 2;

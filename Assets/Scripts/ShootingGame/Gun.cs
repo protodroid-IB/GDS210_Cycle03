@@ -155,6 +155,7 @@ public class Gun : MonoBehaviour {
     public void Eject()
     {
         cylinderTargetAngle = cylinderDrop;
+        cylinder.lastAngle = 0f;
         foreach (Chamber bullet in bullets)
         {
             if (!bullet.isLoaded && !bullet.isEjected)
