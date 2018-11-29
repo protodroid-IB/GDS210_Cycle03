@@ -25017,7 +25017,7 @@ MonoBehaviour:
   hammerSensitivity: 500
   hammerMax: -60
   cylinderSensitivity: 40
-  cylinderLerpTime: 50
+  cylinderLerpTime: 20
   addForce: 500
   hammer: {fileID: 1507507618522076}
   bullets:
@@ -25030,6 +25030,7 @@ MonoBehaviour:
   bulletIndex: 6
   loaded: 1
   cylinder: {fileID: 114910558929622528}
+  cylinderDrop: -80
   firePos: {fileID: 4059608421126544}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
 --- !u!114 &114585026488649310
@@ -25183,7 +25184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableTeleport: 1
-  targetListPolicy: {fileID: 114797714460987206}
+  targetListPolicy: {fileID: 114664779582847296}
   pointerRenderer: {fileID: 114809488559085936}
   activationButton: 10
   holdButtonToActivate: 1
@@ -25252,7 +25253,7 @@ MonoBehaviour:
   hammerSensitivity: 500
   hammerMax: -60
   cylinderSensitivity: 40
-  cylinderLerpTime: 50
+  cylinderLerpTime: 20
   addForce: 500
   hammer: {fileID: 1414966518074442}
   bullets:
@@ -25265,6 +25266,7 @@ MonoBehaviour:
   bulletIndex: 6
   loaded: 1
   cylinder: {fileID: 114869573087591368}
+  cylinderDrop: 80
   firePos: {fileID: 4005484949809390}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
 --- !u!114 &114697616912712874
@@ -25778,7 +25780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cylinder: {fileID: 1249493887981070}
-  cylinderDrag: 40
+  cylinderDrag: 3
+  lastAngle: 0
   cylinderTorque: 0
 --- !u!114 &114910558929622528
 MonoBehaviour:
@@ -25792,7 +25795,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cylinder: {fileID: 1787203437619188}
-  cylinderDrag: 40
+  cylinderDrag: 3
+  lastAngle: 0
   cylinderTorque: 0
 --- !u!114 &114928983548607674
 MonoBehaviour:
