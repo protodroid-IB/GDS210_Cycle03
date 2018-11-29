@@ -25,6 +25,7 @@ public class Gun : MonoBehaviour {
     [HideInInspector] public bool loaded;
     float cylinderTargetAngle;
     public Cylinder cylinder;
+    public float cylinderDrop;
 
     public Transform firePos;
     public GameObject effect;
@@ -153,7 +154,7 @@ public class Gun : MonoBehaviour {
 
     public void Eject()
     {
-        cylinderTargetAngle = 80f;
+        cylinderTargetAngle = cylinderDrop;
         foreach (Chamber bullet in bullets)
         {
             if (!bullet.isLoaded && !bullet.isEjected)

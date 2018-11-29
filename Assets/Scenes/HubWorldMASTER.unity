@@ -526,26 +526,6 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114492426077723368, guid: 0b01046970b84cf429e8290850d24c2b,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114492426077723368, guid: 0b01046970b84cf429e8290850d24c2b,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114695438272764788, guid: 0b01046970b84cf429e8290850d24c2b,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114695438272764788, guid: 0b01046970b84cf429e8290850d24c2b,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114525128156674346, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -566,12 +546,32 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114220953718215542, guid: 0b01046970b84cf429e8290850d24c2b,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114220953718215542, guid: 0b01046970b84cf429e8290850d24c2b,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114711166077759700, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114711166077759700, guid: 0b01046970b84cf429e8290850d24c2b,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114695438272764788, guid: 0b01046970b84cf429e8290850d24c2b,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114695438272764788, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -586,12 +586,12 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114220953718215542, guid: 0b01046970b84cf429e8290850d24c2b,
+    - target: {fileID: 114492426077723368, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114220953718215542, guid: 0b01046970b84cf429e8290850d24c2b,
+    - target: {fileID: 114492426077723368, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -838,6 +838,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4495348906008208, guid: 805c56b3b076949fba9b84cd408d94ad,
     type: 2}
   m_PrefabInternal: {fileID: 1965292565}
+--- !u!114 &971897361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114664779582847296, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1965292565}
+  m_Script: {fileID: 11500000, guid: 2ed2aa1a29b92ca4f84a26a5f6e9218b, type: 3}
 --- !u!1 &1129336785 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1752212362803510, guid: aef63f42035aacd4caa99c992c0c70c7,
@@ -1137,6 +1143,21 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 114643480630475526, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: targetListPolicy
+      value: 
+      objectReference: {fileID: 971897361}
+    - target: {fileID: 114574054693460124, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: cylinderDrop
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 114674899627104304, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: cylinderDrop
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
