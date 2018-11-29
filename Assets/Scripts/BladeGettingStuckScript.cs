@@ -9,12 +9,14 @@ public class BladeGettingStuckScript : MonoBehaviour
     Rigidbody myObjectRB;
 
     ThrowingGameController tgc;
+    DidIHitTarget diht;
 
     private void Awake()
     {
         myObjectRB = myObject.GetComponent<Rigidbody>();
 
         tgc = GameObject.Find("ThrowingGameController").GetComponent<ThrowingGameController>();
+        diht = myObjectRB.GetComponent<DidIHitTarget>();
     }
 
 
@@ -25,11 +27,14 @@ public class BladeGettingStuckScript : MonoBehaviour
             return;
         }
 
-        myObject.GetComponent<Transform>().SetParent(other.gameObject.transform,true);
-        myObjectRB.isKinematic = false;
+        myObject.GetComponent<Transform>().SetParent(other.gameObject.transform,false);
+        myObjectRB.constraints = RigidbodyConstraints.FreezeAll;
 
-        if (other.gameObject.tag == "ThrowingTarget")
+        if (other.gameObject.tag == "ThrowingTarget" && !diht.AmIUsed())
+        {
+            diht.SetUsed();
             tgc.AddScore(100);
+        }
     }
 
     private void OnTriggerExit(Collider collision)
@@ -39,7 +44,7 @@ public class BladeGettingStuckScript : MonoBehaviour
             return;
         }
 
-        myObjectRB.isKinematic = true;
-        
+        myObjectRB.constraints = RigidbodyConstraints.None;
+
     }
 }
