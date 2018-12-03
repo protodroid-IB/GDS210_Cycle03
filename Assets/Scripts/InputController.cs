@@ -11,6 +11,10 @@
         [SerializeField] float touchpadThreshold = .05f;
         [SerializeField] float triggerThreshold = .05f;
 
+        [SerializeField] GameObject model;
+
+        Renderer[] renderers;
+
         float previousAxis = 0;
 
         private AudioSource ctrlAudio;
@@ -65,6 +69,30 @@
         {
             vrGun = null;
             AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
+        }
+
+        public void HideModels()
+        {
+            if (renderers[0] == null)
+                renderers = model.GetComponentsInChildren<Renderer>();
+
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                if (renderers[i].tag != "Gun")
+                    renderers[i].enabled = false;
+            }
+        }
+
+        public void ShowModels()
+        {
+            if (renderers[0] == null)
+                renderers = model.GetComponentsInChildren<Renderer>();
+
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                if (renderers[i].tag != "Gun")
+                    renderers[i].enabled = true;
+            }
         }
 
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)
