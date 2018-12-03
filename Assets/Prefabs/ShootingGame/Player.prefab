@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 54134239764308984}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,7 +1090,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1176238074390750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.21, y: 1, z: 4.64}
+  m_LocalPosition: {x: 0.9607065, y: 0.794, z: 4.6900597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4819231571267864}
@@ -2879,6 +2879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cylinder: {fileID: 1909398795819308}
   cylinderDrag: 5
+  lastAngle: 0
   cylinderTorque: 0
 --- !u!114 &114145270847209310
 MonoBehaviour:
@@ -3017,6 +3018,7 @@ MonoBehaviour:
   bulletIndex: 6
   loaded: 1
   cylinder: {fileID: 114061092307480532}
+  cylinderDrop: 0
   firePos: {fileID: 4712280030388194}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
 --- !u!114 &114894317318311148
