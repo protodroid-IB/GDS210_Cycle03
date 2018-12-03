@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 64002891570652256}
   m_Layer: 0
   m_Name: pCube3
-  m_TagString: Untagged
+  m_TagString: ThrowingTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,8 +164,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1211301613487756}
-  m_LocalRotation: {x: -0, y: 0.6656496, z: -0, w: 0.74626446}
-  m_LocalPosition: {x: -39.23, y: 1.202, z: -17.32}
+  m_LocalRotation: {x: -0, y: 0.56622845, z: -0, w: 0.82424843}
+  m_LocalPosition: {x: -36.41, y: 1.22, z: -19.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4785979824571930}
@@ -173,7 +173,7 @@ Transform:
   - {fileID: 4912140819202674}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 83.464005, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 68.975006, z: 0}
 --- !u!4 &4912140819202674
 Transform:
   m_ObjectHideFlags: 1
