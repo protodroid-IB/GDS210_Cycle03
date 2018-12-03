@@ -13,7 +13,7 @@
 
         [SerializeField] GameObject model;
 
-        Renderer[] renderers;
+        [SerializeField] Renderer[] renderers;
 
         float previousAxis = 0;
 
@@ -22,6 +22,7 @@
         private void Start()
         {
             ctrlAudio = GetComponent<AudioSource>();
+            renderers = model.GetComponentsInChildren<Renderer>();
         }
 
         void OnEnable()
@@ -73,7 +74,7 @@
 
         public void HideModels()
         {
-            if (renderers[0] == null)
+            if (renderers.Length == 0)
                 renderers = model.GetComponentsInChildren<Renderer>();
 
             for (int i = 0; i < renderers.Length; i++)
@@ -85,7 +86,7 @@
 
         public void ShowModels()
         {
-            if (renderers[0] == null)
+            if (renderers.Length == 0)
                 renderers = model.GetComponentsInChildren<Renderer>();
 
             for (int i = 0; i < renderers.Length; i++)

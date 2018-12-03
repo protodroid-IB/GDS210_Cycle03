@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 23740845987930868}
   m_Layer: 8
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 95573760069552194}
   m_Layer: 8
   m_Name: Bullet 0
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 95117037056164386}
   m_Layer: 8
   m_Name: Bullet 3
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 23435531738842788}
   m_Layer: 8
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 23335661827810242}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 23120700753017748}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 23771643840813148}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 23187259680190232}
   m_Layer: 8
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 23631646928270400}
   m_Layer: 8
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -960,7 +960,7 @@ GameObject:
   - component: {fileID: 23897347662744586}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 23523345474109068}
   m_Layer: 8
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 23958832828039092}
   m_Layer: 8
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 95185438327208930}
   m_Layer: 8
   m_Name: Bullet 2
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1276,7 +1276,7 @@ GameObject:
   - component: {fileID: 23796830693901894}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1425,7 +1425,7 @@ GameObject:
   - component: {fileID: 4570851641285266}
   m_Layer: 8
   m_Name: Main
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1544,7 +1544,7 @@ GameObject:
   - component: {fileID: 54972714026645846}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1825,7 +1825,7 @@ GameObject:
   - component: {fileID: 95018536660409696}
   m_Layer: 8
   m_Name: Bullet 5
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1893,7 +1893,7 @@ GameObject:
   - component: {fileID: 23404877816157130}
   m_Layer: 8
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1944,7 +1944,7 @@ GameObject:
   - component: {fileID: 23281315917089314}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2109,7 +2109,7 @@ GameObject:
   - component: {fileID: 23838289438595338}
   m_Layer: 8
   m_Name: Cylinder (5)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2173,7 +2173,7 @@ GameObject:
   - component: {fileID: 23374302097612536}
   m_Layer: 8
   m_Name: Cylinder (5)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2224,7 +2224,7 @@ GameObject:
   - component: {fileID: 23260870902875430}
   m_Layer: 8
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2388,7 +2388,7 @@ GameObject:
   - component: {fileID: 23735928936572490}
   m_Layer: 8
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2406,7 +2406,7 @@ GameObject:
   - component: {fileID: 95535877170202756}
   m_Layer: 8
   m_Name: Bullet 0
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2421,7 +2421,7 @@ GameObject:
   - component: {fileID: 4083858954879280}
   m_Layer: 8
   m_Name: SnapHandle
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2438,7 +2438,7 @@ GameObject:
   - component: {fileID: 23356019861155670}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2553,7 +2553,7 @@ GameObject:
   - component: {fileID: 23211455255102000}
   m_Layer: 8
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2653,7 +2653,7 @@ GameObject:
   - component: {fileID: 4902660902115084}
   m_Layer: 8
   m_Name: Hammer
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2688,7 +2688,7 @@ GameObject:
   - component: {fileID: 95093011258459468}
   m_Layer: 8
   m_Name: Bullet 4
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3073,7 +3073,7 @@ GameObject:
   - component: {fileID: 23044997507155368}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3091,7 +3091,7 @@ GameObject:
   - component: {fileID: 95642802442168840}
   m_Layer: 8
   m_Name: Bullet 2
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3140,7 +3140,7 @@ GameObject:
   - component: {fileID: 23011009694721124}
   m_Layer: 8
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3172,7 +3172,7 @@ GameObject:
   - component: {fileID: 23838863922268504}
   m_Layer: 8
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3241,7 +3241,7 @@ GameObject:
   - component: {fileID: 95805938987936052}
   m_Layer: 8
   m_Name: Bullet 5
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3258,7 +3258,7 @@ GameObject:
   - component: {fileID: 23739571101368560}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3322,7 +3322,7 @@ GameObject:
   - component: {fileID: 23189927362665396}
   m_Layer: 8
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3418,7 +3418,7 @@ GameObject:
   - component: {fileID: 4779598161657096}
   m_Layer: 8
   m_Name: Hammer
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3469,7 +3469,7 @@ GameObject:
   - component: {fileID: 23970901616262952}
   m_Layer: 8
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3780,7 +3780,7 @@ GameObject:
   - component: {fileID: 23716686407696368}
   m_Layer: 8
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3797,7 +3797,7 @@ GameObject:
   - component: {fileID: 23701989233787652}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3847,7 +3847,7 @@ GameObject:
   - component: {fileID: 95950781937114928}
   m_Layer: 8
   m_Name: Bullet 1
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4013,7 +4013,7 @@ GameObject:
   - component: {fileID: 23624247197828856}
   m_Layer: 8
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4047,7 +4047,7 @@ GameObject:
   - component: {fileID: 23326467507398978}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4064,7 +4064,7 @@ GameObject:
   - component: {fileID: 23024359208858260}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4081,7 +4081,7 @@ GameObject:
   - component: {fileID: 23565023892673076}
   m_Layer: 8
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4128,7 +4128,7 @@ GameObject:
   - component: {fileID: 23791330533447506}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4196,7 +4196,7 @@ GameObject:
   - component: {fileID: 23761282176077144}
   m_Layer: 8
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4247,7 +4247,7 @@ GameObject:
   - component: {fileID: 23083945897279934}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4588,7 +4588,7 @@ GameObject:
   - component: {fileID: 23749398556427714}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4605,7 +4605,7 @@ GameObject:
   - component: {fileID: 23686580227956042}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4621,7 +4621,7 @@ GameObject:
   - component: {fileID: 114869573087591368}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4638,7 +4638,7 @@ GameObject:
   - component: {fileID: 23703716957242490}
   m_Layer: 8
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4656,7 +4656,7 @@ GameObject:
   - component: {fileID: 95571122369861454}
   m_Layer: 8
   m_Name: Bullet 1
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4690,7 +4690,7 @@ GameObject:
   - component: {fileID: 23751881663309042}
   m_Layer: 8
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4705,7 +4705,7 @@ GameObject:
   - component: {fileID: 4774711494479834}
   - component: {fileID: 33542184787271430}
   - component: {fileID: 65101639436566226}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Reloader
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -4756,7 +4756,7 @@ GameObject:
   - component: {fileID: 23634137633317002}
   m_Layer: 8
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4807,7 +4807,7 @@ GameObject:
   - component: {fileID: 23525995302632282}
   m_Layer: 8
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 23018204079537456}
   m_Layer: 8
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4974,7 +4974,7 @@ GameObject:
   - component: {fileID: 23307984253419760}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5250,7 +5250,7 @@ GameObject:
   - component: {fileID: 23568476316027536}
   m_Layer: 8
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5299,7 +5299,7 @@ GameObject:
   - component: {fileID: 4059608421126544}
   m_Layer: 8
   m_Name: FirePos
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5316,7 +5316,7 @@ GameObject:
   - component: {fileID: 23322760982441240}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5334,7 +5334,7 @@ GameObject:
   - component: {fileID: 95562368535699974}
   m_Layer: 8
   m_Name: Bullet 4
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5352,7 +5352,7 @@ GameObject:
   - component: {fileID: 54670706303764522}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5474,7 +5474,7 @@ GameObject:
   - component: {fileID: 23568540309622312}
   m_Layer: 8
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5491,7 +5491,7 @@ GameObject:
   - component: {fileID: 23992917188583574}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5579,7 +5579,7 @@ GameObject:
   - component: {fileID: 23098174591757140}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5648,7 +5648,7 @@ GameObject:
   - component: {fileID: 95195891053407624}
   m_Layer: 8
   m_Name: Bullet 3
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5765,7 +5765,7 @@ GameObject:
   - component: {fileID: 114910558929622528}
   m_Layer: 8
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5882,7 +5882,7 @@ GameObject:
   - component: {fileID: 23651485483098338}
   m_Layer: 8
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6065,7 +6065,7 @@ GameObject:
   - component: {fileID: 23273671498805076}
   m_Layer: 8
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6080,7 +6080,7 @@ GameObject:
   - component: {fileID: 4683353830553388}
   m_Layer: 8
   m_Name: Main
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6177,7 +6177,7 @@ GameObject:
   - component: {fileID: 4175293544516866}
   m_Layer: 8
   m_Name: SnapHandle
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6374,7 +6374,7 @@ GameObject:
   - component: {fileID: 23250753340493082}
   m_Layer: 8
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6505,7 +6505,7 @@ GameObject:
   - component: {fileID: 4384954325583696}
   - component: {fileID: 33109079789435778}
   - component: {fileID: 65681996274912570}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Reloader
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -6607,7 +6607,7 @@ GameObject:
   - component: {fileID: 23185627707365956}
   m_Layer: 8
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6657,7 +6657,7 @@ GameObject:
   - component: {fileID: 23897667048789108}
   m_Layer: 8
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6706,7 +6706,7 @@ GameObject:
   - component: {fileID: 23423124870136436}
   m_Layer: 8
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6770,7 +6770,7 @@ GameObject:
   - component: {fileID: 23129852998830828}
   m_Layer: 8
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7434,7 +7434,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1103204097376564}
   m_LocalRotation: {x: 0.6963643, y: -0.122787856, z: 0.122787856, w: 0.6963643}
-  m_LocalPosition: {x: 0.2, y: -0.6, z: 0.2}
+  m_LocalPosition: {x: 0.2, y: -0.7, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4669895139576014}
@@ -7738,7 +7738,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1296636276892368}
   m_LocalRotation: {x: 0.6963643, y: 0.12278779, z: -0.12278779, w: 0.6963643}
-  m_LocalPosition: {x: -0.2, y: -0.6, z: 0.2}
+  m_LocalPosition: {x: -0.2, y: -0.7, z: 0.1}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_Children:
   - {fileID: 4942948185713800}
@@ -24657,6 +24657,8 @@ MonoBehaviour:
   vrGun: {fileID: 0}
   touchpadThreshold: 0.05
   triggerThreshold: 0.1
+  model: {fileID: 1863372072538644}
+  renderers: []
 --- !u!114 &114106456268402594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24985,6 +24987,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114081648859039506}
+        m_MethodName: HideModels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerGrabInteractableObject:
@@ -24994,7 +25007,18 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerStartUngrabInteractableObject:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114081648859039506}
+        m_MethodName: ShowModels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerUngrabInteractableObject:
@@ -25535,6 +25559,8 @@ MonoBehaviour:
   vrGun: {fileID: 0}
   touchpadThreshold: 0.05
   triggerThreshold: 0.05
+  model: {fileID: 1969337973340466}
+  renderers: []
 --- !u!114 &114602000465392120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26120,6 +26146,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114594470311324576}
+        m_MethodName: HideModels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerGrabInteractableObject:
@@ -26129,7 +26166,18 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerStartUngrabInteractableObject:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114594470311324576}
+        m_MethodName: ShowModels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerUngrabInteractableObject:
