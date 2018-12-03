@@ -52,9 +52,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2d5eeb5d560dd44b86c3c469ceacda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameSettings: {fileID: 0}
   sounds:
   - clipName: Soundscape_Inside
-    clip: {fileID: 8300000, guid: c7288948cd0fe9448aa89a4b338b1e93, type: 3}
+    clip: {fileID: 8300000, guid: fd43444b6a996184181974dc6d91545b, type: 3}
     audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -67,7 +68,7 @@ MonoBehaviour:
     minDistance3Dsound: 0
     maxDistance3DSound: 0
   - clipName: Soundscape_Outside
-    clip: {fileID: 8300000, guid: e5ce02b176835aa46ac8f3cdf877e782, type: 3}
+    clip: {fileID: 8300000, guid: 6c2446635315e564b9104a33bc78d3fa, type: 3}
     audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -76,6 +77,201 @@ MonoBehaviour:
     playOnAwake: 1
     oneShot: 1
     spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: BarGame_Gulps
+    clip: {fileID: 8300000, guid: ee5fdde060ebb9a4cb27ada40d4704b0, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.463
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: BarGame_Gulp
+    clip: {fileID: 8300000, guid: f3470e3824c25f3418ac7d01bc3d9193, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.496
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: BarGame_Clink
+    clip: {fileID: 8300000, guid: 57ec8caba4857e24393f6899e2f156e7, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.45
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: BarGame_Pour
+    clip: {fileID: 8300000, guid: 873ef484d524bdc42b81454bb293b75e, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ThrowingGame_Hit
+    clip: {fileID: 8300000, guid: 4e06672ed40fc6d4f84d7bd9c59f2c13, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ThrowingGame_Throw
+    clip: {fileID: 8300000, guid: bd09506474917144ba1bcf5e12e28fd5, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ShootGame_BottleSmash1
+    clip: {fileID: 8300000, guid: 98a7eefdc2fb4434aa60552649812c3d, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ShootGame_BottleSmash2
+    clip: {fileID: 8300000, guid: 51350a9ee3085814c957cf302d771d9d, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ShootGame_Hammer
+    clip: {fileID: 8300000, guid: d38c14b3498c98145a1700924f91ce49, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ShootGame_Ping
+    clip: {fileID: 8300000, guid: 5a58018165d159a44b82309e6b08f634, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ShootGame_Ting
+    clip: {fileID: 8300000, guid: 25f3077ac7fbcc944b0fa1b744029846, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ShootGame_Reload
+    clip: {fileID: 8300000, guid: 4b95da54e68e1904487769d114dcb148, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: ShootGame_ShotFired
+    clip: {fileID: 8300000, guid: 002b8021021e7054fbd4c2d2fe9d4b3f, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: Highscore
+    clip: {fileID: 8300000, guid: 5d9fdfa9e8865144f82516d418fa4f91, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: PickUpItem
+    clip: {fileID: 8300000, guid: c1a7a4abf5db7a04294af4197bf71dcb, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0
     setDistancesHere: 0
     minDistance3Dsound: 0
     maxDistance3DSound: 0
