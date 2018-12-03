@@ -11,6 +11,10 @@
         [SerializeField] float touchpadThreshold = .05f;
         [SerializeField] float triggerThreshold = .05f;
 
+        [SerializeField] GameObject model;
+
+        Renderer[] renderers;
+
         float previousAxis = 0;
 
         private AudioSource ctrlAudio;
@@ -67,6 +71,30 @@
             AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
         }
 
+        public void HideModels()
+        {
+            if (renderers[0] == null)
+                renderers = model.GetComponentsInChildren<Renderer>();
+
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                if (renderers[i].tag != "Gun")
+                    renderers[i].enabled = false;
+            }
+        }
+
+        public void ShowModels()
+        {
+            if (renderers[0] == null)
+                renderers = model.GetComponentsInChildren<Renderer>();
+
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                if (renderers[i].tag != "Gun")
+                    renderers[i].enabled = true;
+            }
+        }
+
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
         }
@@ -94,6 +122,7 @@
 
         void ControllerEvents_TriggerClicked(object sender, ControllerInteractionEventArgs e)
         {
+
         }
 
         void ControllerEvents_TriggerUnclicked(object sender, ControllerInteractionEventArgs e)
@@ -102,18 +131,15 @@
 
         void ControllerEvents_TriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null) 
+            if (vrGun != null)
             {
-                if (!holster.ValidSnappableObjectIsHovering()) 
+                if (e.buttonPressure >= triggerThreshold && !holster.ValidSnappableObjectIsHovering())
                 {
-                    if (e.buttonPressure >= triggerThreshold)
-                    {
-                        vrGun.TriggerPull(e.buttonPressure);
-                    }
-                    else
-                    {
-                        vrGun.TriggerPull(0f);
-                    }
+                    vrGun.TriggerPull(e.buttonPressure);
+                }
+                else
+                {
+                    vrGun.TriggerPull(0f);
                 }
             }
         }
@@ -150,14 +176,7 @@
         {
             if (vrGun != null)
             {
-                if (vrGun.loaded)
-                {
-                    vrGun.Eject();
-                }
-                else
-                {
-                    vrGun.Insert();
-                }
+                vrGun.Reload();
             }
         }
 

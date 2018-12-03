@@ -157,6 +157,45 @@ public class AudioManager : MonoBehaviour
 
 
 
+    // takes in a clip name and an audio source and plays a sound, if it exists, according to its predefined properties but also allows the user to control the pitch
+    public void PlaySound(string inName, ref AudioSource inSource, float inPitch, float inVolume)
+    {
+        int soundIndex;
+
+        // if the sound name exists in the dictionary, grab the the array index value
+        if (soundDictionary.TryGetValue(inName, out soundIndex))
+        {
+
+            // updates the passed in audio source with the correct properties of the sound
+            UpdateAudioSource(ref inSource, soundIndex, inPitch, inVolume);
+
+            // if the sound is only to be played once
+            if (sounds[soundIndex].oneShot == true)
+            {
+                // if the sound is not playing, play it
+                if (!inSource.isPlaying)
+                {
+                    inSource.Play();
+                }
+            }
+
+            // if the sound can be played multiple times
+            else
+            {
+                inSource.Play();
+            }
+        }
+
+        // if the sound does not exist within the dictionary, display an error
+        else
+        {
+            Debug.LogError("Sound was not found: " + inName);
+        }
+    }
+
+
+
+
 
 
     private void UpdateAudioSource(ref AudioSource source, int soundIndex)
@@ -182,6 +221,24 @@ public class AudioManager : MonoBehaviour
     {
         source.clip = sounds[soundIndex].clip;
         source.volume = sounds[soundIndex].volume;
+        source.pitch = inPitch;
+        source.playOnAwake = sounds[soundIndex].playOnAwake;
+        source.loop = sounds[soundIndex].loop;
+        source.outputAudioMixerGroup = sounds[soundIndex].audioMixerGroup;
+        source.spatialBlend = sounds[soundIndex].spatial;
+
+        if (sounds[soundIndex].setDistancesHere)
+        {
+            source.minDistance = sounds[soundIndex].minDistance3Dsound;
+            source.maxDistance = sounds[soundIndex].maxDistance3DSound;
+        }
+    }
+
+
+    private void UpdateAudioSource(ref AudioSource source, int soundIndex, float inPitch, float inVolume)
+    {
+        source.clip = sounds[soundIndex].clip;
+        source.volume = inVolume;
         source.pitch = inPitch;
         source.playOnAwake = sounds[soundIndex].playOnAwake;
         source.loop = sounds[soundIndex].loop;

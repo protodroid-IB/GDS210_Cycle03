@@ -10,6 +10,9 @@ public class DidIHitTarget : MonoBehaviour
 
     bool used = false;
 
+    [SerializeField]
+    private LayerMask handsLayer;
+
 	void Awake ()
     {
         tgc = GameObject.Find("ThrowingGameController").GetComponent<ThrowingGameController>();
@@ -24,16 +27,17 @@ public class DidIHitTarget : MonoBehaviour
             tgc.AddScore(10);
         }
 
-        // need to perform a check
-        // if not player grabbing in VR
-        AudioManager.instance.PlaySound("ThrowingGame_Hit", ref knifeAudio);
+        if(!other.gameObject.layer.Equals(2))
+            AudioManager.instance.PlaySound("ThrowingGame_Hit", ref knifeAudio);
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         // need to perform a check
         // if not player grabbing in VR
-        AudioManager.instance.PlaySound("ThrowingGame_Hit", ref knifeAudio);
+        if (!collision.gameObject.layer.Equals(2))
+            AudioManager.instance.PlaySound("ThrowingGame_Hit", ref knifeAudio);
     }
 
     public void SetUsed()

@@ -16,6 +16,12 @@ public class CactusDialogue : MonoBehaviour
     GameObject dialogueWheel;
 
     [SerializeField]
+    GameObject hiButton;
+
+    [SerializeField]
+    GameObject byeButton;
+
+    [SerializeField]
     GameObject subtitles;
 
     [SerializeField]
@@ -24,14 +30,15 @@ public class CactusDialogue : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI subtitlesText;
 
-    [SerializeField]
-    bool isTalking;
+    
 
 	void Start ()
     {
 
-        isTalking = false;
         cactusAnimator = cactus.GetComponent<Animator>();
+        dialogueWheel.SetActive(false);
+        byeButton.SetActive(false);
+        hiButton.SetActive(true);
 
 	}
 	
@@ -39,26 +46,28 @@ public class CactusDialogue : MonoBehaviour
 	void Update ()
     {
 
-        DialogueManager();
+        if (Input.GetKeyDown("k"))
+        {
+
+            Invoke("Tutorial", 0.5f);
+
+        }
 
 	}
 
-    public void DialogueManager()
+    public void Hi()
     {
 
-        if(isTalking == false)
-        {
+        dialogueWheel.SetActive(true);
+        hiButton.SetActive(false);
 
-            dialogueWheel.SetActive(false);
-            dialogueButton.text = "Hi!";
+    }
 
-        }else if(isTalking == true)
-        {
+    public void Bye()
+    {
 
-            dialogueWheel.SetActive(true);
-            dialogueButton.text = "Bye!";
-
-        }
+        dialogueWheel.SetActive(false);
+        byeButton.SetActive(true);
 
     }
 
@@ -76,9 +85,10 @@ public class CactusDialogue : MonoBehaviour
     {
 
         //play audio or something
+        cactusAnimator.SetTrigger("Disappointed");
         subtitles.SetActive(true);
         subtitlesText.text = "That's not very yee haww of ya!";
-        Invoke("subsOff", 10.0f);
+        Invoke("subsOff", 5.0f);
 
     }
 
@@ -94,24 +104,26 @@ public class CactusDialogue : MonoBehaviour
     void Shooting()
     {
 
-        subtitlesText.text = "You can head out back o' the ol' saloon. There's a set o' targets you can shoot at, as well as bottles and empty cans.";
-        Invoke("Throwing", 15.0f);
+        subtitlesText.text = "You can head out back the ol' saloon. There's a set o' targets you can shoot at, as well as bottles and empty cans.";
+        Invoke("Throwing", 7.0f);
 
     }
 
     void Throwing()
     {
 
+        cactusAnimator.SetTrigger("Disagree");
         subtitlesText.text = "Just by the stairs inside the saloon is an armament of knifes and axes. See if you can stick one on the swingin' target.";
-        Invoke("Serving", 15.0f);
+        Invoke("Serving", 7.0f);
 
     }
 
     void Serving()
     {
 
+        cactusAnimator.SetTrigger("Agree");
         subtitlesText.text = "Now if you wanna earn a little cash honestly, the bar keep will have you serve drinks. Hope you can keep up!";
-        Invoke("subsOff", 15.0f);
+        Invoke("subsOff", 7.0f);
 
     }
 
@@ -119,6 +131,8 @@ public class CactusDialogue : MonoBehaviour
     {
 
         //play audio or something
+        cactusAnimator.SetTrigger("Agree");
+        subtitles.SetActive(true);
         subtitlesText.text = "Just a silly ol' cactus!";
         Invoke("subsOff", 5.0f);
 
@@ -128,6 +142,7 @@ public class CactusDialogue : MonoBehaviour
     {
 
         subtitles.SetActive(false);
+        cactusAnimator.SetTrigger("Idle");
 
     }
 

@@ -13,9 +13,14 @@ public class Cylinder : MonoBehaviour
 
     float rotationSpeed = 2;
 
+    private AudioSource cylinderAudio;
+
     private void Start()
     {
         gun = GetComponentInParent<Gun>();
+        cylinderAudio = GetComponent<AudioSource>();
+
+
     }
 
     private void Update()
@@ -36,6 +41,7 @@ public class Cylinder : MonoBehaviour
         {
             SpinCylinder(Mathf.DeltaAngle(scroll, lastAngle));
             lastAngle = scroll;
+            AudioManager.instance.PlaySound("ShootGame_Reload", ref cylinderAudio);
         }
         else
         {

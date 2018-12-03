@@ -28,12 +28,25 @@ public class ThrowingGameController : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
 
         freeplayMode = false;
+        timerText.enabled = false;
     }
 
 	void Update ()
     {
-        timerText.text = "Time Remaining: " + timeRemaining;
-	}
+        timerText.text = "Time Remaining: " + timeRemaining.ToString("00.00");
+
+        if (timeRemaining > 0 && !freeplayMode)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+
+        if (timeRemaining <= 0 && !freeplayMode)
+        {
+            timeRemaining = 0;
+            freeplayMode = true;
+            timerText.enabled = false;
+        }
+    }
 
     public void AddScore(int points)
     {
@@ -59,6 +72,7 @@ public class ThrowingGameController : MonoBehaviour
     {
         freeplayMode = false;
         StartThrowingGame(freeplayMode);
+        timerText.enabled = true;
     }
 
     void StartThrowingGame(bool freeplaymode)
@@ -75,17 +89,6 @@ public class ThrowingGameController : MonoBehaviour
         if (!freeplayMode)
         {
             timeRemaining = timeLimit;
-
-            while(timeRemaining > 0)
-            {
-                timeRemaining -= Time.deltaTime;
-            }
-
-            if (timeRemaining <= 0)
-            {
-                timeRemaining = 0;
-                freeplayMode = true;
-            }
         }
     }
 }
