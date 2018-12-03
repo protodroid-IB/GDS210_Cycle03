@@ -2064,18 +2064,6 @@ Prefab:
       propertyPath: m_Name
       value: Weapons table (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4716137726404616, guid: 46be36c66014c3e45ad3b68638f97b9b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -130.56001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4716137726404616, guid: 46be36c66014c3e45ad3b68638f97b9b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4716137726404616, guid: 46be36c66014c3e45ad3b68638f97b9b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46be36c66014c3e45ad3b68638f97b9b, type: 2}
   m_IsPrefabAsset: 0
@@ -2396,6 +2384,22 @@ Prefab:
       propertyPath: modelAliasRightController
       value: 
       objectReference: {fileID: 1722671866}
+    - target: {fileID: 1885128640174090, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969337973340466, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505308511682272, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863372072538644, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0

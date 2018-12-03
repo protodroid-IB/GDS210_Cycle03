@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4716137726404616}
   m_Layer: 0
   m_Name: Weapons table
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 64917917031887798}
   m_Layer: 0
   m_Name: WeaponsTableCollider
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,8 +150,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672243033325618}
-  m_LocalRotation: {x: -0, y: -0.42620754, z: -0, w: 0.9046254}
-  m_LocalPosition: {x: -30.47878, y: 0.7234348, z: -13.258259}
+  m_LocalRotation: {x: -0, y: -0.90836173, z: -0, w: 0.41818538}
+  m_LocalPosition: {x: -30.528744, y: 0.7234349, z: -16.635626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4299353018889476}
@@ -159,7 +159,7 @@ Transform:
   - {fileID: 4294704269922332}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -50.454002, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -130.56001, z: 0}
 --- !u!4 &4735764084259120
 Transform:
   m_ObjectHideFlags: 1

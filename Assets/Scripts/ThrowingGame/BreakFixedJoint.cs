@@ -10,7 +10,7 @@
 public class BreakFixedJoint : MonoBehaviour {
     Rigidbody myObjectRB;
 
-    private void Start()
+  /*  private void Start()
     {
         myObjectRB = GetComponent<Rigidbody>();
     }
@@ -30,6 +30,6 @@ public class BreakFixedJoint : MonoBehaviour {
         myObjectRB.constraints = RigidbodyConstraints.FreezeRotationY;
         myObjectRB.isKinematic = false;
     }
-
+    */
 
 }

@@ -57,7 +57,7 @@ public class MenuSettings : MonoBehaviour {
             AudioManager.instance.PlaySound("Soundscape_Outside", ref soundscapes.outsideAudioSources[i]);
         }
 
-        AudioManager.instance.PlaySound("Soundscape_Inside", ref soundscapes.insideAudioSource);
+        //AudioManager.instance.PlaySound("Soundscape_Inside", ref soundscapes.insideAudioSource);
     }
 
 

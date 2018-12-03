@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRTK;
 
 public class BladeGettingStuckScript : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class BladeGettingStuckScript : MonoBehaviour
     [Tooltip("Force required to break the FixedJoint")]
     [SerializeField] int breakForce;
 
+    [SerializeField] Vector3 velocity;
+
     private void Awake()
     {
         myObjectRB = myObject.GetComponent<Rigidbody>();
@@ -27,6 +30,10 @@ public class BladeGettingStuckScript : MonoBehaviour
         diht = myObjectRB.GetComponent<DidIHitTarget>();
     }
 
+    private void Update()
+    {
+        velocity = myObjectRB.velocity;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -58,11 +65,25 @@ public class BladeGettingStuckScript : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider other)
+    public void PickUp()
     {
+        if (myFixedJoint)
+            Destroy(myFixedJoint);
+    }
+
+    public void LetGo()
+    {
+        if (myFixedJoint)
+            myFixedJoint.breakForce = 0f;
+
         // Ensure the rigidbody is not kinematic when pulled away from other colliders.
         myObjectRB.isKinematic = false;
+        myObjectRB.useGravity = true;
+        myObjectRB.constraints = RigidbodyConstraints.FreezeRotationY;
+
     }
+
+    
 
     private void ParentMe(Collider other, float penetrateDepth)
     {
