@@ -83,6 +83,7 @@ public class Gun : MonoBehaviour {
 
             primed = true;
             angle = hammerMax;
+            Debug.Log("Hammer Pulled?");
 
         }
         else
@@ -123,6 +124,7 @@ public class Gun : MonoBehaviour {
     public void Fire()
     {
         AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio);
+
         primed = false;
         triggerDown = true;
         //add pew sound here
@@ -165,7 +167,7 @@ public class Gun : MonoBehaviour {
             Insert();
         }
 
-        AudioManager.instance.PlaySound("ShootGame_Reload", ref gunAudio);
+        AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
     }
 
     public void Eject()

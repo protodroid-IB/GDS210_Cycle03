@@ -148,14 +148,7 @@
         {
             if (vrGun != null)
             {
-                if (vrGun.loaded)
-                {
-                    vrGun.Eject();
-                }
-                else
-                {
-                    vrGun.Insert();
-                }
+                vrGun.Reload();
             }
         }
 
