@@ -94,6 +94,7 @@
 
         void ControllerEvents_TriggerClicked(object sender, ControllerInteractionEventArgs e)
         {
+
         }
 
         void ControllerEvents_TriggerUnclicked(object sender, ControllerInteractionEventArgs e)
@@ -102,18 +103,15 @@
 
         void ControllerEvents_TriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null) 
+            if (vrGun != null)
             {
-                if (!holster.ValidSnappableObjectIsHovering()) 
+                if (e.buttonPressure >= triggerThreshold && !holster.ValidSnappableObjectIsHovering())
                 {
-                    if (e.buttonPressure >= triggerThreshold)
-                    {
-                        vrGun.TriggerPull(e.buttonPressure);
-                    }
-                    else
-                    {
-                        vrGun.TriggerPull(0f);
-                    }
+                    vrGun.TriggerPull(e.buttonPressure);
+                }
+                else
+                {
+                    vrGun.TriggerPull(0f);
                 }
             }
         }
