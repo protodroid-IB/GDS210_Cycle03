@@ -13,6 +13,13 @@
 
         float previousAxis = 0;
 
+        private AudioSource ctrlAudio;
+
+        private void Start()
+        {
+            ctrlAudio = GetComponent<AudioSource>();
+        }
+
         void OnEnable()
         {
             VRTK_ControllerEvents controllerEvents = GetComponent<VRTK_ControllerEvents>();
@@ -51,11 +58,13 @@
         public void EquipGun(Gun newGun)
         {
             vrGun = newGun;
+            AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
         }
 
         public void UnEquipGun()
         {
             vrGun = null;
+            AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
         }
 
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)

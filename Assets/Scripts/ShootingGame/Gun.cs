@@ -30,6 +30,13 @@ public class Gun : MonoBehaviour {
     public Transform firePos;
     public GameObject effect;
 
+    private AudioSource gunAudio;
+
+    private void Start()
+    {
+        gunAudio = GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         cylinder.transform.localEulerAngles = new Vector3(0f, 0f, Mathf.LerpAngle(cylinder.transform.localEulerAngles.z, cylinderTargetAngle, cylinderLerpTime * Time.deltaTime));
@@ -69,8 +76,14 @@ public class Gun : MonoBehaviour {
         float angle;
         if (hammerVal == 1)
         {
+            if (primed == false)
+            {
+                AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
+            }
+
             primed = true;
             angle = hammerMax;
+
         }
         else
         {
@@ -109,6 +122,7 @@ public class Gun : MonoBehaviour {
 
     public void Fire()
     {
+        AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio);
         primed = false;
         triggerDown = true;
         //add pew sound here
@@ -150,6 +164,8 @@ public class Gun : MonoBehaviour {
         {
             Insert();
         }
+
+        AudioManager.instance.PlaySound("ShootGame_Reload", ref gunAudio);
     }
 
     public void Eject()

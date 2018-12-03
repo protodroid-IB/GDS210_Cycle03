@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DidIHitTarget : MonoBehaviour
 {
+    private AudioSource knifeAudio;
+
     ThrowingGameController tgc;
 
     bool used = false;
@@ -11,6 +13,7 @@ public class DidIHitTarget : MonoBehaviour
 	void Awake ()
     {
         tgc = GameObject.Find("ThrowingGameController").GetComponent<ThrowingGameController>();
+        knifeAudio = GetComponent<AudioSource>();
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -20,6 +23,17 @@ public class DidIHitTarget : MonoBehaviour
             SetUsed();
             tgc.AddScore(10);
         }
+
+        // need to perform a check
+        // if not player grabbing in VR
+        AudioManager.instance.PlaySound("ThrowingGame_Hit", ref knifeAudio);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // need to perform a check
+        // if not player grabbing in VR
+        AudioManager.instance.PlaySound("ThrowingGame_Hit", ref knifeAudio);
     }
 
     public void SetUsed()

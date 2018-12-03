@@ -6,7 +6,7 @@ public class Soundscapes : MonoBehaviour
 {
 
     public AudioSource[] outsideAudioSources;   // Made public so I could access the functoins in the MenuSettings Class.
-    public AudioSource insideAudioSource;
+    //public AudioSource insideAudioSource;
 
 	// Use this for initialization
 	void Start ()
@@ -16,6 +16,6 @@ public class Soundscapes : MonoBehaviour
             AudioManager.instance.PlaySound("Soundscape_Outside", ref outsideAudioSources[i]);
         }
         
-        AudioManager.instance.PlaySound("Soundscape_Inside", ref insideAudioSource);
+        //AudioManager.instance.PlaySound("Soundscape_Inside", ref insideAudioSource);
     }
 }
