@@ -31,6 +31,8 @@ public class Gun : MonoBehaviour {
     public GameObject effect;
 
     private AudioSource gunAudio;
+    public GameObject puff;
+    public GameObject spark;
 
     private void Start()
     {
@@ -127,7 +129,6 @@ public class Gun : MonoBehaviour {
 
         primed = false;
         triggerDown = true;
-        //add pew sound here
         HammerSet(0f);
         Instantiate(effect, firePos);
         RaycastHit hit;
@@ -143,14 +144,20 @@ public class Gun : MonoBehaviour {
                 }
                 if (rb != null)
                 {
+                    Instantiate(spark, hit.point, Quaternion.identity);
                     rb.AddForce(transform.forward * addForce);
                 }
 
                 var target = col.transform.parent.GetComponentInChildren<Target>();
                 if (target != null)
                 {
+                    Instantiate(spark, hit.point, Quaternion.identity);
                     target.AddScore();
                 }
+            }
+            else
+            {
+                Instantiate(puff, hit.point, Quaternion.identity);
             }
         }
         //if bullets is equal to current bullet's ID set current bullet inactive take one from bullets and replace current bullet

@@ -11,16 +11,13 @@ public class ShootingGameController : MonoBehaviour {
     int targetIndex = 0;
     [HideInInspector] public int score;
     public Text scoreText;
+    public Text highscoreText;
 
     GameManager gameManager;
 
-
     public void Start()
     {
-        // Find the game manager 
         gameManager = FindObjectOfType<GameManager>();
-
-
         ResetTargets();
     }
 
@@ -28,15 +25,26 @@ public class ShootingGameController : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            score = 0;
-            sequenceIndex = 0;
-            targetIndex = 0;
-            Cycle();
+            StartCycle();
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
-            ResetTargets();
+            StopCycle();
         }
+    }
+
+    void StartCycle()
+    {
+        ResetTargets();
+        score = 0;
+        sequenceIndex = 0;
+        targetIndex = 0;
+        Cycle();
+    }
+
+    void StopCycle()
+    {
+        ResetTargets();
     }
 
     void Cycle()
@@ -80,15 +88,6 @@ public class ShootingGameController : MonoBehaviour {
     {
         score += points;
         scoreText.text = score.ToString("0000");
-    }
-
-    // Button function to start target cycle... Same as pressing the O button.
-    public void StartShootingGame()
-    {
-        score = 0;
-        sequenceIndex = 0;
-        targetIndex = 0;
-        Cycle();
     }
 
     // Function to restart the scene.

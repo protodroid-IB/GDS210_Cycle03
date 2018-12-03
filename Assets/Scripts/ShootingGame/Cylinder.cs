@@ -51,8 +51,6 @@ public class Cylinder : MonoBehaviour
 
     void SpinCylinder(float scroll)
     {
-        print(scroll);
-
         if (scroll != 0)
             cylinderTorque = scroll;
         //cylinderTorque = scroll * gun.cylinderSensitivity;
