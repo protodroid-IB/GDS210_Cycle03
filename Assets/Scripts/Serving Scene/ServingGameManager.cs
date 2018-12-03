@@ -85,20 +85,21 @@ namespace Serving
 		{
 			if (game)
 				return;
-			StartGame(shortTime);
+			StartCoroutine(StartGame(shortTime));
 		}
 
 		public void StartMediumRound()
 		{
 			if (game)
 				return;
-			StartGame(mediumTime);
+			StartCoroutine(StartGame(mediumTime));
 		}
 
 		public void StartLongGame()
 		{
-
-			StartGame(longTime);
+			if (game)
+				return;
+			StartCoroutine(StartGame(longTime));
 		}
 
 		void SetTimerText()
