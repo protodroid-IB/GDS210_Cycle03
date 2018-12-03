@@ -31,6 +31,8 @@ public class Gun : MonoBehaviour {
     public GameObject effect;
 
     private AudioSource gunAudio;
+    public GameObject puff;
+    public GameObject spark;
 
     private void Start()
     {
@@ -78,7 +80,7 @@ public class Gun : MonoBehaviour {
         {
             if (primed == false)
             {
-                AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
+                //AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
             }
 
             primed = true;
@@ -122,10 +124,9 @@ public class Gun : MonoBehaviour {
 
     public void Fire()
     {
-        AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio);
+        //AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio);
         primed = false;
         triggerDown = true;
-        //add pew sound here
         HammerSet(0f);
         Instantiate(effect, firePos);
         RaycastHit hit;
@@ -141,14 +142,20 @@ public class Gun : MonoBehaviour {
                 }
                 if (rb != null)
                 {
+                    Instantiate(spark, hit.point, Quaternion.identity);
                     rb.AddForce(transform.forward * addForce);
                 }
 
                 var target = col.transform.parent.GetComponentInChildren<Target>();
                 if (target != null)
                 {
+                    Instantiate(spark, hit.point, Quaternion.identity);
                     target.AddScore();
                 }
+            }
+            else
+            {
+                Instantiate(puff, hit.point, Quaternion.identity);
             }
         }
         //if bullets is equal to current bullet's ID set current bullet inactive take one from bullets and replace current bullet
@@ -165,7 +172,7 @@ public class Gun : MonoBehaviour {
             Insert();
         }
 
-        AudioManager.instance.PlaySound("ShootGame_Reload", ref gunAudio);
+        //AudioManager.instance.PlaySound("ShootGame_Reload", ref gunAudio);
     }
 
     public void Eject()

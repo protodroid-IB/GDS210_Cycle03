@@ -3063,40 +3063,25 @@ MonoBehaviour:
   targetSequence:
     sequence:
     - timeInterval: 0.5
-      targetTime: 2.5
+      targetTime: 3
       exitTime: 3
-      randomize: 0
-      targetID: 00000000020000000400000006000000080000000a0000000c0000000e000000
-    - timeInterval: 0
-      targetTime: 2
-      exitTime: 0
-      randomize: 1
-      targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-    - timeInterval: 0
-      targetTime: 2
-      exitTime: 3
-      randomize: 1
-      targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-    - timeInterval: 0
-      targetTime: 5
-      exitTime: 2
       randomize: 0
       targetID: 0a0000000b0000000c0000000d0000000e000000
     - timeInterval: 0
-      targetTime: 2
-      exitTime: 0
-      randomize: 1
-      targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-    - timeInterval: 0
-      targetTime: 2
-      exitTime: 3
-      randomize: 1
-      targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-    - timeInterval: 0
-      targetTime: 4
-      exitTime: 0
+      targetTime: 0.001
+      exitTime: 0.5
       randomize: 0
-      targetID: 0000000001000000020000000300000004000000
+      targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+    - timeInterval: 0.5
+      targetTime: 3
+      exitTime: 3
+      randomize: 0
+      targetID: 0400000003000000020000000100000000000000
+    - timeInterval: 0
+      targetTime: 0.001
+      exitTime: 0.5
+      randomize: 0
+      targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
   targets:
   - {fileID: 1826054674}
   - {fileID: 984084314}
@@ -3115,6 +3100,7 @@ MonoBehaviour:
   - {fileID: 1850775500}
   score: 0
   scoreText: {fileID: 854792702}
+  highscoreText: {fileID: 0}
 --- !u!4 &528743055
 Transform:
   m_ObjectHideFlags: 0
@@ -4869,6 +4855,23 @@ Prefab:
       propertyPath: m_Constraints
       value: 126
       objectReference: {fileID: 0}
+    - target: {fileID: 114796324296183252, guid: 7e460d80fac32194e95670e4a7f657da,
+        type: 2}
+      propertyPath: cylinderDrop
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796324296183252, guid: 7e460d80fac32194e95670e4a7f657da,
+        type: 2}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 1316988480434860, guid: 382bb2e6513781649ad94aa92d8d237c,
+        type: 2}
+    - target: {fileID: 114796324296183252, guid: 7e460d80fac32194e95670e4a7f657da,
+        type: 2}
+      propertyPath: spark
+      value: 
+      objectReference: {fileID: 1658489548947860, guid: e710e1b4cb48a3b42a6055d97601a260,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e460d80fac32194e95670e4a7f657da, type: 2}
   m_IsPrefabAsset: 0
