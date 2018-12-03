@@ -18,16 +18,14 @@ namespace Serving
 
 		int order = 0;
 
-		float timer = 0;
+		public bool gameInProgress;
 
-		float roundTime = 30;
-
-		bool gameInProgress, orderBox;
+		bool orderBox;
 
 		private void Start()
 		{
 			manager = FindObjectOfType<ServingGameManager>();
-			GetOrder();
+			
 		}
 
 		private void Update()
@@ -39,12 +37,6 @@ namespace Serving
 					orderText.transform.parent.gameObject.SetActive(true);
 					orderBox = true;
 				}
-				timer += Time.deltaTime;
-				if(timer >= roundTime)
-				{
-					gameInProgress = false;
-					timer = 0;
-				}
 			}
 			else if(orderBox)
 			{ 
@@ -53,10 +45,17 @@ namespace Serving
 			}
 		}
 
-		public void StartGame(float newRoundTime)
+		public void StartGame()
 		{
 			gameInProgress = true;
-			roundTime = newRoundTime;
+			orderBox = true;
+			GetOrder();
+		}
+
+		public void EndGame()
+		{
+			gameInProgress = false;
+			orderBox = false;
 		}
 
 		void GetOrder()
@@ -74,12 +73,6 @@ namespace Serving
 		void SetText()
 		{
 			CompleteDrink drink = GetDrink();
-			/*for (int i = 0; i < drink.usedIngredient.Length; i++)
-			{
-				text += drink.usedIngredient[i].name;
-				text += "\n";
-			}
-			text += drink.mixMethod.ToString();*/
 			orderText.text = drink.usedIngredient.name;
 		}
 
@@ -94,15 +87,18 @@ namespace Serving
 			GetOrder();
 		}
 
-		private void OnCollisionEnter(Collision collision)
+		private void OnTriggerEnter(Collider other)
 		{
-			Drink recievedDrink = collision.gameObject.GetComponentInChildren<Drink>();
-			if (recievedDrink)
+			if (gameInProgress)
 			{
-				int score = (int)(CheckDrink(recievedDrink.GetDrink()) * maxScoreAmount);
-				Score(score);
+				Drink recievedDrink = other.gameObject.GetComponentInChildren<Drink>();
+				if (recievedDrink)
+				{
+					int score = (int)(CheckDrink(recievedDrink.GetDrink()) * maxScoreAmount);
+					Score(score);
+				}
 			}
-			Destroy(collision.gameObject);
+			Destroy(other.gameObject);
 		}
 	}
 }
