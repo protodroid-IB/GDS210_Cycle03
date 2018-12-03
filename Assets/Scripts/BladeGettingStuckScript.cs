@@ -48,7 +48,7 @@ public class BladeGettingStuckScript : MonoBehaviour
             }
             
         }
-        else
+        else if(other.gameObject.tag == "Floor")
         {
             // Sticks to any other collider but does not penetrates. Stops falling through floor.
             // Enables kinematic to stop parents collider bouncing away from others collider.
