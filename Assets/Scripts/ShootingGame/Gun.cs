@@ -80,7 +80,7 @@ public class Gun : MonoBehaviour {
         {
             if (primed == false)
             {
-                //AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
+                AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
             }
 
             primed = true;
@@ -124,7 +124,7 @@ public class Gun : MonoBehaviour {
 
     public void Fire()
     {
-        //AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio);
+        AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio);
         primed = false;
         triggerDown = true;
         HammerSet(0f);
@@ -172,7 +172,7 @@ public class Gun : MonoBehaviour {
             Insert();
         }
 
-        //AudioManager.instance.PlaySound("ShootGame_Reload", ref gunAudio);
+        AudioManager.instance.PlaySound("ShootGame_Reload", ref gunAudio);
     }
 
     public void Eject()
