@@ -16,6 +16,9 @@ public class MenuSettings : MonoBehaviour {
         soundVolumeSlider.onValueChanged.AddListener(delegate { SoundVolumeChange(); });
         musicVolumeSlider.onValueChanged.AddListener(delegate { MusicVolumeChange(); });
         tutorialToggle.onValueChanged.AddListener(delegate { TutorialToggleChange(tutorialToggle.isOn); });
+
+        UpdateVolume();
+
     }
 
     private void Update()
@@ -37,7 +40,7 @@ public class MenuSettings : MonoBehaviour {
     void SoundVolumeChange()
     {
         gameSettings.soundVolume = soundVolumeSlider.value;
-        UpdateSoundScape();
+        UpdateVolume();
         PlayerPrefs.SetFloat("SoundVolume", gameSettings.soundVolume);
     }
 
@@ -45,19 +48,19 @@ public class MenuSettings : MonoBehaviour {
     void MusicVolumeChange()
     {
         gameSettings.musicVolume = musicVolumeSlider.value;
-        UpdateSoundScape();
+        UpdateVolume();
         PlayerPrefs.SetFloat("MusicVolume", gameSettings.musicVolume);
     }
 
-    // Update the SoundScapes Volume based on the values on the Sliders.
-    void UpdateSoundScape()
+    // Update the Volume based on the values on the Sliders.
+    void UpdateVolume()
     {
-        for (int i = 0; i < soundscapes.outsideAudioSources.Length; i++)
+        for (int i = 0; i < AudioManager.instance.sounds.Length; i++)
         {
-            AudioManager.instance.PlaySound("Soundscape_Outside", ref soundscapes.outsideAudioSources[i]);
+            AudioManager.instance.sounds[i].volume = gameSettings.soundVolume;
+
         }
 
-        //AudioManager.instance.PlaySound("Soundscape_Inside", ref soundscapes.insideAudioSource);
     }
 
 

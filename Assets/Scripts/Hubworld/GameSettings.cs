@@ -7,10 +7,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObject/GameSettings")]
 public class GameSettings : ScriptableObject {
     public bool musicMute;
-    public float musicVolume;
+
+    [Range(0f, 1f)] public float musicVolume;
 
     public bool soundMute;
-    public float soundVolume;
+
+    [Range(0f,1f)] public float soundVolume;
 
     public bool tutorial;
 
