@@ -18,7 +18,7 @@ MonoBehaviour:
     glass: 2
   - usedIngredient: {fileID: 11400000, guid: 947b5c1e7f3b64b4d84695b07728d860, type: 2}
     glass: 0
-  - usedIngredient: {fileID: 11400000, guid: 3c7ae37d5b29f6040bff378bbe5f2fb1, type: 2}
+  - usedIngredient: {fileID: 11400000, guid: 07ffe305a628da7438508ed51e994740, type: 2}
     glass: 0
   - usedIngredient: {fileID: 11400000, guid: 2884fdf9d4b9bc14a840d2e66a7f9a5c, type: 2}
     glass: 1
@@ -48,5 +48,3 @@ MonoBehaviour:
     glass: 2
   - usedIngredient: {fileID: 11400000, guid: 5228ae5c5f325f74690968abbaec5368, type: 2}
     glass: 2
-  - usedIngredient: {fileID: 11400000, guid: 07ffe305a628da7438508ed51e994740, type: 2}
-    glass: 0

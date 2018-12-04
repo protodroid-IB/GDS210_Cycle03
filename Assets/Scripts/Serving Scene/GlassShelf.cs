@@ -5,10 +5,10 @@ using UnityEngine;
 public class GlassShelf : MonoBehaviour {
 
 	[SerializeField]
-	GameObject wineGlass, beerGlass, tumbler;
+	GameObject[] spawnGlasses;
 
 	[SerializeField]
-	Transform topLeft, bottomRight, middle;
+	Transform leftTransform, rightTransform;
 
 	[SerializeField]
 	int numberOfGlasses = 1;
@@ -22,16 +22,13 @@ public class GlassShelf : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		glasses = new GameObject[(numberOfGlasses + 1) * 3];
-		spacing = (bottomRight.position.x - topLeft.position.x) / (numberOfGlasses);
-		for(int i = 0; i <= numberOfGlasses; i++)
+		glasses = new GameObject[numberOfGlasses];
+		spacing = (rightTransform.position.x - leftTransform.position.x) / (numberOfGlasses);
+		for(int i = 0; i < numberOfGlasses; i++)
 		{
-			Vector3 glassPosition = new Vector3(topLeft.position.x + (spacing * i), topLeft.position.y, topLeft.position.z);
-			SpawnNewGlass(wineGlass, glassPosition);
-			glassPosition.y = middle.position.y;
-			SpawnNewGlass(tumbler, glassPosition);
-			glassPosition.y = bottomRight.position.y;
-			SpawnNewGlass(beerGlass, glassPosition);
+			int mod = i % spawnGlasses.Length;
+			Vector3 glassPosition = new Vector3(leftTransform.position.x + (spacing * i), leftTransform.position.y, leftTransform.position.z);
+			SpawnNewGlass(spawnGlasses[mod], glassPosition);
 		}
 	}
 	
@@ -44,7 +41,7 @@ public class GlassShelf : MonoBehaviour {
 
 			float sqrVelocity = glasses[i].GetComponent<Rigidbody>().velocity.sqrMagnitude;
 
-			if((glasses[i].transform.position.z - topLeft.position.z) >= 0.2f && glasses[i].transform.parent == transform)
+			if((glasses[i].transform.position.z - leftTransform.position.z) >= 0.2f && glasses[i].transform.parent == transform)
 			{
 				glasses[i].transform.parent = null;
 			}
@@ -68,30 +65,12 @@ public class GlassShelf : MonoBehaviour {
 	IEnumerator SpawnGlass(int glassNumber)
 	{
 		yield return new WaitForSeconds(2);
-		int glassVertical = glassNumber % 3;
-		int glassHorisontal = glassNumber / 3;
 
+		int mod = glassNumber % spawnGlasses.Length;
 		GameObject glass;
-		Vector3 position = new Vector3(topLeft.position.x + (spacing * glassHorisontal), topLeft.position.y, topLeft.position.z);
-		switch (glassVertical)
-		{
-			case 0:
-				glass = wineGlass;
-				position.y = topLeft.position.y;
-				break;
-			case 1:
-				glass = tumbler;
-				position.y = middle.position.y;
-				break;
-			case 2:
-				glass = beerGlass;
-				position.y = bottomRight.position.y;
-				break;
-			default:
-				glass = wineGlass;
-				break;
-		}
-		GameObject spawned = Instantiate(glass, position, Quaternion.identity, transform);
+		Vector3 position = new Vector3(leftTransform.position.x + (spacing * glassNumber), leftTransform.position.y, leftTransform.position.z);
+
+		GameObject spawned = Instantiate(spawnGlasses[mod], position, Quaternion.identity, transform);
 		glasses[glassNumber] = spawned;
 		cache.Remove(glassNumber);
 	}
