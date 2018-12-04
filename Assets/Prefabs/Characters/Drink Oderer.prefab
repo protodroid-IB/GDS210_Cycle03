@@ -1667,6 +1667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipes: {fileID: 11400000, guid: 4189303252642b64eae8f6108f90db48, type: 2}
   orderText: {fileID: 114392047702001878}
+  gameInProgress: 0
 --- !u!137 &137432555544648450
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1706,7 +1707,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300004, guid: bd9bf4673609a964981b510484b74617, type: 3}
+  m_Mesh: {fileID: 4300004, guid: 7db8b42b61ac450448964d87da181607, type: 3}
   m_Bones:
   - {fileID: 4580934906479946}
   - {fileID: 4345908835571790}

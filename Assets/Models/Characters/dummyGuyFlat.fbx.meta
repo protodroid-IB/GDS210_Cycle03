@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 32328200c773fa840ae9ef9116f4a518
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Base
+    100004: Chest
+    100006: //RootNode
+    100008: Head
+    100010: Head_end
+    100012: ikHandle1
+    100014: ikHandle2
+    100016: joint2
+    100018: L_joint7
+    100020: L_joint8
+    100022: L_joint9
+    100024: L_joint9_end
+    100026: left
+    100028: Mid
+    100030: Neck
+    100032: nurbsCircle1
+    100034: nurbsCircle2
+    100036: nurbsCircle3
+    100038: pCylinder15
+    100040: pCylinder16
+    100042: pCylinder18
+    100044: pCylinder19
+    100046: pCylinder2
+    100048: pCylinder20
+    100050: pCylinder21
+    100052: pCylinder22
+    100054: polySurface3
+    100056: polySurface4
+    100058: polySurface5
+    100060: polySurface5.001
+    100062: polySurface6
+    100064: polySurface7
+    100066: R_joint13
+    100068: R_joint8
+    100070: R_joint9
+    100072: R_joint9_end
+    100074: transform1
+    100076: transform18
+    100078: transform19
+    100080: transform20
+    100082: transform21
+    100084: transform22
+    100086: transform23
+    100088: transform24
+    100090: transform25
+    100092: transform26
+    100094: transform9
+    400000: Armature
+    400002: Base
+    400004: Chest
+    400006: //RootNode
+    400008: Head
+    400010: Head_end
+    400012: ikHandle1
+    400014: ikHandle2
+    400016: joint2
+    400018: L_joint7
+    400020: L_joint8
+    400022: L_joint9
+    400024: L_joint9_end
+    400026: left
+    400028: Mid
+    400030: Neck
+    400032: nurbsCircle1
+    400034: nurbsCircle2
+    400036: nurbsCircle3
+    400038: pCylinder15
+    400040: pCylinder16
+    400042: pCylinder18
+    400044: pCylinder19
+    400046: pCylinder2
+    400048: pCylinder20
+    400050: pCylinder21
+    400052: pCylinder22
+    400054: polySurface3
+    400056: polySurface4
+    400058: polySurface5
+    400060: polySurface5.001
+    400062: polySurface6
+    400064: polySurface7
+    400066: R_joint13
+    400068: R_joint8
+    400070: R_joint9
+    400072: R_joint9_end
+    400074: transform1
+    400076: transform18
+    400078: transform19
+    400080: transform20
+    400082: transform21
+    400084: transform22
+    400086: transform23
+    400088: transform24
+    400090: transform25
+    400092: transform26
+    400094: transform9
+    2000000: left
+    2100000: lambert3
+    4300000: polySurface7
+    7400000: Armature|Armature|Take 001|BaseLayer
+    7400002: Armature|ikHandle1|Take 001|BaseLayer
+    7400004: Armature|ikHandle2|Take 001|BaseLayer
+    7400006: Armature|nurbsCircle1|Take 001|BaseLayer
+    7400008: Armature|nurbsCircle2|Take 001|BaseLayer
+    7400010: Armature|nurbsCircle3|Take 001|BaseLayer
+    7400012: nurbsCircle3|ikHandle1|Take 001|BaseLayer
+    7400014: nurbsCircle3|ikHandle2|Take 001|BaseLayer
+    7400016: nurbsCircle3|nurbsCircle1|Take 001|BaseLayer
+    7400018: nurbsCircle3|nurbsCircle2|Take 001|BaseLayer
+    7400020: nurbsCircle3|nurbsCircle3|Take 001|BaseLayer
+    7400022: nurbsCircle2|ikHandle1|Take 001|BaseLayer
+    7400024: nurbsCircle2|ikHandle2|Take 001|BaseLayer
+    7400026: nurbsCircle2|nurbsCircle1|Take 001|BaseLayer
+    7400028: nurbsCircle2|nurbsCircle2|Take 001|BaseLayer
+    7400030: nurbsCircle2|nurbsCircle3|Take 001|BaseLayer
+    7400032: nurbsCircle1|ikHandle1|Take 001|BaseLayer
+    7400034: nurbsCircle1|ikHandle2|Take 001|BaseLayer
+    7400036: nurbsCircle1|nurbsCircle1|Take 001|BaseLayer
+    7400038: nurbsCircle1|nurbsCircle2|Take 001|BaseLayer
+    7400040: nurbsCircle1|nurbsCircle3|Take 001|BaseLayer
+    7400042: ikHandle2|ikHandle1|Take 001|BaseLayer
+    7400044: ikHandle2|ikHandle2|Take 001|BaseLayer
+    7400046: ikHandle2|nurbsCircle1|Take 001|BaseLayer
+    7400048: ikHandle2|nurbsCircle2|Take 001|BaseLayer
+    7400050: ikHandle2|nurbsCircle3|Take 001|BaseLayer
+    7400052: ikHandle1|ikHandle1|Take 001|BaseLayer
+    7400054: ikHandle1|ikHandle2|Take 001|BaseLayer
+    7400056: ikHandle1|nurbsCircle1|Take 001|BaseLayer
+    7400058: ikHandle1|nurbsCircle2|Take 001|BaseLayer
+    7400060: ikHandle1|nurbsCircle3|Take 001|BaseLayer
+    9500000: //RootNode
+    13700000: polySurface7
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.099999994
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

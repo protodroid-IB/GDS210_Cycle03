@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 2f338bf7c08076a4684040701f99685f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: joint1
+    100006: joint10
+    100008: joint11
+    100010: joint12
+    100012: joint12_end
+    100014: joint13
+    100016: joint14
+    100018: joint15
+    100020: joint16
+    100022: joint17
+    100024: joint18
+    100026: joint18_end
+    100028: joint19
+    100030: joint19_end
+    100032: joint2
+    100034: joint3
+    100036: joint4
+    100038: joint5
+    100040: joint6
+    100042: joint6_end
+    100044: joint7
+    100046: joint8
+    100048: joint9
+    100050: left
+    100052: pCube1
+    100054: transform1
+    100056: transform18
+    100058: transform19
+    100060: transform20
+    100062: transform21
+    100064: transform22
+    100066: transform23
+    100068: transform24
+    100070: transform25
+    100072: transform26
+    100074: transform9
+    400000: Armature
+    400002: //RootNode
+    400004: joint1
+    400006: joint10
+    400008: joint11
+    400010: joint12
+    400012: joint12_end
+    400014: joint13
+    400016: joint14
+    400018: joint15
+    400020: joint16
+    400022: joint17
+    400024: joint18
+    400026: joint18_end
+    400028: joint19
+    400030: joint19_end
+    400032: joint2
+    400034: joint3
+    400036: joint4
+    400038: joint5
+    400040: joint6
+    400042: joint6_end
+    400044: joint7
+    400046: joint8
+    400048: joint9
+    400050: left
+    400052: pCube1
+    400054: transform1
+    400056: transform18
+    400058: transform19
+    400060: transform20
+    400062: transform21
+    400064: transform22
+    400066: transform23
+    400068: transform24
+    400070: transform25
+    400072: transform26
+    400074: transform9
+    2000000: left
+    2100000: lambert1
+    4300000: pCube1
+    7400000: Armature|Armature|Take 001|BaseLayer.001
+    7400002: Armature|ikHandle1|Take 001|BaseLayer
+    7400004: Armature|ikHandle2|Take 001|BaseLayer
+    7400006: Armature|nurbsCircle1|Take 001|BaseLayer
+    7400008: Armature|nurbsCircle2|Take 001|BaseLayer
+    7400010: Armature|nurbsCircle3|Take 001|BaseLayer
+    9500000: //RootNode
+    13700000: pCube1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.06
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
