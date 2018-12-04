@@ -97,7 +97,11 @@ public class BladeGettingStuckScript : MonoBehaviour
         myObjectRB.useGravity = false;
         myObjectRB.constraints = RigidbodyConstraints.None;
 
-        // Create the fixed joint.
+        // Destroy the current Fixed Joint
+        if(myObject.GetComponent<FixedJoint>())
+            Destroy(myObject.GetComponent<FixedJoint>());
+
+        // Add new fixed joint at objects location.
         myFixedJoint = myObject.AddComponent<FixedJoint>();
         myFixedJoint.connectedBody = other.GetComponent<Rigidbody>();
         myFixedJoint.breakForce = breakForce;
