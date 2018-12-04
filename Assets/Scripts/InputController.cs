@@ -8,6 +8,11 @@
     {
         [SerializeField] VRTK_SnapDropZone holster;
         [SerializeField] Gun vrGun;
+        [SerializeField] VRTK_InteractableObject equippedObj;
+        [SerializeField] GameObject potentialObj;
+
+        bool equipped = false;
+
         [SerializeField] float touchpadThreshold = .05f;
         [SerializeField] float triggerThreshold = .05f;
 
@@ -60,15 +65,38 @@
             controllerEvents.TouchpadAxisChanged += ControllerEvents_TouchpadAxisChanged;;
         }
 
-        public void EquipGun(Gun newGun)
+        public void AddPotential (GameObject newItem)
         {
-            vrGun = newGun;
+            potentialObj = newItem;
+        }
+
+        public void RemovePotential()
+        {
+            potentialObj = null;
+        }
+
+        public void Equip()
+        {
+            if (potentialObj != null)
+            {
+                equippedObj = potentialObj.GetComponent<VRTK_InteractableObject>();
+
+                if (equippedObj.tag == "Gun")
+                {
+                    vrGun = equippedObj.GetComponent<Gun>() != null ? equippedObj.GetComponent<Gun>() : equippedObj.GetComponentInChildren<Gun>();
+                }
+                equipped = true;
+            }
+
             AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
         }
 
-        public void UnEquipGun()
+        public void UnEquip()
         {
+            equippedObj = null;
             vrGun = null;
+            equipped = false;
+
             AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
         }
 

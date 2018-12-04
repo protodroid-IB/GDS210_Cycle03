@@ -4463,6 +4463,7 @@ GameObject:
   - component: {fileID: 82129290424945670}
   - component: {fileID: 114303946645106146}
   - component: {fileID: 114123742640394018}
+  - component: {fileID: 114938935302086036}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -4536,6 +4537,7 @@ GameObject:
   - component: {fileID: 82770009379377920}
   - component: {fileID: 114814747268607206}
   - component: {fileID: 114815705399956386}
+  - component: {fileID: 114259751564476074}
   m_Layer: 0
   m_Name: LeftController
   m_TagString: Untagged
@@ -5374,6 +5376,7 @@ GameObject:
   - component: {fileID: 114755075551795356}
   - component: {fileID: 54236257373406556}
   - component: {fileID: 82920525731441444}
+  - component: {fileID: 114506297852909360}
   m_Layer: 8
   m_Name: VRGun_L
   m_TagString: Gun
@@ -5528,6 +5531,7 @@ GameObject:
   - component: {fileID: 114242333984459914}
   - component: {fileID: 54888526361500534}
   - component: {fileID: 82926449519249954}
+  - component: {fileID: 114655651518375812}
   m_Layer: 8
   m_Name: VRGun_R
   m_TagString: Gun
@@ -24655,6 +24659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holster: {fileID: 114555375752249504}
   vrGun: {fileID: 0}
+  equippedObj: {fileID: 0}
+  potentialObj: {fileID: 0}
   touchpadThreshold: 0.05
   triggerThreshold: 0.1
   model: {fileID: 1863372072538644}
@@ -24944,6 +24950,41 @@ MonoBehaviour:
   cylinder: {fileID: 1249493887981070}
   bullet: {fileID: 1807542452284916}
   shell: {fileID: 1855432573187928, guid: 18ae90c4612310e41bd9384589dad80b, type: 2}
+--- !u!114 &114259751564476074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646570691596330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069f22b475dd2da42becf7aa319a1ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToAffect: {fileID: 1646570691596330}
+  objectToMonitor: {fileID: 0}
+  gameObjectActiveByDefault: 1
+  rendererVisibleByDefault: 1
+  gameObjectActiveOnNearTouch: 1
+  rendererVisibleOnNearTouch: 1
+  nearTouchAppearanceDelay: 0
+  nearUntouchAppearanceDelay: 0
+  validNearTouchInteractingObject: 0
+  gameObjectActiveOnTouch: 1
+  rendererVisibleOnTouch: 1
+  touchAppearanceDelay: 0
+  untouchAppearanceDelay: 0
+  validTouchInteractingObject: 0
+  gameObjectActiveOnGrab: 1
+  rendererVisibleOnGrab: 0
+  grabAppearanceDelay: 0
+  ungrabAppearanceDelay: 0
+  validGrabInteractingObject: 0
+  gameObjectActiveOnUse: 1
+  rendererVisibleOnUse: 1
+  useAppearanceDelay: 0
+  unuseAppearanceDelay: 0
+  validUseInteractingObject: 0
 --- !u!114 &114276781359883084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25400,6 +25441,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114506297852909360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790823904892086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de86c86b1da3d42da931c9b411fedb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114542055603562258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25559,6 +25611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holster: {fileID: 114030160893360906}
   vrGun: {fileID: 0}
+  equippedObj: {fileID: 0}
+  potentialObj: {fileID: 0}
   touchpadThreshold: 0.05
   triggerThreshold: 0.05
   model: {fileID: 1969337973340466}
@@ -25702,6 +25756,17 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &114655651518375812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809781790848004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de86c86b1da3d42da931c9b411fedb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114664779582847296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25921,34 +25986,12 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114594470311324576}
-        m_MethodName: EquipGun
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114574054693460124}
-          m_ObjectArgumentAssemblyTypeName: Gun, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnUngrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114594470311324576}
-        m_MethodName: UnEquipGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnUse:
@@ -26381,6 +26424,41 @@ MonoBehaviour:
   verbose: 0
   createComponents: 1
   updateDynamically: 1
+--- !u!114 &114938935302086036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637932265931980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069f22b475dd2da42becf7aa319a1ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToAffect: {fileID: 1637932265931980}
+  objectToMonitor: {fileID: 0}
+  gameObjectActiveByDefault: 1
+  rendererVisibleByDefault: 1
+  gameObjectActiveOnNearTouch: 1
+  rendererVisibleOnNearTouch: 1
+  nearTouchAppearanceDelay: 0
+  nearUntouchAppearanceDelay: 0
+  validNearTouchInteractingObject: 0
+  gameObjectActiveOnTouch: 1
+  rendererVisibleOnTouch: 1
+  touchAppearanceDelay: 0
+  untouchAppearanceDelay: 0
+  validTouchInteractingObject: 0
+  gameObjectActiveOnGrab: 1
+  rendererVisibleOnGrab: 0
+  grabAppearanceDelay: 0
+  ungrabAppearanceDelay: 0
+  validGrabInteractingObject: 0
+  gameObjectActiveOnUse: 1
+  rendererVisibleOnUse: 1
+  useAppearanceDelay: 0
+  unuseAppearanceDelay: 0
+  validUseInteractingObject: 0
 --- !u!114 &114970149442044000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26465,34 +26543,12 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114081648859039506}
-        m_MethodName: EquipGun
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 114674899627104304}
-          m_ObjectArgumentAssemblyTypeName: Gun, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnUngrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114081648859039506}
-        m_MethodName: UnEquipGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnUse:
