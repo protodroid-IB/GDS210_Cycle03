@@ -126,6 +126,10 @@
 
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
+            if (equipped)
+                UnEquip();
+            else
+                Equip();
         }
 
         void ControllerEvents_TriggerReleased(object sender, ControllerInteractionEventArgs e)
