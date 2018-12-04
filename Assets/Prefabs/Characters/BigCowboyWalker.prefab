@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 95483646145857614}
   - component: {fileID: 114828170518871096}
   - component: {fileID: 195386817914355496}
+  - component: {fileID: 136462697450829362}
   m_Layer: 0
   m_Name: BigCowboyWalker
   m_TagString: Untagged
@@ -488,6 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4126064015091320}
+  - component: {fileID: 54721871314886778}
   m_Layer: 0
   m_Name: Head_end
   m_TagString: Untagged
@@ -1242,7 +1244,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1536873753080090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -137.6, y: 0, z: 2.7}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 4499275049539456}
@@ -1297,7 +1299,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830345109316292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15.6, y: 0, z: -100.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4499275049539456}
@@ -1324,7 +1326,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825961323209360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 60.7, y: 0, z: 3.1}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 4499275049539456}
@@ -1465,6 +1467,21 @@ Transform:
   m_Father: {fileID: 4817252095559488}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54721871314886778
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1538323460255018}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &95483646145857614
 Animator:
   serializedVersion: 3
@@ -1494,9 +1511,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18f515d9d0bce74a9721798a86019dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.09
-  walkToPos: {x: -50, y: 0, z: -6.85}
-  destinationPoints: []
+  destinationPoints:
+  - {fileID: 4560938682842110}
+  - {fileID: 4521152181224988}
+  - {fileID: 4625375201344276}
+--- !u!136 &136462697450829362
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1327603354042286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.71
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.76, z: 0}
 --- !u!137 &137866147976687970
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
