@@ -4353,7 +4353,7 @@ MonoBehaviour:
     minDistance3Dsound: 0
     maxDistance3DSound: 0
   - clipName: Soundscape_Outside
-    clip: {fileID: 8300000, guid: 6c2446635315e564b9104a33bc78d3fa, type: 3}
+    clip: {fileID: 8300000, guid: 495b900ca5adaec4689cd1649e6aa067, type: 3}
     audioMixerGroup: {fileID: 243471124063866512, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -4557,6 +4557,45 @@ MonoBehaviour:
     playOnAwake: 0
     oneShot: 1
     spatial: 0
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: HorseGallop
+    clip: {fileID: 8300000, guid: 4ea9fae37c4c11c45a2205e99fc487f5, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: HorseNeigh
+    clip: {fileID: 8300000, guid: 65e546059e431a44496e10e9c41dd74a, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 0
+    minDistance3Dsound: 0
+    maxDistance3DSound: 0
+  - clipName: Eagle
+    clip: {fileID: 8300000, guid: 169701204d179fb488a3ce80598e74d3, type: 3}
+    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
     setDistancesHere: 0
     minDistance3Dsound: 0
     maxDistance3DSound: 0
@@ -5254,7 +5293,6 @@ MonoBehaviour:
   - {fileID: 82159239083427020}
   - {fileID: 82446571765840536}
   - {fileID: 82067232491373466}
-  insideAudioSource: {fileID: 0}
 --- !u!114 &114367221007398176
 MonoBehaviour:
   m_ObjectHideFlags: 1
