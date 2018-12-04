@@ -1,15 +1,23 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 // This will control the settings in the options menu.
 
-public class MenuSettings : MonoBehaviour {
+public class MenuSettings : MonoBehaviour
+{
     [SerializeField] GameSettings gameSettings;
     [SerializeField] Soundscapes soundscapes;
+
+    [SerializeField]
+    private string volParameterSFX, volParameterMusic; 
 
     public Slider soundVolumeSlider;
     public Slider musicVolumeSlider;
     public Toggle tutorialToggle;
+
+    [SerializeField]
+    private AudioMixerGroup mixerSFX, mixerMusic, mixerMaster;
 
     private void Start()
     {
@@ -17,7 +25,8 @@ public class MenuSettings : MonoBehaviour {
         musicVolumeSlider.onValueChanged.AddListener(delegate { MusicVolumeChange(); });
         tutorialToggle.onValueChanged.AddListener(delegate { TutorialToggleChange(tutorialToggle.isOn); });
 
-        UpdateVolume();
+        UpdateSFXVolume();
+        UpdateMusicVolume();
 
     }
 
@@ -40,7 +49,7 @@ public class MenuSettings : MonoBehaviour {
     void SoundVolumeChange()
     {
         gameSettings.soundVolume = soundVolumeSlider.value;
-        UpdateVolume();
+        UpdateSFXVolume();
         PlayerPrefs.SetFloat("SoundVolume", gameSettings.soundVolume);
     }
 
@@ -48,20 +57,18 @@ public class MenuSettings : MonoBehaviour {
     void MusicVolumeChange()
     {
         gameSettings.musicVolume = musicVolumeSlider.value;
-        UpdateVolume();
+        UpdateMusicVolume();
         PlayerPrefs.SetFloat("MusicVolume", gameSettings.musicVolume);
     }
 
-    // Update the Volume based on the values on the Sliders.
-    void UpdateVolume()
+    void UpdateSFXVolume()
     {
-        for (int i = 0; i < AudioManager.instance.sounds.Length; i++)
-        {
-            AudioManager.instance.sounds[i].volume = gameSettings.soundVolume;
-
-        }
-
+        mixerSFX.audioMixer.SetFloat(volParameterSFX, 0f + (1f - gameSettings.soundVolume) * -45f);
     }
 
+    void UpdateMusicVolume()
+    {
+        mixerMusic.audioMixer.SetFloat(volParameterMusic, 0f + (1f - gameSettings.musicVolume) * -45f);
+    }
 
 }
