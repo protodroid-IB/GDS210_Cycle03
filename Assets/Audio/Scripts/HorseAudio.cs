@@ -8,6 +8,9 @@ public class HorseAudio : MonoBehaviour
     // 1 = gallop
     private AudioSource[] audioSources;
 
+    private AudioSource horseGallopAudio;
+    private AudioSource horseNeighAudio;
+
     private Animator animator; 
 
     [SerializeField]
@@ -34,6 +37,9 @@ public class HorseAudio : MonoBehaviour
     void Start ()
     {
         audioSources = GetComponents<AudioSource>();
+        horseNeighAudio = audioSources[0];
+        horseGallopAudio = audioSources[1];
+
         animator = GetComponent<Animator>();
 
         newPitch = Mathf.Pow(PITCH_MULT, Random.Range(minSemitone, maxSemitone));
@@ -53,7 +59,7 @@ public class HorseAudio : MonoBehaviour
             Debug.Log(animator.GetBool("walking"));
 
             
-            AudioManager.instance.PlaySound("HorseNeigh", ref audioSources[0], newPitch, 1f);
+            AudioManager.instance.PlaySound("HorseNeigh", ref horseNeighAudio, newPitch, 1f);
             
         }
         else
@@ -72,13 +78,13 @@ public class HorseAudio : MonoBehaviour
             {
                 if (walking == false)
                 {
-                    AudioManager.instance.PlaySound("HorseGallop", ref audioSources[1]);
+                    AudioManager.instance.PlaySound("HorseGallop", ref horseGallopAudio);
                     walking = true;
                 }
             }
             else
             {
-                audioSources[1].Stop();
+                horseGallopAudio.Stop();
                 walking = false;
             }
         }

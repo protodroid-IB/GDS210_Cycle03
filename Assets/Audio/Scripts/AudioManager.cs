@@ -201,7 +201,7 @@ public class AudioManager : MonoBehaviour
     private void UpdateAudioSource(ref AudioSource source, int soundIndex)
     {
         source.clip = sounds[soundIndex].clip;
-        source.volume = gameSettings.soundVolume ;  // Volume is now adjusted based on the scriptable objects volume value.
+        source.volume = sounds[soundIndex].volume;
         source.pitch = sounds[soundIndex].pitch;
         source.playOnAwake = sounds[soundIndex].playOnAwake;
         source.loop = sounds[soundIndex].loop;
