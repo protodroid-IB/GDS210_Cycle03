@@ -3,7 +3,17 @@ guid: 1c0c02593ebd75e428f088c475ce5597
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gameSettings: {instanceID: 0}
+  - soundscapes: {instanceID: 0}
+  - soundVolumeSlider: {instanceID: 0}
+  - musicVolumeSlider: {instanceID: 0}
+  - tutorialToggle: {instanceID: 0}
+  - mixerSFX: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+  - mixerMusic: {fileID: 243460356595201970, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+  - mixerMaster: {fileID: 24300002, guid: 70f1da96556f25b47be5ae6534a22328, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

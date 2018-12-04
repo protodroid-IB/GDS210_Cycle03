@@ -14,7 +14,13 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: ca1e8e027a12ccc489d1685877f346a7
+    name: VolMusic
+  - guid: feefb77bfc626a84896ce0102e56f8ff
+    name: VolSFX
+  - guid: a7f6123295ffc774e83202d05feda2f2
+    name: VolSoundscape
   m_AudioMixerGroupViews:
   - guids:
     - da5ca031b6a45394583092151d2dbb76
@@ -33,7 +39,6 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: da5ca031b6a45394583092151d2dbb76
   m_Children:
-  - {fileID: 243471124063866512}
   - {fileID: 243460356595201970}
   - {fileID: 243386324822033064}
   m_Volume: 9e4397c9cd016194590c4575a0b9ff05
@@ -66,7 +71,9 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: b08fd0764616f024cb6ecad3d650e95d
   m_FloatValues:
-    a7f6123295ffc774e83202d05feda2f2: -10.345207
+    ca1e8e027a12ccc489d1685877f346a7: -0.19117308
+    a7f6123295ffc774e83202d05feda2f2: -9.456394
+    feefb77bfc626a84896ce0102e56f8ff: -80
   m_TransitionOverrides: {}
 --- !u!243 &243386324822033064
 AudioMixerGroupController:
@@ -76,7 +83,8 @@ AudioMixerGroupController:
   m_Name: SFX
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 6ce71eee2b3575440bed2e6722d3a81e
-  m_Children: []
+  m_Children:
+  - {fileID: 243471124063866512}
   m_Volume: feefb77bfc626a84896ce0102e56f8ff
   m_Pitch: 5e392f299b498d14da7faece1b498c41
   m_Effects:

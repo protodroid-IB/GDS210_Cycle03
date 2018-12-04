@@ -54,10 +54,6 @@ public class HorseAudio : MonoBehaviour
             newPitch = Mathf.Pow(PITCH_MULT, Random.Range(minSemitone, maxSemitone));
             neighTime = Random.Range(minNeighTime, maxNeighTime);
             neighTimer = 0f;
-
-
-            Debug.Log(animator.GetBool("walking"));
-
             
             AudioManager.instance.PlaySound("HorseNeigh", ref horseNeighAudio, newPitch, 1f);
             

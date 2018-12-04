@@ -5731,9 +5731,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSettings: {fileID: 11400000, guid: d09a3f0eebf5195419e64410ff71f3d1, type: 2}
   soundscapes: {fileID: 114360645539552590}
+  volParameterSFX: VolSFX
+  volParameterMusic: VolMusic
   soundVolumeSlider: {fileID: 114975197271473672}
   musicVolumeSlider: {fileID: 114696717732325840}
   tutorialToggle: {fileID: 114555524878444792}
+  mixerSFX: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328, type: 2}
+  mixerMusic: {fileID: 243460356595201970, guid: 70f1da96556f25b47be5ae6534a22328,
+    type: 2}
+  mixerMaster: {fileID: 24300002, guid: 70f1da96556f25b47be5ae6534a22328, type: 2}
 --- !u!114 &114453762499602090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6497,9 +6503,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSettings: {fileID: 11400000, guid: d09a3f0eebf5195419e64410ff71f3d1, type: 2}
   soundscapes: {fileID: 114360645539552590}
+  volParameterSFX: VolSFX
+  volParameterMusic: VolMusic
   soundVolumeSlider: {fileID: 114380272724494170}
   musicVolumeSlider: {fileID: 114229334390297698}
   tutorialToggle: {fileID: 114237248132489496}
+  mixerSFX: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328, type: 2}
+  mixerMusic: {fileID: 243460356595201970, guid: 70f1da96556f25b47be5ae6534a22328,
+    type: 2}
+  mixerMaster: {fileID: 24300002, guid: 70f1da96556f25b47be5ae6534a22328, type: 2}
 --- !u!114 &114612302602922396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7120,9 +7132,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSettings: {fileID: 11400000, guid: d09a3f0eebf5195419e64410ff71f3d1, type: 2}
   soundscapes: {fileID: 114360645539552590}
+  volParameterSFX: VolSFX
+  volParameterMusic: VolMusic
   soundVolumeSlider: {fileID: 114151598526855974}
   musicVolumeSlider: {fileID: 114570430613390882}
   tutorialToggle: {fileID: 114812685859734928}
+  mixerSFX: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328, type: 2}
+  mixerMusic: {fileID: 243460356595201970, guid: 70f1da96556f25b47be5ae6534a22328,
+    type: 2}
+  mixerMaster: {fileID: 24300002, guid: 70f1da96556f25b47be5ae6534a22328, type: 2}
 --- !u!114 &114831405155792924
 MonoBehaviour:
   m_ObjectHideFlags: 1
