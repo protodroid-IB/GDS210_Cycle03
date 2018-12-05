@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace Serving
 {
@@ -11,6 +12,9 @@ namespace Serving
 
 		[SerializeField]
 		ScoreRecords barScoreRecord;
+
+		[SerializeField]
+		Button[] gameButtons;
 
 		Order[] customers;
 
@@ -41,6 +45,11 @@ namespace Serving
 				timer += Time.deltaTime;
 				if (timer >= gameTime)
 				{
+					foreach (Button button in gameButtons)
+					{
+						button.enabled = false;
+					}
+
 					timer = 0;
 					game = false;
 					foreach (Order cust in customers)
@@ -65,12 +74,26 @@ namespace Serving
 			}
 		}
 
+		void ResetScore()
+		{
+			score = 0;
+			barScoreRecord.currentScore = score;
+			scoreText.text = "score = " + score.ToString() + " points";
+		}
+
 		IEnumerator StartGame(int roundTime = 30)
 		{
+			foreach(Button button in gameButtons)
+			{
+				button.enabled = false;
+			}
+
 			game = true;
 			countdown = true;
 			timer = 3;
+			ResetScore();
 			yield return new WaitForSeconds(3);
+			timer = 0;
 			countdown = false;
 			customers = FindObjectsOfType<Order>();
 			gameTime = roundTime;
