@@ -89,6 +89,8 @@ namespace Serving
 
 		private void OnTriggerEnter(Collider other)
 		{
+			if (other.tag != "Glass")
+				return;
 			if (gameInProgress)
 			{
 				Drink recievedDrink = other.gameObject.GetComponentInChildren<Drink>();

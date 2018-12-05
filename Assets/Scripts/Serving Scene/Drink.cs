@@ -12,7 +12,7 @@ namespace Serving
 		// list of main ingredients added
 		/*[SerializeField]
 		List<Ingredient> ingredients = new List<Ingredient>();*/
-		[SerializeField]
+
 		Ingredient currentIngredient;
 
 		[SerializeField]
@@ -23,8 +23,6 @@ namespace Serving
 		//List<DrinkType> types = new List<DrinkType>();
 
 		MixMethod method = MixMethod.Mixed;
-
-		float timer;
 
 		[SerializeField]
 		float ingredientAdded;
@@ -74,8 +72,7 @@ namespace Serving
 			}
 			else
 			{
-				timer += time;
-				ingredientAdded = timer / ingredient.timeToAdd + 0.01f;
+				ingredientAdded += time;
 				wobble.fillLevel = ingredientAdded;
 
 				if (ingredientAdded >= 1)

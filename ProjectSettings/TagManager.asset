@@ -12,6 +12,9 @@ TagManager:
   - Fire
   - Bullet
   - Floor
+  - Soundscapes
+  - ThrowingTarget
+  - Glass
   layers:
   - Default
   - TransparentFX
