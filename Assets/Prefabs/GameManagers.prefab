@@ -5212,12 +5212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6fc4f5040458704b9a6eb640480c2b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingGameScores: {fileID: 11400000, guid: 753bfc42abce6514e82520e08ec6a417, type: 2}
-  throwingGameScores: {fileID: 11400000, guid: 713111fb2ce9b67408fdf3b5fa69ad79, type: 2}
-  barGameScores: {fileID: 11400000, guid: 0e176ac8a95fb6345b8d3319cf7eb0c0, type: 2}
-  shootingGameHighscore: {fileID: 0}
-  throwingGameHighscore: {fileID: 0}
-  barGameHighscore: {fileID: 0}
+  shootingHighScores: {fileID: 11400000, guid: 753bfc42abce6514e82520e08ec6a417, type: 2}
+  throwingHighScores: {fileID: 11400000, guid: 713111fb2ce9b67408fdf3b5fa69ad79, type: 2}
+  barHighScores: {fileID: 11400000, guid: 0e176ac8a95fb6345b8d3319cf7eb0c0, type: 2}
 --- !u!114 &114345901365771304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6490,6 +6487,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSettings: {fileID: 11400000, guid: d09a3f0eebf5195419e64410ff71f3d1, type: 2}
   player: {fileID: 0}
+  wantedPosters:
+  - {fileID: 114469420023121528, guid: 8b875cf01462ecb489a1a2ed673f8faf, type: 2}
+  - {fileID: 114443231461950004, guid: 5b285f93a8de2ae4bb87c661cbd35829, type: 2}
+  - {fileID: 114695869478706906, guid: 22693849b5fdaeb4a8117e79260ddf24, type: 2}
 --- !u!114 &114602585392137934
 MonoBehaviour:
   m_ObjectHideFlags: 1

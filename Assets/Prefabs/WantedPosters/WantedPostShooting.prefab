@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 223632033570973560}
   - component: {fileID: 114565236511211458}
   - component: {fileID: 114937350146980396}
+  - component: {fileID: 114443231461950004}
   m_Layer: 5
   m_Name: WantedPostShooting
   m_TagString: Untagged
@@ -176,6 +177,19 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &114443231461950004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606495494381786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee445916295c18147949b721e05aa040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreRecord: {fileID: 11400000, guid: 753bfc42abce6514e82520e08ec6a417, type: 2}
+  highScoreText: {fileID: 114050303995128444}
 --- !u!114 &114505685018460750
 MonoBehaviour:
   m_ObjectHideFlags: 1

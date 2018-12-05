@@ -1,33 +1,79 @@
 ﻿using UnityEngine;
-using TMPro;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System;
 
-    public class ScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour
     {
-        public ScoreRecords shootingGameScores;
-        public ScoreRecords throwingGameScores;
-        public ScoreRecords barGameScores;
+        // References to the Scriptable Objects
+        public ScoreRecords shootingHighScores;
+        public ScoreRecords throwingHighScores;
+        public ScoreRecords barHighScores;
 
-        [SerializeField] TMP_Text shootingGameHighscore;
-        [SerializeField] TMP_Text throwingGameHighscore;
-        [SerializeField] TMP_Text barGameHighscore;
 
     private void Start()
     {
-        UpdateScores();
+        // Ensure current scores start at 0.
+        barHighScores.currentScore = 0;
+        throwingHighScores.currentScore = 0;
+        shootingHighScores.currentScore = 0;
     }
 
-    void UpdateScores()
+    // Loads the save data from disk.
+    public void LoadScores()
     {
-        shootingGameHighscore.text = shootingGameScores.highestScore.ToString();
-        throwingGameHighscore.text = throwingGameScores.highestScore.ToString();
-        barGameHighscore.text = barGameScores.highestScore.ToString();
+        if (File.Exists(Application.persistentDataPath + "/SavedData.dat"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/SavedData.dat", FileMode.Open);
+            SaveData data = (SaveData)bf.Deserialize(file);
+            file.Close();
 
+            shootingHighScores.highestScore = data.shootingHighScores;
+            throwingHighScores.highestScore = data.throwingHighScores;
+            barHighScores.highestScore = data.barHighScores;
+        }
     }
 
-    public void UpdateHighScore(ScoreRecords game)
+    // Save data to disk.
+    public void SaveScores()
     {
-        game.highestScore = game.currentScore;
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/SavedData.dat");
+
+        SaveData data = new SaveData();
+
+        data.shootingHighScores = shootingHighScores.highestScore;
+        data.throwingHighScores = throwingHighScores.highestScore;
+        data.barHighScores = barHighScores.highestScore;
+
+
+        bf.Serialize(file, data);
+        file.Close();
     }
+
+    // Resets all save data and SO's to 0 and update posters.
+    public void ResetHighScores()
+    {
+        shootingHighScores.highestScore = 0;
+        throwingHighScores.highestScore = 0;
+        barHighScores.highestScore = 0;
+
+        SaveScores();
+        LoadScores();
+
+        GameManager.gameManager.UpdatePosters();
+    }
+}
+
+// Save data container.
+[Serializable]
+public class SaveData
+{
+    public int shootingHighScores;
+    public int throwingHighScores;
+    public int barHighScores;
+
 }
 
 
