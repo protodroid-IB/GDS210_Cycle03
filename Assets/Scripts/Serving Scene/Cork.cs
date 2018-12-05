@@ -11,15 +11,19 @@ public class Cork : MonoBehaviour {
 
 	private void Start()
 	{
+		
 		joint = GetComponent<FixedJoint>();
 		collider = GetComponent<MeshCollider>();
-		//collider.enabled = false;
+		collider.enabled = true;
 		parent = transform.parent;
+
+		VRTK.InteractableObject interact = GetComponent<VRTK.InteractableObject>();
+		if (!interact)
+			gameObject.AddComponent<VRTK.InteractableObject>();
 	}
 
 	private void OnJointBreak(float breakForce)
 	{
-		//collider.enabled = true;
 		if(transform.parent == parent)
 		{
 			transform.parent = null;
