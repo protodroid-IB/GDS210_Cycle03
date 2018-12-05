@@ -12,6 +12,8 @@ public class ServingAudio : MonoBehaviour
 
     private Pouring pouring;
 
+
+
     private void Awake()
     {
         audioSources = GetComponents<AudioSource>();
@@ -33,7 +35,9 @@ public class ServingAudio : MonoBehaviour
     void Update()
     {
         if(canPour)
+        {
             audioSources[1].volume = pouring.strength;
+        }         
     }
 
 
