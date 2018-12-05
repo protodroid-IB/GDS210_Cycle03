@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minWaveTime: 15
-  maxWaveTime: 30
+  maxWaveTime: 22
 --- !u!137 &137417963117732336
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

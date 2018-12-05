@@ -2452,6 +2452,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaeca5f2046337140b780c6778dffb2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1611163462
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -13.805143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.6322393
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.555944
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.3155638
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9489044
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed1faab67e15a7542b9e61833b3cec28, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &1676618667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4353348680317336, guid: e90b73da1948cf34191cd78208dc1b24,
