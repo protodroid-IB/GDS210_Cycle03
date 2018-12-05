@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 577868df3b62ef74c8405859ad67edbc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Character_Saloon_Girl
+    100002: ChestController
+    100004: Head
+    100006: HeadController
+    100008: Hip
+    100010: HipController
+    100012: L_Ankle
+    100014: L_ArmController
+    100016: L_ArmIK
+    100018: L_Elbow
+    100020: L_FootController
+    100022: L_Hand
+    100024: L_LegIK
+    100026: L_LowerLeg
+    100028: L_Shoulder
+    100030: L_Toe
+    100032: L_UpperArm
+    100034: L_UpperLeg
+    100036: L_Wrist
+    100038: LowerSpine
+    100040: MasterController
+    100042: MidSpine
+    100044: Neck
+    100046: R_Ankle
+    100048: R_ArmController
+    100050: R_ArmIK
+    100052: R_Elbow
+    100054: R_FootController
+    100056: R_Hand
+    100058: R_LegIK
+    100060: R_LowerLeg
+    100062: R_Shoulder
+    100064: R_Toe
+    100066: R_UpperArm
+    100068: R_UpperLeg
+    100070: R_Wrist
+    100072: Root
+    100074: //RootNode
+    100076: TopHead
+    100078: UpperSpine
+    400000: Character_Saloon_Girl
+    400002: ChestController
+    400004: Head
+    400006: HeadController
+    400008: Hip
+    400010: HipController
+    400012: L_Ankle
+    400014: L_ArmController
+    400016: L_ArmIK
+    400018: L_Elbow
+    400020: L_FootController
+    400022: L_Hand
+    400024: L_LegIK
+    400026: L_LowerLeg
+    400028: L_Shoulder
+    400030: L_Toe
+    400032: L_UpperArm
+    400034: L_UpperLeg
+    400036: L_Wrist
+    400038: LowerSpine
+    400040: MasterController
+    400042: MidSpine
+    400044: Neck
+    400046: R_Ankle
+    400048: R_ArmController
+    400050: R_ArmIK
+    400052: R_Elbow
+    400054: R_FootController
+    400056: R_Hand
+    400058: R_LegIK
+    400060: R_LowerLeg
+    400062: R_Shoulder
+    400064: R_Toe
+    400066: R_UpperArm
+    400068: R_UpperLeg
+    400070: R_Wrist
+    400072: Root
+    400074: //RootNode
+    400076: TopHead
+    400078: UpperSpine
+    2100000: lambert5
+    4300000: Character_Saloon_Girl
+    7400000: Waving
+    7400002: Idle
+    9500000: //RootNode
+    13700000: Character_Saloon_Girl
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 2b9eb62268a6b184ba66ec20ecc91940, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Waving
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 78
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 78
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.049999997
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
