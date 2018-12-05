@@ -5,6 +5,8 @@ public class ScoreRecords : ScriptableObject
 {
     public int highestScore;
     public int currentScore;
-    public int totalScore;
+
 }
+
+
 

@@ -52,4 +52,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  timeLimit: 0
+  timeRemaining: 0
   scoreText: {fileID: 0}
+  timerText: {fileID: 0}
+  knivesContainer: {fileID: 0}
+  axesContainer: {fileID: 0}
+  throwingGameScores: {fileID: 11400000, guid: 713111fb2ce9b67408fdf3b5fa69ad79, type: 2}
+  freeplayMode: 0

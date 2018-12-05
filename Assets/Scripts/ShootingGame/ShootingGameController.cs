@@ -13,11 +13,11 @@ public class ShootingGameController : MonoBehaviour {
     public Text scoreText;
     public Text highscoreText;
 
-    GameManager gameManager;
+    // Reference to the high score records.
+    [SerializeField] ScoreRecords scoreRecord;
 
     public void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
         ResetTargets();
     }
 
@@ -30,10 +30,10 @@ public class ShootingGameController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P))
         {
             StopCycle();
-        }
+        }       
     }
 
-    void StartCycle()
+    public void StartCycle()
     {
         ResetTargets();
         score = 0;
@@ -42,7 +42,7 @@ public class ShootingGameController : MonoBehaviour {
         Cycle();
     }
 
-    void StopCycle()
+    public void StopCycle()
     {
         ResetTargets();
     }
@@ -52,9 +52,10 @@ public class ShootingGameController : MonoBehaviour {
         if (sequenceIndex < targetSequence.sequence.Count)
         {
             Sequence sequence = targetSequence.sequence[sequenceIndex];
+
             if (sequence.randomize)
             {
-                targets[sequence.targetID[Random.Range(0,sequence.targetID.Count)]].FlipUp(sequence.targetTime);
+                targets[sequence.targetID[Random.Range(0, sequence.targetID.Count)]].FlipUp(sequence.targetTime);
                 targetIndex = 0;
                 sequenceIndex++;
                 Invoke("Cycle", sequence.exitTime);
@@ -72,7 +73,20 @@ public class ShootingGameController : MonoBehaviour {
                 Invoke("Cycle", sequence.exitTime);
             }
         }
-        else sequenceIndex = 0;
+        else
+        {
+
+            sequenceIndex = 0;
+
+            // End of minigame occurs here ???
+            Invoke("EndOfGame", 3);
+        }
+    }
+
+    void EndOfGame()
+    {
+        GameManager.gameManager.UpdateHighScore(scoreRecord);
+
     }
 
     private void ResetTargets()
@@ -88,11 +102,13 @@ public class ShootingGameController : MonoBehaviour {
     {
         score += points;
         scoreText.text = score.ToString("0000");
+        scoreRecord.currentScore = score;
+
     }
 
     // Function to restart the scene.
     public void RestartMiniGame(string minigame)
     {
-        gameManager.RestartMiniGame(minigame);
+        GameManager.gameManager.RestartMiniGame(minigame);
     }
 }

@@ -5,8 +5,7 @@ using TMPro;
 
 public class ThrowingGameController : MonoBehaviour
 {
-    GameManager gameManager;
-    
+   
     public int score;
     public float timeLimit;
     public float timeRemaining;
@@ -20,13 +19,14 @@ public class ThrowingGameController : MonoBehaviour
     GameObject activeKnivesContainer;
     GameObject activeAxesContainer;
 
+    // Reference to the score records container.
+    [SerializeField] ScoreRecords throwingGameScores;
+
 
     public bool freeplayMode;
 
 	void Start ()
     {
-        gameManager = FindObjectOfType<GameManager>();
-
         freeplayMode = false;
         timerText.enabled = false;
     }
@@ -45,6 +45,7 @@ public class ThrowingGameController : MonoBehaviour
             timeRemaining = 0;
             freeplayMode = true;
             timerText.enabled = false;
+            UpdateHighScore();
         }
     }
 
@@ -54,12 +55,13 @@ public class ThrowingGameController : MonoBehaviour
         {
             score += points;
             scoreText.text = "Score: " + score.ToString("0000");
+            throwingGameScores.currentScore = score;    // Reference to score records.
         }
     }
 
     public void RestartMiniGame(string minigame)
     {
-        gameManager.RestartMiniGame(minigame);
+        GameManager.gameManager.RestartMiniGame(minigame);  // Resets the whole scene.
     }
 
     public void StartFreeplay()
@@ -90,5 +92,11 @@ public class ThrowingGameController : MonoBehaviour
         {
             timeRemaining = timeLimit;
         }
+    }
+
+    // Updates the throwing games high score.
+    void UpdateHighScore()
+    {
+        GameManager.gameManager.UpdateHighScore(throwingGameScores);
     }
 }
