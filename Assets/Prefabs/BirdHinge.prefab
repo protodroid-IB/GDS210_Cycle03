@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 54911950735064260}
   - component: {fileID: 82212750831011168}
   - component: {fileID: 114458820390068886}
+  - component: {fileID: 114695134569707148}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -548,7 +549,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1515594594443012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 42.14, z: -3.5}
+  m_LocalPosition: {x: -5, y: 42.841, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4722170835942088}
@@ -575,7 +576,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1851900723604356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.85, y: -23.71, z: 2.46}
+  m_LocalPosition: {x: 33.85, y: -25.084, z: 2.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4876780947429118}
@@ -731,7 +732,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -33.85, y: 23.71, z: -2.46}
+  m_ConnectedAnchor: {x: -33.85, y: 25.084, z: -2.46}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -884,6 +885,18 @@ MonoBehaviour:
   maxPlayTime: 40
   minSemitone: -2
   maxSemitone: 2
+--- !u!114 &114695134569707148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851900723604356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c216d20b62c94d14f91889426870b80a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadBird: {fileID: 1847248758492330, guid: b75a0f851e57fdd479054f8b24918ca5, type: 2}
 --- !u!137 &137766706455124728
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

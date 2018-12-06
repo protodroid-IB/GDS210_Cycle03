@@ -4,26 +4,11 @@ using UnityEngine;
 
 public class BirdController : MonoBehaviour
 {
-    [SerializeField] float forwardForce;
-    [SerializeField] float leftForce;
-    [SerializeField] float upTorque;
+    [SerializeField] GameObject deadBird;
 
-    Rigidbody rb;
-
-    void Awake()
+    void Die()
     {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    void Start ()
-    {
-        rb.AddRelativeForce(Vector3.forward * forwardForce, ForceMode.Impulse);
-        rb.AddRelativeForce(Vector3.left * leftForce, ForceMode.Impulse);
-        rb.AddRelativeTorque(Vector3.up * upTorque, ForceMode.Impulse);
-    }
-	
-	void Update ()
-    {
-        
+        Instantiate(deadBird, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
