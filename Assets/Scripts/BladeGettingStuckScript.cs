@@ -43,16 +43,13 @@ public class BladeGettingStuckScript : MonoBehaviour
         }
 
 
-        if (other.gameObject.tag == "ThrowingTarget")
-        {
+        if (other.gameObject.tag == "ThrowingTarget" && !diht.AmIUsed())
+		{
             ParentMe(other, depth);     // Sticks to targets, and penetrates.
 
-            if (!diht.AmIUsed())
-            {
-                print(other.name);
-                diht.SetUsed();
-                tgc.AddScore(100);
-            }
+            print(other.name);
+            diht.SetUsed();
+            tgc.AddScore(100);
             
         }
         else if(other.gameObject.tag == "Floor")

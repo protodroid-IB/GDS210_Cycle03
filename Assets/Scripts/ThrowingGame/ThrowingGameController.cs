@@ -33,7 +33,9 @@ public class ThrowingGameController : MonoBehaviour
 
 	void Update ()
     {
-        timerText.text = "Time Remaining: " + timeRemaining.ToString("00.00");
+		int minutes = (int)(timeRemaining / 60);
+		int seconds = (int)((minutes * 60) - timeRemaining);
+        timerText.text = "Time Remaining: " + minutes.ToString() + ":" + seconds.ToString();
 
         if (timeRemaining > 0 && !freeplayMode)
         {
