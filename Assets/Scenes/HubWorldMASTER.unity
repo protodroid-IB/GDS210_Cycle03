@@ -1040,77 +1040,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualBoundaries
-      value: 
-      objectReference: {fileID: 585992493}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualHeadset
-      value: 
-      objectReference: {fileID: 585992492}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualLeftController
-      value: 
-      objectReference: {fileID: 585992491}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualRightController
-      value: 
-      objectReference: {fileID: 585992489}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: modelAliasLeftController
-      value: 
-      objectReference: {fileID: 585992490}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: modelAliasRightController
-      value: 
-      objectReference: {fileID: 585992488}
-    - target: {fileID: 1014455371488364, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775293057382062, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &585992488 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1455407306083378, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 585992487}
---- !u!1 &585992489 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1417583825379894, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 585992487}
---- !u!1 &585992490 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1039921009492852, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 585992487}
---- !u!1 &585992491 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1358908443004542, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 585992487}
---- !u!1 &585992492 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1847414500154988, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 585992487}
---- !u!1 &585992493 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1242242743102324, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 585992487}
 --- !u!114 &596370797 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114305092971556216, guid: 779083afad61e244c9a5ccc3170c5992,

@@ -6,10 +6,7 @@
 
     public class InputController : MonoBehaviour
     {
-        [SerializeField] VRTK_SnapDropZone holster;
         [SerializeField] Gun vrGun;
-        [SerializeField] VRTK_InteractableObject equippedObj;
-        [SerializeField] GameObject potentialObj;
 
         bool equipped = false;
 
@@ -65,41 +62,6 @@
             controllerEvents.TouchpadAxisChanged += ControllerEvents_TouchpadAxisChanged;;
         }
 
-        public void AddPotential (GameObject newItem)
-        {
-            potentialObj = newItem;
-        }
-
-        public void RemovePotential()
-        {
-            potentialObj = null;
-        }
-
-        public void Equip()
-        {
-            if (potentialObj != null)
-            {
-                equippedObj = potentialObj.GetComponent<VRTK_InteractableObject>();
-
-                if (equippedObj.tag == "Gun")
-                {
-                    vrGun = equippedObj.GetComponent<Gun>() != null ? equippedObj.GetComponent<Gun>() : equippedObj.GetComponentInChildren<Gun>();
-                }
-                equipped = true;
-            }
-
-            AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
-        }
-
-        public void UnEquip()
-        {
-            equippedObj = null;
-            vrGun = null;
-            equipped = false;
-
-            AudioManager.instance.PlaySound("PickUpItem", ref ctrlAudio);
-        }
-
         public void HideModels()
         {
             if (renderers.Length == 0)
@@ -124,12 +86,19 @@
             }
         }
 
+        public void EquipGun()
+        {
+            equipped = true;
+        }
+
+        public void UnEquipGun()
+        {
+            equipped = false;
+        }
+
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
-            if (equipped)
-                UnEquip();
-            else
-                Equip();
+            
         }
 
         void ControllerEvents_TriggerReleased(object sender, ControllerInteractionEventArgs e)
@@ -164,9 +133,9 @@
 
         void ControllerEvents_TriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null)
+            if (equipped)
             {
-                if (e.buttonPressure >= triggerThreshold && !holster.ValidSnappableObjectIsHovering())
+                if (e.buttonPressure >= triggerThreshold && !vrGun.GetComponent<VRTK_InteractableObject>().IsHoveredOverSnapDropZone())
                 {
                     vrGun.TriggerPull(e.buttonPressure);
                 }
@@ -207,7 +176,7 @@
 
         void ControllerEvents_GripClicked(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null)
+            if (equipped)
             {
                 vrGun.Reload();
             }
@@ -240,7 +209,7 @@
 
         void ControllerEvents_TouchpadAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null)
+            if (equipped)
             {
                 if (vrGun.loaded)
                 {

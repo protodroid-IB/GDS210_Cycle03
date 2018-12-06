@@ -18,7 +18,7 @@ public class BladeGettingStuckScript : MonoBehaviour
     [SerializeField] float depth;
 
     [Tooltip("Force required to break the FixedJoint")]
-    [SerializeField] int breakForce;
+	int breakForce = 1000;
 
     [SerializeField] Vector3 velocity;
 

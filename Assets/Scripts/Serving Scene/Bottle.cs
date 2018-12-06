@@ -19,9 +19,6 @@ namespace Serving
 			if(wobbler)
 				wobbler.ingredient = ingredient;
 
-			VRTK.InteractableObject interact = GetComponent<VRTK.InteractableObject>();
-			if (!interact)
-				gameObject.AddComponent<VRTK.InteractableObject>();
 		}
 	}
 }
