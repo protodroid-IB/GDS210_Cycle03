@@ -16,7 +16,7 @@ public class ResetHubWorld : MonoBehaviour {
         GameManager.spawnPosition = col.transform.position;
         GameManager.spawnPosition.y = 0;
 
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene("HubWorldMASTER", LoadSceneMode.Single);
 
         loadingScene = true;
 

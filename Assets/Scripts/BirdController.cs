@@ -9,6 +9,9 @@ public class BirdController : MonoBehaviour
     public void Die()
     {
         Instantiate(deadBird, transform.position, transform.rotation);
+
+        GetComponent<Rigidbody>().angularVelocity = Vector3.forward;
+
         Destroy(gameObject);
     }
 }

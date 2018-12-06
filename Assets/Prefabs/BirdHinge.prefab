@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 82212750831011168}
   - component: {fileID: 114458820390068886}
   - component: {fileID: 114695134569707148}
+  - component: {fileID: 64803649553971998}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Object
@@ -756,6 +757,20 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!64 &64803649553971998
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851900723604356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 32dc1feb0a21d0545b681e43b3032350, type: 3}
 --- !u!82 &82212750831011168
 AudioSource:
   m_ObjectHideFlags: 1

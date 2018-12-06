@@ -158,7 +158,7 @@ public class Gun : MonoBehaviour {
                 }
 
                 // If the bird is shot, run it's die function
-                if (hit.transform.gameObject.name == "Bird")
+                if (hit.transform.name == "Bird")
                 {
                     hit.transform.gameObject.GetComponent<BirdController>().Die();
                 }

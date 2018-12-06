@@ -33,6 +33,7 @@ namespace Serving
 		[SerializeField]
 		float maxFill = 1;
 
+        [SerializeField]
 		float maxWobble = 2, wobbleSpeed = 5, wobbleSmooth = 0.02f, recovery = 0.1f;
 
 		float wobbleAmountX, wobbleAmountZ;

@@ -107,7 +107,7 @@ public class SceneManagement : MonoBehaviour
         GameManager.spawnPosition = playerCollider.transform.position;
         GameManager.spawnPosition.y = 0;
 
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene("HubWorldMASTER", LoadSceneMode.Single);
         SceneManager.LoadScene(minigame, LoadSceneMode.Additive);
 
         GameManager.minigameRestarting = true;

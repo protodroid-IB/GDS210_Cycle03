@@ -97,7 +97,7 @@
         {
             equipped = false;
 
-            HideModels();
+            ShowModels();
         }
 
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)
