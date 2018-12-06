@@ -67,23 +67,24 @@ public class ThrowingGameController : MonoBehaviour
     public void StartFreeplay()
     {
         freeplayMode = true;
-        StartThrowingGame(freeplayMode);
+        StartThrowingGame();
     }
 
     public void StartTimedMode()
     {
         freeplayMode = false;
-        StartThrowingGame(freeplayMode);
-        timerText.enabled = true;
+        StartThrowingGame();
     }
 
-    void StartThrowingGame(bool freeplaymode)
+    void StartThrowingGame()
     {
         if (activeKnivesContainer != null)
             Destroy(activeKnivesContainer);
 
         if (activeAxesContainer != null)
             Destroy(activeAxesContainer);
+
+        timerText.enabled = !freeplayMode;
 
         activeKnivesContainer = Instantiate(knivesContainer);
         activeAxesContainer = Instantiate(axesContainer);
