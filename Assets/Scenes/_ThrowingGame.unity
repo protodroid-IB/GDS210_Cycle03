@@ -1319,7 +1319,7 @@ Prefab:
     - target: {fileID: 114024649906567324, guid: 587b7a50da8b337479f1acaad9377af8,
         type: 2}
       propertyPath: timeLimit
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 114024649906567324, guid: 587b7a50da8b337479f1acaad9377af8,
         type: 2}
