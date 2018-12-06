@@ -18,9 +18,9 @@ namespace Serving
 
 		Order[] customers;
 
-		int shortTime = 30, mediumTime = 60, longTime = 120;
+		int shortTime = 60, mediumTime = 180, longTime = 300;
 
-		float timer = 0, gameTime = 30;
+		float timer = 0, gameTime = 0;
 
 		[SerializeField]
 		TextMeshPro timerText, scoreText, highText;
@@ -83,7 +83,7 @@ namespace Serving
 			scoreText.text = "score = " + score.ToString() + " points";
 		}
 
-		IEnumerator StartGame(int roundTime = 30)
+		IEnumerator StartGame(int roundTime)
 		{
 			foreach(Button button in gameButtons)
 			{
@@ -96,8 +96,8 @@ namespace Serving
 			ResetScore();
 			yield return new WaitForSeconds(3);
 			game = true;
-			timer = 0;
 			countdown = false;
+			timer = 0;
 			customers = FindObjectsOfType<Order>();
 			gameTime = roundTime;
 			foreach(Order cust in customers)
@@ -131,7 +131,9 @@ namespace Serving
 		void SetTimerText()
 		{
 			int timeLeft = (int)(gameTime - timer);
-			timerText.text = ((int)timeLeft).ToString() + " Left";
+			int minutes = timeLeft / 60;
+			int seconds = minutes * 60 - timeLeft;
+			timerText.text = minutes.ToString() + ":" + seconds.ToString();
 		}
 	}
 }

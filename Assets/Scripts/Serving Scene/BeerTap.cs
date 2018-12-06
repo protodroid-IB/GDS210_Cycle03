@@ -1,16 +1,18 @@
-﻿using System.Collections;
+﻿using Serving;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BeerTap : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	[SerializeField]
+	Ingredient ingredient;
+
+	[SerializeField]
+	Pouring particles;
+
+	private void Start()
+	{
+		particles.ingredient = ingredient;
 	}
 }
