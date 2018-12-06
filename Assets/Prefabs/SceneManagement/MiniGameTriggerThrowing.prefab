@@ -25,7 +25,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1082305554853138
 GameObject:
   m_ObjectHideFlags: 1
@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 23976273627598182}
   - component: {fileID: 222981760896299148}
   - component: {fileID: 114335470247362938}
+  - component: {fileID: 114147254047203532}
   m_Layer: 0
   m_Name: ThrowingGameText
   m_TagString: Untagged
@@ -310,7 +311,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1199031537503458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.913, y: -0.033, z: -12.655}
+  m_LocalPosition: {x: -28.29, y: -0.43, z: -14.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4433340325897768}
@@ -477,7 +478,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a405cbe428d5fca48b7de15c88d78780, type: 2}
+  - {fileID: 2100000, guid: 3c6161061fc005d41a02ce83de8952ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -622,6 +623,17 @@ MonoBehaviour:
   hideDirectionIndicatorOnHover: 0
   snapToRotation: 0
   teleporter: {fileID: 0}
+--- !u!114 &114147254047203532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1910588731110998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaeca5f2046337140b780c6778dffb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114316169691932154
 MonoBehaviour:
   m_ObjectHideFlags: 1

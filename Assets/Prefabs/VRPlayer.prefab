@@ -25622,13 +25622,13 @@ MonoBehaviour:
   intervalOnNearTouch: 0.05
   cancelOnNearUntouch: 1
   clipOnTouch: {fileID: 0}
-  strengthOnTouch: 0
-  durationOnTouch: 0
+  strengthOnTouch: 0.2
+  durationOnTouch: 0.2
   intervalOnTouch: 0.05
   cancelOnUntouch: 1
   clipOnGrab: {fileID: 0}
-  strengthOnGrab: 0
-  durationOnGrab: 0
+  strengthOnGrab: 0.5
+  durationOnGrab: 0.2
   intervalOnGrab: 0.05
   cancelOnUngrab: 1
   clipOnUse: {fileID: 0}
@@ -26041,13 +26041,13 @@ MonoBehaviour:
   intervalOnNearTouch: 0.05
   cancelOnNearUntouch: 1
   clipOnTouch: {fileID: 0}
-  strengthOnTouch: 0
-  durationOnTouch: 0
+  strengthOnTouch: 0.2
+  durationOnTouch: 0.2
   intervalOnTouch: 0.05
   cancelOnUntouch: 1
   clipOnGrab: {fileID: 0}
-  strengthOnGrab: 0
-  durationOnGrab: 0
+  strengthOnGrab: 0.5
+  durationOnGrab: 0.2
   intervalOnGrab: 0.05
   cancelOnUngrab: 1
   clipOnUse: {fileID: 0}
