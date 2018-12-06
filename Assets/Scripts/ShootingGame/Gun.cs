@@ -154,6 +154,13 @@ public class Gun : MonoBehaviour {
                     Instantiate(spark, hit.point, Quaternion.identity);
                     target.AddScore();
                 }
+
+                // If the bird is shot, run it's die function
+                if (hit.transform.gameObject.name == "Bird")
+                {
+                    hit.transform.gameObject.GetComponent<BirdController>().Die();
+                }
+
             }
             else
             {

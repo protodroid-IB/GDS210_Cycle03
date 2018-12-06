@@ -6,7 +6,7 @@ public class BirdController : MonoBehaviour
 {
     [SerializeField] GameObject deadBird;
 
-    void Die()
+    public void Die()
     {
         Instantiate(deadBird, transform.position, transform.rotation);
         Destroy(gameObject);
