@@ -34,7 +34,7 @@ public class ThrowingGameController : MonoBehaviour
 	void Update ()
     {
 		int minutes = (int)(timeRemaining / 60);
-		int seconds = (int)((minutes * 60) - timeRemaining);
+		int seconds = (int)(timeRemaining - (minutes * 60));
         timerText.text = "Time Remaining: " + minutes.ToString() + ":" + seconds.ToString();
 
         if (timeRemaining > 0 && !freeplayMode)
@@ -80,6 +80,8 @@ public class ThrowingGameController : MonoBehaviour
 
     void StartThrowingGame()
     {
+		score = 0;
+
         if (activeKnivesContainer != null)
             Destroy(activeKnivesContainer);
 
