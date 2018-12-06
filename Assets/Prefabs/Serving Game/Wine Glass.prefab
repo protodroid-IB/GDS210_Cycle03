@@ -500,7 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glassType: 0
   ingredientAdded: 0
-  particles: {fileID: 0}
+  particles: {fileID: 114851664770776372}
 --- !u!198 &198159970708841162
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -15,6 +15,7 @@ TagManager:
   - Soundscapes
   - ThrowingTarget
   - Glass
+  - ResetBottles
   layers:
   - Default
   - TransparentFX
