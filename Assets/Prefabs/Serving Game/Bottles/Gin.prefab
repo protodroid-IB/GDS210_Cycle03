@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 114985948114668566}
   m_Layer: 9
   m_Name: Gin
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -766,6 +766,10 @@ MonoBehaviour:
   varianceOnSide: 0.278
   varianceBetweenSides: 0.149
   maxFill: 1
+  maxWobble: 0.8
+  wobbleSpeed: 5
+  wobbleSmooth: 0.02
+  recovery: 0.05
 --- !u!114 &114788968019644516
 MonoBehaviour:
   m_ObjectHideFlags: 1

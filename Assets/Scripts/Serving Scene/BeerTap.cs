@@ -11,7 +11,7 @@ public class BeerTap : MonoBehaviour {
 	[SerializeField]
 	Pouring particles;
 
-	private void Start()
+	private void Awake()
 	{
 		particles.ingredient = ingredient;
 	}

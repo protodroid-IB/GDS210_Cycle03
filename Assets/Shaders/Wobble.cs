@@ -34,7 +34,7 @@ namespace Serving
 		float maxFill = 1;
 
         [SerializeField]
-		float maxWobble = 2, wobbleSpeed = 5, wobbleSmooth = 0.02f, recovery = 0.1f;
+		float maxWobble = 0.8f, wobbleSpeed = 5, wobbleSmooth = 0.02f, recovery = 0.05f;
 
 		float wobbleAmountX, wobbleAmountZ;
 
@@ -64,7 +64,7 @@ namespace Serving
 				totalWobbleZ = 0;
 			}
 
-			totalWobbleX += Mathf.Clamp((acceleration.x + (angularAcceleration.z * 0.02f)) * maxWobble, -maxWobble, maxWobble);
+			totalWobbleX += Mathf.Clamp((acceleration.x + (angularAcceleration.z * 0.0f)) * maxWobble, -maxWobble, maxWobble);
 			totalWobbleZ += Mathf.Clamp((acceleration.z + (angularAcceleration.x * 0.02f)) * maxWobble, -maxWobble, maxWobble);
 
 			wobbleAmountX = SetSmooth(wobbleAmountX, totalWobbleX, ref velocityX);

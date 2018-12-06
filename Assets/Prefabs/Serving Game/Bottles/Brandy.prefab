@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 82653128769142876}
   m_Layer: 0
   m_Name: Brandy
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -880,6 +880,10 @@ MonoBehaviour:
   varianceOnSide: 0.386
   varianceBetweenSides: 0.216
   maxFill: 1
+  maxWobble: 0.8
+  wobbleSpeed: 5
+  wobbleSmooth: 0.02
+  recovery: 0.05
 --- !u!138 &138777580629449608
 FixedJoint:
   m_ObjectHideFlags: 1

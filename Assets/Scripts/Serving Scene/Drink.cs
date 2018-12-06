@@ -27,6 +27,9 @@ namespace Serving
 		[SerializeField]
 		float ingredientAdded;
 
+		[SerializeField]
+		Pouring particles;
+
 		Wobble wobble;
 
 		bool clear;
@@ -34,6 +37,7 @@ namespace Serving
 		private void Start()
 		{
 			wobble = GetComponent<Wobble>();
+			adding = FindObjectOfType<Ingredient>();
 		}
 
 		private void Update()
@@ -42,11 +46,17 @@ namespace Serving
 			if(tilt <= 0 && !clear)
 			{
 				clear = true;
+				if (particles)
+				{
+					particles.strength = (tilt * (-1));
+					particles.ingredient = (currentIngredient == null) ? currentIngredient : adding;
+				}
 			}
 			else if(tilt > 0 && clear)
 			{
 				clear = false;
 			}
+			
 
 			if(clear)
 			{

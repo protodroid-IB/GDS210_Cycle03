@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 82454660969263460}
   m_Layer: 9
   m_Name: Wine Glass
-  m_TagString: Glass
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,6 +386,10 @@ MonoBehaviour:
   varianceOnSide: 0.236
   varianceBetweenSides: 0
   maxFill: 0.8
+  maxWobble: 1
+  wobbleSpeed: 5
+  wobbleSmooth: 0.02
+  recovery: 0.05
 --- !u!114 &114540437893723360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -496,6 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glassType: 0
   ingredientAdded: 0
+  particles: {fileID: 0}
 --- !u!198 &198159970708841162
 ParticleSystem:
   m_ObjectHideFlags: 1
