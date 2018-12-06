@@ -4410,7 +4410,7 @@ MonoBehaviour:
       type: 2}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     playOnAwake: 0
     oneShot: 1
     spatial: 0
@@ -4588,110 +4588,6 @@ MonoBehaviour:
     maxDistance3DSound: 0
   - clipName: Eagle
     clip: {fileID: 8300000, guid: 169701204d179fb488a3ce80598e74d3, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_ByeNow
-    clip: {fileID: 8300000, guid: 1b775a2e1247d464aaed1eb484e81ee8, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_Howdy
-    clip: {fileID: 8300000, guid: 48448a867e313ec47baadec190adaaef, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_Serving
-    clip: {fileID: 8300000, guid: bb3e0e3b133365144acd624a3a0dd23c, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_Shooting
-    clip: {fileID: 8300000, guid: c074a05255763194a8bc7892b213a01b, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_ShootingThrowingServing
-    clip: {fileID: 8300000, guid: 1ed79a335f428614ab6ce8dac6e7751c, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_Silly
-    clip: {fileID: 8300000, guid: 5f2e59e643ea96c45b3ffdaad63f088c, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_NotVeryYeeHaw
-    clip: {fileID: 8300000, guid: 6b6d0fa55c24b5b4ea4501467c632df4, type: 3}
-    audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 0
-    playOnAwake: 0
-    oneShot: 1
-    spatial: 1
-    setDistancesHere: 0
-    minDistance3Dsound: 0
-    maxDistance3DSound: 0
-  - clipName: Cactus_Throwing
-    clip: {fileID: 8300000, guid: 80fca7c0342ee464b829af26bdac6c5a, type: 3}
     audioMixerGroup: {fileID: 243386324822033064, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
