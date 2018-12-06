@@ -90,11 +90,12 @@ namespace Serving
 				button.enabled = false;
 			}
 
-			game = true;
+			
 			countdown = true;
 			timer = 3;
 			ResetScore();
 			yield return new WaitForSeconds(3);
+			game = true;
 			timer = 0;
 			countdown = false;
 			customers = FindObjectsOfType<Order>();
@@ -129,7 +130,8 @@ namespace Serving
 
 		void SetTimerText()
 		{
-			timerText.text = ((int)timer).ToString() + " Left";
+			int timeLeft = (int)(gameTime - timer);
+			timerText.text = ((int)timeLeft).ToString() + " Left";
 		}
 	}
 }
