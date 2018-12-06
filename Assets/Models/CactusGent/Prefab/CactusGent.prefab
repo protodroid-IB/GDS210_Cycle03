@@ -457,8 +457,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4816879397282912}
   - component: {fileID: 95855033355135856}
-  - component: {fileID: 82058384063723340}
-  - component: {fileID: 114889598464335812}
   m_Layer: 0
   m_Name: CactusGent
   m_TagString: Untagged
@@ -588,6 +586,7 @@ GameObject:
   - component: {fileID: 114986224812766340}
   - component: {fileID: 114443852219715050}
   - component: {fileID: 114018131845941726}
+  - component: {fileID: 82943467193994628}
   m_Layer: 0
   m_Name: CactusCanvas
   m_TagString: Untagged
@@ -893,17 +892,17 @@ Transform:
   m_Father: {fileID: 4816879397282912}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82058384063723340
+--- !u!82 &82943467193994628
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1743336405354470}
+  m_GameObject: {fileID: 1937862185763348}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2334,18 +2333,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &114889598464335812
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1743336405354470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61b1104eb115d3409ad8f8315904eee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenPhrases: 15
 --- !u!114 &114931905195760484
 MonoBehaviour:
   m_ObjectHideFlags: 1
