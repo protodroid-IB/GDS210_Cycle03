@@ -80,7 +80,7 @@ public class Gun : MonoBehaviour {
         {
             if (primed == false)
             {
-                AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio[0];
+                AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio[0]);
             }
 
             primed = true;
@@ -184,7 +184,7 @@ public class Gun : MonoBehaviour {
             Insert();
         }
 
-        AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio[0];
+        AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio[0]);
     }
 
     public void Eject()
