@@ -14,13 +14,12 @@ public class Bilboard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(mainCamera != null)
-        {
-		    Vector3 forwardPosition = transform.position - mainCamera.position;
-		    forwardPosition = Vector3.Normalize(forwardPosition);
-		    transform.forward = forwardPosition;
-        }
-
+		if (mainCamera != null)
+		{
+			Vector3 forwardPosition = transform.position - mainCamera.position;
+			forwardPosition = Vector3.Normalize(forwardPosition);
+			transform.forward = forwardPosition;
+		}
 			
 			//.LookAt(mainCamera.position, Vector3.up);
 	}

@@ -6133,55 +6133,6 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114392047702001878, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_overrideHtmlColors
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114392047702001878, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_fontSize
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114392047702001878, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_fontSizeBase
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361265558567642, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 7.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361265558567642, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.6624
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361265558567642, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.6624
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361265558567642, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.6624
-      objectReference: {fileID: 0}
-    - target: {fileID: 114392047702001878, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_textAlignment
-      value: 514
-      objectReference: {fileID: 0}
-    - target: {fileID: 1181450245678326, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
   m_IsPrefabAsset: 0

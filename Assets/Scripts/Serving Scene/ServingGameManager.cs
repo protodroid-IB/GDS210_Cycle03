@@ -132,7 +132,7 @@ namespace Serving
 		{
 			int timeLeft = (int)(gameTime - timer);
 			int minutes = timeLeft / 60;
-			int seconds = minutes * 60 - timeLeft;
+			int seconds = timeLeft - (minutes * 60);
 			timerText.text = minutes.ToString() + ":" + seconds.ToString();
 		}
 	}

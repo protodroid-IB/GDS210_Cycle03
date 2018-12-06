@@ -12,15 +12,21 @@ namespace Serving
 		[SerializeField]
 		TextMeshPro orderText;
 
-		ServingGameManager manager;
+		[SerializeField]
+		Transform textSpawnPosition;
 
-		int maxScoreAmount;
+		TextMeshPro scoreText;
+
+		[SerializeField]
+		GameObject scoreTextObject;
+
+		ServingGameManager manager;
 
 		int order = 0;
 
 		public bool gameInProgress;
 
-		bool orderBox;
+		bool orderBox = true;
 
 		private void Start()
 		{
@@ -76,7 +82,7 @@ namespace Serving
 			orderText.text = drink.usedIngredient.name;
 		}
 
-		float CheckDrink(CompleteDrink drink)
+		int CheckDrink(CompleteDrink drink)
 		{
 			return recipes.CheckDrink(drink, order);
 		}
@@ -84,6 +90,8 @@ namespace Serving
 		void Score(int scoreAmount)
 		{
 			manager.AddScore(scoreAmount);
+			scoreText = Instantiate(scoreTextObject, textSpawnPosition.position, Quaternion.identity, orderText.transform).GetComponent<TextMeshPro>();
+			scoreText.text = scoreAmount.ToString() + " Points";
 			GetOrder();
 		}
 
@@ -96,7 +104,7 @@ namespace Serving
 				Drink recievedDrink = other.gameObject.GetComponentInChildren<Drink>();
 				if (recievedDrink)
 				{
-					int score = (int)(CheckDrink(recievedDrink.GetDrink()) * maxScoreAmount);
+					int score = CheckDrink(recievedDrink.GetDrink());
 					Score(score);
 				}
 			}

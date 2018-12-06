@@ -16,13 +16,16 @@ namespace Serving
 			int score = 0;
 			CompleteDrink completeDrink = allDrinks[drinkNumber];
 
+
 			if(completeDrink.usedIngredient == drink.usedIngredient)
 			{
-				score += 50;
+				score +=(int) (50 * drink.ingredientAmount);
+
 			} else if(completeDrink.usedIngredient.type == drink.usedIngredient.type)
 			{
-				score += 20;
+				score += (int)(20 * drink.ingredientAmount);
 			}
+
 			if(completeDrink.glass == drink.glass)
 			{
 				score += 20;

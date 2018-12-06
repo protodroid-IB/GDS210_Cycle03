@@ -21,6 +21,7 @@ namespace Serving
 	public struct CompleteDrink
 	{
 		public Ingredient usedIngredient;
+		public float ingredientAmount;
 		//public MixMethod mixMethod;
 		public GlassType glass;
 	}

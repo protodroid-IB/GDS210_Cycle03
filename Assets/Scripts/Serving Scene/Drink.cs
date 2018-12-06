@@ -18,14 +18,11 @@ namespace Serving
 		[SerializeField]
 		GlassType glassType = GlassType.BeerGlass;
 
-		Ingredient adding;
-
 		//List<DrinkType> types = new List<DrinkType>();
 
 		MixMethod method = MixMethod.Mixed;
 
-		[SerializeField]
-		float ingredientAdded;
+		public float ingredientAdded;
 
 		[SerializeField]
 		Pouring particles;
@@ -37,7 +34,7 @@ namespace Serving
 		private void Start()
 		{
 			wobble = GetComponent<Wobble>();
-			adding = FindObjectOfType<Ingredient>();
+			currentIngredient = FindObjectOfType<Ingredient>();
 		}
 
 		private void Update()
@@ -49,7 +46,7 @@ namespace Serving
 				if (particles)
 				{
 					particles.strength = (tilt * (-1));
-					particles.ingredient = (currentIngredient == null) ? currentIngredient : adding;
+					particles.ingredient = currentIngredient;
 				}
 			}
 			else if(tilt > 0 && clear)
@@ -70,28 +67,20 @@ namespace Serving
 
 		public void AddIngredient(Ingredient ingredient, float time)
 		{
-			if (currentIngredient == ingredient)
+			if (currentIngredient == ingredient && ingredientAdded >= 1)
 				return;
 
-			if(ingredient != adding)
+			if(ingredient != currentIngredient)
 			{
 				ingredientAdded = time;
-				adding = ingredient;
+				currentIngredient = ingredient;
 				wobble.ingredient = ingredient;
 				wobble.SetColours();
 			}
 			else
 			{
-				ingredientAdded += time;
+				ingredientAdded = Mathf.Clamp01(ingredientAdded + time);
 				wobble.fillLevel = ingredientAdded;
-
-				if (ingredientAdded >= 1)
-				{
-					currentIngredient = adding;
-					/*types.Add(ingredient.type);
-					ingredients.Add(ingredient);
-					ingredients = ingredients.OrderBy(t => t.name).ToList();*/
-				}
 			}
 		}
 
@@ -107,7 +96,9 @@ namespace Serving
 		{
 			CompleteDrink drink = new CompleteDrink
 			{
+				
 				usedIngredient = currentIngredient,
+				ingredientAmount = ingredientAdded,
 				//mixMethod = method,
 				glass = glassType
 			};
