@@ -6,7 +6,6 @@
 
     public class InputController : MonoBehaviour
     {
-        [SerializeField] VRTK_SnapDropZone holster;
         [SerializeField] Gun vrGun;
 
         bool equipped = false;
@@ -87,6 +86,16 @@
             }
         }
 
+        public void EquipGun()
+        {
+            equipped = true;
+        }
+
+        public void UnEquipGun()
+        {
+            equipped = false;
+        }
+
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
             
@@ -124,9 +133,9 @@
 
         void ControllerEvents_TriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null)
+            if (equipped)
             {
-                if (e.buttonPressure >= triggerThreshold && !holster.ValidSnappableObjectIsHovering())
+                if (e.buttonPressure >= triggerThreshold && !vrGun.GetComponent<VRTK_InteractableObject>().IsHoveredOverSnapDropZone())
                 {
                     vrGun.TriggerPull(e.buttonPressure);
                 }
@@ -167,7 +176,7 @@
 
         void ControllerEvents_GripClicked(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null)
+            if (equipped)
             {
                 vrGun.Reload();
             }
@@ -200,7 +209,7 @@
 
         void ControllerEvents_TouchpadAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
-            if (vrGun != null)
+            if (equipped)
             {
                 if (vrGun.loaded)
                 {
