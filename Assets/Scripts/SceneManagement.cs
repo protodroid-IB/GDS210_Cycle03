@@ -13,6 +13,7 @@ public class SceneManagement : MonoBehaviour
 
     [SerializeField] GameObject optionMenus;
     [SerializeField] GameObject piano;
+    [SerializeField] Transform hubworld;
 
     GameObject instancedObjects;
 
@@ -53,7 +54,7 @@ public class SceneManagement : MonoBehaviour
         ignore[vrPlayer.transform] = true;
         ignore[doNotDisable] = true;
         ignore[piano.transform] = true;
-       // ignore[optionMenus.transform] = true;
+        ignore[hubworld.transform] = true;
 
         MakeNewInstanceObjects(SceneManager.GetActiveScene().name);
 

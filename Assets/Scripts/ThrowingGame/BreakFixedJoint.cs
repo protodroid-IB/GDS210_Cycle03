@@ -10,7 +10,7 @@
 public class BreakFixedJoint : MonoBehaviour {
     Rigidbody myObjectRB;
 
-  /*  private void Start()
+  private void Start()
     {
         myObjectRB = GetComponent<Rigidbody>();
     }
@@ -20,16 +20,7 @@ public class BreakFixedJoint : MonoBehaviour {
     {
         Debug.Log("A joint from " + gameObject.name + " has just been broken!, force: " + breakForce);
 
-        BreakJoint();
     }
 
-    public void BreakJoint()
-    {
-
-        myObjectRB.useGravity = true;
-        myObjectRB.constraints = RigidbodyConstraints.FreezeRotationY;
-        myObjectRB.isKinematic = false;
-    }
-    */
 
 }

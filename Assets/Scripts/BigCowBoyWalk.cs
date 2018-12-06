@@ -12,9 +12,13 @@ public class BigCowBoyWalk : MonoBehaviour {
     Animator animator;
 
     [SerializeField] Transform[] destinationPoints;
-    int destinationPoint = 0;
+    int refPoint = 0;
+
+    Vector3[] destinationPoint;
 
     NavMeshAgent navAgent;
+    [SerializeField] float walkSpeed;
+    [SerializeField] float animSpeed;
 
     bool walking = true;
 
@@ -25,8 +29,17 @@ public class BigCowBoyWalk : MonoBehaviour {
         animator = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
 
-        navAgent.autoBraking = false;
+        destinationPoint = new Vector3[destinationPoints.Length];
 
+        animator.speed = animSpeed;
+
+        navAgent.autoBraking = false;
+        navAgent.speed = walkSpeed;
+
+        for(int i = 0; i < destinationPoint.Length; i++)
+        {
+            destinationPoint[i] = destinationPoints[i].position;
+        }
     }
 
     // Stop the navmesh causing errors on disable.
@@ -60,16 +73,16 @@ public class BigCowBoyWalk : MonoBehaviour {
         navAgent.isStopped = false;
         walking = true;
 
-        if (destinationPoints.Length == 0)
+        if (destinationPoint.Length == 0)
         {
             Debug.LogError("No destination points setup");
             return;
         }
 
-        navAgent.destination = destinationPoints[destinationPoint].position;
+        navAgent.destination = destinationPoint[refPoint];
 
         // Randomly assign the next destination point. 
-        destinationPoint = Random.Range(0, destinationPoints.Length);
+        refPoint = Random.Range(0, destinationPoint.Length);
 
     }
 }

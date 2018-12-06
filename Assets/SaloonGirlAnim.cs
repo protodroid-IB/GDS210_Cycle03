@@ -17,6 +17,7 @@ public class SaloonGirlAnim : MonoBehaviour
 	void Start ()
     {
         anim = GetComponent<Animator>();
+        anim.SetTrigger("wave");
 
         Reset();
 	}
@@ -37,5 +38,6 @@ public class SaloonGirlAnim : MonoBehaviour
     {
         waveTimer = 0f;
         waveTime = Random.Range(minWaveTime, maxWaveTime);
+        anim.speed = Random.Range(0.95f, 1.3f);
     }
 }
