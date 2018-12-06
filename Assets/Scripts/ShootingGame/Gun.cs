@@ -30,13 +30,13 @@ public class Gun : MonoBehaviour {
     public Transform firePos;
     public GameObject effect;
 
-    private AudioSource gunAudio;
+    private AudioSource[] gunAudio;
     public GameObject puff;
     public GameObject spark;
 
     private void Start()
     {
-        gunAudio = GetComponent<AudioSource>();
+        gunAudio = GetComponents<AudioSource>(); //0 is shot and hammer, 1 is hit
     }
 
     private void Update()
@@ -80,7 +80,7 @@ public class Gun : MonoBehaviour {
         {
             if (primed == false)
             {
-                AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
+                AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio[0];
             }
 
             primed = true;
@@ -125,7 +125,7 @@ public class Gun : MonoBehaviour {
 
     public void Fire()
     {
-        AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio);
+        AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio[0]);
 
         primed = false;
         triggerDown = true;
@@ -144,6 +144,7 @@ public class Gun : MonoBehaviour {
                 }
                 if (rb != null)
                 {
+                    AudioManager.instance.PlaySound("ShootGame_Ping", ref gunAudio[1]);
                     Instantiate(spark, hit.point, Quaternion.identity);
                     rb.AddForce(transform.forward * addForce);
                 }
@@ -151,6 +152,7 @@ public class Gun : MonoBehaviour {
                 var target = col.transform.parent.GetComponentInChildren<Target>();
                 if (target != null)
                 {
+                    AudioManager.instance.PlaySound("ShootGame_Ting", ref gunAudio[1]);
                     Instantiate(spark, hit.point, Quaternion.identity);
                     target.AddScore();
                 }
@@ -164,6 +166,7 @@ public class Gun : MonoBehaviour {
             }
             else
             {
+                AudioManager.instance.PlaySound("ThrowingGame_Hit", ref gunAudio[1]);
                 Instantiate(puff, hit.point, Quaternion.identity);
             }
         }
@@ -181,7 +184,7 @@ public class Gun : MonoBehaviour {
             Insert();
         }
 
-        AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio);
+        AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio[0];
     }
 
     public void Eject()
