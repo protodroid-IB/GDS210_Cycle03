@@ -708,7 +708,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1776322934907326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.58881664, y: 0.01999998, z: 5.260819}
+  m_LocalPosition: {x: 1.0185028, y: 0.17253284, z: 5.4851437}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4584905533681756}
@@ -2128,6 +2128,8 @@ MonoBehaviour:
   cylinderDrop: 0
   firePos: {fileID: 4827790849590400}
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
+  puff: {fileID: 0}
+  spark: {fileID: 0}
 --- !u!114 &114612911317626238
 MonoBehaviour:
   m_ObjectHideFlags: 1
