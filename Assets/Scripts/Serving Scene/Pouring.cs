@@ -35,17 +35,13 @@ namespace Serving
 
 		Color streamColour;
 
-		private void Awake()
-		{
+		// Use this for initialization
+		void Start() {
 			pourParticle = GetComponent<ParticleSystem>();
 			trail = pourParticle.trails;
 			main = pourParticle.main;
 			emission = pourParticle.emission;
 			streamColour = ingredient.colour;
-		}
-
-		// Use this for initialization
-		void Start() {
 			Drink[] glassesColliders = FindObjectsOfType<Drink>();
 			for(int i = 0; i < glassesColliders.Length; i++)
 			{
