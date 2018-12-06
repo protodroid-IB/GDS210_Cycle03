@@ -56,7 +56,9 @@ namespace Serving
 					{
 						cust.EndGame();
 					}
-				}
+
+                    GameManager.gameManager.UpdateHighScore(barScoreRecord);
+                }
 			}
 			SetTimerText();
 		}
