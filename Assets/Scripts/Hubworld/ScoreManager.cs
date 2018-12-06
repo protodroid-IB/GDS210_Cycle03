@@ -63,6 +63,7 @@ public class ScoreManager : MonoBehaviour
         LoadScores();
 
         GameManager.gameManager.UpdatePosters();
+        print("reset scores");
     }
 }
 

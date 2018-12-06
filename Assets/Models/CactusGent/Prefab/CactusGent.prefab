@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224720635073839638}
   - component: {fileID: 222440620506793712}
   - component: {fileID: 114506754590529940}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TextMeshPro Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 224896241366139866}
   - component: {fileID: 222014966636171980}
   - component: {fileID: 114479710325471054}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayButton_Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 224708496757547946}
   - component: {fileID: 222723139512836090}
   - component: {fileID: 114881362622071506}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayButton_Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 222010908309448734}
   - component: {fileID: 114326130203089520}
   - component: {fileID: 114309654966999224}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ByeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 224653425964066820}
   - component: {fileID: 222841991794723022}
   - component: {fileID: 114262972206561078}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayButton_Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224019024184982460}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Subtitles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224092086141478102}
   - component: {fileID: 114876084156168766}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NPC Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 224118243151407698}
   - component: {fileID: 222660754856777670}
   - component: {fileID: 114657226819481706}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TextMeshPro Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 222433430390079788}
   - component: {fileID: 114239735798011270}
   - component: {fileID: 114595446163387246}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Greet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 222958929300344460}
   - component: {fileID: 114205204357439492}
   - component: {fileID: 114438462918975344}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Greet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 222030040964112242}
   - component: {fileID: 114305224372978348}
   - component: {fileID: 114310531052081258}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Antagonise
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 224444741311536128}
   - component: {fileID: 222336869665941628}
   - component: {fileID: 114146507349315606}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TextMeshPro Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 222848342730600472}
   - component: {fileID: 114761845311761416}
   - component: {fileID: 114566994336117960}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HiButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 224425091097067346}
   - component: {fileID: 222557665313986194}
   - component: {fileID: 114931905195760484}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 224637412570354730}
   - component: {fileID: 222255463776822574}
   - component: {fileID: 114964711338616042}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayButton_Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224237033130259274}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 222990597460056398}
   - component: {fileID: 114231256599994048}
   - component: {fileID: 114503650945529744}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Tutorial Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 114443852219715050}
   - component: {fileID: 114018131845941726}
   - component: {fileID: 82943467193994628}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CactusCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 224093952811602454}
   - component: {fileID: 222575587453505608}
   - component: {fileID: 114505744311896054}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TextMeshPro Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Cactus Guy
+  m_text: Pokey McPokerson
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1785,14 +1785,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1826,7 +1826,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114505744311896054}
-    characterCount: 10
+    characterCount: 16
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -2710,7 +2710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 147.3}
+  m_AnchoredPosition: {x: -0, y: 134.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224093952811602454
@@ -2768,7 +2768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2, y: -11.5}
+  m_AnchoredPosition: {x: 0.2, y: -0.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224271026401468456
@@ -2787,7 +2787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.1999793, y: -11.500002}
+  m_AnchoredPosition: {x: 0.1999793, y: -0.4}
   m_SizeDelta: {x: 24.5, y: 17.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224419682311405432
@@ -2810,8 +2810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.02, y: 0.02}
-  m_SizeDelta: {x: 400, y: 200}
+  m_AnchoredPosition: {x: -0.02, y: 0.020000001}
+  m_SizeDelta: {x: 120, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224425091097067346
 RectTransform:
@@ -3013,7 +3013,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2, y: -11.5}
+  m_AnchoredPosition: {x: 0.2, y: -0.4}
   m_SizeDelta: {x: 24.5, y: 17.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224896241366139866

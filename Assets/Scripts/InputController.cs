@@ -89,11 +89,15 @@
         public void EquipGun()
         {
             equipped = true;
+
+            HideModels();
         }
 
         public void UnEquipGun()
         {
             equipped = false;
+
+            HideModels();
         }
 
         void ControllerEvents_TriggerPressed(object sender, ControllerInteractionEventArgs e)
