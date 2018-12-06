@@ -51,8 +51,7 @@ GameObject:
   - component: {fileID: 114431261445566092}
   - component: {fileID: 82564074753489580}
   - component: {fileID: 82811671315140670}
-  - component: {fileID: 114593566578726610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sarsaparilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +68,7 @@ GameObject:
   - component: {fileID: 4223658236581810}
   - component: {fileID: 33526590819474090}
   - component: {fileID: 23039281966309868}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SmallBottleLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +93,6 @@ GameObject:
   - component: {fileID: 114345916219976412}
   - component: {fileID: 114696732920542412}
   - component: {fileID: 114408147421770856}
-  - component: {fileID: 114855025208538180}
   m_Layer: 9
   m_Name: Cork
   m_TagString: Untagged
@@ -113,7 +111,7 @@ GameObject:
   - component: {fileID: 33047397417641594}
   - component: {fileID: 23062123938254596}
   - component: {fileID: 114874339371511178}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +202,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: be6da45d1e1358d47a659c58aca063da, type: 2}
+  - {fileID: 2100000, guid: 0b75db2cdd1f00c479019dc749db586a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -795,17 +793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114593566578726610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1455600715202438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de86c86b1da3d42da931c9b411fedb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114696732920542412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -825,17 +812,6 @@ MonoBehaviour:
   objectToHighlight: {fileID: 0}
   objectHighlighter: {fileID: 0}
   objectToAffect: {fileID: 0}
---- !u!114 &114855025208538180
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1666397354112266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de86c86b1da3d42da931c9b411fedb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114874339371511178
 MonoBehaviour:
   m_ObjectHideFlags: 1

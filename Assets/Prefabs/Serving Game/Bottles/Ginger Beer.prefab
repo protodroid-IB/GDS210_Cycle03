@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33515463754632234}
   - component: {fileID: 23710500738058340}
   - component: {fileID: 114274674859627560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 114726793713836954}
   - component: {fileID: 82726290183051540}
   - component: {fileID: 82362653948822510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ginger Beer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 4090376373463814}
   - component: {fileID: 33215133491606144}
   - component: {fileID: 23516195998624512}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SmallBottleLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1392386938277490}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -20.378, y: 2.316, z: -29.45}
+  m_LocalPosition: {x: -21.331001, y: 2.35, z: -29.5}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4090376373463814}
@@ -407,7 +407,7 @@ MeshCollider:
   m_GameObject: {fileID: 1667864121425838}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -879,7 +879,7 @@ MonoBehaviour:
   lean: 0.2
   emissionAmount: 0
   leanTolerance: 0
-  pourEffect: {fileID: 0}
+  pourEffect: {fileID: 114245058972302016}
 --- !u!138 &138548783735670468
 FixedJoint:
   m_ObjectHideFlags: 1

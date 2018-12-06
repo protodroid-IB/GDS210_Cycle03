@@ -33,7 +33,7 @@ GameObject:
   - component: {fileID: 114503463154773338}
   - component: {fileID: 82523473309896294}
   - component: {fileID: 82974494387421236}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Soda Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 33526200949317640}
   - component: {fileID: 23366048548135668}
   - component: {fileID: 114287259502725670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 4158597838034934}
   - component: {fileID: 33064007019650158}
   - component: {fileID: 23160607142071664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SmallBottleLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
