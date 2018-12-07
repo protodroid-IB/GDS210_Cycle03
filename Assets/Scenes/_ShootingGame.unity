@@ -1385,7 +1385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4502317644088124, guid: 139d4b30850476841b55f5190a27c59d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -32.63
+      value: -30.692
       objectReference: {fileID: 0}
     - target: {fileID: 4502317644088124, guid: 139d4b30850476841b55f5190a27c59d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1567,6 +1567,91 @@ Prefab:
     - target: {fileID: 1751870373917780, guid: 139d4b30850476841b55f5190a27c59d, type: 2}
       propertyPath: m_Name
       value: StopButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493756115115212, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493756115115212, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493756115115212, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184585455997444, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184585455997444, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184585455997444, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929741811338244, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_text
+      value: Shootin' Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929741811338244, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929741811338244, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929741811338244, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929741811338244, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929741811338244, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_fontSizeBase
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929741811338244, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224885873566347590, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 37.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139d4b30850476841b55f5190a27c59d, type: 2}
