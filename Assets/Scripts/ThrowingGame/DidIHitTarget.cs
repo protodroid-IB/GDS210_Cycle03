@@ -47,7 +47,7 @@ public class DidIHitTarget : MonoBehaviour
 
     public bool AmIUsed()
     {
-        print(used);
+
         if (used)
             return true;
         else
