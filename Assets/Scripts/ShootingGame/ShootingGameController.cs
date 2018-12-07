@@ -11,6 +11,7 @@ public class ShootingGameController : MonoBehaviour {
     int poolIndex = 0;
     int sequenceIndex = 0;
     int targetIndex = 0;
+    List<int> randomIdCache = new List<int>();
     [HideInInspector] public int score;
     public Text scoreText;
     public Text highscoreText;
@@ -54,7 +55,13 @@ public class ShootingGameController : MonoBehaviour {
                 var subSequence = sequencePool.pool[poolIndex].sequence[sequenceIndex];
                 if (subSequence.randomize)
                 {
-                    targets[subSequence.targetID[Random.Range(0, subSequence.targetID.Count)]].FlipUp(subSequence.targetTime);
+                    int randomID = Random.Range(subSequence.targetID[0], subSequence.targetID.Count);
+                    while (randomIdCache.Contains(randomID) && randomIdCache.Count < subSequence.targetID.Count)
+                    {
+                        randomID = Random.Range(subSequence.targetID[0], subSequence.targetID.Count);
+                    }
+                    randomIdCache.Add(randomID);
+                    targets[randomID].FlipUp(subSequence.targetTime);
                     targetIndex = 0;
                     sequenceIndex++;
                     Invoke("Cycle", subSequence.exitTime);
