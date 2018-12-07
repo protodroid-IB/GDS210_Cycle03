@@ -6,7 +6,6 @@ public class Target : MonoBehaviour {
 
     public int points;
     bool triggered = false;
-    float timer = 0;
     HingeJoint hinge;
     JointSpring hingeSpring;
     ShootingGameController gameController;
@@ -18,30 +17,18 @@ public class Target : MonoBehaviour {
         hingeSpring = hinge.spring;
     }
 
-    public void Update()
-    {
-        if (timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
-        else if (timer < 0)
-        {
-            FlipDown();
-        }
-    }
-
     public void FlipUp(float time = 0f)
     {
+        CancelInvoke();
         triggered = true;
         SetAngle(0);
-        timer = time;
+        Invoke("FlipDown", time);
     }
 
     public void FlipDown()
     {
         triggered = false;
         SetAngle(-80);
-        timer = 0;
     }
 
     void SetAngle(float angle)

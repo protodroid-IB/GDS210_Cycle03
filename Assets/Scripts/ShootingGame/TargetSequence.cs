@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class TargetSequence
+public class SequencePool
 {
-    public List<Sequence> sequence;
+    public List<TargetSequence> pool;
 }
 
 [System.Serializable]
-public class Sequence
+public class TargetSequence
+{
+    public string name;
+    public List<SubSequence> sequence;
+}
+
+[System.Serializable]
+public class SubSequence
 {
     public float timeInterval;
     public float targetTime;
