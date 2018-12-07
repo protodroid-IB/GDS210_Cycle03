@@ -39,14 +39,12 @@ public class GlassShelf : MonoBehaviour {
 			if (cache.Contains(i))
 				break;
 
-			float sqrVelocity = glasses[i].GetComponent<Rigidbody>().velocity.sqrMagnitude;
-
 			if((glasses[i].transform.position.z - leftTransform.position.z) >= 0.2f && glasses[i].transform.parent == transform)
 			{
-				glasses[i].transform.parent = null;
+				glasses[i].transform.parent = transform.parent;
 			}
 
-			if (glasses[i].transform.parent != transform && sqrVelocity >= 0.1f)
+			if (glasses[i].transform.parent != transform)
 			{
 				cache.Add(i);
 				GameObject newGlass = glasses[i];
