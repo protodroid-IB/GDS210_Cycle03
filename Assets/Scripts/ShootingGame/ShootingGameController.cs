@@ -42,7 +42,7 @@ public class ShootingGameController : MonoBehaviour {
         poolIndex = 0;
         sequenceIndex = 0;
         targetIndex = 0;
-        Cycle();
+        Invoke("Cycle", 3f);
     }
 
     void Cycle()
