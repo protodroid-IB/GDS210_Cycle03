@@ -54,7 +54,6 @@ namespace Serving
 		public void StartGame()
 		{
 			gameInProgress = true;
-			orderBox = true;
 			GetOrder();
 		}
 

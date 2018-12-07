@@ -26,9 +26,14 @@ namespace Serving
 
 		}
 
-		private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider other)
+        {
+            
+        }
+
+        private void OnCollisionEnter(Collision collision)
 		{
-			if(collision.transform.tag == "ResetBottles")
+			if(collision.transform.tag == "Floor")
 			{
 				transform.position = startPosition;
 				transform.rotation = startRotation;
