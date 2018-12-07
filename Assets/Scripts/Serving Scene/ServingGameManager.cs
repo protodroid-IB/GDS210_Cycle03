@@ -94,6 +94,7 @@ namespace Serving
 			countdown = true;
 			timer = 3;
 			ResetScore();
+
 			yield return new WaitForSeconds(3);
 			game = true;
 			countdown = false;
