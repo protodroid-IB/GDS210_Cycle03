@@ -10,7 +10,7 @@ public class RisingScoreText : MonoBehaviour {
 
 	private void Start()
 	{
-		Destroy(gameObject, 5);
+		Destroy(gameObject, 3);
 		text = GetComponent<TextMeshPro>();
 	}
 

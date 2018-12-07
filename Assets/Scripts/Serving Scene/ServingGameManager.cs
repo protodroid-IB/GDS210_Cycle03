@@ -130,7 +130,12 @@ namespace Serving
 
 		void SetTimerText()
 		{
-			int timeLeft = (int)(gameTime - timer);
+            int timeLeft = (int)(gameTime - timer);
+            if (countdown)
+            {
+                timeLeft = (int)timer;
+            }
+			
 			int minutes = timeLeft / 60;
 			int seconds = timeLeft - (minutes * 60);
 			timerText.text = minutes.ToString() + ":" + seconds.ToString();
