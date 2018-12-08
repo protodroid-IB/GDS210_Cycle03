@@ -98,6 +98,7 @@ namespace Serving
 			if (ingredient)
 			{
 				fillColor = ingredient.colour;
+				fillColor = new Color(fillColor.r, fillColor.g, fillColor.b, 1);
 				foamColor = fillColor + (Color.white * 0.1f);
 				rend.material.SetColor("_Tint", fillColor);
 				rend.material.SetColor("_FoamColor", foamColor);

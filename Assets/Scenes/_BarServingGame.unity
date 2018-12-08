@@ -375,6 +375,21 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.10000004
       objectReference: {fileID: 0}
+    - target: {fileID: 114839732430992740, guid: 6b76c7e56e4b5b7439dd0f4d08b61df5,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartRound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114118933348638514, guid: 6b76c7e56e4b5b7439dd0f4d08b61df5,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114764542197844898, guid: 6b76c7e56e4b5b7439dd0f4d08b61df5,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartFreePlay
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b76c7e56e4b5b7439dd0f4d08b61df5, type: 2}
   m_IsPrefabAsset: 0
