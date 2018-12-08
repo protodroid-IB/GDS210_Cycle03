@@ -18,7 +18,7 @@ namespace Serving
 
 		Order[] customers;
 
-		int shortTime = 60, mediumTime = 180, longTime = 300;
+		int roundLength = 180;
 
 		float timer = 0, gameTime = 0;
 
@@ -45,21 +45,10 @@ namespace Serving
 				timer += Time.deltaTime;
 				if (timer >= gameTime)
 				{
-					foreach (Button button in gameButtons)
-					{
-						button.enabled = false;
-					}
-
-					timer = 0;
-					game = false;
-					foreach (Order cust in customers)
-					{
-						cust.EndGame();
-					}
-
-                    GameManager.gameManager.UpdateHighScore(barScoreRecord);
+					StopGame();
                 }
 			}
+
 			SetTimerText();
 		}
 
@@ -85,11 +74,8 @@ namespace Serving
 
 		IEnumerator StartGame(int roundTime)
 		{
-			foreach(Button button in gameButtons)
-			{
-				button.enabled = false;
-			}
 
+			StopGame();
 			
 			countdown = true;
 			timer = 3;
@@ -99,34 +85,54 @@ namespace Serving
 			game = true;
 			countdown = false;
 			timer = 0;
-			customers = FindObjectsOfType<Order>();
 			gameTime = roundTime;
-			foreach(Order cust in customers)
+
+			customers = FindObjectsOfType<Order>();
+
+			ManageCustomers(true, false);
+
+		}
+
+		public void StopGame()
+		{
+			if (!game)
+				return;
+
+			ManageCustomers(false, false);
+
+			timer = 0;
+			game = false;
+
+			GameManager.gameManager.UpdateHighScore(barScoreRecord);
+		}
+
+		public void StartRound()
+		{
+			if (game)
+				return;
+			StartCoroutine(StartGame(roundLength));
+		}
+
+		public void StartFreePlay()
+		{
+			if (game)
+				return;
+
+			ManageCustomers(true, true);
+		}
+
+		void ManageCustomers(bool start, bool free)
+		{
+			customers = FindObjectsOfType<Order>();
+			foreach (Order cust in customers)
 			{
-				cust.StartGame();
+				if (start)
+					cust.StartGame();
+				else
+					cust.EndGame();
+
+				cust.freePlay = free;
 			}
-
-		}
-
-		public void StartShortRound()
-		{
-			if (game)
-				return;
-			StartCoroutine(StartGame(shortTime));
-		}
-
-		public void StartMediumRound()
-		{
-			if (game)
-				return;
-			StartCoroutine(StartGame(mediumTime));
-		}
-
-		public void StartLongGame()
-		{
-			if (game)
-				return;
-			StartCoroutine(StartGame(longTime));
 		}
 
 		void SetTimerText()

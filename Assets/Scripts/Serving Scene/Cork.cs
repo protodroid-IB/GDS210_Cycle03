@@ -19,12 +19,13 @@ public class Cork : MonoBehaviour {
 
 	}
 
-	private void OnJointBreak(float breakForce)
+	private void Update()
 	{
-		if(transform.parent == parent)
+		if(transform.parent != parent)
 		{
-			transform.parent = null;
+			Destroy(joint);
 		}
 	}
+
 
 }
