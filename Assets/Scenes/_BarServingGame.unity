@@ -253,13 +253,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4794477165430032, guid: 8797bdf7e4767d546902a3a36f336f03, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 10
+    - target: {fileID: 1355330777694310, guid: 8797bdf7e4767d546902a3a36f336f03, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 4794477165430032, guid: 8797bdf7e4767d546902a3a36f336f03, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 10
+    - target: {fileID: 1421955521940672, guid: 8797bdf7e4767d546902a3a36f336f03, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1631031509381724, guid: 8797bdf7e4767d546902a3a36f336f03, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8797bdf7e4767d546902a3a36f336f03, type: 2}
@@ -11567,19 +11571,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4211896276502168, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4211896276502168, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.86605275
       objectReference: {fileID: 0}
     - target: {fileID: 4211896276502168, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4211896276502168, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.4999527
       objectReference: {fileID: 0}
     - target: {fileID: 4211896276502168, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
       propertyPath: m_RootOrder
@@ -11599,6 +11603,10 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211896276502168, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 120.006004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a4a23038467f54b93724b3d4188bb0, type: 2}
@@ -12382,7 +12390,7 @@ GameObject:
   - component: {fileID: 1597470993}
   m_Layer: 0
   m_Name: ServingGameWorld
-  m_TagString: Untagged
+  m_TagString: Parent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

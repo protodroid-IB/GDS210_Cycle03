@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bc110b53cd20d4c9ff38cfed54dba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillLevel: 0
+  fillLevel: 0.75
   ingredient: {fileID: 0}
   unevenBase: 1
   centreFill: -0.5
