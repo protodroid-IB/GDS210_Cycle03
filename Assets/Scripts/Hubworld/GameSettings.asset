@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   musicMute: 0
-  musicVolume: 1
+  musicVolume: 0.6444949
   soundMute: 0
-  soundVolume: 1
+  soundVolume: 0.8860984
   tutorial: 1

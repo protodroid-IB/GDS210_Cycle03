@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using VRTK;
 
 // This will control the settings in the options menu.
 
@@ -19,19 +20,32 @@ public class MenuSettings : MonoBehaviour
     [SerializeField]
     private AudioMixerGroup mixerSFX, mixerMusic, mixerMaster;
 
+    VRTK_ObjectTooltip[] tutorials;
+
     private void Start()
     {
-        soundVolumeSlider.onValueChanged.AddListener(delegate { SoundVolumeChange(); });
-        musicVolumeSlider.onValueChanged.AddListener(delegate { MusicVolumeChange(); });
-        tutorialToggle.onValueChanged.AddListener(delegate { TutorialToggleChange(tutorialToggle.isOn); });
+        soundVolumeSlider.onValueChanged.AddListener(SoundVolumeChange);
+        musicVolumeSlider.onValueChanged.AddListener( MusicVolumeChange);
+        tutorialToggle.onValueChanged.AddListener(TutorialToggleChange);
 
         UpdateSFXVolume();
         UpdateMusicVolume();
 
+        tutorials = new VRTK_ObjectTooltip[0];
     }
 
     private void Update()
     {
+        if (tutorials.Length < 4)
+        {
+            tutorials = FindObjectsOfType<VRTK_ObjectTooltip>();
+            foreach (VRTK_ObjectTooltip tute in tutorials)
+            {
+                tute.gameObject.SetActive(tutorialToggle.isOn);
+            }
+
+        }
+
         soundVolumeSlider.value = gameSettings.soundVolume;
         musicVolumeSlider.value = gameSettings.musicVolume;
         tutorialToggle.isOn = gameSettings.tutorial;
@@ -40,21 +54,26 @@ public class MenuSettings : MonoBehaviour
     // Set if the game should be played as a tutorial.
     void TutorialToggleChange(bool toggle)
     {
+        foreach (VRTK_ObjectTooltip tute in tutorials)
+        {
+            tute.gameObject.SetActive(toggle);
+        }
+
         int tutorialToggle = toggle ? 1 : 0;
         gameSettings.tutorial = toggle;
         PlayerPrefs.SetInt("Tutorial", tutorialToggle);
     }
     
     // Adjust volumes for Sounds...
-    void SoundVolumeChange()
+    void SoundVolumeChange(float volume)
     {
-        gameSettings.soundVolume = soundVolumeSlider.value;
+        gameSettings.soundVolume = volume;
         UpdateSFXVolume();
         PlayerPrefs.SetFloat("SoundVolume", gameSettings.soundVolume);
     }
 
     // ... and Music.
-    void MusicVolumeChange()
+    void MusicVolumeChange(float volume)
     {
         gameSettings.musicVolume = musicVolumeSlider.value;
         UpdateMusicVolume();

@@ -13,8 +13,7 @@ public class Poster : MonoBehaviour {
     public void UpdateScore()
     {
         highScoreText.text = "$" + scoreRecord.highestScore.ToString();
-        print(scoreRecord.highestScore);
-        print(highScoreText.text);
+
     }
 
 }

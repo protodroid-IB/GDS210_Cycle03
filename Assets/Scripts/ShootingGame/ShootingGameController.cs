@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class ShootingGameController : MonoBehaviour {
 
-    public TargetSequence targetSequence;
+    public SequencePool sequencePool;
     public Target[] targets;
+    int poolIndex = 0;
     int sequenceIndex = 0;
     int targetIndex = 0;
+    List<int> randomIdCache = new List<int>();
     [HideInInspector] public int score;
     public Text scoreText;
     public Text highscoreText;
-
-    // Reference to the high score records.
+    
     [SerializeField] ScoreRecords scoreRecord;
 
     public void Start()
@@ -30,63 +32,76 @@ public class ShootingGameController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P))
         {
             StopCycle();
-        }       
+        }
     }
 
     public void StartCycle()
     {
         ResetTargets();
+        sequencePool.pool = sequencePool.pool.OrderBy(x => Random.value).ToList();
         score = 0;
+        poolIndex = 0;
         sequenceIndex = 0;
         targetIndex = 0;
-        Cycle();
+        Invoke("Cycle", 3f);
+    }
+
+    void Cycle()
+    {
+        if (poolIndex < sequencePool.pool.Count)
+        {
+            if (sequenceIndex < sequencePool.pool[poolIndex].sequence.Count)
+            {
+                var subSequence = sequencePool.pool[poolIndex].sequence[sequenceIndex];
+                if (subSequence.randomize)
+                {
+                    int randomID = Random.Range(subSequence.targetID[0], subSequence.targetID.Count);
+                    while (randomIdCache.Contains(randomID) && randomIdCache.Count < subSequence.targetID.Count)
+                    {
+                        randomID = Random.Range(subSequence.targetID[0], subSequence.targetID.Count);
+                    }
+                    randomIdCache.Add(randomID);
+                    targets[randomID].FlipUp(subSequence.targetTime);
+                    targetIndex = 0;
+                    sequenceIndex++;
+                    Invoke("Cycle", subSequence.exitTime);
+                }
+                else if (targetIndex < subSequence.targetID.Count)
+                {
+                    targets[subSequence.targetID[targetIndex]].FlipUp(subSequence.targetTime);
+                    targetIndex++;
+                    Invoke("Cycle", subSequence.timeInterval);
+                }
+                else
+                {
+                    targetIndex = 0;
+                    sequenceIndex++;
+                    Invoke("Cycle", subSequence.exitTime);
+                }
+            }
+            else
+            {
+                sequenceIndex = 0;
+                targetIndex = 0;
+                poolIndex++;
+                Cycle();
+            }
+        }
+        else
+        {
+            Invoke("EndGame", 3);
+        }
+    }
+
+    void EndGame()
+    {
+        StopCycle();
+        GameManager.gameManager.UpdateHighScore(scoreRecord);
     }
 
     public void StopCycle()
     {
         ResetTargets();
-    }
-
-    void Cycle()
-    {
-        if (sequenceIndex < targetSequence.sequence.Count)
-        {
-            Sequence sequence = targetSequence.sequence[sequenceIndex];
-
-            if (sequence.randomize)
-            {
-                targets[sequence.targetID[Random.Range(0, sequence.targetID.Count)]].FlipUp(sequence.targetTime);
-                targetIndex = 0;
-                sequenceIndex++;
-                Invoke("Cycle", sequence.exitTime);
-            }
-            else if (targetIndex < sequence.targetID.Count)
-            {
-                targets[sequence.targetID[targetIndex]].FlipUp(sequence.targetTime);
-                targetIndex++;
-                Invoke("Cycle", sequence.timeInterval);
-            }
-            else
-            {
-                targetIndex = 0;
-                sequenceIndex++;
-                Invoke("Cycle", sequence.exitTime);
-            }
-        }
-        else
-        {
-
-            sequenceIndex = 0;
-
-            // End of minigame occurs here ???
-            Invoke("EndOfGame", 3);
-        }
-    }
-
-    void EndOfGame()
-    {
-        GameManager.gameManager.UpdateHighScore(scoreRecord);
-
     }
 
     private void ResetTargets()
@@ -103,10 +118,8 @@ public class ShootingGameController : MonoBehaviour {
         score += points;
         scoreText.text = score.ToString("0000");
         scoreRecord.currentScore = score;
-
     }
-
-    // Function to restart the scene.
+    
     public void RestartMiniGame(string minigame)
     {
         GameManager.gameManager.RestartMiniGame(minigame);

@@ -16,6 +16,7 @@ TagManager:
   - ThrowingTarget
   - Glass
   - ResetBottles
+  - Parent
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,7 @@ namespace Serving
 
 		int order = 0;
 
-		public bool gameInProgress;
+		public bool gameInProgress, freePlay;
 
 		bool orderBox = true;
 
@@ -54,7 +54,6 @@ namespace Serving
 		public void StartGame()
 		{
 			gameInProgress = true;
-			orderBox = true;
 			GetOrder();
 		}
 
@@ -89,7 +88,8 @@ namespace Serving
 
 		void Score(int scoreAmount)
 		{
-			manager.AddScore(scoreAmount);
+			if(!freePlay)
+				manager.AddScore(scoreAmount);
 			scoreText = Instantiate(scoreTextObject, textSpawnPosition.position, Quaternion.identity, orderText.transform).GetComponent<TextMeshPro>();
 			scoreText.text = scoreAmount.ToString() + " Points";
 			GetOrder();

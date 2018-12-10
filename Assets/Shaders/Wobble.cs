@@ -32,8 +32,7 @@ namespace Serving
 
 		[SerializeField]
 		float maxFill = 1;
-
-        [SerializeField]
+		
 		float maxWobble = 0.8f, wobbleSpeed = 5, wobbleSmooth = 0.02f, recovery = 0.05f;
 
 		float wobbleAmountX, wobbleAmountZ;
@@ -98,6 +97,7 @@ namespace Serving
 			if (ingredient)
 			{
 				fillColor = ingredient.colour;
+				fillColor = new Color(fillColor.r, fillColor.g, fillColor.b, 1);
 				foamColor = fillColor + (Color.white * 0.1f);
 				rend.material.SetColor("_Tint", fillColor);
 				rend.material.SetColor("_FoamColor", foamColor);
