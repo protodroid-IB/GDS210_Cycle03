@@ -22,12 +22,15 @@ public class BladeGettingStuckScript : MonoBehaviour
 
     [SerializeField] Vector3 velocity;
 
+    VRTK_InteractableObject interactableObject;
+
     private void Awake()
     {
         myObjectRB = myObject.GetComponent<Rigidbody>();
 
         tgc = GameObject.Find("ThrowingGameController").GetComponent<ThrowingGameController>();
         diht = myObjectRB.GetComponent<DidIHitTarget>();
+        interactableObject = GetComponentInParent<VRTK_InteractableObject>();
     }
 
     private void Update()
@@ -44,19 +47,25 @@ public class BladeGettingStuckScript : MonoBehaviour
 
         if (other.gameObject.tag == "ThrowingTarget" && diht.AmIUsed())
 		{
-            ParentMe(other, depth);     // Sticks to targets, and penetrates.
+            if (!interactableObject.IsGrabbed())
+            {
+                ParentMe(other, depth);     // Sticks to targets, and penetrates.
 
-            print(other.name);
-            diht.SetUsed();
-            tgc.AddScore(100);
+                print(other.name);
+                diht.SetUsed();
+                tgc.AddScore(100);
+            }
             
         }
         else if(other.gameObject.tag == "Floor")
         {
-            // Sticks to any other collider but does not penetrates. Stops falling through floor.
-            // Enables kinematic to stop parents collider bouncing away from others collider.
-            ParentMe(other, 0);    
-            myObjectRB.isKinematic = true;
+            if (!interactableObject.IsGrabbed())
+            {
+                // Sticks to any other collider but does not penetrates. Stops falling through floor.
+                // Enables kinematic to stop parents collider bouncing away from others collider.
+                ParentMe(other, 0);
+                myObjectRB.isKinematic = true;
+            }
         }
 
     }
