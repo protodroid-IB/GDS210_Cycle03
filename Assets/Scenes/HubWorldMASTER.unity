@@ -4805,12 +4805,12 @@ Prefab:
     - target: {fileID: 114274387884120712, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114274387884120712, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114130939695755460, guid: 0b01046970b84cf429e8290850d24c2b,
         type: 2}
