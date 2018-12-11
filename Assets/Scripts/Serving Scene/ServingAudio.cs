@@ -7,9 +7,6 @@ public class ServingAudio : MonoBehaviour
 {
     private AudioSource[] audioSources;
 
-    [SerializeField]
-    private bool canPour = false;
-
     private Pouring pouring;
 
 
@@ -17,24 +14,31 @@ public class ServingAudio : MonoBehaviour
     private void Awake()
     {
         audioSources = GetComponents<AudioSource>();
+        if(audioSources.Length < 2)
+        {
+            AudioSource source = (audioSources.Length == 1)? audioSources[0] : gameObject.AddComponent<AudioSource>();
+            audioSources = new AudioSource[2];
+            audioSources[0] = source;
+            audioSources[1] = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     // Use this for initialization
     void Start ()
     {
-        if (canPour)
-        {
-            pouring = GetComponentInChildren<Pouring>();
+        pouring = GetComponentInChildren<Pouring>();
+
+        if (pouring)
+        {   
             audioSources[1].volume = 0f;
             AudioManager.instance.PlaySound("BarGame_Pour", ref audioSources[1], 1f, 0f);
         }
-        else pouring = null;
     }
 
     //POUR SOUND
     void Update()
     {
-        if(canPour)
+        if(pouring)
         {
             audioSources[1].volume = pouring.strength;
         }         

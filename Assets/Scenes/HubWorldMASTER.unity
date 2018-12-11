@@ -2224,11 +2224,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 350375518}
@@ -10002,6 +10002,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4942889207938810, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10182,6 +10192,56 @@ Prefab:
       propertyPath: modelAliasRightController
       value: 
       objectReference: {fileID: 864764087}
+    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1698443557}
+    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayPickUpSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1885074618}
+    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayPickUpSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
+        type: 2}
+      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0
@@ -13783,6 +13843,12 @@ Transform:
   m_Father: {fileID: 14019496}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1698443557 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114815705399956386, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1064278720}
+  m_Script: {fileID: 11500000, guid: b786295ec8e5a324d852d3a2cbc085a1, type: 3}
 --- !u!1001 &1703374006
 Prefab:
   m_ObjectHideFlags: 0
@@ -15157,6 +15223,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4333736859441266, guid: ff26c2df8f3d20943b36ddd0fa5f565c,
     type: 2}
   m_PrefabInternal: {fileID: 1502560015}
+--- !u!114 &1885074618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114123742640394018, guid: 805c56b3b076949fba9b84cd408d94ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1064278720}
+  m_Script: {fileID: 11500000, guid: b786295ec8e5a324d852d3a2cbc085a1, type: 3}
 --- !u!4 &1887782865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4271585738583754, guid: 805c56b3b076949fba9b84cd408d94ad,

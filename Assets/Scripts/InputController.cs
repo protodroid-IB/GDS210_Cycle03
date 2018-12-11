@@ -128,7 +128,6 @@
 
         void ControllerEvents_TriggerClicked(object sender, ControllerInteractionEventArgs e)
         {
-
         }
 
         void ControllerEvents_TriggerUnclicked(object sender, ControllerInteractionEventArgs e)

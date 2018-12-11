@@ -35,6 +35,8 @@ namespace Serving
 
 		Color streamColour;
 
+        private ServingAudio servingAudio;
+
 		// Use this for initialization
 		void Start() {
 			pourParticle = GetComponent<ParticleSystem>();
@@ -47,7 +49,16 @@ namespace Serving
 			{
 				pourParticle.trigger.SetCollider(i, glassesColliders[i].GetComponent<Collider>());
 			}
-		}
+
+            servingAudio = GetComponent<ServingAudio>();
+
+            if (servingAudio == null)
+                servingAudio = gameObject.AddComponent<ServingAudio>();
+
+            
+           
+
+        }
 
 		private void OnParticleCollision(GameObject other)
 		{

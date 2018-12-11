@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeerTap : MonoBehaviour {
+public class BeerTap : MonoBehaviour
+{
 
 	[SerializeField]
 	Ingredient ingredient;
