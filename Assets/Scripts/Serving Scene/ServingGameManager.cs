@@ -60,7 +60,7 @@ namespace Serving
 
 			if (barScoreRecord.highestScore < score)
 			{
-				barScoreRecord.highestScore = score;
+				// barScoreRecord.highestScore = score;
 				highText.text = "Highscore = " + score.ToString() + " points";
 			}
 		}
