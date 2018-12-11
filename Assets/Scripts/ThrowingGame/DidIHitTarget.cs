@@ -24,7 +24,7 @@ public class DidIHitTarget : MonoBehaviour
         if (other.gameObject.tag == "ThrowingTarget" && !AmIUsed())
         {
             SetUsed();
-            tgc.AddScore(10);
+            tgc.AddScore(10, other);
         }
 
         if(!other.gameObject.layer.Equals(2))

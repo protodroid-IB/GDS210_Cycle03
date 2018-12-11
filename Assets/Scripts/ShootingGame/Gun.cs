@@ -179,6 +179,11 @@ public class Gun : MonoBehaviour {
                     hit.transform.gameObject.GetComponent<BirdController>().Die();
                 }
 
+				if( hit.transform.GetComponent<CharacterDialogue>())
+				{
+					hit.transform.GetComponent<CharacterDialogue>().PlayShotAudio();
+				}
+
             }
             else
             {
