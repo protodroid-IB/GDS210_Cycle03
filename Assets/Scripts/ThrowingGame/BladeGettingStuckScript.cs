@@ -53,7 +53,7 @@ public class BladeGettingStuckScript : MonoBehaviour
 
                 print(other.name);
                 diht.SetUsed();
-                tgc.AddScore(100);
+                tgc.AddScore(100, other);
             }
             
         }

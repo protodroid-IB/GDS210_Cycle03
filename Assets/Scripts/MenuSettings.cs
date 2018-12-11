@@ -52,7 +52,7 @@ public class MenuSettings : MonoBehaviour
     }
 
     // Set if the game should be played as a tutorial.
-    void TutorialToggleChange(bool toggle)
+    public void TutorialToggleChange(bool toggle)
     {
         foreach (VRTK_ObjectTooltip tute in tutorials)
         {
