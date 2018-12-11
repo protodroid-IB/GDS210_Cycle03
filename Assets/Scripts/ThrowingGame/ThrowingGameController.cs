@@ -51,10 +51,13 @@ public class ThrowingGameController : MonoBehaviour
         }
     }
 
-    public void AddScore(int points)
+    public void AddScore(int points, Collider collider)
     {
         if (!freeplayMode)
         {
+            if (collider.gameObject.name == "SwingingTarget")
+                points = points * 10;
+
             score += points;
             scoreText.text = "Score: " + score.ToString("0000");
             throwingGameScores.currentScore = score;    // Reference to score records.

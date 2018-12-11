@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 64704027315353302}
   - component: {fileID: 54130055768593628}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: SwingingTarget
   m_TagString: ThrowingTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
