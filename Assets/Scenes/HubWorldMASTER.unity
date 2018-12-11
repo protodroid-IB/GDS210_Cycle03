@@ -2055,11 +2055,6 @@ Transform:
   m_Father: {fileID: 141393461}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &328371047 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4155597049115508, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!4 &329347071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4936740473142850, guid: ed1faab67e15a7542b9e61833b3cec28,
@@ -3405,11 +3400,6 @@ Transform:
   m_Father: {fileID: 13135375}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &501802220 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4361740224968906, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1001 &512320620
 Prefab:
   m_ObjectHideFlags: 0
@@ -5442,25 +5432,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90b73da1948cf34191cd78208dc1b24, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &667341923 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1480767123546722, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
---- !u!114 &667341924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 667341923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 1015964170}
-  _ears: {fileID: 1287330465}
-  wireframe: 0
 --- !u!1 &676190207
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,11 +7582,6 @@ Transform:
   m_Father: {fileID: 349954313}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &848079595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1847414500154988, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1001 &851148548
 Prefab:
   m_ObjectHideFlags: 0
@@ -7662,11 +7628,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90b73da1948cf34191cd78208dc1b24, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &864764087 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1455407306083378, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1 &870686519
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,11 +9481,6 @@ Transform:
   m_Father: {fileID: 490438801}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1015964170 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4677426645414564, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!4 &1018988461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4353348680317336, guid: e90b73da1948cf34191cd78208dc1b24,
@@ -9560,11 +9516,6 @@ Transform:
   m_Father: {fileID: 1433173159}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1026067781 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1242242743102324, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1 &1031534607
 GameObject:
   m_ObjectHideFlags: 0
@@ -9698,16 +9649,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4942889207938810, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9740,226 +9681,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 33849071712089394, guid: 805c56b3b076949fba9b84cd408d94ad,
+    - target: {fileID: 114643480630475526, guid: 805c56b3b076949fba9b84cd408d94ad,
         type: 2}
-      propertyPath: m_Mesh
+      propertyPath: targetListPolicy
       value: 
-      objectReference: {fileID: 873698669}
+      objectReference: {fileID: 0}
     - target: {fileID: 23464530437541238, guid: 805c56b3b076949fba9b84cd408d94ad,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 444725345}
-    - target: {fileID: 1395730490316946, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1519484228842028, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
+    - target: {fileID: 33849071712089394, guid: 805c56b3b076949fba9b84cd408d94ad,
         type: 2}
-      propertyPath: displayText
-      value: Use Grips to Reload
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerSize.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: drawLineFrom
+      propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1887782865}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: drawLineTo
-      value: 
-      objectReference: {fileID: 328371047}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: fontColor.r
-      value: 0.8773585
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: fontColor.g
-      value: 0.8773585
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: fontColor.b
-      value: 0.8773585
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerColor.r
-      value: 0.6415094
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerColor.g
-      value: 0.3266093
-      objectReference: {fileID: 0}
-    - target: {fileID: 114667784903631926, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: displayText
-      value: Use Grips to Reload
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerSize.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: drawLineFrom
-      value: 
-      objectReference: {fileID: 1324963224}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: drawLineTo
-      value: 
-      objectReference: {fileID: 501802220}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: fontColor.r
-      value: 0.8773585
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: fontColor.g
-      value: 0.8773585
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: fontColor.b
-      value: 0.8773585
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerColor.r
-      value: 0.6415094
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerColor.g
-      value: 0.3266093
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295369733206706, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: containerColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualBoundaries
-      value: 
-      objectReference: {fileID: 1026067781}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualHeadset
-      value: 
-      objectReference: {fileID: 848079595}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualLeftController
-      value: 
-      objectReference: {fileID: 1471355504}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: actualRightController
-      value: 
-      objectReference: {fileID: 1456277575}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: modelAliasLeftController
-      value: 
-      objectReference: {fileID: 1618439354}
-    - target: {fileID: 114478505568904270, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: modelAliasRightController
-      value: 
-      objectReference: {fileID: 864764087}
-    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1698443557}
-    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayPickUpSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 114814747268607206, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1885074618}
-    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayPickUpSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 114303946645106146, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: OnControllerGrabInteractableObject.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114044724157748258, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: targetListPolicy
-      value: 
-      objectReference: {fileID: 1398131034}
-    - target: {fileID: 1284294863661180, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-      propertyPath: m_Name
-      value: TP Policy
-      objectReference: {fileID: 0}
-    - target: {fileID: 114067377139746398, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: layer.m_Bits
-      value: 8192
-      objectReference: {fileID: 0}
-    - target: {fileID: 114067377139746398, guid: 805c56b3b076949fba9b84cd408d94ad,
-        type: 2}
-      propertyPath: distance
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114664779582847296, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
-    - {fileID: 114075193734990122, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      objectReference: {fileID: 873698669}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1065024771
@@ -11151,11 +10888,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cf9dcd4a7d86844081559c0626348e8, type: 2}
   m_IsPrefabAsset: 0
---- !u!4 &1287330465 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4623448230200554, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1 &1301124323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1893934906340376, guid: e90b73da1948cf34191cd78208dc1b24,
@@ -11340,11 +11072,6 @@ Transform:
   m_Father: {fileID: 1822998151}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1324963224 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4437304356747798, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1 &1325978885
 GameObject:
   m_ObjectHideFlags: 0
@@ -11775,26 +11502,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1398131030 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1284294863661180, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
---- !u!114 &1398131034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1398131030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ed2aa1a29b92ca4f84a26a5f6e9218b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  operation: 0
-  checkType: 4
-  identifiers:
-  - Character
 --- !u!1 &1404747683
 GameObject:
   m_ObjectHideFlags: 0
@@ -12229,11 +11936,6 @@ Transform:
   m_Father: {fileID: 1233560629}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1456277575 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1417583825379894, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1001 &1457590615
 Prefab:
   m_ObjectHideFlags: 0
@@ -12330,11 +12032,6 @@ Transform:
   m_Father: {fileID: 455694504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1471355504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1358908443004542, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!114 &1471946386 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114257908161972230, guid: 0b01046970b84cf429e8290850d24c2b,
@@ -13404,11 +13101,6 @@ Transform:
   m_Father: {fileID: 591643645}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -49.437004, z: 0}
---- !u!1 &1618439354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1039921009492852, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1 &1622757507
 GameObject:
   m_ObjectHideFlags: 0
@@ -13573,12 +13265,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4482421912944732, guid: 9ef9dbf9bcc60f341a401e7c2924cacb,
     type: 2}
   m_PrefabInternal: {fileID: 1333973893}
---- !u!114 &1698443557 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114815705399956386, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
-  m_Script: {fileID: 11500000, guid: b786295ec8e5a324d852d3a2cbc085a1, type: 3}
 --- !u!1001 &1703374006
 Prefab:
   m_ObjectHideFlags: 0
@@ -14953,17 +14639,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4333736859441266, guid: ff26c2df8f3d20943b36ddd0fa5f565c,
     type: 2}
   m_PrefabInternal: {fileID: 1502560015}
---- !u!114 &1885074618 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114123742640394018, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
-  m_Script: {fileID: 11500000, guid: b786295ec8e5a324d852d3a2cbc085a1, type: 3}
---- !u!4 &1887782865 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4271585738583754, guid: 805c56b3b076949fba9b84cd408d94ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1064278720}
 --- !u!1001 &1893066561
 Prefab:
   m_ObjectHideFlags: 0
