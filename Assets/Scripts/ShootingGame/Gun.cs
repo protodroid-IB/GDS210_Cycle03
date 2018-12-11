@@ -161,13 +161,16 @@ public class Gun : MonoBehaviour {
                     rb.AddForce(transform.forward * addForce);
                 }
 
-                var target = col.transform.parent.GetComponentInChildren<Target>();
-                if (target != null)
+                if (transform.parent != null)
                 {
-                    float newPitch = Mathf.Pow(PITCH_MULT, Random.Range(minPingSemitone, maxPingSemitone));
-                    AudioManager.instance.PlaySound("ShootGame_Ting", ref gunAudio[1], newPitch);
-                    Instantiate(spark, hit.point, Quaternion.identity);
-                    target.AddScore();
+                    var target = col.transform.parent.GetComponentInChildren<Target>();
+                    if (target != null)
+                    {
+                        float newPitch = Mathf.Pow(PITCH_MULT, Random.Range(minPingSemitone, maxPingSemitone));
+                        AudioManager.instance.PlaySound("ShootGame_Ting", ref gunAudio[1], newPitch);
+                        Instantiate(spark, hit.point, Quaternion.identity);
+                        target.AddScore();
+                    }
                 }
 
                 // If the bird is shot, run it's die function
