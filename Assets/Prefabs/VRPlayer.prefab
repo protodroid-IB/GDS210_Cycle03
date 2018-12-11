@@ -1747,10 +1747,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4439177479074372}
-  - component: {fileID: 114664779582847296}
   - component: {fileID: 114498445399409500}
+  - component: {fileID: 114613246871578560}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: TP Policy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3308,7 +3308,7 @@ GameObject:
   - component: {fileID: 20629320615231132}
   - component: {fileID: 124949666852265504}
   - component: {fileID: 114067377139746398}
-  - component: {fileID: 114075193734990122}
+  - component: {fileID: 114533401830687006}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -6090,6 +6090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4495348906008208}
   - component: {fileID: 136818983882285770}
+  - component: {fileID: 54368565804657374}
   m_Layer: 8
   m_Name: PlayerCollider
   m_TagString: Player
@@ -24711,6 +24712,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!54 &54368565804657374
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838533884708792}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!54 &54518767355951754
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -26033,7 +26049,7 @@ MonoBehaviour:
   blinkTransitionSpeed: 0.6
   distanceBlinkDelay: 0
   headsetPositionCompensation: 1
-  targetListPolicy: {fileID: 114664779582847296}
+  targetListPolicy: {fileID: 114613246871578560}
   navMeshData: {fileID: 114498445399409500}
   navMeshLimitDistance: 0
   snapToNearestFloor: 1
@@ -26144,20 +26160,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollider: {fileID: 1838533884708792}
---- !u!114 &114075193734990122
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1480767123546722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4677426645414564}
-  _ears: {fileID: 4623448230200554}
-  wireframe: 0
+  distance: 3
+  layer:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!114 &114081648859039506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26621,14 +26627,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ed683b89cd94a44bb399806ce5cce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: TooltipText
+  displayText: Use Grips to Reload
   fontSize: 14
-  containerSize: {x: 100, y: 30}
+  containerSize: {x: 200, y: 30}
   drawLineFrom: {fileID: 4437304356747798}
-  drawLineTo: {fileID: 4035558357984150}
+  drawLineTo: {fileID: 4361740224968906}
   lineWidth: 0.001
-  fontColor: {r: 0, g: 0, b: 0, a: 1}
-  containerColor: {r: 1, g: 0.5588235, b: 0.5588235, a: 1}
+  fontColor: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
+  containerColor: {r: 0.6415094, g: 0.3266093, b: 0, a: 1}
   lineColor: {r: 0, g: 0, b: 0, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114303946645106146
@@ -26649,7 +26655,18 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerGrabInteractableObject:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114123742640394018}
+        m_MethodName: PlayPickUpSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerStartUngrabInteractableObject:
@@ -27137,6 +27154,20 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 2
+--- !u!114 &114533401830687006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480767123546722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4677426645414564}
+  _ears: {fileID: 4623448230200554}
+  wireframe: 0
 --- !u!114 &114542055603562258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27301,6 +27332,8 @@ MonoBehaviour:
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
   puff: {fileID: 1316988480434860, guid: 382bb2e6513781649ad94aa92d8d237c, type: 2}
   spark: {fileID: 1658489548947860, guid: e710e1b4cb48a3b42a6055d97601a260, type: 2}
+  minPingSemitone: -2
+  maxPingSemitone: 2
 --- !u!114 &114582445305643250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27397,6 +27430,21 @@ MonoBehaviour:
   cylinder: {fileID: 1249493887981070}
   bullet: {fileID: 1054334011665338}
   shell: {fileID: 1855432573187928, guid: 18ae90c4612310e41bd9384589dad80b, type: 2}
+--- !u!114 &114613246871578560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284294863661180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2aa1a29b92ca4f84a26a5f6e9218b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  operation: 1
+  checkType: 1
+  identifiers:
+  - Floor
 --- !u!114 &114616524562674180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27479,7 +27527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableTeleport: 1
-  targetListPolicy: {fileID: 114664779582847296}
+  targetListPolicy: {fileID: 0}
   pointerRenderer: {fileID: 114809488559085936}
   activationButton: 10
   holdButtonToActivate: 1
@@ -27518,21 +27566,6 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
---- !u!114 &114664779582847296
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1284294863661180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ed2aa1a29b92ca4f84a26a5f6e9218b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  operation: 1
-  checkType: 1
-  identifiers:
-  - Floor
 --- !u!114 &114667784903631926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27544,14 +27577,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ed683b89cd94a44bb399806ce5cce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: TooltipText
+  displayText: Use Grips to Reload
   fontSize: 14
-  containerSize: {x: 100, y: 30}
+  containerSize: {x: 200, y: 30}
   drawLineFrom: {fileID: 4271585738583754}
-  drawLineTo: {fileID: 4780589036662930}
+  drawLineTo: {fileID: 4155597049115508}
   lineWidth: 0.001
-  fontColor: {r: 0, g: 0, b: 0, a: 1}
-  containerColor: {r: 1, g: 0.5588235, b: 0.5588235, a: 1}
+  fontColor: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
+  containerColor: {r: 0.6415094, g: 0.3266093, b: 0, a: 1}
   lineColor: {r: 0, g: 0, b: 0, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114674899627104304
@@ -27587,6 +27620,8 @@ MonoBehaviour:
   effect: {fileID: 1213703788200150, guid: 9baa46dc2bab1d740a1b7df190d4e07b, type: 2}
   puff: {fileID: 1316988480434860, guid: 382bb2e6513781649ad94aa92d8d237c, type: 2}
   spark: {fileID: 1658489548947860, guid: e710e1b4cb48a3b42a6055d97601a260, type: 2}
+  minPingSemitone: -2
+  maxPingSemitone: 2
 --- !u!114 &114690721559970532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27674,6 +27709,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollider: {fileID: 1838533884708792}
+  distance: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &114741875824612618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28100,7 +28139,18 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerGrabInteractableObject:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114815705399956386}
+        m_MethodName: PlayPickUpSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnControllerStartUngrabInteractableObject:

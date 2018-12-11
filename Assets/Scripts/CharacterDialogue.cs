@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SphereCollider), typeof(AudioSource))]
+[RequireComponent(typeof(Collider), typeof(AudioSource))]
 public class CharacterDialogue : MonoBehaviour
 {
-	private SphereCollider audioCollider;
 	private AudioSource dialogueAudio;
 
 	[SerializeField]
@@ -20,7 +19,7 @@ public class CharacterDialogue : MonoBehaviour
 
 
 
-	private bool speak = false;
+	public bool speak = false;
 
 	[SerializeField]
 	private float minTime = 10f, maxTime = 20f;
@@ -35,8 +34,6 @@ public class CharacterDialogue : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		audioCollider = GetComponent<SphereCollider>();
-		audioCollider.isTrigger = true;
 
 		dialogueAudio = GetComponent<AudioSource>();
 
@@ -53,35 +50,20 @@ public class CharacterDialogue : MonoBehaviour
 	{
 		if(speak)
 		{
-			if (speakTimer == speakTime)
+			if (speakTimer >= speakTime)
 			{
-				speakTime = 0f;
-				dialogueIndex = Random.Range(0, dialogueOptions.Length);
-				AudioManager.instance.PlaySound(dialogueOptions[dialogueIndex], ref dialogueAudio);
-
+				speakTimer = 0f;
+                speakTime = Random.Range(minTime, maxTime);
+                if (dialogueOptions.Length >= 1)
+                {
+                    dialogueIndex = Random.Range(0, dialogueOptions.Length);
+                    AudioManager.instance.PlaySound(dialogueOptions[dialogueIndex], ref dialogueAudio);
+                }
+                speak = false;
 			}
 			else speakTimer += Time.deltaTime;
 
 			Debug.Log("I CAN SPEAK!!!");
-		}
-	}
-
-
-
-
-	private void OnTriggerEnter(Collider other)
-	{
-		if(other.gameObject.tag == "Player" && other.gameObject.layer == 8)
-		{
-			speak = true;
-		}
-	}
-
-	private void OnTriggerExit(Collider other)
-	{
-		if (other.gameObject.tag == "Player" && other.gameObject.layer == 8)
-		{
-			speak = false;
 		}
 	}
 

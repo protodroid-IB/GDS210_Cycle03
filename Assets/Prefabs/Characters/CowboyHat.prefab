@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54120165826210302}
   - component: {fileID: 138452565375190506}
   - component: {fileID: 64723755631754534}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CowboyHat
   m_TagString: Object
   m_Icon: {fileID: 0}
