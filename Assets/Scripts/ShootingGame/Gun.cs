@@ -34,6 +34,17 @@ public class Gun : MonoBehaviour {
     public GameObject puff;
     public GameObject spark;
 
+    [Space(5)]
+    [Header("AUDIO STUFF")]
+
+    private const float PITCH_MULT = 1.05946f;
+
+    [SerializeField]
+    private float minPingSemitone = -2f;
+    [SerializeField]
+    private float maxPingSemitone = 2f;
+
+
     private void Start()
     {
         gunAudio = GetComponents<AudioSource>(); //0 is shot and hammer, 1 is hit
@@ -144,7 +155,8 @@ public class Gun : MonoBehaviour {
                 }
                 if (rb != null)
                 {
-                    AudioManager.instance.PlaySound("ShootGame_Ping", ref gunAudio[1]);
+                    float newPitch = Mathf.Pow(PITCH_MULT, Random.Range(minPingSemitone, maxPingSemitone));
+                    AudioManager.instance.PlaySound("ShootGame_Ping", ref gunAudio[1], newPitch);
                     Instantiate(spark, hit.point, Quaternion.identity);
                     rb.AddForce(transform.forward * addForce);
                 }
@@ -152,7 +164,8 @@ public class Gun : MonoBehaviour {
                 var target = col.transform.parent.GetComponentInChildren<Target>();
                 if (target != null)
                 {
-                    AudioManager.instance.PlaySound("ShootGame_Ting", ref gunAudio[1]);
+                    float newPitch = Mathf.Pow(PITCH_MULT, Random.Range(minPingSemitone, maxPingSemitone));
+                    AudioManager.instance.PlaySound("ShootGame_Ting", ref gunAudio[1], newPitch);
                     Instantiate(spark, hit.point, Quaternion.identity);
                     target.AddScore();
                 }
