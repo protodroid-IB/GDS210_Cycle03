@@ -24,6 +24,7 @@ namespace Serving
 		public float ingredientAmount;
 		//public MixMethod mixMethod;
 		public GlassType glass;
+        public string audioClipName;
 	}
 	
 }

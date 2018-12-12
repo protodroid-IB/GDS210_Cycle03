@@ -35,10 +35,15 @@ namespace Serving
 
 		bool orderBox = true;
 
+
+
+        private AudioSource orderAudio;
+
 		private void Start()
 		{
 			manager = FindObjectOfType<ServingGameManager>();
-
+            orderAudio = gameObject.AddComponent<AudioSource>();
+            orderAudio.playOnAwake = false; 
             // Setup animator.
             animator = GetComponent<Animator>();
             animator.speed = Random.Range(minAnimSpeed, maxAnimSpeed);
@@ -89,6 +94,7 @@ namespace Serving
 		void SetText()
 		{
 			CompleteDrink drink = GetDrink();
+            AudioManager.instance.PlaySound(drink.audioClipName, ref orderAudio);
 			orderText.text = drink.usedIngredient.name;
 		}
 
