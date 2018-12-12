@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: b562beb010680e24aa1663161e5e656e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Black Keys
+    100002: Black Keys 1
+    100004: Black Keys 10
+    100006: Black Keys 11
+    100008: Black Keys 12
+    100010: Black Keys 13
+    100012: Black Keys 14
+    100014: Black Keys 15
+    100016: Black Keys 16
+    100018: Black Keys 2
+    100020: Black Keys 3
+    100022: Black Keys 4
+    100024: Black Keys 5
+    100026: Black Keys 6
+    100028: Black Keys 7
+    100030: Black Keys 8
+    100032: Black Keys 9
+    100034: //RootNode
+    100036: Piano
+    100038: Real
+    100040: White Keys
+    100042: White Keys 1
+    100044: White Keys 10
+    100046: White Keys 11
+    100048: White Keys 12
+    100050: White Keys 13
+    100052: White Keys 14
+    100054: White Keys 15
+    100056: White Keys 16
+    100058: White Keys 17
+    100060: White Keys 18
+    100062: White Keys 19
+    100064: White Keys 2
+    100066: White Keys 20
+    100068: White Keys 21
+    100070: White Keys 22
+    100072: White Keys 23
+    100074: White Keys 24
+    100076: White Keys 25
+    100078: White Keys 26
+    100080: White Keys 27
+    100082: White Keys 28
+    100084: White Keys 29
+    100086: White Keys 3
+    100088: White Keys 30
+    100090: White Keys 31
+    100092: White Keys 4
+    100094: White Keys 5
+    100096: White Keys 6
+    100098: White Keys 7
+    100100: White Keys 8
+    100102: White Keys 9
+    400000: Black Keys
+    400002: Black Keys 1
+    400004: Black Keys 10
+    400006: Black Keys 11
+    400008: Black Keys 12
+    400010: Black Keys 13
+    400012: Black Keys 14
+    400014: Black Keys 15
+    400016: Black Keys 16
+    400018: Black Keys 2
+    400020: Black Keys 3
+    400022: Black Keys 4
+    400024: Black Keys 5
+    400026: Black Keys 6
+    400028: Black Keys 7
+    400030: Black Keys 8
+    400032: Black Keys 9
+    400034: Piano
+    400036: //RootNode
+    400038: Real
+    400040: White Keys
+    400042: White Keys 1
+    400044: White Keys 10
+    400046: White Keys 11
+    400048: White Keys 12
+    400050: White Keys 13
+    400052: White Keys 14
+    400054: White Keys 15
+    400056: White Keys 16
+    400058: White Keys 17
+    400060: White Keys 18
+    400062: White Keys 19
+    400064: White Keys 2
+    400066: White Keys 20
+    400068: White Keys 21
+    400070: White Keys 22
+    400072: White Keys 23
+    400074: White Keys 24
+    400076: White Keys 25
+    400078: White Keys 26
+    400080: White Keys 27
+    400082: White Keys 28
+    400084: White Keys 29
+    400086: White Keys 3
+    400088: White Keys 30
+    400090: White Keys 31
+    400092: White Keys 4
+    400094: White Keys 5
+    400096: White Keys 6
+    400098: White Keys 7
+    400100: White Keys 8
+    400102: White Keys 9
+    2100000: No Name
+    2300000: Black Keys
+    2300002: Black Keys 1
+    2300004: Black Keys 10
+    2300006: Black Keys 11
+    2300008: Black Keys 12
+    2300010: Black Keys 13
+    2300012: Black Keys 14
+    2300014: Black Keys 15
+    2300016: Black Keys 16
+    2300018: Black Keys 2
+    2300020: Black Keys 3
+    2300022: Black Keys 4
+    2300024: Black Keys 5
+    2300026: Black Keys 6
+    2300028: Black Keys 7
+    2300030: Black Keys 8
+    2300032: Black Keys 9
+    2300034: Piano
+    2300036: Real
+    2300038: White Keys
+    2300040: White Keys 1
+    2300042: White Keys 10
+    2300044: White Keys 11
+    2300046: White Keys 12
+    2300048: White Keys 13
+    2300050: White Keys 14
+    2300052: White Keys 15
+    2300054: White Keys 16
+    2300056: White Keys 17
+    2300058: White Keys 18
+    2300060: White Keys 19
+    2300062: White Keys 2
+    2300064: White Keys 20
+    2300066: White Keys 21
+    2300068: White Keys 22
+    2300070: White Keys 23
+    2300072: White Keys 24
+    2300074: White Keys 25
+    2300076: White Keys 26
+    2300078: White Keys 27
+    2300080: White Keys 28
+    2300082: White Keys 29
+    2300084: White Keys 3
+    2300086: White Keys 30
+    2300088: White Keys 31
+    2300090: White Keys 4
+    2300092: White Keys 5
+    2300094: White Keys 6
+    2300096: White Keys 7
+    2300098: White Keys 8
+    2300100: White Keys 9
+    3300000: Black Keys
+    3300002: Black Keys 1
+    3300004: Black Keys 10
+    3300006: Black Keys 11
+    3300008: Black Keys 12
+    3300010: Black Keys 13
+    3300012: Black Keys 14
+    3300014: Black Keys 15
+    3300016: Black Keys 16
+    3300018: Black Keys 2
+    3300020: Black Keys 3
+    3300022: Black Keys 4
+    3300024: Black Keys 5
+    3300026: Black Keys 6
+    3300028: Black Keys 7
+    3300030: Black Keys 8
+    3300032: Black Keys 9
+    3300034: Piano
+    3300036: Real
+    3300038: White Keys
+    3300040: White Keys 1
+    3300042: White Keys 10
+    3300044: White Keys 11
+    3300046: White Keys 12
+    3300048: White Keys 13
+    3300050: White Keys 14
+    3300052: White Keys 15
+    3300054: White Keys 16
+    3300056: White Keys 17
+    3300058: White Keys 18
+    3300060: White Keys 19
+    3300062: White Keys 2
+    3300064: White Keys 20
+    3300066: White Keys 21
+    3300068: White Keys 22
+    3300070: White Keys 23
+    3300072: White Keys 24
+    3300074: White Keys 25
+    3300076: White Keys 26
+    3300078: White Keys 27
+    3300080: White Keys 28
+    3300082: White Keys 29
+    3300084: White Keys 3
+    3300086: White Keys 30
+    3300088: White Keys 31
+    3300090: White Keys 4
+    3300092: White Keys 5
+    3300094: White Keys 6
+    3300096: White Keys 7
+    3300098: White Keys 8
+    3300100: White Keys 9
+    4300000: Real
+    4300002: Piano
+    4300004: Black Keys
+    4300006: Black Keys
+    4300008: Black Keys
+    4300010: Black Keys
+    4300012: Black Keys
+    4300014: Black Keys
+    4300016: Black Keys
+    4300018: Black Keys
+    4300020: Black Keys
+    4300022: Black Keys
+    4300024: Black Keys
+    4300026: Black Keys
+    4300028: Black Keys
+    4300030: Black Keys
+    4300032: Black Keys
+    4300034: Black Keys
+    4300036: Black Keys
+    4300038: White Keys
+    4300040: White Keys
+    4300042: White Keys
+    4300044: White Keys
+    4300046: White Keys
+    4300048: White Keys
+    4300050: White Keys
+    4300052: White Keys
+    4300054: White Keys
+    4300056: White Keys
+    4300058: White Keys
+    4300060: White Keys
+    4300062: White Keys
+    4300064: White Keys
+    4300066: White Keys
+    4300068: White Keys
+    4300070: White Keys
+    4300072: White Keys
+    4300074: White Keys
+    4300076: White Keys
+    4300078: White Keys
+    4300080: White Keys
+    4300082: White Keys
+    4300084: White Keys
+    4300086: White Keys
+    4300088: White Keys
+    4300090: White Keys
+    4300092: White Keys
+    4300094: White Keys
+    4300096: White Keys
+    4300098: White Keys
+    4300100: White Keys
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
