@@ -19,7 +19,7 @@ public class CharacterDialogue : MonoBehaviour
 
 
 
-	public bool speak = false;
+	[HideInInspector] public bool speak = false;
 
 	[SerializeField]
 	private float minTime = 10f, maxTime = 20f;
@@ -58,12 +58,12 @@ public class CharacterDialogue : MonoBehaviour
                 {
                     dialogueIndex = Random.Range(0, dialogueOptions.Length);
                     AudioManager.instance.PlaySound(dialogueOptions[dialogueIndex], ref dialogueAudio);
+                    Debug.Log("I SAID: " + dialogueOptions[dialogueIndex] + "!");
                 }
                 speak = false;
 			}
 			else speakTimer += Time.deltaTime;
 
-			Debug.Log("I CAN SPEAK!!!");
 		}
 	}
 

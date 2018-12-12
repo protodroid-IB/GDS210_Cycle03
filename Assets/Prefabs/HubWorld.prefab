@@ -36763,7 +36763,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDialogue: 
-  dialogueOptions: []
+  dialogueOptions:
+  - Cowgirl_Hot
+  - Cowgirl_OnlyBoys
+  - Cowgirl_WellHeyThere
   speak: 0
   minTime: 10
   maxTime: 20
@@ -36779,7 +36782,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDialogue: 
-  dialogueOptions: []
+  dialogueOptions:
+  - Blake_Cactus
+  - Blake_Bird
+  - Blake_NotEnoughRoom
   speak: 0
   minTime: 10
   maxTime: 20
@@ -36981,11 +36987,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotDialogue: Cactus_NotVeryYeeHaw
+  shotDialogue: SaloonGirl_BetterShot
   dialogueOptions:
-  - Cactus_ByeNow
-  - Cactus_Howdy
-  - Cactus_Silly
+  - SaloonGirl_Drink
+  - SaloonGirl_Funny
+  - SaloonGirl_Howdy
   speak: 0
   minTime: 10
   maxTime: 20
@@ -37001,7 +37007,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDialogue: 
-  dialogueOptions: []
+  dialogueOptions:
+  - Ken_OuttaGin
+  - Ken_FirstRule
+  - Ken_NoGods
+  - Ken_RealCowboy
+  - Ken_SnakeBoot
+  - Ken_Snake
   speak: 0
   minTime: 10
   maxTime: 20
@@ -37108,11 +37120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotDialogue: Cactus_NotVeryYeeHaw
+  shotDialogue: SaloonGirl_BetterShot
   dialogueOptions:
-  - Cactus_ByeNow
-  - Cactus_Howdy
-  - Cactus_Silly
+  - SaloonGirl_Drink
+  - SaloonGirl_Funny
+  - SaloonGirl_Howdy
   speak: 0
   minTime: 10
   maxTime: 20
@@ -37139,11 +37151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotDialogue: Cactus_NotVeryYeeHaw
+  shotDialogue: SaloonGirl_BetterShot
   dialogueOptions:
-  - Cactus_ByeNow
-  - Cactus_Howdy
-  - Cactus_Silly
+  - SaloonGirl_Drink
+  - SaloonGirl_Funny
+  - SaloonGirl_Howdy
   speak: 0
   minTime: 10
   maxTime: 20
@@ -37300,11 +37312,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotDialogue: Cactus_NotVeryYeeHaw
+  shotDialogue: SaloonGirl_BetterShot
   dialogueOptions:
-  - Cactus_ByeNow
-  - Cactus_Howdy
-  - Cactus_Silly
+  - SaloonGirl_Drink
+  - SaloonGirl_Funny
+  - SaloonGirl_Howdy
   speak: 0
   minTime: 10
   maxTime: 20

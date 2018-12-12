@@ -2476,7 +2476,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotDialogue: 
-  dialogueOptions: []
+  dialogueOptions:
+  - JG_ClearOff
+  - JG_SixShooter
+  - JG_HitOrMiss
+  - JG_LookingAt
+  - JG_TakenMen
   speak: 0
   minTime: 10
   maxTime: 20
