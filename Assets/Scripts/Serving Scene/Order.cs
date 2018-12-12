@@ -35,7 +35,7 @@ namespace Serving
 
 		bool orderBox = true;
 
-
+        bool firstOrder = true;
 
         private AudioSource orderAudio;
 
@@ -94,8 +94,11 @@ namespace Serving
 		void SetText()
 		{
 			CompleteDrink drink = GetDrink();
-            AudioManager.instance.PlaySound(drink.audioClipName, ref orderAudio);
-			orderText.text = drink.usedIngredient.name;
+
+            if (firstOrder == false) AudioManager.instance.PlaySound(drink.audioClipName, ref orderAudio);
+            else firstOrder = false;
+
+            orderText.text = drink.usedIngredient.name;
 		}
 
 		int CheckDrink(CompleteDrink drink)
