@@ -22,6 +22,13 @@ namespace Serving
 
 		ServingGameManager manager;
 
+        // Animator settings.
+        Animator animator;
+        [SerializeField] float minAnimSpeed;
+        [SerializeField] float maxAnimSpeed;
+        [SerializeField] Transform myDrinkingHand;
+    
+
 		int order = 0;
 
 		public bool gameInProgress, freePlay;
@@ -31,6 +38,10 @@ namespace Serving
 		private void Start()
 		{
 			manager = FindObjectOfType<ServingGameManager>();
+
+            // Setup animator.
+            animator = GetComponent<Animator>();
+            animator.speed = Random.Range(minAnimSpeed, maxAnimSpeed);
 			
 		}
 
@@ -92,7 +103,12 @@ namespace Serving
 				manager.AddScore(scoreAmount);
 			scoreText = Instantiate(scoreTextObject, textSpawnPosition.position, Quaternion.identity, orderText.transform).GetComponent<TextMeshPro>();
 			scoreText.text = scoreAmount.ToString() + " Points";
-			GetOrder();
+
+            // Tell animator to drink and change animation speed.
+            animator.SetTrigger("Drink"); 
+            animator.speed = Random.Range(minAnimSpeed, maxAnimSpeed);
+
+            GetOrder();
 		}
 
 		private void OnTriggerEnter(Collider other)
@@ -108,7 +124,8 @@ namespace Serving
 					Score(score);
 				}
 			}
-			Destroy(other.gameObject);
+
+			Destroy(other.gameObject, 2f);
 		}
 	}
 }
