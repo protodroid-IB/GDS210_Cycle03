@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-using VRTK;
+using System.Collections.Generic;
 
 // This will control the settings in the options menu.
 
@@ -20,7 +20,7 @@ public class MenuSettings : MonoBehaviour
     [SerializeField]
     private AudioMixerGroup mixerSFX, mixerMusic, mixerMaster;
 
-    VRTK_ObjectTooltip[] tutorials;
+
 
     private void Start()
     {
@@ -31,21 +31,10 @@ public class MenuSettings : MonoBehaviour
         UpdateSFXVolume();
         UpdateMusicVolume();
 
-        tutorials = new VRTK_ObjectTooltip[0];
     }
 
     private void Update()
     {
-        if (tutorials.Length < 4)
-        {
-            tutorials = FindObjectsOfType<VRTK_ObjectTooltip>();
-            foreach (VRTK_ObjectTooltip tute in tutorials)
-            {
-                tute.gameObject.SetActive(tutorialToggle.isOn);
-            }
-
-        }
-
         soundVolumeSlider.value = gameSettings.soundVolume;
         musicVolumeSlider.value = gameSettings.musicVolume;
         tutorialToggle.isOn = gameSettings.tutorial;
@@ -54,10 +43,7 @@ public class MenuSettings : MonoBehaviour
     // Set if the game should be played as a tutorial.
     public void TutorialToggleChange(bool toggle)
     {
-        foreach (VRTK_ObjectTooltip tute in tutorials)
-        {
-            tute.gameObject.SetActive(toggle);
-        }
+        GameManager.gameManager.SetTutorialActive();
 
         int tutorialToggle = toggle ? 1 : 0;
         gameSettings.tutorial = toggle;
@@ -90,4 +76,5 @@ public class MenuSettings : MonoBehaviour
         mixerMusic.audioMixer.SetFloat(volParameterMusic, 0f + (1f - gameSettings.musicVolume) * -45f);
     }
 
+    
 }
