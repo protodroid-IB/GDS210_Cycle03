@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(SceneManagement), typeof(ScoreManager))]
 public class GameManager : MonoBehaviour {
@@ -13,13 +14,17 @@ public class GameManager : MonoBehaviour {
 
     ScoreManager scoreManager;
 
-    [SerializeField] GameSettings gameSettings;
+    public GameSettings gameSettings;
 
     [SerializeField] Transform player;
 
     [SerializeField] Poster[] wantedPosters;
 
     private AudioSource[] highscoreAudio;
+
+    // List of all tutorial objects in the game. Items are added to the list when they are spawned through the Tutorial Objects script.
+    public static List<GameObject> tutorialObjects; // = new List<GameObject>();
+
 
     void Awake () {
         if (gameManager != null)
@@ -36,6 +41,9 @@ public class GameManager : MonoBehaviour {
         // Load the games saved data.
         LoadPlayerPrefs();
         scoreManager.LoadScores();
+
+        tutorialObjects = new List<GameObject>();
+
     }
 
     private void Start()
@@ -44,6 +52,8 @@ public class GameManager : MonoBehaviour {
 
         highscoreAudio[0] = gameObject.AddComponent<AudioSource>();
         highscoreAudio[1] = gameObject.AddComponent<AudioSource>();
+
+        SetTutorialActive();
     }
 
     // Updates the high score on the scriptable object.
@@ -84,5 +94,15 @@ public class GameManager : MonoBehaviour {
     public void RestartMiniGame(string minigame)
     {
         sceneManagement.RestartMiniGame(minigame);
+    }
+
+    public void SetTutorialActive()
+    {
+        bool toggle = gameSettings.tutorial;
+        foreach (GameObject tute in tutorialObjects)
+        {
+            if(tute != null)
+                tute.SetActive(toggle);
+        }
     }
 }
