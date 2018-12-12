@@ -31,7 +31,7 @@ namespace Serving
 		{
 			highText.text = "Highscore = " + barScoreRecord.highestScore.ToString() + " points";
 			scoreText.text = "Score = 0 points";
-		}
+        }
 
 		private void Update()
 		{

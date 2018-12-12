@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] Poster[] wantedPosters;
 
+    private AudioSource[] highscoreAudio;
+
     void Awake () {
         if (gameManager != null)
         {
@@ -36,11 +38,22 @@ public class GameManager : MonoBehaviour {
         scoreManager.LoadScores();
     }
 
+    private void Start()
+    {
+        highscoreAudio = new AudioSource[2];
+
+        highscoreAudio[0] = gameObject.AddComponent<AudioSource>();
+        highscoreAudio[1] = gameObject.AddComponent<AudioSource>();
+    }
+
     // Updates the high score on the scriptable object.
     public void UpdateHighScore(ScoreRecords game)
     {
         if(game.currentScore > game.highestScore)
         {
+            AudioManager.instance.PlaySound("Voice_Highscore", ref highscoreAudio[0]);
+            AudioManager.instance.PlaySound("Highscore", ref highscoreAudio[1], 1f, 0.75f);
+
             print("Updating highScore");
             game.highestScore = game.currentScore;
             scoreManager.SaveScores();
