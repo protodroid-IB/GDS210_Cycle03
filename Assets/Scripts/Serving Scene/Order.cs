@@ -125,7 +125,7 @@ namespace Serving
 				}
 			}
 
-			Destroy(other.gameObject, 2f);
+			Destroy(other.gameObject, 0f);
 		}
 	}
 }
