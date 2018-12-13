@@ -48,14 +48,21 @@ public class GameCountdownAudio : MonoBehaviour
 
     public void StartGame()
     {
-        AudioManager.instance.PlaySound("Games_Countdown", ref thisAudio);
-        gameStarted = true;
+        if(gameStarted == false && freePlayStarted == false)
+        {
+            AudioManager.instance.PlaySound("Games_Countdown", ref thisAudio);
+            gameStarted = true;
+        }
+        
     }
 
 
     public void StartFreePlay()
     {
-        AudioManager.instance.PlaySound("Games_Countdown", ref thisAudio);
-        freePlayStarted = true;
+        if (gameStarted == false && freePlayStarted == false)
+        {
+            AudioManager.instance.PlaySound("Games_Countdown", ref thisAudio);
+            freePlayStarted = true;
+        }
     }
 }
