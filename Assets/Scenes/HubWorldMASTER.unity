@@ -4669,6 +4669,26 @@ Prefab:
       propertyPath: m_Height
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4361740224968906, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0022315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361740224968906, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155597049115508, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790823904892086, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215578078899452, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805c56b3b076949fba9b84cd408d94ad, type: 2}
   m_IsPrefabAsset: 0
