@@ -12,15 +12,24 @@ public class ShootingGameController : MonoBehaviour {
     int sequenceIndex = 0;
     int targetIndex = 0;
     List<int> randomIdCache = new List<int>();
+
+    public float speedThreshold;
+    public float speedMultiplyer;
+    public float accuracyMultiplyer;
+    [HideInInspector] public static int shotsFired = 0;
+    static int targetsHit = 0;
+    int accuracyBonus;
+    int speedBonus;
+
     [HideInInspector] public int score;
     public Text scoreText;
-    public Text highscoreText;
-    
+    public Text speedText;
+    public Text accuraccyText;
     [SerializeField] ScoreRecords scoreRecord;
 
     public void Start()
     {
-        ResetTargets();
+        StopCycle();
     }
 
     void Update()
@@ -37,7 +46,9 @@ public class ShootingGameController : MonoBehaviour {
 
     public void StartCycle()
     {
-        ResetTargets();
+        StopCycle();
+        accuracyBonus = 0;
+        speedBonus = 0;
         sequencePool.pool = sequencePool.pool.OrderBy(x => Random.value).ToList();
         score = 0;
         poolIndex = 0;
@@ -89,22 +100,19 @@ public class ShootingGameController : MonoBehaviour {
         }
         else
         {
-            Invoke("EndGame", 3);
+            Invoke("EndGame",0);
         }
     }
 
     void EndGame()
     {
         StopCycle();
+        score += speedBonus;
+        score += accuracyBonus;
         GameManager.gameManager.UpdateHighScore(scoreRecord);
     }
 
     public void StopCycle()
-    {
-        ResetTargets();
-    }
-
-    private void ResetTargets()
     {
         CancelInvoke();
         foreach (Target target in targets)
@@ -113,10 +121,20 @@ public class ShootingGameController : MonoBehaviour {
         }
     }
 
+    public void Addscore(int points, float speed)
+    {
+        speedBonus += Mathf.CeilToInt((speedThreshold - speed) * speedMultiplyer);
+        speedText.text = speedBonus.ToString("00000");
+        Addscore(points);
+    }
+
     public void Addscore(int points)
     {
         score += points;
-        scoreText.text = score.ToString("0000");
+        scoreText.text = score.ToString("00000");
+        targetsHit++;
+        accuracyBonus = targetsHit > 0 ? Mathf.CeilToInt((targetsHit / shotsFired) * score * accuracyMultiplyer) : 0;
+        accuraccyText.text = "%" + (accuracyBonus * 100).ToString("00.00");
         scoreRecord.currentScore = score;
     }
     

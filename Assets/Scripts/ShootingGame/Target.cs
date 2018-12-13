@@ -5,10 +5,12 @@ using UnityEngine;
 public class Target : MonoBehaviour {
 
     public int points;
+    public float reactionStartTime;
     bool triggered = false;
     HingeJoint hinge;
     JointSpring hingeSpring;
     ShootingGameController gameController;
+    public SpeedBonus speedBonus;
 
     public void Awake()
     {
@@ -22,6 +24,7 @@ public class Target : MonoBehaviour {
         CancelInvoke();
         triggered = true;
         SetAngle(0);
+        reactionStartTime = Time.time;
         Invoke("FlipDown", time);
     }
 
@@ -41,7 +44,16 @@ public class Target : MonoBehaviour {
     {
         if (triggered)
         {
-            gameController.Addscore(points);
+            float speed = Time.time - reactionStartTime;
+            if (speed > gameController.speedThreshold)
+            {
+                gameController.Addscore(points);
+            }
+            else
+            {
+                gameController.Addscore(points, speed);
+                Instantiate(speedBonus, transform);
+            }
             FlipDown();
         }
     }

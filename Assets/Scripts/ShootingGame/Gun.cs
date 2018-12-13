@@ -137,12 +137,12 @@ public class Gun : MonoBehaviour {
     public void Fire()
     {
         AudioManager.instance.PlaySound("ShootGame_ShotFired", ref gunAudio[0]);
-
         primed = false;
         triggerDown = true;
         HammerSet(0f);
         Instantiate(effect, firePos);
         RaycastHit hit;
+        ShootingGameController.shotsFired++;
         if (Physics.SphereCast(firePos.transform.position, 0.1f, transform.forward, out hit, 1 << 8))
         {
             var col = hit.collider;
