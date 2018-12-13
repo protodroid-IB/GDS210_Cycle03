@@ -5491,11 +5491,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1300222923}
+      objectReference: {fileID: 1616854158}
     - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartCycle
+      value: StartGame
       objectReference: {fileID: 0}
     - target: {fileID: 114406842028583684, guid: 139d4b30850476841b55f5190a27c59d,
         type: 2}
@@ -11552,6 +11552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1616854157}
   - component: {fileID: 1300222923}
+  - component: {fileID: 1616854158}
   m_Layer: 0
   m_Name: ShootingLevel
   m_TagString: Untagged
@@ -11575,6 +11576,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -179.07501, z: 0}
+--- !u!114 &1616854158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616854156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb56ae9cc497a344bb88caa2384775e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startGameFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1300222923}
+        m_MethodName: StartCycle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  startFreePlayFunction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  retryFunction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1658630318
 Prefab:
   m_ObjectHideFlags: 0
