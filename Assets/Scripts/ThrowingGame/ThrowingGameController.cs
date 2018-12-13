@@ -65,7 +65,7 @@ public class ThrowingGameController : MonoBehaviour
             {
                 points = points * 10;
 
-                if(Random.Range(0,3) == 0)
+                if(Random.Range(0,9) == 0)
                     AudioManager.instance.PlaySound("ThrowingGame_NiceThrow", ref audioSource);
             }   
 
