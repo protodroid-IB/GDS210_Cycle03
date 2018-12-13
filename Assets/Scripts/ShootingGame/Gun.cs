@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour {
     public float cylinderSensitivity;
     public float cylinderLerpTime;
     public float addForce;
-
     
     bool primed;
     bool triggerDown;
@@ -95,11 +94,8 @@ public class Gun : MonoBehaviour {
             {
                 AudioManager.instance.PlaySound("ShootGame_Hammer", ref gunAudio[0]);
             }
-
             primed = true;
             angle = hammerMax;
-            Debug.Log("Hammer Pulled?");
-
         }
         else
         {

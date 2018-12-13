@@ -9262,7 +9262,7 @@ MonoBehaviour:
   - {fileID: 1029571268}
   - {fileID: 718306208}
   speedThreshold: 1
-  speedMultiplyer: 100
+  speedMultiplyer: 1000
   accuracyMultiplyer: 0.5
   shotsFired: 0
   targetsHit: 0
