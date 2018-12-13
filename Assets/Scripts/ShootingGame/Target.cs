@@ -10,7 +10,7 @@ public class Target : MonoBehaviour {
     HingeJoint hinge;
     JointSpring hingeSpring;
     ShootingGameController gameController;
-    public SpeedBonus speedBonus;
+    public GameObject speedBonus;
 
     public void Awake()
     {
@@ -52,7 +52,7 @@ public class Target : MonoBehaviour {
             else
             {
                 gameController.Addscore(points, speed);
-                Instantiate(speedBonus, transform);
+                Instantiate(speedBonus, transform.position, Quaternion.identity);
             }
             FlipDown();
         }

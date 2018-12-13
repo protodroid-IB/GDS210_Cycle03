@@ -401,8 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &46536095
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,8 +549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &61525010
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,8 +919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1001 &113503404
 Prefab:
   m_ObjectHideFlags: 0
@@ -1513,8 +1510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &189977926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,8 +2434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &387976668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4155,8 +4150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1001 &652057139
 Prefab:
   m_ObjectHideFlags: 0
@@ -4795,8 +4789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!59 &718306209
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -6783,8 +6776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &1026691643
 GameObject:
   m_ObjectHideFlags: 0
@@ -6921,8 +6913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &1041123099
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,8 +7360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1001 &1097363977
 Prefab:
   m_ObjectHideFlags: 0
@@ -7927,8 +7917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &1177174470
 GameObject:
   m_ObjectHideFlags: 0
@@ -8400,8 +8389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &1293535416
 GameObject:
   m_ObjectHideFlags: 0
@@ -8493,13 +8481,6 @@ MonoBehaviour:
         exitTime: 2
         randomize: 0
         targetID: 0000000001000000020000000300000004000000
-    - name: Top
-      sequence:
-      - timeInterval: 0
-        targetTime: 2
-        exitTime: 2
-        randomize: 0
-        targetID: 0000000001000000020000000300000004000000
     - name: Middle
       sequence:
       - timeInterval: 0
@@ -8507,20 +8488,6 @@ MonoBehaviour:
         exitTime: 2
         randomize: 0
         targetID: 0500000006000000070000000800000009000000
-    - name: Middle
-      sequence:
-      - timeInterval: 0
-        targetTime: 2
-        exitTime: 2
-        randomize: 0
-        targetID: 0500000006000000070000000800000009000000
-    - name: Bottom
-      sequence:
-      - timeInterval: 0
-        targetTime: 2
-        exitTime: 2
-        randomize: 0
-        targetID: 0a0000000b0000000c0000000d0000000e000000
     - name: Bottom
       sequence:
       - timeInterval: 0
@@ -8602,7 +8569,7 @@ MonoBehaviour:
       sequence:
       - timeInterval: 0.5
         targetTime: 2
-        exitTime: 2
+        exitTime: 3
         randomize: 0
         targetID: 000000000100000002000000030000000400000009000000080000000700000006000000050000000e0000000d0000000c0000000b0000000a000000
     - name: Low with Random Fill
@@ -8659,143 +8626,9 @@ MonoBehaviour:
         targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
       - timeInterval: 0
         targetTime: 1
-        exitTime: 1
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-    - name: Low with Random Fill
-      sequence:
-      - timeInterval: 0
-        targetTime: 3.25
-        exitTime: 0
-        randomize: 0
-        targetID: 0a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 3.25
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 3
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 2.75
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 2.5
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 2.25
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 2
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 1.75
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 1.5
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 1.25
-        exitTime: 0.25
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-      - timeInterval: 0
-        targetTime: 1
-        exitTime: 1
-        randomize: 1
-        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
-    - name: Random Fill
-      sequence:
-      - timeInterval: 0
-        targetTime: 10
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 9.5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 9
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 8.5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 8
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 7.5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 7
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 6.5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 4.5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 4
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 3.5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 3
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 2.5
-        exitTime: 0.5
-        randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
-      - timeInterval: 0
-        targetTime: 2
         exitTime: 2
         randomize: 1
-        targetID: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+        targetID: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
     - name: Random Fill
       sequence:
       - timeInterval: 0
@@ -9124,13 +8957,13 @@ MonoBehaviour:
   - {fileID: 1380895092}
   - {fileID: 1029571268}
   - {fileID: 718306208}
-  speedThreshold: 0
-  speedMultiplyer: 0
-  accuracyMultiplyer: 0
+  speedThreshold: 1
+  speedMultiplyer: 100
+  accuracyMultiplyer: 0.5
   score: 0
   scoreText: {fileID: 2127132336}
-  speedText: {fileID: 0}
-  accuraccyText: {fileID: 0}
+  speedText: {fileID: 61525012}
+  accuraccyText: {fileID: 2029087832}
   scoreRecord: {fileID: 11400000, guid: 753bfc42abce6514e82520e08ec6a417, type: 2}
 --- !u!1 &1308933839
 GameObject:
@@ -9976,8 +9809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &1384358795
 GameObject:
   m_ObjectHideFlags: 0
@@ -10201,8 +10033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1 &1407823182
 GameObject:
   m_ObjectHideFlags: 0
@@ -11252,8 +11083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 100
   reactionStartTime: 0
-  speedBonus: {fileID: 114891763535036764, guid: 6aef18761f477654498a6087519fe584,
-    type: 2}
+  speedBonus: {fileID: 1326539661096398, guid: 6aef18761f477654498a6087519fe584, type: 2}
 --- !u!1001 &1534978256
 Prefab:
   m_ObjectHideFlags: 0

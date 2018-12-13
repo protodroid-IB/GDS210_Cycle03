@@ -16,9 +16,9 @@ public class ShootingGameController : MonoBehaviour {
     public float speedThreshold;
     public float speedMultiplyer;
     public float accuracyMultiplyer;
-    [HideInInspector] public static int shotsFired = 0;
-    static int targetsHit = 0;
-    int accuracyBonus;
+    [SerializeField] int shotsFired = 0;
+    [SerializeField] int targetsHit = 0;
+    float accuracyBonus;
     int speedBonus;
 
     [HideInInspector] public int score;
@@ -27,8 +27,18 @@ public class ShootingGameController : MonoBehaviour {
     public Text accuraccyText;
     [SerializeField] ScoreRecords scoreRecord;
 
+    Gun[] guns;
+
+
     public void Start()
     {
+        guns = FindObjectsOfType<Gun>();
+
+        foreach(Gun gun in guns)
+        {
+            gun.sgc = this;
+        }
+
         StopCycle();
     }
 
@@ -54,7 +64,8 @@ public class ShootingGameController : MonoBehaviour {
         poolIndex = 0;
         sequenceIndex = 0;
         targetIndex = 0;
-        Invoke("Cycle", 3f);
+        shotsFired = 0;
+        Cycle();
     }
 
     void Cycle()
@@ -108,7 +119,8 @@ public class ShootingGameController : MonoBehaviour {
     {
         StopCycle();
         score += speedBonus;
-        score += accuracyBonus;
+        score += (int)(accuracyBonus / 100 * score);
+        scoreText.text = score.ToString("00000");
         GameManager.gameManager.UpdateHighScore(scoreRecord);
     }
 
@@ -133,13 +145,18 @@ public class ShootingGameController : MonoBehaviour {
         score += points;
         scoreText.text = score.ToString("00000");
         targetsHit++;
-        accuracyBonus = targetsHit > 0 ? Mathf.CeilToInt((targetsHit / shotsFired) * score * accuracyMultiplyer) : 0;
-        accuraccyText.text = "%" + (accuracyBonus * 100).ToString("00.00");
         scoreRecord.currentScore = score;
     }
     
     public void RestartMiniGame(string minigame)
     {
         GameManager.gameManager.RestartMiniGame(minigame);
+    }
+
+    public void AddShot()
+    {
+        shotsFired++;
+        accuracyBonus = targetsHit > 0 ? (((float)targetsHit / shotsFired) * 100) : 0;
+        accuraccyText.text = "%" + accuracyBonus.ToString("00.00");
     }
 }

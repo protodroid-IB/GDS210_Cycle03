@@ -34,6 +34,8 @@ public class Gun : MonoBehaviour {
     public GameObject puff;
     public GameObject spark;
 
+    public ShootingGameController sgc;
+
     [Space(5)]
     [Header("AUDIO STUFF")]
 
@@ -142,7 +144,10 @@ public class Gun : MonoBehaviour {
         HammerSet(0f);
         Instantiate(effect, firePos);
         RaycastHit hit;
-        ShootingGameController.shotsFired++;
+        if (sgc)
+        {
+            sgc.AddShot();
+        }
         if (Physics.SphereCast(firePos.transform.position, 0.1f, transform.forward, out hit, 1 << 8))
         {
             var col = hit.collider;
