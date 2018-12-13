@@ -5258,8 +5258,8 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 1
-    setDistancesHere: 1
+    spatial: 0
+    setDistancesHere: 0
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: Voice_Highscore

@@ -21,6 +21,7 @@ public class GameCountdownAudio : MonoBehaviour
 	void Start ()
     {
         thisAudio = gameObject.AddComponent<AudioSource>();
+        thisAudio.playOnAwake = false;
 
        
 	}

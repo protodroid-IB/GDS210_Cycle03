@@ -661,7 +661,7 @@ Prefab:
     - target: {fileID: 114955470348690380, guid: 66bcfdaf3193cbd43a97282810c5145f,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartMiniGame
+      value: RetryGame
       objectReference: {fileID: 0}
     - target: {fileID: 114270289264186738, guid: 66bcfdaf3193cbd43a97282810c5145f,
         type: 2}
@@ -681,7 +681,7 @@ Prefab:
     - target: {fileID: 114270289264186738, guid: 66bcfdaf3193cbd43a97282810c5145f,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartFreeplay
+      value: StartFreePlay
       objectReference: {fileID: 0}
     - target: {fileID: 114270289264186738, guid: 66bcfdaf3193cbd43a97282810c5145f,
         type: 2}
@@ -706,7 +706,7 @@ Prefab:
     - target: {fileID: 114911122464516834, guid: 66bcfdaf3193cbd43a97282810c5145f,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartTimedMode
+      value: StartGame
       objectReference: {fileID: 0}
     - target: {fileID: 114911122464516834, guid: 66bcfdaf3193cbd43a97282810c5145f,
         type: 2}
@@ -1467,7 +1467,7 @@ Prefab:
   m_IsPrefabAsset: 0
 --- !u!114 &1935930473 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114024649906567324, guid: 587b7a50da8b337479f1acaad9377af8,
+  m_CorrespondingSourceObject: {fileID: 114246958267411766, guid: 587b7a50da8b337479f1acaad9377af8,
     type: 2}
   m_PrefabInternal: {fileID: 1935930472}
-  m_Script: {fileID: 11500000, guid: c7eaf0864610d7243b6f228113a02483, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bb56ae9cc497a344bb88caa2384775e, type: 3}
