@@ -64,9 +64,9 @@ public class ThrowingGameController : MonoBehaviour
         }
     }
 
-    public void RestartMiniGame(string minigame)
+    public void RestartMiniGame()
     {
-        GameManager.gameManager.RestartMiniGame(minigame);  // Resets the whole scene.
+        GameManager.gameManager.RestartMiniGame("_ThrowingGame");  // Resets the whole scene.
     }
 
     public void StartFreeplay()

@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4398780375319112}
   - component: {fileID: 114024649906567324}
+  - component: {fileID: 114246958267411766}
   m_Layer: 0
   m_Name: ThrowingGameController
   m_TagString: Untagged
@@ -52,11 +53,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  timeLimit: 0
+  timeLimit: 60
   timeRemaining: 0
   scoreText: {fileID: 0}
   timerText: {fileID: 0}
-  knivesContainer: {fileID: 0}
-  axesContainer: {fileID: 0}
+  knivesContainer: {fileID: 1565381733552316, guid: 3287302a1c05be343823638f4e1f6e00,
+    type: 2}
+  axesContainer: {fileID: 1593655595714770, guid: da35f6704b10bd7428bed3e6bacfc1c0,
+    type: 2}
   throwingGameScores: {fileID: 11400000, guid: 713111fb2ce9b67408fdf3b5fa69ad79, type: 2}
   freeplayMode: 0
+--- !u!114 &114246958267411766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1064393570789662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb56ae9cc497a344bb88caa2384775e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startGameFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114024649906567324}
+        m_MethodName: StartTimedMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  startFreePlayFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114024649906567324}
+        m_MethodName: StartFreeplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  retryFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114024649906567324}
+        m_MethodName: RestartMiniGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
