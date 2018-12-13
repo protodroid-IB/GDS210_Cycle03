@@ -70,7 +70,7 @@ public class ThrowingGameController : MonoBehaviour
             }   
 
             score += points;
-            scoreText.text = "Score: " + score.ToString("0000");
+            UpdateScore();
             throwingGameScores.currentScore = score;    // Reference to score records.
         }
     }
@@ -95,6 +95,7 @@ public class ThrowingGameController : MonoBehaviour
     void StartThrowingGame()
     {
 		score = 0;
+        UpdateScore();
 
         if (activeKnivesContainer != null)
             Destroy(activeKnivesContainer);
@@ -111,6 +112,11 @@ public class ThrowingGameController : MonoBehaviour
         {
             timeRemaining = timeLimit;
         }
+    }
+
+    void UpdateScore()
+    {
+        scoreText.text = "Score: " + score.ToString("0000");
     }
 
     // Updates the throwing games high score.
