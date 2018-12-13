@@ -22,10 +22,16 @@ public class ThrowingGameController : MonoBehaviour
     // Reference to the score records container.
     [SerializeField] ScoreRecords throwingGameScores;
 
+    AudioSource audioSource;
 
     public bool freeplayMode;
 
-	void Start ()
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    void Start ()
     {
         freeplayMode = false;
         timerText.enabled = false;
@@ -56,7 +62,11 @@ public class ThrowingGameController : MonoBehaviour
         if (!freeplayMode)
         {
             if (collider.gameObject.name == "SwingingTarget")
+            {
                 points = points * 10;
+
+                AudioManager.instance.PlaySound("ThrowingGame_NiceThrow", ref audioSource);
+            }   
 
             score += points;
             scoreText.text = "Score: " + score.ToString("0000");
