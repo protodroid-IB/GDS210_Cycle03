@@ -72,16 +72,10 @@ namespace Serving
 			scoreText.text = "score = " + score.ToString() + " points";
 		}
 
-		IEnumerator StartGame(int roundTime)
+
+		public void InitialiseGame(int roundTime)
 		{
 
-			StopGame();
-			
-			countdown = true;
-			timer = 3;
-			ResetScore();
-
-			yield return new WaitForSeconds(3);
 			game = true;
 			countdown = false;
 			timer = 0;
@@ -108,9 +102,9 @@ namespace Serving
 
 		public void StartRound()
 		{
-			if (game)
-				return;
-			StartCoroutine(StartGame(roundLength));
+            StopGame();
+            ResetScore();
+            InitialiseGame(roundLength);
 		}
 
 		public void StartFreePlay()
