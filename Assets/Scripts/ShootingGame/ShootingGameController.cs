@@ -144,7 +144,8 @@ public class ShootingGameController : MonoBehaviour {
         else
         {
             endSequence = 0;
-            Invoke("EndSequence",0.5f);
+            Invoke("EndSequence",1f);
+            Debug.Log("game ended");
         }
     }
 
@@ -181,7 +182,7 @@ public class ShootingGameController : MonoBehaviour {
     public void AddShot()
     {
         shotsFired++;
-        accuracyBonus = targetsHit > 0 ? (((float)targetsHit / shotsFired) * 100) : 0;
+        accuracyBonus = targetsHit > 0 ? (((float)targetsHit / (float)shotsFired) * 100) : 0;
         accuraccyText.text = "%" + accuracyBonus.ToString("00.00");
     }
 
@@ -194,10 +195,10 @@ public class ShootingGameController : MonoBehaviour {
             totalScoreText.text = score.ToString("00000");
             totalScoreText.gameObject.SetActive(true);
 
-            endSequence++;
+            endSequence = 1;
             Invoke("EndSequence", 0.5f);
         }
-        if (endSequence == 1) // display speed bonus
+        else if (endSequence == 1) // display speed bonus
         {
             score += (int)speedBonus;
             maxDelta = speedBonus * 0.05f;
@@ -211,12 +212,12 @@ public class ShootingGameController : MonoBehaviour {
             bonusText.gameObject.SetActive(true);
             bonusLabelText.gameObject.SetActive(true);
 
-            endSequence++;
-            Invoke("EndSequence", 0.5f);
+            endSequence = 2;
+            Invoke("EndSequence", 1f);
         }
-        if (endSequence == 2) // add speed bonus
+        else if (endSequence == 2) // add speed bonus
         {
-            if (speedBonus > 0f)
+            if (speedBonus > 0f && displayScore != score)
             {
                 speedBonus = Mathf.MoveTowards(speedBonus, 0, maxDelta);
                 displayScore = Mathf.MoveTowards(displayScore, score, maxDelta);
@@ -224,15 +225,15 @@ public class ShootingGameController : MonoBehaviour {
                 bonusText.text = "+" + speedBonus.ToString("00000");
                 totalScoreText.text = displayScore.ToString("00000");
 
-                Invoke("EndSequence", 0.1f);
+                Invoke("EndSequence", 0.05f);
             }
             else
             {
-                endSequence++;
+                endSequence = 3;
                 Invoke("EndSequence", 0.5f);
             }
         }
-        if (endSequence == 3) // display accuracy bonus
+        else if (endSequence == 3) // display accuracy bonus
         {
             accuracyBonus = accuracyBonus / 100 * score;
             score += (int)(accuracyBonus);
@@ -244,12 +245,12 @@ public class ShootingGameController : MonoBehaviour {
             bonusText.text = "+" + accuracyBonus.ToString("00000");
             bonusLabelText.text = "ACCURACY BONUS";
 
-            endSequence++;
-            Invoke("EndSequence", 0.5f);
+            endSequence = 4;
+            Invoke("EndSequence", 1f);
         }
-        if (endSequence == 4) // add accuracy bonus
+        else if (endSequence == 4) // add accuracy bonus
         {
-            if (speedBonus > 0f)
+            if (accuracyBonus > 0f && displayScore != score)
             {
                 accuracyBonus = Mathf.MoveTowards(accuracyBonus, 0, maxDelta);
                 displayScore = Mathf.MoveTowards(displayScore, score, maxDelta);
@@ -257,15 +258,15 @@ public class ShootingGameController : MonoBehaviour {
                 bonusText.text = "+" + accuracyBonus.ToString("00000");
                 totalScoreText.text = displayScore.ToString("00000");
 
-                Invoke("EndSequence", 0.1f);
+                Invoke("EndSequence", 0.05f);
             }
             else
             {
-                endSequence++;
+                endSequence = 5;
                 Invoke("EndSequence", 0.5f);
             }
         }
-        if (endSequence == 5) // display total score / highscore
+        else if (endSequence == 5) // display total score / highscore
         {
             bonusText.gameObject.SetActive(false);
             bonusLabelText.gameObject.SetActive(false);

@@ -58,7 +58,6 @@ public class CharacterDialogue : MonoBehaviour
                 {
                     dialogueIndex = Random.Range(0, dialogueOptions.Length);
                     AudioManager.instance.PlaySound(dialogueOptions[dialogueIndex], ref dialogueAudio);
-                    Debug.Log("I SAID: " + dialogueOptions[dialogueIndex] + "!");
                 }
                 speak = false;
 			}

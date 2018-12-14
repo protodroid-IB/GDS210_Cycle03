@@ -67,7 +67,7 @@ public class ThrowingGameController : MonoBehaviour
             {
                 points = points * 10;
 
-                maxChance -= 2;
+                maxChance -= 1;
 
                 if(Random.Range(0,maxChance) == 0)
                 {
