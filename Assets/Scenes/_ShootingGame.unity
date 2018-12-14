@@ -8848,13 +8848,6 @@ MonoBehaviour:
         exitTime: 2
         randomize: 0
         targetID: 00000000010000000200000003000000040000000900000008000000070000000600000005000000
-    - name: Top to Mid Pan I
-      sequence:
-      - timeInterval: 0.5
-        targetTime: 2
-        exitTime: 2
-        randomize: 0
-        targetID: 04000000030000000200000001000000000000000500000006000000070000000800000009000000
     - name: Mid to Low Pan
       sequence:
       - timeInterval: 0.5
@@ -8862,13 +8855,6 @@ MonoBehaviour:
         exitTime: 2
         randomize: 0
         targetID: 0a0000000b0000000c0000000d0000000e0000000900000008000000070000000600000005000000
-    - name: Mid to Low Pan I
-      sequence:
-      - timeInterval: 0.5
-        targetTime: 2
-        exitTime: 2
-        randomize: 0
-        targetID: 0e0000000d0000000c0000000b0000000a0000000500000006000000070000000800000009000000
     - name: Full Pan
       sequence:
       - timeInterval: 0.5
