@@ -208,7 +208,7 @@ public class ShootingGameController : MonoBehaviour {
         }
         if (endSequence == 2) // add speed bonus
         {
-            if (speedBonus >= 0f)
+            if (speedBonus > 0f)
             {
                 speedBonus = Mathf.MoveTowards(speedBonus, 0, maxDelta);
                 displayScore = Mathf.MoveTowards(displayScore, score, maxDelta);
@@ -241,7 +241,7 @@ public class ShootingGameController : MonoBehaviour {
         }
         if (endSequence == 4) // add accuracy bonus
         {
-            if (speedBonus >= 0f)
+            if (speedBonus > 0f)
             {
                 accuracyBonus = Mathf.MoveTowards(accuracyBonus, 0, maxDelta);
                 displayScore = Mathf.MoveTowards(displayScore, score, maxDelta);
