@@ -55,7 +55,6 @@ public class BladeGettingStuckScript : MonoBehaviour
             {
                 ParentMe(other, depth);     // Sticks to targets, and penetrates.
 
-                print(other.name);
                 diht.SetUsed();
 
                 if(trigger == false)

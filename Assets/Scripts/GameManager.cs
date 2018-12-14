@@ -64,7 +64,6 @@ public class GameManager : MonoBehaviour {
             AudioManager.instance.PlaySound("Voice_Highscore", ref highscoreAudio[0]);
             AudioManager.instance.PlaySound("Highscore", ref highscoreAudio[1], 1f, 0.75f);
 
-            print("Updating highScore");
             game.highestScore = game.currentScore;
             scoreManager.SaveScores();
 
