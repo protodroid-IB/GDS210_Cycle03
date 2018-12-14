@@ -4946,7 +4946,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -4959,7 +4959,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -4972,7 +4972,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -4985,7 +4985,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -4998,7 +4998,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -5011,7 +5011,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -5024,7 +5024,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 0
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -5037,7 +5037,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -5050,7 +5050,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -5063,7 +5063,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -5076,7 +5076,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     oneShot: 1
-    spatial: 0.5
+    spatial: 0.25
     setDistancesHere: 1
     minDistance3Dsound: 1
     maxDistance3DSound: 15
@@ -5185,7 +5185,7 @@ MonoBehaviour:
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: Blake_Cactus
-    clip: {fileID: 8300000, guid: ffad2f1e4bcf4e841a401d93bcb1b518, type: 3}
+    clip: {fileID: 8300000, guid: 58d0db69ec718c34d986a396eb4414a0, type: 3}
     audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -5198,7 +5198,7 @@ MonoBehaviour:
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: Blake_Bird
-    clip: {fileID: 8300000, guid: 48c0ccf0bca5fd744aafa520471e2662, type: 3}
+    clip: {fileID: 8300000, guid: 7a4c8fb4ae3f4f045baa7370ed8694bc, type: 3}
     audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -5211,7 +5211,7 @@ MonoBehaviour:
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: Blake_NotEnoughRoom
-    clip: {fileID: 8300000, guid: 93a596e288cb897449123baac7664de4, type: 3}
+    clip: {fileID: 8300000, guid: e239989bb7483ff4cabfaebd63ec1667, type: 3}
     audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -5224,7 +5224,7 @@ MonoBehaviour:
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: ShootGame_NiceShot
-    clip: {fileID: 8300000, guid: a6011dddec2a2b54c9946e0569e708ca, type: 3}
+    clip: {fileID: 8300000, guid: b9877f36d1a5e2348ba297108949ec1a, type: 3}
     audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -5237,7 +5237,7 @@ MonoBehaviour:
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: ThrowingGame_NiceThrow
-    clip: {fileID: 8300000, guid: 426828224d7da8745ad87e54b3bab841, type: 3}
+    clip: {fileID: 8300000, guid: caf8cf304a106f74f88a83d9d63978f7, type: 3}
     audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -5250,7 +5250,7 @@ MonoBehaviour:
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: Games_Countdown
-    clip: {fileID: 8300000, guid: a8fc0857724ca874a9fbeca10b4b4541, type: 3}
+    clip: {fileID: 8300000, guid: 7921d5b3703eb3f4791625aaad812c1d, type: 3}
     audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -5263,7 +5263,7 @@ MonoBehaviour:
     minDistance3Dsound: 1
     maxDistance3DSound: 15
   - clipName: Voice_Highscore
-    clip: {fileID: 8300000, guid: 3d4abc4cde8f2ae4b8fdcf580c6e54a0, type: 3}
+    clip: {fileID: 8300000, guid: c64c780d84e6c5f49956c4c2d26df7dc, type: 3}
     audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
       type: 2}
     volume: 1
@@ -5275,6 +5275,84 @@ MonoBehaviour:
     setDistancesHere: 0
     minDistance3Dsound: 1
     maxDistance3DSound: 15
+  - clipName: BarGame_Cider
+    clip: {fileID: 8300000, guid: 1413928235d30394aa53a9058a7491da, type: 3}
+    audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.25
+    setDistancesHere: 1
+    minDistance3Dsound: 1
+    maxDistance3DSound: 15
+  - clipName: BarGame_FancyBeer
+    clip: {fileID: 8300000, guid: 2da4595abbb1e9c43b4e3429da31ad89, type: 3}
+    audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.25
+    setDistancesHere: 1
+    minDistance3Dsound: 1
+    maxDistance3DSound: 15
+  - clipName: BarGame_Mead
+    clip: {fileID: 8300000, guid: 3a95e72b99460dc458ccef83242fba68, type: 3}
+    audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.25
+    setDistancesHere: 1
+    minDistance3Dsound: 1
+    maxDistance3DSound: 15
+  - clipName: BarGame_Port
+    clip: {fileID: 8300000, guid: 81af8c951aa0ddf40b95df1d164cb19c, type: 3}
+    audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.25
+    setDistancesHere: 1
+    minDistance3Dsound: 1
+    maxDistance3DSound: 15
+  - clipName: BarGame_Tequila
+    clip: {fileID: 8300000, guid: 29183b16a92254a4c8a2fe418b31a3da, type: 3}
+    audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 0.25
+    setDistancesHere: 1
+    minDistance3Dsound: 1
+    maxDistance3DSound: 15
+  - clipName: Kim_NeighCensored
+    clip: {fileID: 8300000, guid: cdcdb04b65d569e41913c07a544bf4f9, type: 3}
+    audioMixerGroup: {fileID: 243262633014299890, guid: 70f1da96556f25b47be5ae6534a22328,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    oneShot: 1
+    spatial: 1
+    setDistancesHere: 1
+    minDistance3Dsound: 1
+    maxDistance3DSound: 25
 --- !u!114 &114160913357953200
 MonoBehaviour:
   m_ObjectHideFlags: 1
