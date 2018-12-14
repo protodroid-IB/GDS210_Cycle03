@@ -48,16 +48,24 @@ public class ServingAudio : MonoBehaviour
 
 
     //CLINK SOUND
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (!other.gameObject.layer.Equals(2))
-            AudioManager.instance.PlaySound("BarGame_Clink", ref audioSources[0]);
-
+		BottleClink(collider.gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.layer.Equals(2))
-            AudioManager.instance.PlaySound("BarGame_Clink", ref audioSources[0]);
+		BottleClink(collision.gameObject);
     }
+
+	void BottleClink(GameObject collider)
+	{
+		if (!collider.layer.Equals(2))
+		{
+			if (collider.GetComponent<Rigidbody>().velocity.sqrMagnitude >= 0.5)
+			{
+				AudioManager.instance.PlaySound("BarGame_Clink", ref audioSources[0]);
+			}
+		}
+	}
 }
