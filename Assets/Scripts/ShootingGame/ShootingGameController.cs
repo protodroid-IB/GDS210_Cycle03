@@ -15,11 +15,13 @@ public class ShootingGameController : MonoBehaviour {
 
     public float speedThreshold;
     public float speedMultiplyer;
+    public float speedBasePoints;
     public float accuracyMultiplyer;
-    [SerializeField] int shotsFired = 0;
-    [SerializeField] int targetsHit = 0;
+    int shotsFired = 0;
+    int targetsHit = 0;
+    int fastShotsHit = 0;
     float accuracyBonus;
-    int speedBonus;
+    float speedBonus;
 
     [HideInInspector] public int score;
     public Text scoreText;
@@ -27,8 +29,18 @@ public class ShootingGameController : MonoBehaviour {
     public Text accuraccyText;
     [SerializeField] ScoreRecords scoreRecord;
 
-    Gun[] guns;
+    public Color speedColor;
+    public Color accuracyColor;
+    public Text bonusLabelText;
+    public Text bonusText;
+    public Text labelText;
+    public Text totalScoreText;
+    int endSequence;
+    float maxDelta; //for the end sequence
+    float displayScore;
+    float startTimer;
 
+    Gun[] guns;
 
     public void Start()
     {
@@ -41,22 +53,31 @@ public class ShootingGameController : MonoBehaviour {
 
         StopCycle();
     }
-
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if (startTimer > 0f)
         {
-            StartCycle();
+            totalScoreText.text = startTimer.ToString("0.00");
+            startTimer -= Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            StopCycle();
-        }
+    }
+
+    public void DisplayStartTimer()
+    {
+        bonusLabelText.gameObject.SetActive(false);
+        bonusText.gameObject.SetActive(false);
+        labelText.text = "GAME START";
+        startTimer = 3f;
+        labelText.gameObject.SetActive(true);
+        totalScoreText.gameObject.SetActive(true);
     }
 
     public void StartCycle()
     {
         StopCycle();
+        labelText.gameObject.SetActive(false);
+        totalScoreText.gameObject.SetActive(false);
         accuracyBonus = 0;
         speedBonus = 0;
         sequencePool.pool = sequencePool.pool.OrderBy(x => Random.value).ToList();
@@ -66,6 +87,7 @@ public class ShootingGameController : MonoBehaviour {
         targetIndex = 0;
         shotsFired = 0;
         targetsHit = 0;
+        fastShotsHit = 0;
         speedText.text = speedBonus.ToString("00000");
         Cycle();
     }
@@ -113,18 +135,9 @@ public class ShootingGameController : MonoBehaviour {
         }
         else
         {
-            Invoke("EndGame",0);
+            endSequence = 0;
+            Invoke("EndSequence",0.5f);
         }
-    }
-
-    void EndGame()
-    {
-        StopCycle();
-        score += speedBonus;
-        score += (int)(accuracyBonus / 100 * score);
-        scoreRecord.currentScore = score;
-        scoreText.text = score.ToString("00000");
-        GameManager.gameManager.UpdateHighScore(scoreRecord);
     }
 
     public void StopCycle()
@@ -139,7 +152,7 @@ public class ShootingGameController : MonoBehaviour {
     public void Addscore(int points, float speed)
     {
         speedBonus += Mathf.CeilToInt((speedThreshold - speed) * speedMultiplyer);
-        speedText.text = speedBonus.ToString("00000");
+        fastShotsHit++;
         Addscore(points);
     }
 
@@ -148,6 +161,7 @@ public class ShootingGameController : MonoBehaviour {
         score += points;
         scoreText.text = score.ToString("00000");
         targetsHit++;
+        speedText.text = fastShotsHit.ToString("00") + "/" + targetsHit.ToString("00");
         scoreRecord.currentScore = score;
     }
     
@@ -161,5 +175,101 @@ public class ShootingGameController : MonoBehaviour {
         shotsFired++;
         accuracyBonus = targetsHit > 0 ? (((float)targetsHit / shotsFired) * 100) : 0;
         accuraccyText.text = "%" + accuracyBonus.ToString("00.00");
+    }
+
+    void EndSequence() 
+    {
+        if (endSequence == 0) // display score
+        {
+            StopCycle();
+
+            totalScoreText.text = score.ToString("00000");
+            totalScoreText.gameObject.SetActive(true);
+
+            endSequence++;
+            Invoke("EndSequence", 0.5f);
+        }
+        if (endSequence == 1) // display speed bonus
+        {
+            score += (int)speedBonus;
+            maxDelta = speedBonus * 0.05f;
+
+            bonusText.color = speedColor;
+            bonusLabelText.color = speedColor;
+
+            bonusText.text = "+" + speedBonus.ToString("00000");
+            bonusLabelText.text = "SPEED BONUS";
+
+            bonusText.gameObject.SetActive(true);
+            bonusLabelText.gameObject.SetActive(true);
+
+            endSequence++;
+            Invoke("EndSequence", 0.5f);
+        }
+        if (endSequence == 2) // add speed bonus
+        {
+            if (speedBonus >= 0f)
+            {
+                speedBonus = Mathf.MoveTowards(speedBonus, 0, maxDelta);
+                displayScore = Mathf.MoveTowards(displayScore, score, maxDelta);
+
+                bonusText.text = "+" + speedBonus.ToString("00000");
+                totalScoreText.text = displayScore.ToString("00000");
+
+                Invoke("EndSequence", 0.1f);
+            }
+            else
+            {
+                endSequence++;
+                Invoke("EndSequence", 0.5f);
+            }
+        }
+        if (endSequence == 3) // display accuracy bonus
+        {
+            accuracyBonus = accuracyBonus / 100 * score;
+            score += (int)(accuracyBonus);
+            maxDelta = accuracyBonus * 0.05f;
+
+            bonusText.color = accuracyColor;
+            bonusLabelText.color = accuracyColor;
+
+            bonusText.text = "+" + accuracyBonus.ToString("00000");
+            bonusLabelText.text = "ACCURACY BONUS";
+
+            endSequence++;
+            Invoke("EndSequence", 0.5f);
+        }
+        if (endSequence == 4) // add accuracy bonus
+        {
+            if (speedBonus >= 0f)
+            {
+                accuracyBonus = Mathf.MoveTowards(accuracyBonus, 0, maxDelta);
+                displayScore = Mathf.MoveTowards(displayScore, score, maxDelta);
+
+                bonusText.text = "+" + accuracyBonus.ToString("00000");
+                totalScoreText.text = displayScore.ToString("00000");
+
+                Invoke("EndSequence", 0.1f);
+            }
+            else
+            {
+                endSequence++;
+                Invoke("EndSequence", 0.5f);
+            }
+        }
+        if (endSequence == 5) // display total score / highscore
+        {
+            bonusText.gameObject.SetActive(false);
+            bonusLabelText.gameObject.SetActive(false);
+
+            if (score > scoreRecord.highestScore)
+            {
+                labelText.text = "HIGH SCORE";
+                labelText.gameObject.SetActive(true);
+
+                scoreRecord.currentScore = score;
+                GameManager.gameManager.UpdateHighScore(scoreRecord);
+            }
+        }
     }
 }

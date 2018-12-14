@@ -11,10 +11,10 @@ public class SpeedBonus : MonoBehaviour {
 	}
 	
 	void Update () {
-        transform.position += Vector3.up * 2 * Time.deltaTime;
+        transform.position += Vector3.up * Time.deltaTime;
         if (renderer.color.a > 0)
         {
-            color.a -= 2 * Time.deltaTime;
+            color.a -= Time.deltaTime;
             renderer.color = color;
         }
         else

@@ -11,6 +11,7 @@ public class Target : MonoBehaviour {
     JointSpring hingeSpring;
     ShootingGameController gameController;
     public GameObject speedBonus;
+    public float spawnheight;
 
     public void Awake()
     {
@@ -52,7 +53,9 @@ public class Target : MonoBehaviour {
             else
             {
                 gameController.Addscore(points, speed);
-                Instantiate(speedBonus, transform.position, Quaternion.identity);
+                Vector3 spawnPos = transform.position;
+                spawnPos.y = spawnheight;
+                Instantiate(speedBonus, spawnPos, Quaternion.identity);
             }
             FlipDown();
         }
