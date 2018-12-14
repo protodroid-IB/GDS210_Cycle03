@@ -77,7 +77,7 @@ public class ThrowingGameController : MonoBehaviour
 
     public void RestartMiniGame()
     {
-        GameManager.gameManager.RestartMiniGame("_ThrowingGame");  // Resets the whole scene.
+        GameManager.instance.RestartMiniGame("_ThrowingGame");  // Resets the whole scene.
     }
 
     public void StartFreeplay()
@@ -122,6 +122,6 @@ public class ThrowingGameController : MonoBehaviour
     // Updates the throwing games high score.
     void UpdateHighScore()
     {
-        GameManager.gameManager.UpdateHighScore(throwingGameScores);
+        GameManager.instance.UpdateHighScore(throwingGameScores);
     }
 }

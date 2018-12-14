@@ -43,7 +43,7 @@ public class MenuSettings : MonoBehaviour
     // Set if the game should be played as a tutorial.
     public void TutorialToggleChange(bool toggle)
     {
-        GameManager.gameManager.SetTutorialActive();
+        GameManager.instance.SetTutorialActive();
 
         int tutorialToggle = toggle ? 1 : 0;
         gameSettings.tutorial = toggle;
@@ -75,6 +75,11 @@ public class MenuSettings : MonoBehaviour
     {
         mixerMusic.audioMixer.SetFloat(volParameterMusic, 0f + (1f - gameSettings.musicVolume) * -45f);
     }
+
+	public void TutorialToggle()
+	{
+		tutorialToggle.isOn = !tutorialToggle.isOn;
+	}
 
     
 }

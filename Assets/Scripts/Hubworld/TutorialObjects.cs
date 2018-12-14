@@ -10,7 +10,7 @@ public class TutorialObjects : MonoBehaviour {
         // Add this item to the list on start.
         GameManager.tutorialObjects.Add(gameObject);
 
-        bool active = GameManager.gameManager.gameSettings.tutorial;
+        bool active = GameManager.instance.gameSettings.tutorial;
         gameObject.SetActive(active); // Ensures objects on start follow the games settings.
     
     }

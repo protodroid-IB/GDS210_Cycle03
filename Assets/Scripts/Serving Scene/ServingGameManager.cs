@@ -97,7 +97,7 @@ namespace Serving
 			timer = 0;
 			game = false;
 
-			GameManager.gameManager.UpdateHighScore(barScoreRecord);
+			GameManager.instance.UpdateHighScore(barScoreRecord);
 		}
 
 		public void StartRound()

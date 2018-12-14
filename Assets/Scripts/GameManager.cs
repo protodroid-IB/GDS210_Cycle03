@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 [RequireComponent(typeof(SceneManagement), typeof(ScoreManager))]
 public class GameManager : MonoBehaviour {
-    public static GameManager gameManager;
+    public static GameManager instance;
 
     // Players spawn position
     public static Vector3 spawnPosition = Vector3.zero;
@@ -27,13 +27,13 @@ public class GameManager : MonoBehaviour {
 
 
     void Awake () {
-        if (gameManager != null)
+        if (instance != null)
         {
             Destroy(gameObject);
             return;
         }
 
-        gameManager = this;
+        instance = this;
 
         sceneManagement = GetComponent<SceneManagement>();
         scoreManager = GetComponent<ScoreManager>();

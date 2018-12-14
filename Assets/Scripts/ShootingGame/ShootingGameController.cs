@@ -167,7 +167,7 @@ public class ShootingGameController : MonoBehaviour {
     
     public void RestartMiniGame(string minigame)
     {
-        GameManager.gameManager.RestartMiniGame(minigame);
+        GameManager.instance.RestartMiniGame(minigame);
     }
 
     public void AddShot()
@@ -268,7 +268,7 @@ public class ShootingGameController : MonoBehaviour {
                 labelText.gameObject.SetActive(true);
 
                 scoreRecord.currentScore = score;
-                GameManager.gameManager.UpdateHighScore(scoreRecord);
+                GameManager.instance.UpdateHighScore(scoreRecord);
             }
         }
     }

@@ -62,7 +62,7 @@ public class ScoreManager : MonoBehaviour
         SaveScores();
         LoadScores();
 
-        GameManager.gameManager.UpdatePosters();
+        GameManager.instance.UpdatePosters();
 
     }
 }
