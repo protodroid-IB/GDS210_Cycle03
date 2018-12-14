@@ -88,7 +88,7 @@ public class ShootingGameController : MonoBehaviour {
         shotsFired = 0;
         targetsHit = 0;
         fastShotsHit = 0;
-        speedText.text = speedBonus.ToString("00000");
+        speedText.text = fastShotsHit.ToString("00") + "/" + targetsHit.ToString("00");
         Cycle();
     }
 
