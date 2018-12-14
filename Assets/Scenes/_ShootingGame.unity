@@ -6481,6 +6481,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4502317644088124, guid: 139d4b30850476841b55f5190a27c59d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -30.692
@@ -6750,6 +6755,31 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 37.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1300222923}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayStartTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551094787857160, guid: 139d4b30850476841b55f5190a27c59d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139d4b30850476841b55f5190a27c59d, type: 2}
@@ -10250,10 +10280,10 @@ MonoBehaviour:
   scoreRecord: {fileID: 11400000, guid: 753bfc42abce6514e82520e08ec6a417, type: 2}
   speedColor: {r: 0.9528302, g: 0.8030327, b: 0, a: 1}
   accuracyColor: {r: 0, g: 0.43529412, b: 0.6431373, a: 1}
-  bonusLabelText: {fileID: 0}
-  bonusText: {fileID: 0}
-  labelText: {fileID: 0}
-  totalScoreText: {fileID: 0}
+  bonusLabelText: {fileID: 706052925}
+  bonusText: {fileID: 1904095}
+  labelText: {fileID: 88998471}
+  totalScoreText: {fileID: 1867393626}
 --- !u!1 &1308933839
 GameObject:
   m_ObjectHideFlags: 0
