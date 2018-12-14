@@ -4660,7 +4660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotDialogue: 
+  shotDialogue: Ken_ShotHat
   dialogueOptions:
   - Blake_Cactus
   - Blake_Bird
@@ -6881,6 +6881,12 @@ Transform:
   m_Father: {fileID: 1899902832}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643261460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114217387264624536, guid: 0b01046970b84cf429e8290850d24c2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1039056200}
+  m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
 --- !u!1 &646224895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6890,6 +6896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 646224896}
   - component: {fileID: 78899683}
+  - component: {fileID: 646224897}
   m_Layer: 13
   m_Name: Head_end
   m_TagString: Untagged
@@ -6910,6 +6917,18 @@ Transform:
   m_Father: {fileID: 1311143877}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &646224897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 646224895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba7078572b04334e91ad89eed9b6a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charDialogue: {fileID: 1024240261}
 --- !u!1 &650186702
 GameObject:
   m_ObjectHideFlags: 0
@@ -10618,7 +10637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotDialogue: 
+  shotDialogue: Ken_ShotHat
   dialogueOptions:
   - Ken_OuttaGin
   - Ken_FirstRule
@@ -11311,6 +11330,16 @@ Prefab:
     - target: {fileID: 1055803512227540, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114217387264624536, guid: 0b01046970b84cf429e8290850d24c2b,
+        type: 2}
+      propertyPath: shotDialogue
+      value: Ken_ShotHat
+      objectReference: {fileID: 0}
+    - target: {fileID: 114291667381145908, guid: 0b01046970b84cf429e8290850d24c2b,
+        type: 2}
+      propertyPath: shotDialogue
+      value: Ken_ShotHat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b01046970b84cf429e8290850d24c2b, type: 2}
@@ -13162,6 +13191,23 @@ Transform:
   m_Father: {fileID: 1684794326}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1252149016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1234032540077524, guid: 0b01046970b84cf429e8290850d24c2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1039056200}
+--- !u!114 &1252149019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252149016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba7078572b04334e91ad89eed9b6a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charDialogue: {fileID: 1462226720}
 --- !u!1 &1252494235
 GameObject:
   m_ObjectHideFlags: 0
@@ -15689,6 +15735,23 @@ Transform:
   m_Father: {fileID: 1083936277}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1453383315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1761024115216196, guid: 0b01046970b84cf429e8290850d24c2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1039056200}
+--- !u!114 &1453383318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1453383315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba7078572b04334e91ad89eed9b6a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charDialogue: {fileID: 643261460}
 --- !u!1 &1458346414
 GameObject:
   m_ObjectHideFlags: 0
@@ -15745,6 +15808,12 @@ Transform:
   m_Father: {fileID: 1927068890}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1462226720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114291667381145908, guid: 0b01046970b84cf429e8290850d24c2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1039056200}
+  m_Script: {fileID: 11500000, guid: a73b57b068b3e4140a40edb9af9bc7cf, type: 3}
 --- !u!1 &1468787505
 GameObject:
   m_ObjectHideFlags: 0
@@ -19050,6 +19119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907968216}
   - component: {fileID: 1332176388}
+  - component: {fileID: 1907968217}
   m_Layer: 13
   m_Name: Head_end
   m_TagString: Untagged
@@ -19070,6 +19140,18 @@ Transform:
   m_Father: {fileID: 412856098}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907968217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1907968215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba7078572b04334e91ad89eed9b6a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charDialogue: {fileID: 456689825}
 --- !u!1 &1911422038
 GameObject:
   m_ObjectHideFlags: 0
