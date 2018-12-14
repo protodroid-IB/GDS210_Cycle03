@@ -79,6 +79,7 @@ public class MenuSettings : MonoBehaviour
 	public void TutorialToggle()
 	{
 		tutorialToggle.isOn = !tutorialToggle.isOn;
+        TutorialToggleChange(tutorialToggle.isOn);
 	}
 
     

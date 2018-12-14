@@ -24,6 +24,8 @@ public class ThrowingGameController : MonoBehaviour
 
     AudioSource audioSource;
 
+    private int maxChance = 9;
+
     public bool freeplayMode;
 
     void Awake()
@@ -65,8 +67,14 @@ public class ThrowingGameController : MonoBehaviour
             {
                 points = points * 10;
 
-                if(Random.Range(0,9) == 0)
+                maxChance -= 2;
+
+                if(Random.Range(0,maxChance) == 0)
+                {
                     AudioManager.instance.PlaySound("ThrowingGame_NiceThrow", ref audioSource);
+                    maxChance = 9;
+                }
+                    
             }   
 
             score += points;

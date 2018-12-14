@@ -21,14 +21,19 @@
 
         private AudioSource ctrlAudio;
 
+        bool isEnabled;
+
         private void Start()
         {
             ctrlAudio = GetComponent<AudioSource>();
             renderers = model.GetComponentsInChildren<Renderer>();
         }
 
-        void OnEnable()
+        void OnEnable ()
         {
+            if (isEnabled)
+                return;
+            isEnabled = true;
             VRTK_ControllerEvents controllerEvents = GetComponent<VRTK_ControllerEvents>();
 
             if (controllerEvents == null)
@@ -61,7 +66,7 @@
             controllerEvents.TouchpadTouchEnd += ControllerEvents_TouchpadTouchEnd;
             controllerEvents.TouchpadAxisChanged += ControllerEvents_TouchpadAxisChanged;
 
-			controllerEvents.ButtonOneTouchStart += ControllerEvents_ButtonOnePressed;
+			controllerEvents.ButtonTwoPressed += ControllerEvents_ButtonOnePressed;
         }
 
         public void HideModels()

@@ -62,7 +62,7 @@ public class ServingAudio : MonoBehaviour
 	{
 		if (!collider.layer.Equals(2))
 		{
-			if (collider.GetComponent<Rigidbody>().velocity.sqrMagnitude >= 0.5)
+			if (GetComponent<Rigidbody>().velocity.sqrMagnitude >= 0.5)
 			{
 				AudioManager.instance.PlaySound("BarGame_Clink", ref audioSources[0]);
 			}
