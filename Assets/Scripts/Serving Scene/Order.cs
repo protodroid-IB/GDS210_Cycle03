@@ -77,7 +77,8 @@ namespace Serving
 		{
 			gameInProgress = false;
 			orderBox = false;
-		}
+            firstOrder = false;
+        }
 
 		void GetOrder()
 		{

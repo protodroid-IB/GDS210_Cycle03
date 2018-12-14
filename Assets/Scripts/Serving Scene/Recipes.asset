@@ -31,7 +31,7 @@ MonoBehaviour:
   - usedIngredient: {fileID: 11400000, guid: 2884fdf9d4b9bc14a840d2e66a7f9a5c, type: 2}
     ingredientAmount: 0
     glass: 1
-    audioClipName: BarGame_Beer
+    audioClipName: BarGame_Cider
   - usedIngredient: {fileID: 11400000, guid: e312045500d06ec42a05057c3aea3306, type: 2}
     ingredientAmount: 0
     glass: 1
@@ -51,11 +51,11 @@ MonoBehaviour:
   - usedIngredient: {fileID: 11400000, guid: b2001068431ce354a82e449c61dd2e73, type: 2}
     ingredientAmount: 0
     glass: 0
-    audioClipName: BarGame_Wine
+    audioClipName: BarGame_Mead
   - usedIngredient: {fileID: 11400000, guid: 178191aa0fcc4e34d8d5fb193fdfd63f, type: 2}
     ingredientAmount: 0
     glass: 0
-    audioClipName: BarGame_Wine
+    audioClipName: BarGame_Port
   - usedIngredient: {fileID: 11400000, guid: 44450696ca88812429350c3461cb2cf5, type: 2}
     ingredientAmount: 0
     glass: 0
