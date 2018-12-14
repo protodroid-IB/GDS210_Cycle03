@@ -5584,6 +5584,26 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.4000002
       objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 7.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 4.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 1.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
   m_IsPrefabAsset: 0
@@ -6115,6 +6135,26 @@ Prefab:
     - target: {fileID: 4591920857473072, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.4000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 7.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 4.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 1.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
@@ -11284,6 +11324,26 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.4000002
       objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 7.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 4.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 1.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
   m_IsPrefabAsset: 0
@@ -12480,6 +12540,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  retryFunction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1721736009
 GameObject:
   m_ObjectHideFlags: 0
@@ -13300,6 +13365,26 @@ Prefab:
     - target: {fileID: 4591920857473072, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.4000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 7.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 4.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 65278064047040532, guid: a8b47f416dd8023418685be710fdbf80,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 1.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b47f416dd8023418685be710fdbf80, type: 2}
