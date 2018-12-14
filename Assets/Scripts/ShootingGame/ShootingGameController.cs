@@ -65,6 +65,8 @@ public class ShootingGameController : MonoBehaviour {
         sequenceIndex = 0;
         targetIndex = 0;
         shotsFired = 0;
+        targetsHit = 0;
+        speedText.text = speedBonus.ToString("00000");
         Cycle();
     }
 
@@ -120,6 +122,7 @@ public class ShootingGameController : MonoBehaviour {
         StopCycle();
         score += speedBonus;
         score += (int)(accuracyBonus / 100 * score);
+        scoreRecord.currentScore = score;
         scoreText.text = score.ToString("00000");
         GameManager.gameManager.UpdateHighScore(scoreRecord);
     }

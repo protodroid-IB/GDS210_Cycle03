@@ -21,11 +21,11 @@ public class DidIHitTarget : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (other.gameObject.tag == "ThrowingTarget" && !AmIUsed())
-        //{
-        //    SetUsed();
-        //    tgc.AddScore(10, other);
-        //}
+        if (other.gameObject.tag == "ThrowingTarget" && !AmIUsed())
+        {
+            SetUsed();
+            tgc.AddScore(10, other);
+        }
 
         if(!other.gameObject.layer.Equals(2))
             AudioManager.instance.PlaySound("ThrowingGame_Hit", ref knifeAudio);

@@ -24,6 +24,8 @@ public class BladeGettingStuckScript : MonoBehaviour
 
     VRTK_InteractableObject interactableObject;
 
+    bool trigger;
+
     private void Awake()
     {
         myObjectRB = myObject.GetComponent<Rigidbody>();
@@ -31,6 +33,8 @@ public class BladeGettingStuckScript : MonoBehaviour
         tgc = GameObject.Find("ThrowingGameController").GetComponent<ThrowingGameController>();
         diht = myObjectRB.GetComponent<DidIHitTarget>();
         interactableObject = GetComponentInParent<VRTK_InteractableObject>();
+
+        trigger = false;
     }
 
     private void Update()
@@ -53,7 +57,13 @@ public class BladeGettingStuckScript : MonoBehaviour
 
                 print(other.name);
                 diht.SetUsed();
-                tgc.AddScore(100, other);
+
+                if(trigger == false)
+                {
+                    tgc.AddScore(100, other);
+                    trigger = true;
+                }
+
             }
             
         }
@@ -99,7 +109,7 @@ public class BladeGettingStuckScript : MonoBehaviour
 
         // Adjust Rigidbody to account for being stuck in a target, especially the moving target.
         myObjectRB.velocity = Vector3.zero;
-        myObjectRB.useGravity = false;
+       // myObjectRB.useGravity = false;
         myObjectRB.constraints = RigidbodyConstraints.None;
 
         // Destroy the current Fixed Joint

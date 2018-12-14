@@ -1020,8 +1020,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1498803256868458}
   m_LocalRotation: {x: -0, y: 0.976808, z: -0, w: 0.21411721}
-  m_LocalPosition: {x: -28.31, y: 11.47, z: -0.95}
-  m_LocalScale: {x: 4.0000024, y: 4, z: 4.0000024}
+  m_LocalPosition: {x: -33.641605, y: 2.2035866, z: -25.106424}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4063165912199456}
   - {fileID: 224444085648295682}
@@ -1036,8 +1036,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1031384077411882}
   m_LocalRotation: {x: -0, y: 0.976808, z: -0, w: 0.21411721}
-  m_LocalPosition: {x: -21.72, y: 11.47, z: 10.84}
-  m_LocalScale: {x: 4.0000024, y: 4, z: 4.0000024}
+  m_LocalPosition: {x: -27.051605, y: 2.2035866, z: -13.316423}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4191287233324206}
   - {fileID: 224980464858517510}
@@ -1065,8 +1065,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1580395430441110}
   m_LocalRotation: {x: -0, y: 0.976808, z: -0, w: 0.21411721}
-  m_LocalPosition: {x: -7.483, y: 11.47, z: -0.035}
-  m_LocalScale: {x: 4.000002, y: 4, z: 4.000002}
+  m_LocalPosition: {x: -12.814606, y: 2.2035866, z: -24.191423}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4499030520737082}
   - {fileID: 224064330347352534}
@@ -1093,9 +1093,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1432324786012898}
-  m_LocalRotation: {x: -0, y: 0.88349015, z: -0, w: 0.46844968}
-  m_LocalPosition: {x: 17.87, y: 11.983, z: 15.97}
-  m_LocalScale: {x: 4.000002, y: 4, z: 4.000002}
+  m_LocalRotation: {x: -0, y: 0.8834902, z: -0, w: 0.4684497}
+  m_LocalPosition: {x: 12.538395, y: 2.716586, z: -8.186423}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4980631226139972}
   - {fileID: 4131987121975386}
@@ -1110,7 +1110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387359478955928}
   m_LocalRotation: {x: -0, y: 0.9346038, z: -0, w: -0.3556906}
-  m_LocalPosition: {x: 0.050255775, y: 11.156414, z: 16.0792}
+  m_LocalPosition: {x: -5.28135, y: 1.8900003, z: -8.077223}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4034387977802606}
@@ -1138,8 +1138,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087892336581282}
   m_LocalRotation: {x: -0, y: 0.8834902, z: -0, w: 0.4684497}
-  m_LocalPosition: {x: 12.37, y: 11.983, z: 33.97}
-  m_LocalScale: {x: 3.9999995, y: 4, z: 3.9999995}
+  m_LocalPosition: {x: 7.038394, y: 2.716586, z: 9.813578}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4606217085703498}
   - {fileID: 4680791596890090}
@@ -1180,8 +1180,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1196420397602758}
   m_LocalRotation: {x: -0, y: 0.9346038, z: -0, w: -0.3556906}
-  m_LocalPosition: {x: -5.04, y: 13.29, z: 13}
-  m_LocalScale: {x: 4.000002, y: 4, z: 4.000002}
+  m_LocalPosition: {x: -12.321606, y: 4.0235863, z: -12.746424}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4557018897289820}
   - {fileID: 224587525980798048}
@@ -1235,7 +1235,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1896924993305652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.331606, y: -9.266414, z: -24.156424}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4483234505945732}
@@ -1269,8 +1269,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901097657182204}
   m_LocalRotation: {x: -0, y: 0.976808, z: -0, w: 0.21411721}
-  m_LocalPosition: {x: -12.13, y: 10.09, z: 6.5}
-  m_LocalScale: {x: 4.0000024, y: 4, z: 4.0000024}
+  m_LocalPosition: {x: -17.461605, y: 0.82358646, z: -17.656424}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4918715673304362}
   - {fileID: 224740690190156316}
@@ -1321,9 +1321,9 @@ MonoBehaviour:
   drawLineFrom: {fileID: 4536052510549096}
   drawLineTo: {fileID: 4606217085703498}
   lineWidth: 0.01
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114076689916980076
 MonoBehaviour:
@@ -1401,9 +1401,9 @@ MonoBehaviour:
   drawLineFrom: {fileID: 0}
   drawLineTo: {fileID: 4483234505945732}
   lineWidth: 0.001
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114121808028183146
 MonoBehaviour:
@@ -1641,9 +1641,9 @@ MonoBehaviour:
   drawLineFrom: {fileID: 4196809806316806}
   drawLineTo: {fileID: 4565676348003998}
   lineWidth: 0.01
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114256090477604162
 MonoBehaviour:
@@ -1942,13 +1942,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: Enter the Saloon here!
   fontSize: 50
-  containerSize: {x: 550, y: 90}
+  containerSize: {x: 750, y: 90}
   drawLineFrom: {fileID: 4588799469461074}
   drawLineTo: {fileID: 4597132406152870}
-  lineWidth: 0.01
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  lineWidth: 0.025
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114599631604329770
 MonoBehaviour:
@@ -1988,9 +1988,9 @@ MonoBehaviour:
   drawLineFrom: {fileID: 4391549730405016}
   drawLineTo: {fileID: 4980631226139972}
   lineWidth: 0.01
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114633075929384226
 MonoBehaviour:
@@ -2063,9 +2063,9 @@ MonoBehaviour:
   drawLineFrom: {fileID: 4947508113264654}
   drawLineTo: {fileID: 4124780812353134}
   lineWidth: 0.01
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114683178622918506
 MonoBehaviour:
@@ -2304,9 +2304,9 @@ MonoBehaviour:
   drawLineFrom: {fileID: 4148473194853736}
   drawLineTo: {fileID: 4118484862644208}
   lineWidth: 0.01
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114824646816835708
 MonoBehaviour:
@@ -2573,9 +2573,9 @@ MonoBehaviour:
   drawLineFrom: {fileID: 4141918059056846}
   drawLineTo: {fileID: 4274561005524760}
   lineWidth: 0.01
-  fontColor: {r: 0.8784314, g: 0.8784314, b: 0.8784314, a: 1}
-  containerColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
-  lineColor: {r: 0.6431373, g: 0.3254902, b: 0, a: 1}
+  fontColor: {r: 0, g: 0, b: 0, a: 1}
+  containerColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
+  lineColor: {r: 0.54901963, g: 0.7490196, b: 0.8392157, a: 1}
   alwaysFaceHeadset: 1
 --- !u!114 &114987715861869798
 MonoBehaviour:
