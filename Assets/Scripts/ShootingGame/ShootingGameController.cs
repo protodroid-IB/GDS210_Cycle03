@@ -65,30 +65,38 @@ public class ShootingGameController : MonoBehaviour {
 
     public void DisplayStartTimer()
     {
+        StopCycle();
+        ResetScore();
         bonusLabelText.gameObject.SetActive(false);
         bonusText.gameObject.SetActive(false);
         labelText.text = "GAME START";
         startTimer = 3f;
         labelText.gameObject.SetActive(true);
         totalScoreText.gameObject.SetActive(true);
+        Invoke("StartCycle", 3f);
+    }
+
+    private void ResetScore()
+    {
+        accuracyBonus = 0;
+        speedBonus = 0;
+        score = 0;
+        accuraccyText.text = "%" + accuracyBonus.ToString("00.00");
+        speedText.text = fastShotsHit.ToString("00") + "/" + targetsHit.ToString("00");
+        scoreText.text = score.ToString("00000");
     }
 
     public void StartCycle()
     {
-        StopCycle();
         labelText.gameObject.SetActive(false);
         totalScoreText.gameObject.SetActive(false);
-        accuracyBonus = 0;
-        speedBonus = 0;
         sequencePool.pool = sequencePool.pool.OrderBy(x => Random.value).ToList();
-        score = 0;
         poolIndex = 0;
         sequenceIndex = 0;
         targetIndex = 0;
         shotsFired = 0;
         targetsHit = 0;
         fastShotsHit = 0;
-        speedText.text = fastShotsHit.ToString("00") + "/" + targetsHit.ToString("00");
         Cycle();
     }
 
@@ -271,5 +279,10 @@ public class ShootingGameController : MonoBehaviour {
                 GameManager.instance.UpdateHighScore(scoreRecord);
             }
         }
+    }
+
+    public void DoNothing()
+    {
+
     }
 }
