@@ -61,7 +61,7 @@
             controllerEvents.TouchpadTouchEnd += ControllerEvents_TouchpadTouchEnd;
             controllerEvents.TouchpadAxisChanged += ControllerEvents_TouchpadAxisChanged;
 
-			controllerEvents.ButtonOnePressed += ControllerEvents_ButtonOnePressed;
+			controllerEvents.ButtonOneTouchStart += ControllerEvents_ButtonOnePressed;
         }
 
         public void HideModels()
