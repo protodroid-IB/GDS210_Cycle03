@@ -185,6 +185,18 @@ public class Gun : MonoBehaviour {
 					hit.transform.GetComponent<CharacterDialogue>().PlayShotAudio();
 				}
 
+				// THIS IS SOME DUMB CODE - PLEASE FORGIVE ME SENPAI
+				if(hit.transform.GetComponent<FixedJoint>())
+				{
+					FixedJoint fixedJoint = hit.transform.GetComponent<FixedJoint>();
+					if (fixedJoint.connectedBody.name == "Head_end")
+					{
+						Transform characterTrans = fixedJoint.connectedBody.transform;
+
+						characterTrans.GetComponent<HatDialogueReference>().charDialogue.PlayShotAudio();
+					}
+				}
+
             }
             else
             {
